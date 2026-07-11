@@ -22,6 +22,9 @@ toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
+🌐 **한국어** · [English](/en/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/) · [日本語](/ja/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/)
+{: .notice--info}
+
 Objective-C 코드를 처음 열어보면 제일 먼저 눈에 걸리는 게 있어요.
 
 바로 여기저기 붙어 있는 골뱅이(@)입니다.
