@@ -23,13 +23,13 @@ tags:
   - コーディング
   - IT職種
   - プログラミング学習
-permalink: /ja/Coder-vs.-Software-Engineer./
+permalink: /ja/Coder-vs.-Software-Engineer/
 toc: true
 toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
-🌐 [한국어](/Coder-vs.-Software-Engineer/) · [English](/en/Coder-vs.-Software-Engineer./) · **日本語** · [中文](/zh/Coder-vs.-Software-Engineer./)
+🌐 [한국어](/Coder-vs.-Software-Engineer/) · [English](/en/Coder-vs.-Software-Engineer/) · **日本語** · [中文](/zh/Coder-vs.-Software-Engineer/)
 {: .notice--info}
 
 開発の勉強をしていると、一度はこんな疑問が浮かびます。「自分はコーダーなのか、ソフトウェアエンジニアなのか?」私も数年前、同じ悩みを抱えていました。

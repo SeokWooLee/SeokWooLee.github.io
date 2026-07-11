@@ -23,13 +23,13 @@ tags:
   - coding
   - IT jobs
   - learning to code
-permalink: /en/Coder-vs.-Software-Engineer./
+permalink: /en/Coder-vs.-Software-Engineer/
 toc: true
 toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
-🌐 [한국어](/Coder-vs.-Software-Engineer/) · **English** · [日本語](/ja/Coder-vs.-Software-Engineer./) · [中文](/zh/Coder-vs.-Software-Engineer./)
+🌐 [한국어](/Coder-vs.-Software-Engineer/) · **English** · [日本語](/ja/Coder-vs.-Software-Engineer/) · [中文](/zh/Coder-vs.-Software-Engineer/)
 {: .notice--info}
 
 If you've spent any time studying development, you've probably asked yourself this question at least once: "Am I a coder, or a software engineer?" I wrestled with the same question a few years back.

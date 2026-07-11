@@ -23,13 +23,13 @@ tags:
   - 编程
   - IT职业
   - 编程学习
-permalink: /zh/Coder-vs.-Software-Engineer./
+permalink: /zh/Coder-vs.-Software-Engineer/
 toc: true
 toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
-🌐 [한국어](/Coder-vs.-Software-Engineer/) · [English](/en/Coder-vs.-Software-Engineer./) · [日本語](/ja/Coder-vs.-Software-Engineer./) · **中文**
+🌐 [한국어](/Coder-vs.-Software-Engineer/) · [English](/en/Coder-vs.-Software-Engineer/) · [日本語](/ja/Coder-vs.-Software-Engineer/) · **中文**
 {: .notice--info}
 
 学编程的过程中，你多半冒出过这样的疑问："我到底是个码农，还是软件工程师？"几年前我也有过一模一样的困惑。
