@@ -26,7 +26,7 @@ toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
-🌐 [한국어](/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · [日本語](/ja/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · **中文**
+🌐 [한국어](/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · [English](/en/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · [日本語](/ja/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · **中文**
 {: .notice--info}
 
 # ChatGPT vs Claude vs Gemini 对比，到底有什么不同？（2026年7月最新版）
