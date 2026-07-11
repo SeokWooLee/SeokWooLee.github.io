@@ -22,6 +22,9 @@ toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
+🌐 **한국어** · [English](/en/Objective-C-%EC%97%AD%EC%82%AC/) · [日本語](/ja/Objective-C-%EC%97%AD%EC%82%AC/) · [中文](/zh/Objective-C-%EC%97%AD%EC%82%AC/)
+{: .notice--info}
+
 iOS 개발 공부를 시작하면 꼭 한 번 마주치는 언어가 있어요. 대괄호가 잔뜩 들어간 낯선 문법, `NSString` 같은 알 수 없는 접두어.
 
 바로 Objective-C인데요.
