@@ -22,6 +22,9 @@ toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
+🌐 **한국어** · [English](/en/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [日本語](/ja/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
+{: .notice--info}
+
 iOS 공부를 시작하고 처음 Objective-C 코드를 봤을 때, 저는 솔직히 좀 당황했어요.
 
 온통 대괄호 `[ ]` 투성이더라고요. 함수 호출인 것 같긴 한데, 다른 언어랑 생김새가 너무 달랐거든요.
