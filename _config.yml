@@ -83,7 +83,7 @@ google:
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification : "tU-7oFJWhiIi8339hX2S7w5kSqAe5QI9FnFWP3uZKyg"
-google_adsense           : # AdSense 게시자 ID (예: ca-pub-1234567890123456) 입력 시 전 페이지에 스크립트 삽입
+google_adsense           : "ca-pub-2371133949449816"
 bing_site_verification   :
 naver_site_verification  : "adc0c8f8b835845bab36ee5d087fb89c5ad23c1b"
 yandex_site_verification :
