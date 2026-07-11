@@ -1,6 +1,8 @@
 ---
 title: "Swift 커스텀 에러 메세지 정의하기 - LocalizedError와 errorDescription"
-description: "Swift에서 커스텀 에러 메세지를 정의할 때 Error 프로토콜의 localizedDescription을 직접 구현하면 추상화된 타입에서 동작하지 않습니다. LocalizedError 프로토콜과 errorDescription을 사용해 해결하는 방법을 소개합니다."
+description: "Swift에서 커스텀 에러 메세지를 정의하려면 Error의 localizedDescription 대신 LocalizedError 프로토콜의 errorDescription을 구현해야 합니다. 그 이유와 예제 코드를 소개합니다."
+header:
+  og_image: "https://github.com/user-attachments/assets/89f0101e-ff74-4b1b-9596-b0991e688435"
 categories:
   - iOS
 tags:

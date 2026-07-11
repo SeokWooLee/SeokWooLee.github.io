@@ -2,6 +2,7 @@
 
 {% if page.date %}
 {%- assign schema_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | strip -%}
+{%- assign schema_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: page.header.teaser | default: site.og_image -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -16,6 +17,9 @@
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
   "inLanguage": "ko-KR",
+  {% if schema_image -%}
+  "image": {{ schema_image | absolute_url | jsonify }},
+  {%- endif %}
   {% if page.tags and page.tags.size > 0 -%}
   "keywords": {{ page.tags | join: ", " | jsonify }},
   {%- endif %}
