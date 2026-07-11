@@ -46,7 +46,7 @@ last_modified_at: 2026-07-11
   <figcaption>KISS,让代码保持简单,是有原因的</figcaption>
 </figure>
 
-先说结论,KISS 是"Keep It Simple, Stupid"的缩写。直译过来大概是"简单点,别整那么复杂"。
+先说结论,KISS 是"Keep It Simple, Stupid"的缩写。意思大概是"简单点,别整那么复杂"。
 
 它是一种设计哲学:系统不是越复杂越好用,而是越简单、越能保持简单,运行起来才越顺畅。
 

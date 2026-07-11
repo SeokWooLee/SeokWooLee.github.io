@@ -8,7 +8,7 @@ related: true
 classes: wide
 title: "Coder vs. Software Engineer: What's the Real Difference? (Salary & Roles Explained)"
 lang: en
-description: "If you've spent any time studying development, you've probably asked yourself this question at least once: \"Am I a coder, or a software engineer?\" I wrestled…"
+description: "If you've spent any time studying development, you've probably asked yourself this question at least once: \"Am I a coder, or a software engineer?\" I wrestled with the same question a few years back."
 header:
   og_image: /assets/images/posts/23191df9-ab31-41e7-bd28-18763b03754f/1.png
 categories:

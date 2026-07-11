@@ -35,7 +35,7 @@ last_modified_at: 2026-07-11
 
 When I first started learning iOS and looked at Objective-C code, I'll admit I was a bit thrown off.
 
-Brackets `[ ]` everywhere. It looked like some kind of function call, but it looked nothing like any other language I'd seen.
+Brackets `[ ]` everywhere. It seemed to be some kind of function call, but it looked nothing like any other language I'd seen.
 
 I kept wondering, "Why on earth was this designed this way?"
 

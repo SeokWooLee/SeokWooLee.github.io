@@ -8,7 +8,7 @@ related: true
 classes: wide
 title: "Defining Custom Error Messages in Swift: The Complete Guide to LocalizedError (With Examples)"
 lang: en
-description: "If you build apps in Swift, you've probably had this experience: you caught an error with do-catch, but the message you actually got to show on screen was pr…"
+description: "If you build apps in Swift, you've probably had this experience: you caught an error with do-catch, but the message you actually got to show on screen was pretty underwhelming."
 header:
   og_image: /assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/1.png
 categories:

@@ -8,7 +8,7 @@ related: true
 classes: wide
 title: "Swift自定义错误消息定义，LocalizedError完全指南（附示例）"
 lang: zh
-description: "用Swift开发App的时候，你可能也遇到过这种情况：用do-catch捕获了错误，可真到了要在界面上显示提示的时候，那条消息却完全不像话。"
+description: "用Swift开发App的时候，你可能也遇到过这种情况：用do-catch捕获了错误，可真到了要在界面上显示提示的时候，那条消息却不太理想。"
 header:
   og_image: /assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/1.png
 categories:
@@ -31,7 +31,7 @@ last_modified_at: 2026-07-11
 🌐 [한국어](/error-description/) · [English](/en/error-description/) · [日本語](/ja/error-description/) · **中文**
 {: .notice--info}
 
-用Swift开发App的时候，你可能也遇到过这种情况：用`do-catch`捕获了错误，可真到了要在界面上显示提示的时候，那条消息却完全不像话。
+用Swift开发App的时候，你可能也遇到过这种情况：用`do-catch`捕获了错误，可真到了要在界面上显示提示的时候，那条消息却不太理想。
 
 我自己也是一开始直接用`error.localizedDescription`，结果给用户看到的是"The operation couldn't be completed…"这种莫名其妙的句子。😅
 

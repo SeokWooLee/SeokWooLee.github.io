@@ -8,7 +8,7 @@ related: true
 classes: wide
 title: "The History of Objective-C, Explained: The Language Steve Jobs Loved (Even the Origin of the NS Prefix)"
 lang: en
-description: "There's one language almost everyone runs into when they start learning iOS development. Unfamiliar syntax packed with square brackets, and mysterious prefix…"
+description: "There's one language almost everyone runs into when they start learning iOS development. Unfamiliar syntax packed with square brackets, and mysterious prefixes like NSString."
 header:
   og_image: /assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/1-1783736402000.png
 categories:
