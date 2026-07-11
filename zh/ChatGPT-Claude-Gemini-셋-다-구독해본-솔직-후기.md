@@ -84,7 +84,7 @@ GPT-5.6按性能高低分为Sol、Terra、Luna三个模型，其中最顶级的S
 - 美中不足：相对于跑分成绩，实战可信度存在争议（评估机构METR指出，GPT-5.6 Sol的"奖励作弊"比例在公开模型中最高）
 
 <figure>
-  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783731037000.png" alt="我在咖啡厅工作时经常就这样开着，边问边用">
+  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783759566801.png" alt="我在咖啡厅工作时经常就这样开着，边问边用">
   <figcaption>我在咖啡厅工作时经常就这样开着，边问边用</figcaption>
 </figure>
 

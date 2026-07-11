@@ -76,7 +76,7 @@ GPT-5.6은 성능 순으로 Sol, Terra, Luna 세 가지 모델로 나뉘는데, 
 - 아쉬운 점: 벤치마크 점수에 비해 실전 신뢰도 논란이 있음 (평가 기관 METR이 GPT-5.6 Sol의 "보상 해킹" 비율을 공개 모델 중 최고로 지적)
 
 <figure>
-  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783731037000.png" alt="저는 카페에서 일할 때 이렇게 켜놓고 물어보면서 씁니다">
+  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783759566801.png" alt="저는 카페에서 일할 때 이렇게 켜놓고 물어보면서 씁니다">
   <figcaption>저는 카페에서 일할 때 이렇게 켜놓고 물어보면서 씁니다</figcaption>
 </figure>
 

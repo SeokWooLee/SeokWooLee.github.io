@@ -84,7 +84,7 @@ Image generation, voice conversations, data analysis, and custom GPTs are all st
 - Downside: There's some controversy over whether real-world reliability matches its benchmark scores (the evaluation group METR flagged GPT-5.6 Sol for having the highest "reward hacking" rate among publicly available models)
 
 <figure>
-  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783731037000.png" alt="This is basically how I use them — pulled up at a coffee shop, asking away while I work">
+  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783759566801.png" alt="This is basically how I use them — pulled up at a coffee shop, asking away while I work">
   <figcaption>This is basically how I use them — pulled up at a coffee shop, asking away while I work</figcaption>
 </figure>
 
