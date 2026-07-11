@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://seokwoolee.github.io/
+
+Sitemap: https://seokwoolee.github.io/sitemap.xml
