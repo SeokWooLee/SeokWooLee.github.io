@@ -30,7 +30,7 @@ toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
-🌐 [한국어](/KISS-%EC%9B%90%EC%B9%99/) · **English** · [日本語](/ja/KISS-%EC%9B%90%EC%B9%99/)
+🌐 [한국어](/KISS-%EC%9B%90%EC%B9%99/) · **English** · [日本語](/ja/KISS-%EC%9B%90%EC%B9%99/) · [中文](/zh/KISS-%EC%9B%90%EC%B9%99/)
 {: .notice--info}
 
 There's this weird feeling you get sometimes when you're coding — like writing complicated code is what makes you good at your job.

@@ -30,7 +30,7 @@ toc_sticky: true
 last_modified_at: 2026-07-11
 ---
 
-🌐 [한국어](/KISS-%EC%9B%90%EC%B9%99/) · [English](/en/KISS-%EC%9B%90%EC%B9%99/) · **日本語**
+🌐 [한국어](/KISS-%EC%9B%90%EC%B9%99/) · [English](/en/KISS-%EC%9B%90%EC%B9%99/) · **日本語** · [中文](/zh/KISS-%EC%9B%90%EC%B9%99/)
 {: .notice--info}
 
 開発をしていると、なぜかコードを難しく書いたほうが「できる人」っぽい気がすることがあります。
