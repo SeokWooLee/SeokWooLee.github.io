@@ -17,7 +17,7 @@ tags:
 permalink: /error-description/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-11
+last_modified_at: 2026-07-13
 ---
 
 🌐 **한국어** · [English](/en/error-description/) · [日本語](/ja/error-description/) · [中文](/zh/error-description/)
@@ -25,7 +25,7 @@ last_modified_at: 2026-07-11
 
 Swift로 앱을 만들다 보면 `do-catch`로 에러를 잡았는데, 정작 화면에 띄울 메시지가 영 시원찮았던 경험 있으실 거예요.
 
-저도 처음엔 `error.localizedDescription`을 그대로 썼다가 "The operation couldn't be completed…" 같은 정체불명의 문구를 사용자에게 보여준 적이 있습니다. 😅
+`error.localizedDescription`을 그대로 쓰면 "The operation couldn't be completed…" 같은 정체불명의 문구가 사용자에게 그대로 노출되기 쉽거든요.
 
 결론부터 말씀드릴게요.
 
@@ -141,4 +141,6 @@ extension LoginError: LocalizedError {
 ## 함께 보면 좋은 글
 
 - [Swift 싱글톤 패턴, shared가 안티패턴 소리 듣는 진짜 이유](/Swift-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4-shared%EA%B0%80-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4-%EC%86%8C%EB%A6%AC-%EB%93%A3%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
+- [Swift 모노스테이트 패턴, 싱글톤의 대안이 될 수 있을까 (실전 정리)](/Swift-%EB%AA%A8%EB%85%B8%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%8B%B1%EA%B8%80%ED%86%A4%EC%9D%98-%EB%8C%80%EC%95%88%EC%9D%B4-%EB%90%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
