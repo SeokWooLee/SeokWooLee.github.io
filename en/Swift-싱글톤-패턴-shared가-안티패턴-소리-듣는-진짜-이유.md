@@ -6,22 +6,22 @@ comments: true
 share: false
 related: true
 classes: wide
-title: "The Real Reason Swift's `shared` Singleton Gets Called an Anti-Pattern"
+title: "The Real Reason Swift's Singleton Pattern Gets Called an Anti-Pattern"
 lang: en
 description: "If you've done any Swift development, you've almost certainly run into a singleton built with a single line: static let shared."
 header:
   og_image: /assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png
 tags:
   - Swift
-  - Singleton Pattern
-  - iOS Development
-  - Design Patterns
-  - Dependency Injection
-  - Anti-Pattern
-  - shared
-  - Swift Concurrency
-  - App Development
-  - Swift Developer
+  - singleton pattern
+  - iOS development
+  - design patterns
+  - dependency injection
+  - anti-pattern
+  - shared instance
+  - Swift architecture
+  - app development
+  - Swift developers
 permalink: /en/Swift-싱글톤-패턴-shared가-안티패턴-소리-듣는-진짜-이유/
 toc: true
 toc_sticky: true
@@ -33,93 +33,98 @@ last_modified_at: 2026-07-12
 
 If you've done any Swift development, you've almost certainly run into a singleton built with a single line: `static let shared`.
 
-When I built my first iOS app, I plastered singletons everywhere — network manager, user session, cache management, all of it.
+When I built my first iOS app, I plastered singletons everywhere — network manager, user session, cache manager, all of it.
 
-It's just convenient. You can call `Manager.shared` from anywhere.
+It's just convenient. You call `Manager.shared` from anywhere and you're done.
 
-But as the project grew, weird things started happening. Tests broke. I'd fix one screen and a bug would blow up somewhere completely unrelated.
+But as the project grew, strange things started happening. Tests stopped working. I'd fix one screen and a bug would blow up somewhere completely unrelated.
 
-That's when it hit me: there's a reason singletons get called an anti-pattern.
+That's when it first hit me: "Oh, there's a real reason singletons get called an anti-pattern."
 
-In this post, I want to walk through what the Swift singleton pattern actually is, why overusing it earns it that anti-pattern reputation, and when it's still fine to use — all based on real experience.
+In this post, I want to walk through exactly what the Swift singleton pattern is, why overusing it earns it anti-pattern status, and when it's still fine to use — all based on what I've actually run into.
 
-The short version: singletons themselves aren't the problem. The problem is the pattern of "leaving state open so it can be mutated from literally anywhere." Abuse `shared` without discipline, and you end up with tests you can't write, dependencies that hide in plain sight, and concurrency bugs on top of it all.
+To cut to the conclusion first: the singleton itself isn't the problem. The problem is "leaving state open to being changed from anywhere, by anything." Abuse `shared` without discipline, and you end up blocking tests, hiding dependencies, and even introducing concurrency bugs.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png" alt="The Swift singleton pattern — `shared` makes life easy, but the trap is just as big">
-  <figcaption>The Swift singleton pattern — `shared` makes life easy, but the trap is just as big</figcaption>
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png" alt="Swift's singleton pattern — `shared` makes life easy, but the trap is just as big">
+  <figcaption>Swift's singleton pattern — `shared` makes life easy, but the trap is just as big</figcaption>
 </figure>
 
 ## So What Exactly Is the Swift Singleton Pattern?
 
-A singleton is a design pattern that guarantees exactly one instance of a type exists across the entire app.
+A singleton is a design pattern that "guarantees exactly one instance exists across the entire app."
 
-In Swift, you can write one in almost no code at all. That's both the appeal and the trap.
+In Swift, you can write one in almost no code at all. That's both its charm and its trap.
 
 ```swift
 final class NetworkManager {
-    static let shared = NetworkManager()  // The one and only instance in the app
-    private init() {}                     // Blocks external instantiation
+    static let shared = NetworkManager()  // The only one in the app
+    private init() {}                     // Block external instantiation
     func request(_ url: URL) { /* ... */ }
 }
 ```
 
-`static let` guarantees Swift initializes it exactly once, in a thread-safe way. So instance creation itself is safe without any extra locking.
+`static let` guarantees Swift initializes it exactly once, thread-safely. So instance creation itself is safe without any extra locking.
 
-`private init()` is just as essential — it stops anyone from creating a new instance from outside. Drop that line and you don't really have a singleton anymore, just a global object.
+Blocking external creation with `private init()` is also key. Leave that out and it's just a global object, not a true singleton.
 
-Up to this point, it all looks pretty clean. The trouble starts because you can call it from anywhere.
+Up to this point, it all looks clean. The trouble starts once you realize this can be called from literally anywhere.
 
 ---
 
-## Why Does `shared` Get Called an Anti-Pattern?
+## Why Does the `shared` Instance Get Called an Anti-Pattern?
 
-Here are the three reasons I hear most, in the order I personally ran into them.
+Let me walk through the three most commonly cited reasons, in the order I personally ran into them.
 
-First, testing becomes a nightmare.
+First, testing turns into hell.
 
-If your code calls `NetworkManager.shared` directly, there's no way to swap it out for a mock during tests.
+If you call `NetworkManager.shared` directly inside your code, there's no way to swap it out for a mock when you write tests.
 
-Requests fire off to a real server, or tests end up sharing state with each other — so just changing the order they run in changes the results.
+Requests actually go out to the real server, or tests end up sharing state with each other — and suddenly just reordering tests changes the results.
 
 Second, dependencies get hidden.
 
-If a function quietly reaches for `UserSession.shared` internally, you can't tell what that function actually needs just by looking at its signature.
+If a function quietly calls `UserSession.shared` internally, you can't tell what that function actually needs just by reading its signature.
 
-This becomes genuinely scary when you're working with a team. You have to open up the implementation to see what it depends on.
+This is genuinely scary when you're working with a team. You have to open up the whole implementation just to see what it depends on.
 
 Third, there's the concurrency problem with global mutable state.
 
-If a singleton holds properties internally and multiple threads read and write to them at the same time, you get a data race.
+If a singleton holds internal properties and multiple threads read and write them at the same time, you get a data race.
 
-Safe instance creation doesn't mean safe state mutation inside that instance — those are two different things, and mixing them up is how you end up staring at a crash.
+Instance creation being safe doesn't mean mutating its internal state is safe too. Mix those two up and you'll run straight into a crash.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/2.png" alt="My code back when I plastered `shared` everywhere. Looking at it now makes me wince.">
-  <figcaption>My code back when I plastered `shared` everywhere. Looking at it now makes me wince.</figcaption>
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/2.png" alt="My old code from the days I plastered `shared` everywhere. Looking back, it's terrifying.">
+  <figcaption>My old code from the days I plastered `shared` everywhere. Looking back, it's terrifying.</figcaption>
 </figure>
 
 To sum it up:
 
-> Singletons don't get a bad rap because "only one exists." It's because they can be pulled out and mutated from anywhere, by anyone.
+> The real reason singletons get a bad rap isn't "because there's only one instance" — it's "because it can be pulled out and mutated from anywhere."
 
 ---
 
-## So Does That Mean You Should Never Use Singletons?
+## So Should You Never Use Singletons?
 
-No. I still use them in certain situations.
+No. I still use them in certain situations, even now.
 
-Some things are naturally meant to have exactly one instance. Apple itself uses singletons throughout the standard library — think `UserDefaults.standard`, `FileManager.default`, `URLSession.shared`.
+Some things are naturally meant to have exactly one instance. Apple itself uses singletons in the standard library — think `UserDefaults.standard`, `FileManager.default`, `URLSession.shared`.
 
 Here's a rule of thumb I find useful:
 
-- Mostly read-only, rarely mutated state → a singleton is fine
-- Genuinely needs to be one instance across the whole app → worth considering
-- Needs to behave differently under test → prefer dependency injection
+- Mostly read-only, rarely mutates state → a singleton is fine
+- Genuinely needs to be the one and only instance app-wide → consider a singleton
+- Needs to behave differently in tests → prefer dependency injection
 
-The key idea is: don't call `shared` directly inside your code — have it injected from outside instead.
+The core idea is: don't call `shared` directly inside your code — have it injected from outside instead.
 
-Even when you're still using the same singleton, making this one change dramatically improves testability.
+<figure>
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/3-1783847709763.png" alt="Default to `shared`, inject a mock for tests — that's the structure">
+  <figcaption>Default to `shared`, inject a mock for tests — that's the structure</figcaption>
+</figure>
+
+Even if you're using the same singleton, restructuring it like this dramatically improves testability.
 
 ```swift
 protocol Networking { func request(_ url: URL) }
@@ -127,28 +132,28 @@ extension NetworkManager: Networking {}
 
 final class FeedViewModel {
     private let network: Networking
-    init(network: Networking = .shared) {  // Defaults to the singleton, but a mock can be injected for tests
+    init(network: Networking = .shared) {  // Default to the singleton, inject a mock for testing
         self.network = network
     }
 }
 ```
 
-Day to day, it's convenient because it defaults to the singleton. But for testing, it's flexible because you can pass in a mock.
+Normally it defaults to the singleton, so it's convenient — and in tests, you can drop in a mock, so it's flexible too.
 
-You're not throwing the singleton away — you're just changing how it gets called.
+You're not throwing the singleton away. You're just changing how it gets called.
 
 ---
 
-## Three Rules I Follow in Practice
+## The 3 Rules I Actually Follow in Practice
 
-Lastly, here are the ground rules I've set for myself on the job.
+Lastly, let me share the rules I've settled on for myself on the job.
 
-1. Never build a singleton whose mutable state gets changed from multiple places. If state is needed, its owner should be crystal clear.
-2. Never call `shared` directly inside a function — inject it through an initializer or parameter instead.
-3. If a singleton faces concurrent access, wrap it in an actor or guard it with a serial queue.
+1. Don't build singletons whose mutable state gets changed from multiple places. If you need state, make ownership explicit.
+2. Never call `shared` directly inside a function body — inject it through an initializer or parameter instead.
+3. If a singleton has concurrent access, make it an actor or protect it with a serial queue.
 
-Follow just these three, and you'll rarely end up in a situation where "the singleton is rotting the whole project."
+Stick to just these three, and you'll rarely end up in a situation where "the singleton is rotting the project."
 
-A singleton isn't a bad tool — it's a tool that's so easy to reach for that it gets abused.
+A singleton isn't a bad tool — it's a tool that's so easy to reach for that it's easy to abuse.
 
-Before you scatter `shared` everywhere just because it's convenient, ask yourself one question: "Can I actually test this later?" That single question will save you six months from now.
+Before you scatter `shared` everywhere just because it's convenient, ask yourself once: "Can I actually test this later?" That one question can save you six months from now.
