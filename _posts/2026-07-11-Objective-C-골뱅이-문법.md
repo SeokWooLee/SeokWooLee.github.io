@@ -19,7 +19,7 @@ tags:
 permalink: /Objective-C-골뱅이-문법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-11
+last_modified_at: 2026-07-13
 ---
 
 🌐 **한국어** · [English](/en/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/) · [日本語](/ja/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/)
@@ -29,7 +29,7 @@ Objective-C 코드를 처음 열어보면 제일 먼저 눈에 걸리는 게 있
 
 바로 여기저기 붙어 있는 골뱅이(@)입니다.
 
-@interface, @property, 심지어 문자열까지 @"Hello" 이렇게 쓰더라고요. 저도 처음엔 "이거 오타 아니야?" 싶었어요.
+@interface, @property, 심지어 문자열까지 @"Hello" 이렇게 쓰는데요. 처음 보면 "이거 오타 아니야?" 싶을 수 있어요.
 
 그런데 이 @에는 아주 명확한 이유가 있습니다.
 
@@ -66,7 +66,7 @@ Objective-C는 완전히 새로운 언어가 아니에요. C언어 위에 객체
 
 ## 왜 하필 골뱅이(@) 기호였을까?
 
-저도 이게 제일 궁금했어요. 별표(*)도 있고 샵(#)도 있는데 왜 굳이 @였을까요?
+별표(*)도 있고 샵(#)도 있는데 왜 굳이 @였을까요?
 
 답은 의외로 실용적이에요.
 
@@ -170,6 +170,14 @@ NSString *greeting = @"안녕하세요"; // 따옴표 앞 @ → NSString 객체
 
 ---
 
-처음엔 코드마다 붙은 골뱅이가 낯설고 불편했는데, "C와 Objective-C를 나누는 경계선"이라는 걸 알고 나니 오히려 반갑더라고요.
+코드마다 붙은 골뱅이가 낯설게 느껴질 수 있지만, "C와 Objective-C를 나누는 경계선"이라는 걸 알고 나면 오히려 반갑게 보여요.
 
 @만 따라가도 어디부터가 객체지향 문법인지 딱 보이니까요. Objective-C 코드 읽으실 때 이 관점 하나만 기억하시면 훨씬 수월하실 거예요. 오늘도 즐거운 코딩 되세요!
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
+- [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
+<!-- /RELATED-POSTS -->

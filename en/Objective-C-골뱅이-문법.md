@@ -6,178 +6,178 @@ comments: true
 share: false
 related: true
 classes: wide
-title: "Why Does Everything in Objective-C Start with an @ Sign? (A Complete Breakdown)"
+title: "Objective-C's @ Symbol: Why Does Everything Start With It? (A Complete Breakdown)"
 lang: en
-description: "The first time you open up Objective-C code, one thing immediately catches your eye."
+description: "Open up an Objective-C file for the first time, and one thing jumps out right away."
 header:
   og_image: /assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.png
 categories:
   - iOS
 tags:
   - Objective-C
-  - at sign syntax
-  - atSymbol
+  - Objective-C syntax
+  - at symbol
+  - "@ symbol"
   - programming basics
   - iOS development
   - C language
   - NSString
   - learn to code
   - developer tips
-  - Objective-C syntax
 permalink: /en/Objective-C-골뱅이-문법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-11
+last_modified_at: 2026-07-13
 ---
 
 🌐 [한국어](/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/) · **English** · [日本語](/ja/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/)
 {: .notice--info}
 
-The first time you open up Objective-C code, one thing immediately catches your eye.
+Open up an Objective-C file for the first time, and one thing jumps out right away.
 
-It's the at signs (@) scattered everywhere.
+The @ symbol is everywhere.
 
-@interface, @property, and even strings are written like @"Hello". The first time I saw it, I thought, "Wait, is that a typo?"
+@interface, @property, and even strings written as @"Hello". At first glance, it might look like a typo.
 
-But it turns out there's a very clear reason behind this @.
+But there's a very clear reason behind that @.
 
-> The @ in Objective-C is a signal to the compiler that says, "From here on, this isn't plain C anymore — it's Objective-C's extended syntax."
+> The @ in Objective-C is a signal to the compiler that says, "From here on, this isn't plain C — it's Objective-C's extended syntax."
 
-Today, I want to walk you through why the same @ shows up in @interface, @property, and @"strings" alike, and explain the logic behind it in a simple way.
+Today, let's walk through why the same @ symbol shows up on @interface, @property, and @"strings" alike — and the logic behind it.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.png" alt="Objective-C's @ syntax — once you get it, there's really just one rule">
-  <figcaption>Objective-C's @ syntax — once you get it, there's really just one rule</figcaption>
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.png" alt="Objective-C's @ symbol looks confusing, but there's really just one rule behind it">
+  <figcaption>Objective-C's @ symbol looks confusing, but there's really just one rule behind it</figcaption>
 </figure>
 
 ---
 
-## So What Exactly Is the @ in Objective-C?
+## What exactly is the @ in Objective-C?
 
-Let's get straight to the point.
+Let's start with the core idea.
 
-The @ is a special symbol that tells the compiler, "This is syntax unique to Objective-C."
+The @ is a special marker that tells the compiler, "This part is Objective-C-specific syntax."
 
-To understand this, you need to know where Objective-C came from.
+To understand why, you need to know where Objective-C came from.
 
-Objective-C isn't a completely new language. It's the C language with object-oriented features layered on top.
+Objective-C isn't a brand-new language built from scratch. It's C with object-oriented features layered on top.
 
-In other words, it includes 100% of the C language as-is, with additional features like classes and messaging bolted on.
+In other words, it includes 100% of standard C, with classes and messaging added on top of that foundation.
 
-But this creates a problem.
+But that setup creates a problem.
 
-From the compiler's perspective, it needs to distinguish between what's original C syntax and what's newly added Objective-C syntax.
+The compiler needs a way to tell which parts are original C syntax and which parts are the newly added Objective-C syntax.
 
-And the @ is exactly the marker that draws that dividing line.
+The @ symbol is exactly that dividing line.
 
 ---
 
-## Why the At Sign (@) Specifically?
+## Why the @ symbol specifically?
 
-This was the part that intrigued me the most too. There's the asterisk (*), there's the hash (#) — so why @ of all things?
+There's also the asterisk (*) and the hash (#) — so why did they land on @?
 
-The answer turns out to be surprisingly practical.
+The answer turns out to be pretty practical.
 
-The @ symbol simply isn't used anywhere in standard C syntax.
+The @ symbol isn't used anywhere in standard C syntax.
 
-Let's think about the characters C actually uses.
+Think about the characters C actually uses.
 
-- Variable/function names: letters, numbers, underscore (_)
+- Variable and function names: letters, digits, underscore (_)
 - Operators: +, -, *, /, =, &, and so on
-- Preprocessor: # (e.g., #include)
+- Preprocessor directives: # (as in #include)
 
-The @ symbol doesn't appear anywhere on this list.
+Nowhere on that list does @ show up.
 
-So the creators of Objective-C picked it up and put it to use. It was a safe symbol that would never clash with existing C code.
+That's exactly why the designers of Objective-C picked it up. It was a safe symbol that would never collide with existing C code.
 
-If they had used the plain word "interface" as a keyword instead of @interface, every piece of existing C code that used a variable named "interface" would have broken.
+If they had used a plain word like "interface" as a keyword instead, any existing C code that used "interface" as a variable name would have broken instantly.
 
-By prefixing it with @, that kind of collision is ruled out entirely.
+By prefixing it with @, that kind of collision is ruled out from the start.
 
-To put it simply, @ is like a drawer handle that gathers up all of Objective-C's exclusive syntax in one place.
+A simple way to think about it: @ works like a labeled drawer handle that collects all of Objective-C's own syntax in one place.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/2.png" alt="What came from C and what Objective-C bolted on — @ is the dividing line">
-  <figcaption>What came from C and what Objective-C bolted on — @ is the dividing line</figcaption>
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/2.png" alt="What comes from C and what Objective-C adds on top — the @ marks that boundary">
+  <figcaption>What comes from C and what Objective-C adds on top — the @ marks that boundary</figcaption>
 </figure>
 
 ---
 
-## Why @interface, @property, and @"strings" All Share the Same @
+## Why @interface, @property, and @"strings" all share the @
 
-Now for the main event. Let's look at why these three, which seem so different in nature, all start with the same @.
+Now for the main event. Let's look at why these three, despite seeming so different from each other, all start with the same @.
 
-The short answer: all three are "features that exist only in Objective-C, not in C."
+The short answer: all three are "features that exist in Objective-C but not in C."
 
 Let's go through them one at a time.
 
-**@interface** — This is the directive that opens up a class's skeleton (declaration). Since C has no concept of a "class" at all, it had to be marked with @. Its counterparts, @implementation and @end, follow the same logic.
+**@interface** — This is the directive that opens a class's declaration (its skeleton). Since C has no concept of a "class" at all, it needed the @ marker. Its counterparts, @implementation and @end, exist for the same reason.
 
-**@property** — This is a feature that automatically generates an object's attributes. This, too, is syntax that doesn't exist in plain C, so it gets the @.
+**@property** — This feature auto-generates an object's properties for you. It's also syntax that doesn't exist in plain C, so it gets the @ too.
 
-**@"string"** — This is the most interesting one. A plain quoted string like "Hello" and @"Hello" are completely different things.
+**@"string"** — This one's the most interesting. A plain quoted "Hello" and an @"Hello" are completely different things.
 
-Let's compare them in a table.
+Here's a comparison:
 
 | Category | "Hello" | @"Hello" |
 |------|---------|----------|
-| Identity | C-style character array | NSString object |
+| What it is | A C-style character array | An NSString object |
 | Belongs to | Original C syntax | Objective-C extension |
-| Capability | Just a sequence of characters | Can use methods like length |
+| Capability | Just a sequence of characters | Supports methods like length |
 
-Just by adding a single @ in front of the quotation marks, a plain chunk of characters transforms into an "object."
+Add a single @ in front of the quotation marks, and it transforms from a plain chunk of characters into an "object."
 
-That's exactly why the @ is needed. It's essentially an instruction saying, "Don't treat this string as a plain C string — make it an NSString object."
+That's why the @ is needed there — it's essentially an instruction saying, "Don't treat this as a plain C string, make it an NSString object."
 
 To sum it up:
 
-> Whether it's @interface, @property, or @"string", they all carry the same @ marker because they're all "features that exist in Objective-C but not in C."
+> Whether it's @interface, @property, or @"string", they all carry the same @ marker because they're all features that exist only in Objective-C, not in C.
 
 ---
 
-## Seeing It in Code at a Glance
+## Seeing it in code
 
-Explaining this in words alone can feel a bit abstract, so here's a short example.
+This can feel a bit abstract when explained purely in words, so here's a short example.
 
-Below is what a simple class declaration looks like. You can see how @ wraps around Objective-C syntax.
+Below is what a simple class declaration looks like. You can see exactly how the @ wraps around Objective-C syntax.
 
 ```objectivec
-@interface Person : NSObject   // Start of class declaration (syntax that doesn't exist in C)
+@interface Person : NSObject   // Start of class declaration (doesn't exist in C)
 @property NSString *name;      // Auto-generated property
 @end                           // End of declaration
 
 NSString *greeting = @"Hello"; // @ before quotes → NSString object
 ```
 
-As you can see, every line starting with @ is a feature Objective-C newly added.
+As you can see, every line that starts with @ is a feature Objective-C added on top.
 
-Conversely, the parts without @ are syntax carried over directly from C.
+ Conversely, the parts without @ are plain C syntax carried over as-is.
 
-So just by checking whether @ is present or not, you can instantly tell, "Ah, this is an Objective-C extension."
+Just by checking whether @ is present or not, you can instantly tell, "Ah, this is an Objective-C extension."
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/3.png" alt="Once your eyes catch the @, reading the code gets a whole lot easier">
-  <figcaption>Once your eyes catch the @, reading the code gets a whole lot easier</figcaption>
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/3.png" alt="Once your eyes catch the @, reading the code gets a lot easier">
+  <figcaption>Once your eyes catch the @, reading the code gets a lot easier</figcaption>
 </figure>
 
 ---
 
 ## Frequently Asked Questions (Q&A)
 
-**Q. Is @ the same as the preprocessor's #?**
+**Q. Is @ the same as the # preprocessor directive?**
 
-No, it's not. The # in #include is a preprocessor directive that gets processed before compilation. The @, on the other hand, is an Objective-C compiler directive that the compiler itself interprets directly, so their roles are different.
+No. The # in #include is a preprocessor directive handled before compilation even begins. The @, on the other hand, is an Objective-C compiler directive interpreted directly by the compiler itself — so they play different roles.
 
 **Q. Are there other kinds of @ besides these?**
 
-Yes, quite a few. There's @protocol, @selector, @try/@catch, @autoreleasepool, and more. With modern syntax, you can even easily create an @[] array, an @{} dictionary, or an @42 number object using @.
+Yes, quite a few. There's @protocol, @selector, @try/@catch, @autoreleasepool, and more. In modern syntax, you can even use @ to quickly create an @[] array, an @{} dictionary, or an @42 number object.
 
-**Q. Doesn't Swift also have @?**
+**Q. Swift has @ too, right?**
 
-That's right. Though the meaning is a bit different. In Swift, @ is mainly used to mark attributes, like @State or @IBOutlet. The roots are similar, but it's best to think of their uses as distinct.
+That's right. Though the meaning is a bit different there. In Swift, @ is mainly used to mark attributes, as in @State or @IBOutlet. The roots are similar, but it's worth keeping the two usages distinct in your mind.
 
 ---
 
-At first, having an at sign attached to everything in the code felt unfamiliar and a bit awkward. But once I realized it's "the boundary line separating C from Objective-C," I actually came to appreciate it.
+That @ scattered throughout the code might feel unfamiliar at first, but once you realize it marks "the boundary between C and Objective-C," it starts to feel like a welcome landmark instead.
 
-Just by following the @ signs, you can immediately spot where the object-oriented syntax begins. Keep this one perspective in mind when reading Objective-C code, and things will get a lot easier. Happy coding, everyone!
+Just by tracking the @ symbols, you can immediately spot where the object-oriented syntax begins. Keep this one perspective in mind next time you're reading Objective-C code, and it'll go a lot more smoothly. Happy coding!
