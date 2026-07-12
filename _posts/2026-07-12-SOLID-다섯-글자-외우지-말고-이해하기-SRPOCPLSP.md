@@ -165,4 +165,5 @@ Square를 넣는 순간 "너비 5, 높이 4면 넓이 20"이라는 당연한 기
 
 - [YAGNI 정리, 개발자의 '언젠가 쓰겠지'가 비싼 이유](/YAGNI-%EC%A0%95%EB%A6%AC-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%96%B8%EC%A0%A0%EA%B0%80-%EC%93%B0%EA%B2%A0%EC%A7%80%EA%B0%80-%EB%B9%84%EC%8B%BC-%EC%9D%B4%EC%9C%A0/)
 - [KISS 원칙, 코드를 단순하게 짜라는 말의 진짜 의미](/KISS-%EC%9B%90%EC%B9%99/)
+- [디미터의 법칙, 메서드 체이닝이 나쁜 코드가 되는 순간 (기준·예시)](/%EB%94%94%EB%AF%B8%ED%84%B0%EC%9D%98-%EB%B2%95%EC%B9%99-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%B2%B4%EC%9D%B4%EB%8B%9D%EC%9D%B4-%EB%82%98%EC%81%9C-%EC%BD%94%EB%93%9C%EA%B0%80-%EB%90%98%EB%8A%94-%EC%88%9C%EA%B0%84-%EA%B8%B0%EC%A4%80%EC%98%88%EC%8B%9C/)
 <!-- /RELATED-POSTS -->
