@@ -20,7 +20,7 @@ toc_sticky: true
 last_modified_at: 2026-07-12
 ---
 
-🌐 **한국어** · [English](/en/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/) · [日本語](/ja/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/)
+🌐 **한국어** · [English](/en/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/) · [日本語](/ja/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/) · [中文](/zh/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/)
 {: .notice--info}
 
 면접에서 "SOLID 원칙 설명해보세요"라는 질문, 다들 한 번쯤 받아보셨을 거예요.
@@ -101,6 +101,11 @@ function pay(method, amount) {
 기존 코드는 안 건드리고(수정에 닫힘), 새 클래스를 추가하는 것만으로 기능이 늘어납니다(확장에 열림). 자주 바뀌는 지점에만 이 구조를 깔아두는 게 요령이에요. 모든 코드에 깔면 지난 편에서 말한 YAGNI 위반이 됩니다.
 
 <figure>
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/4-1783848080106.png" alt="토스페이 추가는 클래스 하나 얹는 걸로 끝">
+  <figcaption>토스페이 추가는 클래스 하나 얹는 걸로 끝</figcaption>
+</figure>
+
+<figure>
   <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.png" alt="수정 대신 추가로 대응하는 게 OCP예요">
   <figcaption>수정 대신 추가로 대응하는 게 OCP예요</figcaption>
 </figure>
@@ -159,4 +164,5 @@ Square를 넣는 순간 "너비 5, 높이 4면 넓이 20"이라는 당연한 기
 ## 함께 보면 좋은 글
 
 - [YAGNI 정리, 개발자의 '언젠가 쓰겠지'가 비싼 이유](/YAGNI-%EC%A0%95%EB%A6%AC-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%96%B8%EC%A0%A0%EA%B0%80-%EC%93%B0%EA%B2%A0%EC%A7%80%EA%B0%80-%EB%B9%84%EC%8B%BC-%EC%9D%B4%EC%9C%A0/)
+- [KISS 원칙, 코드를 단순하게 짜라는 말의 진짜 의미](/KISS-%EC%9B%90%EC%B9%99/)
 <!-- /RELATED-POSTS -->

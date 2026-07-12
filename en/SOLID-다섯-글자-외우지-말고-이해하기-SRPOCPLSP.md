@@ -6,9 +6,9 @@ comments: true
 share: false
 related: true
 classes: wide
-title: "SOLID's Five Letters: Understanding Instead of Memorizing (SRP, OCP, LSP)"
+title: "The Five Letters of SOLID, Understood Not Memorized (SRP, OCP, LSP)"
 lang: en
-description: "\"Can you explain the SOLID principles?\" — I'm sure most of you have been asked this in an interview at least once."
+description: "\"Explain the SOLID principles\" — pretty much everyone has fielded that interview question at some point."
 header:
   og_image: /assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png
 tags:
@@ -18,31 +18,31 @@ tags:
   - LSP
   - object-oriented design
   - single responsibility principle
-  - liskov substitution
+  - liskov substitution principle
   - software design principles
   - clean code
-  - programming
+  - software engineering
 permalink: /en/SOLID-다섯-글자-외우지-말고-이해하기-SRPOCPLSP/
 toc: true
 toc_sticky: true
 last_modified_at: 2026-07-12
 ---
 
-🌐 [한국어](/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/) · **English** · [日本語](/ja/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/)
+🌐 [한국어](/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/) · **English** · [日本語](/ja/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/) · [中文](/zh/SOLID-%EB%8B%A4%EC%84%AF-%EA%B8%80%EC%9E%90-%EC%99%B8%EC%9A%B0%EC%A7%80-%EB%A7%90%EA%B3%A0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-SRPOCPLSP/)
 {: .notice--info}
 
-"Can you explain the SOLID principles?" — I'm sure most of you have been asked this in an interview at least once.
+"Explain the SOLID principles" — pretty much everyone has fielded that interview question at some point.
 
-But honestly, even if you can rattle off all five letters, it's rare for the answer to actually connect to "okay, so how do I use this in my own code?" I was the same way for a long time.
+But honestly, most of us can rattle off the five letters and still draw a blank when it comes to "okay, so how does this actually apply to my code?" I was in that boat for a while myself.
 
-So this time, I want to break down SOLID not as textbook definitions, but through real-world scenes from actual work. There's a lot of ground to cover, so I'm splitting it into two parts. Today covers the first three letters: SRP, OCP, and LSP.
+So this time I want to walk through SOLID as real working scenarios instead of textbook definitions. It's a lot of ground to cover, so I'm splitting it into two posts. Today covers the first three letters: SRP, OCP, and LSP.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png" alt="Today we're starting with the first three of the five letters">
-  <figcaption>Today we're starting with the first three of the five letters</figcaption>
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png" alt="Today we're covering the first three of the five letters">
+  <figcaption>Today we're covering the first three of the five letters</figcaption>
 </figure>
 
-SOLID is an acronym for five object-oriented design principles compiled by Robert Martin (Uncle Bob).
+SOLID is an acronym for five object-oriented design principles laid out by Robert C. Martin (Uncle Bob).
 
 - **S**RP — Single Responsibility Principle
 - **O**CP — Open-Closed Principle
@@ -50,55 +50,55 @@ SOLID is an acronym for five object-oriented design principles compiled by Rober
 - **I**SP — Interface Segregation Principle
 - **D**IP — Dependency Inversion Principle
 
-Each of the five seems to be making a different point, but there's one message running through all of them: when a change happens, shrink the scope of code you have to touch.
+They look like five unrelated ideas at first glance, but they're all pointing at the same thing: shrink the blast radius of a change. When something needs to change, you want to touch as little code as possible.
 
 ---
 
 ## SRP — Single Responsibility Principle
 
-The textbook definition is "a class should have only one responsibility," but Uncle Bob himself later rephrased it more precisely.
+The textbook definition is "a class should have only one responsibility," but Uncle Bob himself later rephrased it into something sharper.
 
 > A module should be responsible to one, and only one, actor.
 
-Here, "actor" means the person (or department) who demands changes to that code. Take this class as an example:
+Here, an "actor" means the person (or department) who would ask for that code to change. Take a class like this:
 
 ```javascript
 class Employee {
-  calculatePay() { ... }    // Accounting asks for changes here
-  reportHours() { ... }     // HR asks for changes here
-  save() { ... }            // Engineering (DBA) asks for changes here
+  calculatePay() { ... }    // Accounting wants changes here
+  reportHours() { ... }     // HR wants changes here
+  save() { ... }            // Engineering (DBAs) wants changes here
 }
 ```
 
-All three methods answer to different owners. If a change requested by Accounting to `calculatePay` accidentally touches shared logic, HR's report quietly breaks. When something like this actually happens, it's a nightmare to trace.
+All three methods answer to a different owner. If accounting requests a change to `calculatePay` and the edit touches shared logic along the way, HR's reports can quietly break. When something like that actually happens, it's brutal to trace back to the cause.
 
-SRP boils this down to: "if different people are asking for the changes, separate the code too." Split pay calculation, hours reporting, and saving into separate classes, and Accounting's requests will never touch HR's functionality.
+SRP boils this down to a simple rule: if different people ask for changes, the code should live in different places. Split payroll calculation, hours reporting, and persistence into separate classes, and an accounting request can no longer reach into HR's territory.
 
 ---
 
 ## OCP — Open-Closed Principle
 
-The definition is "open for extension, closed for modification." It sounds like a riddle at first, but it's clear once you see it in code.
+The definition is "open for extension, closed for modification." Sounds cryptic the first time you hear it, but it clicks once you see it in code.
 
 ```javascript
-// If you have to modify this function every time a new payment method is added
+// If you have to edit this function every time a new payment method shows up...
 function pay(method, amount) {
   if (method === 'card') { ... }
   else if (method === 'kakaopay') { ... }
   else if (method === 'naverpay') { ... }
-  // New payment method = new else-if = modifying existing code
+  // new payment method = new else if = editing existing code
 }
 ```
 
-With this structure, adding a new payment provider means opening up a function that was already working fine and editing it. Every edit risks breaking one of the existing payment methods.
+With this structure, adding a new payment provider means cracking open a function that already works and modifying it. Every edit risks breaking a payment method that used to work fine.
 
 ```javascript
-// A structure where adding a new payment method just means 'adding' something
+// A structure where adding a new payment method means only 'adding' code
 const payments = {
   card: new CardPayment(),
   kakaopay: new KakaoPayment(),
   naverpay: new NaverPayment(),
-  // Adding a new provider = one line registering a new class
+  // adding a new provider = register one new class
 };
 
 function pay(method, amount) {
@@ -106,22 +106,27 @@ function pay(method, amount) {
 }
 ```
 
-You never touch the existing code (closed for modification), and functionality grows just by adding a new class (open for extension). The trick is to only apply this structure at points that change frequently. If you apply it everywhere, you end up violating YAGNI, which I covered in the last post.
+Here, existing code stays untouched (closed for modification), and new functionality just means adding a new class (open for extension). The trick is applying this pattern only at the points that actually change often. Slap it everywhere and you end up violating YAGNI, which I covered in an earlier post.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.png" alt="Responding by adding instead of modifying — that's OCP">
-  <figcaption>Responding by adding instead of modifying — that's OCP</figcaption>
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/4-1783848080106.png" alt="Adding Toss Pay is as simple as tacking on one more class">
+  <figcaption>Adding Toss Pay is as simple as tacking on one more class</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.png" alt="OCP means responding by adding, not modifying">
+  <figcaption>OCP means responding by adding, not modifying</figcaption>
 </figure>
 
 ---
 
 ## LSP — Liskov Substitution Principle
 
-The name sounds the scariest, but the idea is simple.
+It has the scariest-sounding name of the five, but the idea itself is simple.
 
-> A subclass should be substitutable for its parent class anywhere the parent is used, without breaking the program.
+> A subclass should be substitutable for its parent class without breaking the program.
 
-The classic counterexample is the rectangle-square problem. If you follow the mathematical common sense that "a square is a rectangle" and set up inheritance accordingly, this happens:
+The classic counterexample is the rectangle-square problem. If you follow the mathematical logic that "a square is a rectangle" and model it as inheritance, here's what happens:
 
 ```javascript
 class Rectangle {
@@ -134,31 +139,31 @@ class Square extends Rectangle {
   setHeight(h) { this.width = h; this.height = h; }
 }
 
-// Code that expects a rectangle
+// code that expects a rectangle
 function test(rect) {
   rect.setWidth(5);
   rect.setHeight(4);
-  console.log(rect.width * rect.height); // expects 20, but gets 16 if it's a Square
+  console.log(rect.width * rect.height); // expects 20, but gets 16 for a Square
 }
 ```
 
-The moment you pass in a Square, the reasonable expectation of "width 5, height 4, so area 20" breaks down. Even if the is-a relationship seems to hold, LSP says you shouldn't use inheritance if it breaks the behavioral contract.
+The moment you pass in a Square, the reasonable expectation of "width 5, height 4, area 20" falls apart. Even when an is-a relationship looks valid on paper, LSP says you shouldn't inherit if it breaks the behavioral contract.
 
-Here's the practical warning sign: if a subclass overrides a parent method by throwing an exception or leaving it as an empty implementation, that inheritance is likely violating LSP.
+Here's the practical tell: if a subclass overrides a parent method just to throw an exception or leave it empty, that inheritance relationship is probably violating LSP.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/3.png" alt="Turns out a square just doesn't fit where a rectangle belongs">
-  <figcaption>Turns out a square just doesn't fit where a rectangle belongs</figcaption>
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/3.png" alt="Turns out a square just doesn't fit where a rectangle should go">
+  <figcaption>Turns out a square just doesn't fit where a rectangle should go</figcaption>
 </figure>
 
 ---
 
-## Wrapping up Part One
+## Wrapping up part one
 
-Let me leave you with one line each for the three principles covered today.
+Here's each of today's three principles boiled down to one line:
 
-- **SRP** — If different people are asking for changes, separate the code too.
-- **OCP** — Build the frequently-changing points so you can respond by adding, not modifying.
-- **LSP** — A subclass must not break its parent's contract. If it has to, the inheritance itself is wrong.
+- **SRP** — If a different person asks for the change, the code should live in a different place.
+- **OCP** — Design the parts that change often so you can respond by adding, not modifying.
+- **LSP** — A subclass shouldn't break its parent's contract. If it has to, the inheritance itself is the mistake.
 
-In the next part, I'll cover the remaining two letters: ISP (Interface Segregation) and DIP (Dependency Inversion). DIP in particular ties directly into why modern frameworks all rely on dependency injection, so that one should be fun.
+Next time, I'll cover the remaining two letters: ISP (Interface Segregation) and DIP (Dependency Inversion). DIP in particular ties directly into why so many modern frameworks lean on dependency injection, so that one should be fun.
