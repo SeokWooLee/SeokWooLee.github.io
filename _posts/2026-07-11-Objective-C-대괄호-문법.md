@@ -1,6 +1,6 @@
 ---
 title: "Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)"
-description: "iOS 공부를 시작하고 처음 Objective-C 코드를 봤을 때, 저는 솔직히 좀 당황했어요."
+description: "iOS 공부를 시작하고 처음 Objective-C 코드를 보면 당황하기 쉬워요."
 header:
   og_image: /assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.png
 categories:
@@ -19,17 +19,17 @@ tags:
 permalink: /Objective-C-대괄호-문법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-12
+last_modified_at: 2026-07-13
 ---
 
 🌐 **한국어** · [English](/en/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [日本語](/ja/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
 {: .notice--info}
 
-iOS 공부를 시작하고 처음 Objective-C 코드를 봤을 때, 저는 솔직히 좀 당황했어요.
+iOS 공부를 시작하고 처음 Objective-C 코드를 보면 당황하기 쉬워요.
 
-온통 대괄호 `[ ]` 투성이더라고요. 함수 호출인 것 같긴 한데, 다른 언어랑 생김새가 너무 달랐거든요.
+온통 대괄호 `[ ]` 투성이거든요. 함수 호출인 것 같긴 한데, 다른 언어랑 생김새가 너무 다르니까요.
 
-"이걸 왜 이렇게 만들었지?" 하는 궁금증이 계속 남았어요.
+"이걸 왜 이렇게 만들었지?" 하는 궁금증이 남기 마련이에요.
 
 결론부터 말씀드리면, Objective-C의 대괄호는 함수를 "호출"하는 게 아니라 객체에게 "메시지를 보내는" 문법이에요. 이 개념 하나만 잡으면 낯설던 대괄호가 갑자기 눈에 들어와요.
 
@@ -200,7 +200,7 @@ objc_msgSend(dog, @selector(bark));
 
 ---
 
-처음엔 저도 대괄호가 그저 이상한 규칙처럼 보였는데, "객체에게 말을 거는 문법"이라고 생각을 바꾸니 훨씬 친근해졌어요.
+대괄호가 그저 이상한 규칙처럼 보이다가도, "객체에게 말을 거는 문법"이라고 생각을 바꾸면 훨씬 친근해져요.
 
 낯선 문법일수록 그 뿌리를 알면 오히려 오래 기억에 남더라고요.
 
