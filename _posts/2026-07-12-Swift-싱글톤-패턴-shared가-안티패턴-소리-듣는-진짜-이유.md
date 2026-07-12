@@ -144,3 +144,9 @@ final class FeedViewModel {
 싱글톤은 잘못된 도구가 아니라, 너무 쉬워서 남용되기 좋은 도구입니다.
 
 편하다는 이유로 아무 데나 `shared`를 뿌리기 전에, "이거 나중에 테스트할 수 있나?" 한 번만 자문해보세요. 그 질문 하나가 6개월 뒤의 나를 구합니다.
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [Swift 모노스테이트 패턴, 싱글톤의 대안이 될 수 있을까 (실전 정리)](/Swift-%EB%AA%A8%EB%85%B8%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%8B%B1%EA%B8%80%ED%86%A4%EC%9D%98-%EB%8C%80%EC%95%88%EC%9D%B4-%EB%90%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
+<!-- /RELATED-POSTS -->
