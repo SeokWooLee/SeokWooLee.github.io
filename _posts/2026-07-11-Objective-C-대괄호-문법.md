@@ -178,8 +178,8 @@ objc_msgSend(dog, @selector(bark));
 대괄호라는 겉모습 뒤에 이런 유연한 구조가 숨어 있던 거죠.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="저도 처음엔 어색했는데 며칠 쓰니 손에 붙더라고요">
-  <figcaption>저도 처음엔 어색했는데 며칠 쓰니 손에 붙더라고요</figcaption>
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="며칠 쓰다 보면 손에 붙는 문법이에요">
+  <figcaption>며칠 쓰다 보면 손에 붙는 문법이에요</figcaption>
 </figure>
 
 ---
@@ -209,7 +209,7 @@ objc_msgSend(dog, @selector(bark));
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 - [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
 - [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [Objective-C 골뱅이(@) 문법, 왜 전부 @로 시작할까? (완벽 정리)](/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/)
 <!-- /RELATED-POSTS -->

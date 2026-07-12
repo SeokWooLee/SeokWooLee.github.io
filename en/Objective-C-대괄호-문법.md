@@ -6,24 +6,23 @@ comments: true
 share: false
 related: true
 classes: wide
-title: "Why Does Objective-C's Bracket Syntax Look Like That? (The Secret of Message Sending)"
+title: "Why Does Objective-C's Bracket Syntax Look Like That? (The Secret Behind Message Sending)"
 lang: en
-description: "When you start learning iOS development and look at Objective-C code for the first time, it's easy to feel thrown off."
+description: "When you're starting out with iOS and open Objective-C code for the first time, it's easy to feel thrown off."
 header:
   og_image: /assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.png
 categories:
   - iOS
 tags:
-  - ObjectiveC
   - Objective-C
-  - iOSDevelopment
-  - ProgrammingLanguages
-  - MessageSending
+  - iOS development
+  - programming languages
+  - message sending
   - Smalltalk
-  - LearnToCode
-  - CodingForBeginners
-  - AppleDevelopment
-  - CodingBasics
+  - learning to code
+  - coding for beginners
+  - Apple development
+  - coding basics
 permalink: /en/Objective-C-대괄호-문법/
 toc: true
 toc_sticky: true
@@ -33,39 +32,39 @@ last_modified_at: 2026-07-13
 🌐 [한국어](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · **English** · [日本語](/ja/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
 {: .notice--info}
 
-When you start learning iOS development and look at Objective-C code for the first time, it's easy to feel thrown off.
+When you're starting out with iOS and open Objective-C code for the first time, it's easy to feel thrown off.
 
-The code is covered in square brackets `[ ]`. It looks like it's calling functions, but the shape is so different from other languages.
+Everything's covered in square brackets `[ ]`. It looks like it's calling a function, but it looks nothing like other languages.
 
-It naturally leaves you wondering, "Why on earth was this designed this way?"
+You can't help but wonder, "Why did they build it like this?"
 
-To cut to the answer: Objective-C's square brackets don't "call" a function — they're syntax for "sending a message" to an object. Once you grasp this single concept, those unfamiliar brackets suddenly start making sense.
+Here's the short answer: in Objective-C, those brackets aren't "calling" a function — they're "sending a message" to an object. Once this one concept clicks, those unfamiliar brackets suddenly make sense.
 
-Today, let's take a relaxed look at why these brackets look the way they do, tracing them back to their roots. 😊
+Today, let's dig into why these brackets look the way they do, tracing it back to its roots. 😊
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.png" alt="Objective-C's bracket syntax — there's a reason it looks this way">
-  <figcaption>Objective-C's bracket syntax — there's a reason it looks this way</figcaption>
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.png" alt="Objective-C's bracket syntax — there's a reason it looks the way it does">
+  <figcaption>Objective-C's bracket syntax — there's a reason it looks the way it does</figcaption>
 </figure>
 
 ---
 
-## Let's Start With the Key Takeaways
+## Let's start with the key takeaways
 
-First, here's what you'll get out of this post.
+Here's what you'll get out of this post.
 
-1. Objective-C's brackets mean "send a message to an object"
+1. Objective-C brackets mean "sending a message to an object"
 2. This syntax was inherited from a language called Smalltalk
-3. Once you know the `[object method]` structure, you can read most of it
-4. Under the hood, it gets converted into a function call called `objc_msgSend`
+3. Once you understand the `[object method]` structure, most of it reads easily
+4. Under the hood, it gets translated into a function called `objc_msgSend`
 
-If you understand these four points, you've achieved today's goal.
+If you understand just these four points, you've already achieved today's goal.
 
 ---
 
-## What Exactly Is Objective-C's Message-Sending Syntax?
+## What exactly is Objective-C's message-sending syntax?
 
-In most other languages, you'd call a method like this:
+In most other languages, calling a method looks like this:
 
 `object.method()`
 
@@ -75,7 +74,7 @@ But Objective-C writes it like this:
 // send the message bark to the dog object
 [dog bark];
 
-// send the count value along as an argument too
+// send count as an argument along with it
 [dog barkTimes:3];
 ```
 
@@ -83,133 +82,133 @@ The look is unfamiliar, but the structure is simple.
 
 `[receivingObject messageToSend]`
 
-You open a bracket, put the object that will receive the message on the left, and write the message to send on the right.
+You open a bracket, put the object receiving the message on the left, and write the message to send on the right.
 
-So `[dog bark]` means "hey dog, go bark."
+So `[dog bark]` means "Hey dog, go bark."
 
-Thinking of this as "talking to something" rather than a "function call" makes it much easier to follow.
+It's much easier to grasp if you think of it not as a "function call" but as "talking to" the object.
 
 When there are multiple arguments, it extends like this:
 
 ```objc
-// the message name is split into two pieces: setName: and age:
+// the message name is split into two parts: setName: and age:
 [person setName:@"Chulsoo" age:20];
 ```
 
-You can think of it as one value attaching to each colon (:).
+Just think of each colon (:) as attaching one value.
 
 ---
 
-## Why Do the Brackets Look Like This?
+## Why do the brackets look like this?
 
-> Objective-C's brackets are a trace left behind from layering Smalltalk's "message-sending" philosophy on top of the C language.
+> Objective-C's brackets are a trace left behind from layering Smalltalk's "message sending" philosophy on top of the C language.
 
 The story goes back to the early 1980s.
 
 Two people, Brad Cox and Tom Love, created Objective-C.
 
-They wanted to keep using C, which was popular at the time, while adding object-oriented concepts on top of it.
+They wanted to keep using C, which was popular at the time, while adding object-oriented concepts to it.
 
-The role model for that object orientation was Smalltalk.
+Their role model for object orientation was Smalltalk.
 
-Smalltalk's core philosophy was that "everything is an object, and objects communicate with each other by sending messages."
+Smalltalk's core philosophy was that "everything is an object, and objects communicate with each other through messages."
 
-The problem was they needed to introduce this messaging concept without breaking C's syntax.
+The problem was they had to fit this messaging concept in without breaking C's syntax.
 
-So they took square brackets — barely used in C syntax at the time — and designated that space as the place for sending messages.
+So they took square brackets, which were barely used in C syntax, and designated that space as where messages get sent.
 
-Thanks to this, it could be mixed with existing C code without any conflicts.
+Thanks to that, it could mix with existing C code without any conflicts.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/2.png" alt="Once the feel of 'sending' a message clicks, the brackets get comfortable">
-  <figcaption>Once the feel of 'sending' a message clicks, the brackets get comfortable</figcaption>
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/2.png" alt="Once the feel of 'sending' a message sinks in, brackets get easier">
+  <figcaption>Once the feel of 'sending' a message sinks in, brackets get easier</figcaption>
 </figure>
 
 This language was later adopted by a company called NeXT, and when Apple acquired NeXT in 1996, it became the backbone of Mac and iPhone development.
 
-The Cocoa framework we know today also came from this lineage.
+The Cocoa framework we know today came out of this as well.
 
-So this one unfamiliar bracket carries a surprisingly long history.
+So that one unfamiliar pair of brackets carries this much history within it.
 
 ---
 
-## How Is It Different From Dot (.) Syntax?
+## How is it different from dot (.) syntax?
 
-If you look at Objective-C code these days, you'll often see dot (.) syntax too.
+If you look at Objective-C code these days, you'll also often see dot (.) syntax.
 
 Something like `dog.name`.
 
 This can be confusing, so here's a table comparing the two.
 
-| Category | Bracket Syntax | Dot (.) Syntax |
+| Category | Bracket syntax | Dot (.) syntax |
 |------|------------|------------|
 | Form | `[dog name]` | `dog.name` |
 | Meaning | Message sending | Property access |
-| Introduced | From the beginning | Since Objective-C 2.0 (2007) |
-| Internal behavior | Method execution | Effectively converted into a method |
+| Introduced | From the beginning | After Objective-C 2.0 (2007) |
+| Under the hood | Executes a method | Effectively converted into a method |
 
-What's interesting is that dot syntax also ultimately gets converted into a bracket message internally.
+What's interesting is that dot syntax also gets converted into a bracket message under the hood in the end.
 
 In other words, when `dog.name` runs, it does the same thing as `[dog name]`.
 
-Dot syntax is just a more visually convenient outer layer.
+Dot syntax is really just a coat put on top to make things easier on the eyes.
 
-That's why I'd recommend beginners first understand that brackets are the real essence.
+That's why I'd recommend beginners first understand that brackets are the essence of it.
 
 ---
 
-## What Actually Happens Inside the Brackets?
+## What actually happens inside those brackets?
 
 Let's go a bit deeper.
 
-When you write `[dog bark]`, the compiler converts it into a function call called `objc_msgSend`.
+When you write `[dog bark]`, the compiler converts it into a call to a function called `objc_msgSend`.
 
 ```objc
 // the code we write
 [dog bark];
 
-// internally, it's roughly converted into this
+// under the hood, it roughly converts to this
 objc_msgSend(dog, @selector(bark));
 ```
 
-The first slot holds the object receiving the message, and the second slot holds the name tag (selector) of the method to execute.
+The first slot holds the object receiving the message, and the second slot holds the name tag (selector) of the method to run.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="Different on the outside, but it all funnels into one place">
-  <figcaption>Different on the outside, but it all funnels into one place</figcaption>
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="Different on the surface, but it all funnels into one place in the end">
+  <figcaption>Different on the surface, but it all funnels into one place in the end</figcaption>
 </figure>
 
 This approach is flexible because it decides which method to run at runtime.
 
-Thanks to this, Objective-C had strong dynamic capabilities, letting you change or add methods while the program was running.
+Thanks to that, Objective-C had strong dynamic capabilities, letting you swap or add methods while the program was running.
 
-Behind the outer appearance of brackets, this kind of flexible structure was hiding.
+Behind the appearance of those brackets was this flexible structure hiding underneath.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="It felt awkward at first, but it clicks after a few days of use">
-  <figcaption>It felt awkward at first, but it clicks after a few days of use</figcaption>
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="After a few days of using it, this syntax becomes second nature">
+  <figcaption>After a few days of using it, this syntax becomes second nature</figcaption>
 </figure>
 
 ---
 
-## Let's Wrap Up With Q&A
+## Let's wrap up with Q&A
 
 **Q. Do I have to memorize the brackets?**
 
-Rather than memorizing, once you get a feel for the single structure `[receivingObject messageToSend]`, it reads naturally.
+It's less about memorizing and more about getting a feel for the `[receivingObject messageToSend]` structure — once you do, it reads naturally.
 
-**Q. I use Swift now — do I still need to know this?**
+**Q. I use Swift now, do I still need to know this?**
 
-Older libraries and sample code are still often written in Objective-C, so being able to read it is a big help.
+A lot of older libraries and sample code are still written in Objective-C, so being able to read it helps a lot.
 
 **Q. What if there are brackets inside brackets?**
 
-It's a structure where the outer bracket receives the result of the inner one. Reading from the inside out will untangle it.
+That's a structure where the outer one receives the result of the inner one. Reading from the inside out untangles it.
 
 ---
 
-Brackets might seem like a strange rule at first, but once you shift your thinking to "syntax for talking to an object," they become much friendlier.
+Brackets might look like some strange rule at first, but once you shift your thinking to "syntax for talking to an object," they become much friendlier.
 
-The more unfamiliar a piece of syntax is, the longer it tends to stick with you once you know its roots.
+The more unfamiliar a piece of syntax is, the more it tends to stick with you once you know its roots.
 
-I hope this post helps you get a little more comfortable with Objective-C. Rooting for you! 🙌
+I hope this post helps you feel a little closer to Objective-C. Rooting for you! 🙌
