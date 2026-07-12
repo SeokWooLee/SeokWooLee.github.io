@@ -200,3 +200,9 @@ objc_msgSend(dog, @selector(bark));
 낯선 문법일수록 그 뿌리를 알면 오히려 오래 기억에 남더라고요.
 
 오늘 이 글이 Objective-C와 조금 더 친해지는 계기가 되면 좋겠어요. 응원할게요! 🙌
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+<!-- /RELATED-POSTS -->

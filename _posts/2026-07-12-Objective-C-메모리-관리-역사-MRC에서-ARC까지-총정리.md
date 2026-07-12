@@ -60,6 +60,11 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 
 이 단순한 규칙이 Objective-C 메모리 관리의 뿌리입니다.
 
+<figure>
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/3-1783847918895.png" alt="숫자 하나로 생사가 갈리는 참조 카운트 흐름">
+  <figcaption>숫자 하나로 생사가 갈리는 참조 카운트 흐름</figcaption>
+</figure>
+
 ---
 
 ## MRC 시대: 개발자가 직접 숫자를 세던 시절
@@ -205,3 +210,11 @@ iOS 개발 공부하시는 분들께 이 흐름이 작은 지도가 되었으면
 
 - [Transitioning to ARC Release Notes (Apple Developer)](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)
 - [About Memory Management (Apple Developer)](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html)
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
+- [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
+- [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
+<!-- /RELATED-POSTS -->
