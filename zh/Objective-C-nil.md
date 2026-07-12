@@ -6,9 +6,9 @@ comments: true
 share: false
 related: true
 classes: wide
-title: "Objective-C nil 与 Java null 的区别，为什么表现不一样"
+title: "Objective-C 的 nil 和 Java 的 null 有什么不同，为什么表现不一样"
 lang: zh
-description: "作为开发者第一次接触 iOS 时，最让我懵的就是这个。"
+description: "刚开始接触 iOS 开发的时候，最让我摸不着头脑的就是这件事。"
 header:
   og_image: /assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png
 categories:
@@ -18,136 +18,141 @@ tags:
   - nil
   - iOS开发
   - NullPointerException
-  - objcmsgSend
+  - objc_msgSend
   - Swift可选值
   - 编程
   - 运行时
   - 开发学习
-  - 编程语言
+  - 编码
 permalink: /zh/Objective-C-nil/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-11
+last_modified_at: 2026-07-12
 ---
 
 🌐 [한국어](/Objective-C-nil/) · [English](/en/Objective-C-nil/) · [日本語](/ja/Objective-C-nil/) · **中文**
 {: .notice--info}
 
-作为开发者第一次接触 iOS 时，最让我懵的就是这个。
+刚开始接触 iOS 开发的时候，最让我摸不着头脑的就是这件事。
 
-在 Java 或 C++ 里，只要对 nil（空）对象做点什么，应用马上就崩了吧。就是那个赫赫有名的 NullPointerException。
+在 Java 或 C++ 里，只要对 nil（空）对象做点什么，程序马上就崩溃了吧。就是那个大名鼎鼎的 NullPointerException。
 
-可是 Objective-C 里，就算给 nil 发消息，也是静悄悄的。不崩溃，也不报错。
+可是 Objective-C 里，就算给 nil 发消息，也是安安静静的。既不崩溃，也不报错。
 
-一开始我还以为“这不是 bug 吗？”，后来才发现原来是语言故意这么设计的。
+一开始我还以为“这不是个 bug 吗”，后来才知道，这其实是语言层面故意设计成这样的。
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png" alt="Objective-C 的 nil 消息不会抛异常，而是悄悄跳过">
-  <figcaption>Objective-C 的 nil 消息不会抛异常，而是悄悄跳过</figcaption>
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png" alt="Objective-C 的 nil 消息会悄悄放行，而不是抛出异常">
+  <figcaption>Objective-C 的 nil 消息会悄悄放行，而不是抛出异常</figcaption>
 </figure>
 
-先说结论：在 Objective-C 中给 nil 发消息，什么都不会发生，只是老老实实返回 0（或 nil）。
+先说结论：在 Objective-C 里给 nil 发消息，什么都不会发生，只会老老实实返回一个 0（或者 nil）。
 
-这并不是放任错误不管，而是语言层面刻意做出的一道安全阀。
+这并不是对错误的放任，而是语言层面刻意打造的一道安全阀。
 
-今天就来聊聊为什么会有这种行为，以及我们该怎么理解它。
+今天就来聊聊为什么会有这样的行为，以及我们该怎么看待它。
 
 ---
 
-## 为什么给 nil 发消息不会崩？
+## 为什么给 nil 发消息不会崩溃？
 
-关键在于 Objective-C 的消息发送机制。
+关键就在 Objective-C 的消息发送机制上。
 
-我们写 `[object doSomething]` 这样的代码时，编译器会把它转成 `objc_msgSend(object, @selector(doSomething))` 这样一次函数调用。
+我们写 `[object doSomething]` 这样的代码时，编译器会把它转换成 `objc_msgSend(object, @selector(doSomething))` 这样一个函数调用。
 
-这不是直接调用方法，而是一种“麻烦运行时把这条消息转达给这个对象”的结构。
+这不是直接调用方法，而是在运行时“拜托”一句：“麻烦把这条消息传给这个对象。”
 
-而这个 `objc_msgSend` 函数，一开始就会检查接收消息的对象是不是 nil。
+而这个 `objc_msgSend` 函数，一上来就会先检查接收消息的对象是不是 nil。
 
-如果接收者是 nil 呢？
+<figure>
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/4-1783847973933.png" alt="objc_msgSend 悄悄吞掉 nil 的那个瞬间">
+  <figcaption>objc_msgSend 悄悄吞掉 nil 的那个瞬间</figcaption>
+</figure>
 
-> 不会去找方法，而是当场直接返回 0，安安静静地结束。
+如果接收对象是 nil 呢？
 
-也就是说，nil 相当于一个“吞掉消息的存在”。反正发出去也到不了任何地方，自然也就没有崩溃这回事了。
+> 它不会去查找方法，而是当场直接返回 0，安静地结束。
+
+也就是说，nil 就像一个“把消息吞掉的存在”。反正发出去也到不了任何地方，自然也就没有崩溃这回事了。
 
 ```objc
-// 如果 receiver 是 nil，就不会去找方法，直接返回 0
+// receiver 为 nil 时不会查找方法，直接返回 0
 NSString *name = nil;
 NSUInteger len = [name length];  // 不会崩溃，len == 0
 ```
 
 ---
 
-## 这和 NullPointerException 有什么不同？
+## 这跟 NullPointerException 到底有什么不一样？
 
-这一点很多人会搞混，我整理成表格来看。
+这一点很多人容易搞混，我整理成表格来说明。
 
-| 区分 | Objective-C（nil） | Java（null） |
+| 项目 | Objective-C（nil） | Java（null） |
 |------|-------------------|-------------|
 | 对 null 调用方法 | 忽略并返回 0/nil | 抛出 NullPointerException |
-| 应用表现 | 不崩溃，继续运行 | 因异常而崩溃 |
-| 处理主体 | 运行时（objc_msgSend） | JVM 异常处理 |
+| 应用运行状态 | 不崩溃，继续执行 | 因异常而崩溃 |
+| 处理主体 | 运行时（objc_msgSend） | JVM 异常处理机制 |
 
-Java 一旦访问 null 引用，就会“哪有这种对象？”地立刻抛出异常。
+Java 一旦访问 null 引用，就会立刻抛出异常，告诉你“这个对象根本不存在”。
 
-而 Objective-C 的运行时把 nil 当作一个正常的值来对待。
+而 Objective-C 的运行时则把 nil 当作一个正常的值来处理。
 
-所以 Java 开发者转来 Objective-C 时，往往会因为这个差异别扭好一阵子。
+所以很多从 Java 转到 Objective-C 的开发者，一开始都会因为这个差异感到别扭好一阵子。
 
-返回值也会因类型而略有不同。对象类型返回 nil，数字类型返回 0，结构体则返回填充为 0 的值。
+返回值也会根据类型略有不同：对象类型返回 nil，数值类型返回 0，结构体则返回一个全部填充为 0 的值。
 
 ---
 
 ## 不崩溃就一定是好事吗？
 
-老实说，这是把双刃剑。
+老实说，这是一把双刃剑。
 
-优点确实很明显。不用到处铺满 nil 判断代码。
+优点确实很明显：不用在代码里到处堆砌 nil 判断。
 
-比如数组为空返回了 nil，即使对它问 `count`，也只会得到 0，流程不会中断。
+比如说，数组为空导致返回了 nil，这时候你去问它的 `count`，得到的也只是 0，流程不会因此中断。
 
-但恰恰是这一点，也可能变成陷阱。
+但恰恰是这一点，也会变成陷阱。
 
-因为 bug 不会以崩溃的方式暴露出来，而是被悄悄埋没。
+因为 bug 不会以崩溃的形式暴露出来，而是被悄悄地埋掉了。
 
-我以前也遇到过数据死活不显示在屏幕上、折腾了好久的情况，后来才发现是中间某个对象是 nil，导致后面的消息全被无声无息地吞掉了。
+我以前也遇到过数据死活显示不出来的情况，折腾了好久才发现，原来中间某个对象是 nil，导致后面所有消息都被悄悄忽略了。
 
-要是当场崩溃了，反倒能很快找到问题，可正因为它悄无声息地过去了，排查原因反而花了更长时间。
+要是真崩溃了，反而能很快定位问题，但因为一切都安静地过去了，排查原因反而花了更久的时间。
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.png" alt="亲自跑一下就能很快确认它真的不会崩溃">
-  <figcaption>亲自跑一下就能很快确认它真的不会崩溃</figcaption>
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.png" alt="亲自运行一下，很快就能确认真的不会崩溃">
+  <figcaption>亲自运行一下，很快就能确认真的不会崩溃</figcaption>
 </figure>
 
-所以养成区分“这里可以让 nil 流过去”还是“这里必须有值”的习惯，对开发者来说很重要。
+所以，开发者养成习惯去区分“这里允许 nil 流过”还是“这里必须有值”，就显得格外重要。
 
 ---
 
-## 实战中该怎么处理？
+## 实际开发中该怎么处理比较好？
 
-我把自己常用的几个方法整理一下。
+分享几个我自己常用的方法。
 
-1. 在关键分支处显式检查 nil（`if (object == nil)`）
-2. 对可能返回 nil 的方法，用注释或命名标注出来
-3. 怀疑出现了意料之外的 nil 时，用 `NSAssert` 在开发阶段先拦下来
+1. 在重要的分支逻辑中，显式检查 nil（`if (object == nil)`）
+2. 对可能返回 nil 的方法，用注释或命名方式提前标注出来
+3. 如果怀疑出现了意料之外的 nil，用 `NSAssert` 在开发阶段提前拦截
 
-尤其是换到 Swift 之后，情况又不一样了。
+特别是到了 Swift，情况又不一样了。
 
-Swift 干脆用可选值（Optional）这个概念，把 nil 的可能性钉死在类型系统里。
+Swift 干脆用可选值（Optional）这个概念，把 nil 的可能性直接钉死在了类型系统里。
 
-可能为 nil 的值必须加上问号标出来，解包使用时也强制要求做安全处理。
+可能为 nil 的值必须加上问号来标注，解包使用时也强制要求安全处理。
 
-可以说，Swift 把 Objective-C 那种“悄悄放过去”的做法，换成了“提前摆出来”。
+可以说，Objective-C 的“悄悄放行”，到了 Swift 变成了“提前摊开来讲”。
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/3.png" alt="和 Swift 放在一起对比，就能看出设计理念的差异">
-  <figcaption>和 Swift 放在一起对比，就能看出设计理念的差异</figcaption>
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/3.png" alt="和 Swift 放在一起看，设计理念的差异一目了然">
+  <figcaption>和 Swift 放在一起看，设计理念的差异一目了然</figcaption>
 </figure>
 
 ---
 
-Objective-C 在给 nil 发消息时不崩溃，不是 bug，而是一种设计哲学。
+Objective-C 对 nil 消息不崩溃，不是 bug，而是一种设计理念。
 
-方便的同时也会把静默的 bug 藏起来，一旦理解了“为什么不崩”，反而能写出更扎实的代码。
+方便的同时，也难免藏着一些安静的 bug；一旦理解了“为什么不会崩溃”，反而能写出更扎实的代码。
 
-如果你现在的 iOS 代码里正遇到莫名其妙的空白页面，不妨看看中间是不是悄悄溜过去了一个 nil。相信一定会有帮助。
+如果你现在正对着 iOS 代码里一片莫名其妙的空白界面发愁，不妨看看中间是不是悄悄溜过了一个 nil。相信一定会有帮助。
