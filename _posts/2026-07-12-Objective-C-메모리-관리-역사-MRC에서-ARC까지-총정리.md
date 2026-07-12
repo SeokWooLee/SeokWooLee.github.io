@@ -17,7 +17,7 @@ tags:
 permalink: /Objective-C-메모리-관리-역사-MRC에서-ARC까지-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-12
+last_modified_at: 2026-07-13
 ---
 
 🌐 **한국어** · [English](/en/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [日本語](/ja/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [中文](/zh/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
@@ -27,7 +27,7 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 
 "예전 Objective-C 코드에는 왜 `retain`, `release`가 잔뜩 적혀 있을까?"
 
-저도 스위프트로 입문한 뒤에 옛날 코드를 열어보고 적잖이 당황했던 기억이 납니다.
+스위프트로 입문하신 분이라면 옛날 코드를 열어보고 한 번쯤 당황하셨을 법한 풍경이죠.
 
 오늘은 Objective-C 메모리 관리의 역사, 그러니까 MRC에서 ARC까지 어떻게 흘러왔는지 정리해 드릴게요.
 
@@ -214,7 +214,7 @@ iOS 개발 공부하시는 분들께 이 흐름이 작은 지도가 되었으면
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 - [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
 - [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
-- [Objective-C 골뱅이(@) 문법, 왜 전부 @로 시작할까? (완벽 정리)](/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/)
 <!-- /RELATED-POSTS -->
