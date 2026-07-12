@@ -15,7 +15,7 @@ tags:
 permalink: /ChatGPT-Claude-Gemini-셋-다-구독해본-솔직-후기/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-11
+last_modified_at: 2026-07-13
 ---
 
 🌐 **한국어** · [English](/en/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · [日本語](/ja/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/) · [中文](/zh/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/)
@@ -25,7 +25,7 @@ last_modified_at: 2026-07-11
 
 요즘 AI 하나쯤 안 쓰는 분이 없죠. 그런데 막상 시작하려면 고민이 됩니다.
 
-ChatGPT를 써야 하나, Claude가 낫다던데, Gemini는 무료로 꽤 쓸 수 있다던데... 저도 셋 다 유료 구독까지 해보면서 한참을 헤맸어요.
+ChatGPT를 써야 하나, Claude가 낫다던데, Gemini는 무료로 꽤 쓸 수 있다던데... 저도 셋 다 유료 구독까지 해보면서 직접 비교해봤어요.
 
 결론부터 말씀드리면, 2026년 7월 기준으로 ChatGPT는 이제 누구에게나 충분히 쓸만한 수준까지 올라왔고, 개발자들이 실무에서 가장 선호하는 건 여전히 Claude이며, Gemini는 솔직히 아직 한 발 뒤에 있습니다.
 
