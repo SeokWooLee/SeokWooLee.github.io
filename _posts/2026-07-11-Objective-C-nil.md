@@ -1,6 +1,6 @@
 ---
 title: "Objective-C nil vs Java null 비교, 왜 다르게 동작할까"
-description: "개발자로 처음 iOS를 만졌을 때 저를 제일 당황하게 한 게 이거였어요."
+description: "iOS를 처음 만지는 개발자를 제일 당황하게 하는 게 있어요."
 header:
   og_image: /assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png
 categories:
@@ -19,19 +19,19 @@ tags:
 permalink: /Objective-C-nil/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-12
+last_modified_at: 2026-07-13
 ---
 
 🌐 **한국어** · [English](/en/Objective-C-nil/) · [日本語](/ja/Objective-C-nil/) · [中文](/zh/Objective-C-nil/)
 {: .notice--info}
 
-개발자로 처음 iOS를 만졌을 때 저를 제일 당황하게 한 게 이거였어요.
+iOS를 처음 만지는 개발자를 제일 당황하게 하는 게 있어요.
 
 Java나 C++에서는 nil(널) 객체에 뭔가를 시키면 바로 앱이 죽잖아요. 그 유명한 NullPointerException이요.
 
 그런데 Objective-C는 nil한테 메시지를 보내도 조용합니다. 크래시도 없고 에러도 없어요.
 
-처음엔 "이거 버그 아니야?" 싶었는데, 알고 보니 언어가 일부러 그렇게 설계된 거더라고요.
+처음 보면 "이거 버그 아니야?" 싶은데, 사실 언어가 일부러 그렇게 설계된 거예요.
 
 <figure>
   <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png" alt="Objective-C nil 메시지는 예외 대신 조용히 넘어갑니다">
@@ -107,9 +107,9 @@ Java는 null 참조에 접근하는 순간 "그런 객체 없는데?" 하면서 
 
 버그가 크래시로 드러나지 않고 조용히 묻혀버리거든요.
 
-저도 예전에 데이터가 화면에 안 뜨길래 한참을 헤맸는데, 알고 보니 중간에 어떤 객체가 nil이라 메시지가 전부 무시되고 있던 거였어요.
+데이터가 화면에 안 떠서 한참 헤매다 보면, 중간에 어떤 객체가 nil이라 메시지가 전부 무시되고 있는 경우가 많아요.
 
-크래시라도 났으면 금방 찾았을 텐데, 조용히 넘어가니 원인 추적이 더 오래 걸렸죠.
+크래시라도 나면 금방 찾을 텐데, 조용히 넘어가니 원인 추적이 더 오래 걸리죠.
 
 <figure>
   <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.png" alt="직접 돌려보면 정말 안 죽는지 금방 확인됩니다">
