@@ -72,8 +72,8 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 ARC 이전, 그러니까 MRC(Manual Retain Count) 시대에는 이 숫자를 사람이 손으로 관리했어요.
 
 <figure>
-  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/2.png" alt="retain release가 잔뜩 적힌 옛날 코드, 저도 처음엔 당황했어요">
-  <figcaption>retain release가 잔뜩 적힌 옛날 코드, 저도 처음엔 당황했어요</figcaption>
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/2.png" alt="retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠">
+  <figcaption>retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠</figcaption>
 </figure>
 
 규칙은 명확했습니다. 흔히 'NARC'라는 말로 외우곤 했죠.
