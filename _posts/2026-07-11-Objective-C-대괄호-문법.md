@@ -19,7 +19,7 @@ tags:
 permalink: /Objective-C-대괄호-문법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-11
+last_modified_at: 2026-07-12
 ---
 
 🌐 **한국어** · [English](/en/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [日本語](/ja/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/) · [中文](/zh/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
@@ -166,6 +166,11 @@ objc_msgSend(dog, @selector(bark));
 
 첫 번째 자리에 메시지를 받을 객체, 두 번째 자리에 실행할 메서드의 이름표(셀렉터)가 들어가요.
 
+<figure>
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="겉모습은 달라도 결국 한곳으로 모여요">
+  <figcaption>겉모습은 달라도 결국 한곳으로 모여요</figcaption>
+</figure>
+
 이 방식은 어떤 메서드를 실행할지 실행 시점에 결정해서 유연해요.
 
 덕분에 Objective-C는 실행 도중에 메서드를 바꾸거나 추가하는 동적인 기능이 강했어요.
@@ -204,5 +209,7 @@ objc_msgSend(dog, @selector(bark));
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
+- [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
 - [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
