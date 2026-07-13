@@ -177,7 +177,7 @@ NSString *greeting = @"안녕하세요"; // 따옴표 앞 @ → NSString 객체
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
 - [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
+- [Objective-C id 타입 완전정복 (동적 타이핑·덕 타이핑 총정리)](/Objective-C-id-%ED%83%80%EC%9E%85-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EB%8D%95-%ED%83%80%EC%9D%B4%ED%95%91-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
