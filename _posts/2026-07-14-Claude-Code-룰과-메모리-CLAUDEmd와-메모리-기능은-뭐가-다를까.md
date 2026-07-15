@@ -110,7 +110,7 @@ CLAUDE.md는 헌법이고 메모리는 업무 일지입니다. 사람이 정한 
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [코딩 AI 하나만 골라야 한다면? 1년 실사용자의 선택](/%EC%BD%94%EB%94%A9-AI-%ED%95%98%EB%82%98%EB%A7%8C-%EA%B3%A8%EB%9D%BC%EC%95%BC-%ED%95%9C%EB%8B%A4%EB%A9%B4-1%EB%85%84-%EC%8B%A4%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9D%98-%EC%84%A0%ED%83%9D/)
 - [Claude Code·Cursor·Copilot 코딩 AI 어떻게 고르나요? 용도별 가이드](/Claude-CodeCursorCopilot-%EC%BD%94%EB%94%A9-AI-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%A0%EB%A5%B4%EB%82%98%EC%9A%94-%EC%9A%A9%EB%8F%84%EB%B3%84-%EA%B0%80%EC%9D%B4%EB%93%9C/)
 - [MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)](/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [AI 에이전트 병렬 터미널 6종 비교, cmux·Orca·Conductor 뭘 써야 할까](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B3%91%EB%A0%AC-%ED%84%B0%EB%AF%B8%EB%84%90-6%EC%A2%85-%EB%B9%84%EA%B5%90-cmuxOrcaConductor-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
