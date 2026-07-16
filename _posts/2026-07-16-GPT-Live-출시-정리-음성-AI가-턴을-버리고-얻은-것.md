@@ -30,6 +30,11 @@ OpenAI가 새 음성 모델 GPT-Live를 출시했습니다. 발표문의 핵심 
   <figcaption>무전기에서 전화기로. GPT-Live는 듣기와 말하기를 동시에 수행합니다</figcaption>
 </figure>
 
+먼저 새 음성 대화가 시작되는 모습부터 잠깐 보고 가죠.
+
+▶ GPT-Live 음성 대화 시작 화면 (OpenAI 공식)
+<video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/generated/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/6.mp4"></video>
+
 ## 계단식에서 턴 기반으로, 그리고 풀 듀플렉스로
 
 음성 AI의 구조는 세 단계를 거쳐 왔습니다.
@@ -41,10 +46,10 @@ OpenAI가 새 음성 모델 GPT-Live를 출시했습니다. 발표문의 핵심 
 GPT-Live는 턴이라는 개념 자체를 버렸습니다. 응답을 생성하는 동시에 사용자의 입력을 계속 처리하면서, 말할지, 계속 들을지, 잠시 멈출지, 끼어들지, 도구를 쓸지를 초당 여러 번 판단합니다. 상대가 말하는 중에 "음", "네" 하고 반응하는 백채널(backchannel)이 가능해진 것도, 실시간 통역이 가능해진 것도 이 구조 덕분입니다. 이 차이는 글보다 소리로 확인하는 쪽이 빠릅니다. OpenAI가 공개한 데모 영상 두 편을 같이 둘게요.
 
 ▶ 자연스러운 대화 데모 (OpenAI 공식)
-https://vimeo.com/1208099473/f2c8e02b91
+<video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/generated/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/1.mp4"></video>
 
 ▶ 듣기와 말하기를 동시에, 실시간 통역 데모 (OpenAI 공식)
-https://vimeo.com/1208096618/c7dd7ef278
+<video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/generated/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/2.mp4"></video>
 
 <figure>
   <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/2.png" alt="침묵으로 턴을 판단하던 구조 대신, 듣기·말하기 동시 처리에 백그라운드 위임까지">
@@ -60,7 +65,7 @@ https://vimeo.com/1208096618/c7dd7ef278
 성능 수치도 이 구조를 뒷받침합니다. OpenAI 발표에 따르면 GPT-Live-1은 전문가 수준 과학 추론을 평가하는 GPQA, 에이전틱 웹 검색을 평가하는 BrowseComp, 통신 지원 환경의 다중 턴 음성 작업을 평가하는 τ³-Voice Telecom에서 모두 고급 음성 모드보다 나은 결과를 냈습니다. 5~10분 실사용 비교 평가에서도 턴 주고받기, 끼어들기, 대화 흐름 항목에서 더 높은 선호를 받았고요. 백그라운드 위임이 실제로 어떻게 동작하는지는 아래 데모에서 볼 수 있습니다.
 
 ▶ 더 똑똑해진 답변, 백그라운드 추론 데모 (OpenAI 공식)
-https://vimeo.com/1209991962/932d97ada3
+<video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/generated/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/3.mp4"></video>
 
 ## 무엇을 쓸 수 있고, 무엇은 아직인가
 
@@ -69,10 +74,10 @@ https://vimeo.com/1209991962/932d97ada3
 대화 중에 날씨, 주식, 스포츠 같은 주제는 시각적 카드로 함께 보여주고, 검색, 메모리, 이미지, 파일 업로드도 음성 대화 안에서 그대로 쓸 수 있습니다. 배경 소음 속에서 사용자 목소리에 집중하는 능력도 개선됐다고 하네요. 두 기능 모두 공식 데모가 올라와 있습니다.
 
 ▶ 대화 중 시각적 카드 데모 (OpenAI 공식)
-https://vimeo.com/1207915483/24ce7fd596
+<video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/generated/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/4.mp4"></video>
 
 ▶ 배경 소음 속 대화 데모 (OpenAI 공식)
-https://vimeo.com/1209991941/57e91cca3b
+<video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/generated/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/5.mp4"></video>
 
 안전 장치도 음성에 맞게 다시 짰습니다. 음성 대화는 실시간이라 응답이 나가는 중에도 작동하는 보호 장치를 뒀고, 위험도가 높으면 대화를 종료할 수 있습니다. 자해 관련 대화에는 위기 상담 핫라인을 안내하고, 청소년 계정은 부모가 음성 대화 사용 여부를 설정할 수 있으며 고위험 상황에서는 부모에게 알림이 갈 수 있습니다. 실제 사람 목소리를 모방하지 못하도록 미리 정의된 9가지 음성만 제공한다는 점도 명시했고요.
 
