@@ -110,7 +110,7 @@ CLAUDE.md는 헌법이고 메모리는 업무 일지입니다. 사람이 정한 
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [AI 컨텍스트 윈도우의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
 - [컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot](/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EA%B8%B8%EC%88%98%EB%A1%9D-AI%EB%8A%94-%EB%A9%8D%EC%B2%AD%ED%95%B4%EC%A7%84%EB%8B%A4-lost-in-the-middle%EA%B3%BC-context-rot/)
 - [/clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나](/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/)
+- [CLAUDE.md는 왜 짧아야 할까, AI 에이전트 상시 로드 컨텍스트 설계법](/CLAUDEmd%EB%8A%94-%EC%99%9C-%EC%A7%A7%EC%95%84%EC%95%BC-%ED%95%A0%EA%B9%8C-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%83%81%EC%8B%9C-%EB%A1%9C%EB%93%9C-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EB%B2%95/)
 <!-- /RELATED-POSTS -->
