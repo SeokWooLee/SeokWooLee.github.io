@@ -88,7 +88,7 @@ last_modified_at: 2026-07-16
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [AI 컨텍스트 윈도우의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
 - [MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)](/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [Claude Code 룰과 메모리, CLAUDE.md와 메모리 기능은 뭐가 다를까](/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
+- [/clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나](/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/)
 <!-- /RELATED-POSTS -->
