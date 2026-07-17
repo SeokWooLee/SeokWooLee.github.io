@@ -172,7 +172,7 @@ A가 B를, B가 A를 서로 참조하면 프로퍼티 주입은 앱이 실행될
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 팩토리 메서드 패턴, init 대신 쓰는 이유 (실전 정리)](/Swift-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4-init-%EB%8C%80%EC%8B%A0-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 싱글톤 패턴, shared가 안티패턴 소리 듣는 진짜 이유](/Swift-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4-shared%EA%B0%80-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4-%EC%86%8C%EB%A6%AC-%EB%93%A3%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
 - [iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유](/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
+- [의존성 주입(DI)이란? new를 클래스 밖으로 꺼내는 것부터 (예제·비유 총정리)](/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85DI%EC%9D%B4%EB%9E%80-new%EB%A5%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EA%BA%BC%EB%82%B4%EB%8A%94-%EA%B2%83%EB%B6%80%ED%84%B0-%EC%98%88%EC%A0%9C%EB%B9%84%EC%9C%A0-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
