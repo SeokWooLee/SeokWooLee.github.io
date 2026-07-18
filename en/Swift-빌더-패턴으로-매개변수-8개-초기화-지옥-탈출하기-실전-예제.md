@@ -118,7 +118,7 @@ Using the builder we just built, object creation now looks like this.
 ```swift
 // Set only the values you need, each one labeled, with no worry about order
 let user = UserBuilder()
-    .setName("Seokwoo Lee")
+    .setName("Alice")
     .setEmail("hello@example.com")
     .build()
 // No need to pad unused values with nil
