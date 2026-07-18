@@ -173,7 +173,7 @@ func fetchUser(completion: @escaping (User) -> Void) {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 전략 패턴 완벽 정리 (프로토콜·클로저로 알고리즘 갈아끼우기)](/Swift-%EC%A0%84%EB%9E%B5-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%ED%81%B4%EB%A1%9C%EC%A0%80%EB%A1%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%88%EC%95%84%EB%81%BC%EC%9A%B0%EA%B8%B0/)
 - [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 - [Swift 모노스테이트 패턴, 싱글톤의 대안이 될 수 있을까 (실전 정리)](/Swift-%EB%AA%A8%EB%85%B8%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%8B%B1%EA%B8%80%ED%86%A4%EC%9D%98-%EB%8C%80%EC%95%88%EC%9D%B4-%EB%90%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
+- [Swift 옵셔널의 정체, 사실은 enum입니다 (언래핑 5종 실무 기준까지)](/Swift-%EC%98%B5%EC%85%94%EB%84%90%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%82%AC%EC%8B%A4%EC%9D%80-enum%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%B8%EB%9E%98%ED%95%91-5%EC%A2%85-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80%EA%B9%8C%EC%A7%80/)
 <!-- /RELATED-POSTS -->
