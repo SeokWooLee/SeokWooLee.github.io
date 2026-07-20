@@ -19,9 +19,6 @@ toc_sticky: true
 last_modified_at: 2026-07-14
 ---
 
-🌐 **한국어** · [English](/en/Swift-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4-NotificationCenter%EB%B6%80%ED%84%B0-Combine%EA%B9%8C%EC%A7%80-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/) · [日本語](/ja/Swift-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4-NotificationCenter%EB%B6%80%ED%84%B0-Combine%EA%B9%8C%EC%A7%80-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/) · [中文](/zh/Swift-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4-NotificationCenter%EB%B6%80%ED%84%B0-Combine%EA%B9%8C%EC%A7%80-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
-{: .notice--info}
-
 iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 바뀌었는데, 저 멀리 떨어진 B 화면도 같이 갱신돼야 하는 상황이요.
 
 화면끼리 델리게이트로 억지로 연결하다 보면 코드가 스파게티처럼 엉키기 쉽습니다.

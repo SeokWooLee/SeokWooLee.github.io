@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-16
 ---
 
-🌐 **한국어** · [English](/en/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/) · [日本語](/ja/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/) · [中文](/zh/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/)
-{: .notice--info}
-
 앞선 두 편에서 진단을 마쳤습니다. 컨텍스트 윈도우는 유한하고(1편), 채운다고 다 쓰이는 것도 아니며 길어질수록 오히려 성능이 떨어집니다(2편). 그럼 처방은 하나로 모입니다. 컨텍스트를 관리해야 합니다. 그리고 Claude Code를 비롯한 코딩 에이전트들이 이를 위해 쥐여주는 가장 기본 도구가 /clear와 /compact입니다.
 
 두 명령 모두 "컨텍스트를 줄인다"는 점은 같습니다. 그래서 아무거나 쓰거나, 잔량 경고가 뜰 때까지 둘 다 안 쓰는 경우가 많은데요. 동작 원리가 완전히 달라서 상황에 맞지 않게 쓰면 작업 맥락을 통째로 날리거나, 반대로 지저분한 컨텍스트를 계속 끌고 다니게 됩니다. 이번 편에서는 두 명령이 내부에서 정확히 뭘 하는지부터 보고, 언제 뭘 쓸지 기준을 세웁니다.

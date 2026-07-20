@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-17
 ---
 
-🌐 **한국어** · [English](/en/%EC%83%9D%EC%84%B1%EC%9E%90-%EC%A3%BC%EC%9E%85-vs-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%A3%BC%EC%9E%85-vs-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%A3%BC%EC%9E%85-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-Swift-DI-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [日本語](/ja/%EC%83%9D%EC%84%B1%EC%9E%90-%EC%A3%BC%EC%9E%85-vs-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%A3%BC%EC%9E%85-vs-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%A3%BC%EC%9E%85-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-Swift-DI-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [中文](/zh/%EC%83%9D%EC%84%B1%EC%9E%90-%EC%A3%BC%EC%9E%85-vs-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%A3%BC%EC%9E%85-vs-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%A3%BC%EC%9E%85-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-Swift-DI-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-{: .notice--info}
-
 Swift로 iOS 앱을 만들다 보면 꼭 마주치는 고민이 있어요.
 
 "의존성 주입, 대체 어떤 방식으로 해야 맞는 거지?"

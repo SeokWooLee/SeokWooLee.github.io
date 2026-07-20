@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-12
 ---
 
-🌐 **한국어** · [English](/en/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/) · [日本語](/ja/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/) · [中文](/zh/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
-{: .notice--info}
-
 iOS 개발을 시작하면 누구나 한 번쯤 궁금해합니다. "애플은 잘 쓰던 Objective-C 놔두고 왜 굳이 Swift를 새로 만들었을까?" 하고요.
 
 저도 Swift로 첫 앱을 만들면서 문법이 참 깔끔하다 싶었는데, 그 뒤에 어떤 이야기가 있는지 파고들다 보니 꽤 재미있는 사연이 있더라고요.

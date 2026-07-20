@@ -18,9 +18,6 @@ toc_sticky: true
 last_modified_at: 2026-07-14
 ---
 
-🌐 **한국어** · [English](/en/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [日本語](/ja/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [中文](/zh/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-{: .notice--info}
-
 AI 코딩 도구를 확장하는 방법이 요즘 부쩍 늘었습니다. MCP로 도구를 붙이고, Skill로 절차를 등록하고, 서브에이전트로 작업을 위임하고요.
 
 문제는 셋 다 "모델의 능력을 확장한다"는 설명이 붙어 있어서, 막상 뭘 써야 할지 고를 때 헷갈린다는 겁니다.

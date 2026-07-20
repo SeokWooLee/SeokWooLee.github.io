@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-16
 ---
 
-🌐 **한국어** · [English](/en/macOS-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%95%B1-6%EC%A2%85-%EB%B9%84%EA%B5%90-iTerm2GhosttyWarp-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/) · [日本語](/ja/macOS-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%95%B1-6%EC%A2%85-%EB%B9%84%EA%B5%90-iTerm2GhosttyWarp-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/) · [中文](/zh/macOS-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%95%B1-6%EC%A2%85-%EB%B9%84%EA%B5%90-iTerm2GhosttyWarp-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/)
-{: .notice--info}
-
 맥을 쓰는 개발자라면 하루에 가장 오래 띄워놓는 앱이 아마 터미널일 거예요. 그런데 의외로 기본 터미널만 몇 년째 쓰는 분들이 많더라고요.
 
 저는 기본 Terminal.app에서 iTerm2로 넘어갔고 요즘은 Ghostty에 정착했는데요. 그 사이에 Warp, Alacritty, Kitty까지 한 번씩 다 갈아타 봤습니다.

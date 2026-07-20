@@ -18,9 +18,6 @@ toc_sticky: true
 last_modified_at: 2026-07-14
 ---
 
-🌐 **한국어** · [English](/en/Claude-vs-ChatGPT-%EC%A0%84%EB%B0%A9%EC%9C%84-%EB%B9%84%EA%B5%90-%EC%BD%94%EB%94%A9%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8A%B9%EC%9E%90%EA%B0%80-%EB%8B%A4-%EB%8B%A4%EB%A6%85%EB%8B%88%EB%8B%A4-2026%EB%85%84-7%EC%9B%94/) · [日本語](/ja/Claude-vs-ChatGPT-%EC%A0%84%EB%B0%A9%EC%9C%84-%EB%B9%84%EA%B5%90-%EC%BD%94%EB%94%A9%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8A%B9%EC%9E%90%EA%B0%80-%EB%8B%A4-%EB%8B%A4%EB%A6%85%EB%8B%88%EB%8B%A4-2026%EB%85%84-7%EC%9B%94/) · [中文](/zh/Claude-vs-ChatGPT-%EC%A0%84%EB%B0%A9%EC%9C%84-%EB%B9%84%EA%B5%90-%EC%BD%94%EB%94%A9%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8A%B9%EC%9E%90%EA%B0%80-%EB%8B%A4-%EB%8B%A4%EB%A6%85%EB%8B%88%EB%8B%A4-2026%EB%85%84-7%EC%9B%94/)
-{: .notice--info}
-
 "Claude랑 ChatGPT 중에 뭘 구독할까"라는 질문은 이제 모델 성능 비교로는 답이 안 나옵니다. 2026년 7월 기준 양쪽 최상위 모델(Claude Fable 5, GPT-5.6 Sol)의 종합 지능 점수는 60 대 59, 사실상 동점이거든요. 갈리는 지점은 모델이 아니라 생태계입니다. 뭘 만들어 주고 뭘 아예 못 하느냐가 다릅니다.
 
 이 글은 코딩 벤치마크 얘기는 최소로 줄이고(그건 앞선 Claude Code vs Codex 글에서 다뤘습니다), 이미지 생성·디자인·글쓰기·에이전트까지 실사용 영역별로 두 생태계를 비교합니다.

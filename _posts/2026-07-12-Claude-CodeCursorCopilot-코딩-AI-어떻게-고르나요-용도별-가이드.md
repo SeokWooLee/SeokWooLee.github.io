@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-13
 ---
 
-🌐 **한국어** · [English](/en/Claude-CodeCursorCopilot-%EC%BD%94%EB%94%A9-AI-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%A0%EB%A5%B4%EB%82%98%EC%9A%94-%EC%9A%A9%EB%8F%84%EB%B3%84-%EA%B0%80%EC%9D%B4%EB%93%9C/) · [日本語](/ja/Claude-CodeCursorCopilot-%EC%BD%94%EB%94%A9-AI-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%A0%EB%A5%B4%EB%82%98%EC%9A%94-%EC%9A%A9%EB%8F%84%EB%B3%84-%EA%B0%80%EC%9D%B4%EB%93%9C/) · [中文](/zh/Claude-CodeCursorCopilot-%EC%BD%94%EB%94%A9-AI-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%A0%EB%A5%B4%EB%82%98%EC%9A%94-%EC%9A%A9%EB%8F%84%EB%B3%84-%EA%B0%80%EC%9D%B4%EB%93%9C/)
-{: .notice--info}
-
 요즘 개발자 커뮤니티에서 가장 많이 나오는 질문이 바로 이거예요. "Claude Code, Cursor, Copilot 중에 대체 뭘 써야 하나요?"
 
 저도 셋 다 결제해서 몇 달째 실무에 써봤는데요. 이름만 보면 다 비슷한 코딩 AI 같지만, 실제로 써보면 성격이 완전히 다른 도구들입니다.

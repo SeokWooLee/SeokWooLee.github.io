@@ -18,9 +18,6 @@ toc_sticky: true
 last_modified_at: 2026-07-14
 ---
 
-🌐 **한국어** · [English](/en/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/) · [日本語](/ja/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
-{: .notice--info}
-
 Claude Code를 프로젝트에 붙여 쓰다 보면 두 가지 요구가 생깁니다. "이 규칙은 매번 지켜라"와 "지난번에 알아낸 걸 기억해라".
 
 앞의 것을 담당하는 게 룰 파일인 CLAUDE.md이고 뒤의 것을 담당하는 게 메모리 기능입니다. 둘 다 "세션이 끝나도 남는 지시"라서 헷갈리기 쉬운 부분인데, 관리 주체와 성격이 다릅니다.

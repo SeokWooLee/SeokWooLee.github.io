@@ -19,9 +19,6 @@ toc_sticky: true
 last_modified_at: 2026-07-14
 ---
 
-🌐 **한국어** · [English](/en/Objective-C-id-%ED%83%80%EC%9E%85-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EB%8D%95-%ED%83%80%EC%9D%B4%ED%95%91-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [日本語](/ja/Objective-C-id-%ED%83%80%EC%9E%85-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EB%8D%95-%ED%83%80%EC%9D%B4%ED%95%91-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [中文](/zh/Objective-C-id-%ED%83%80%EC%9E%85-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EB%8D%95-%ED%83%80%EC%9D%B4%ED%95%91-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-{: .notice--info}
-
 Objective-C를 처음 공부하다 보면 `id`라는 타입 앞에서 한 번쯤 멈칫하게 됩니다.
 
 "이게 대체 무슨 타입이지? 왜 아무 객체나 다 넣어도 컴파일이 되지?" 하는 의문이 들죠.

@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-19
 ---
 
-🌐 **한국어** · [English](/en/Swift-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-NSCopying-vs-%EA%B0%92-%ED%83%80%EC%9E%85-%EB%B3%B5%EC%82%AC-%EC%B0%A8%EC%9D%B4/) · [日本語](/ja/Swift-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-NSCopying-vs-%EA%B0%92-%ED%83%80%EC%9E%85-%EB%B3%B5%EC%82%AC-%EC%B0%A8%EC%9D%B4/) · [中文](/zh/Swift-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-NSCopying-vs-%EA%B0%92-%ED%83%80%EC%9E%85-%EB%B3%B5%EC%82%AC-%EC%B0%A8%EC%9D%B4/)
-{: .notice--info}
-
 Swift로 객체를 복사하다가 "이게 진짜 복사된 게 맞나?" 하고 멈칫한 적 있으신가요.
 
 클래스 인스턴스를 대입 한 줄로 복사하면, 복제본을 고쳤는데 원본까지 같이 바뀌는 문제로 이어지기 쉽습니다.

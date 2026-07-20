@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-13
 ---
 
-🌐 **한국어** · [English](/en/error-description/) · [日本語](/ja/error-description/) · [中文](/zh/error-description/)
-{: .notice--info}
-
 Swift로 앱을 만들다 보면 `do-catch`로 에러를 잡았는데, 정작 화면에 띄울 메시지가 영 시원찮았던 경험 있으실 거예요.
 
 `error.localizedDescription`을 그대로 쓰면 "The operation couldn't be completed…" 같은 정체불명의 문구가 사용자에게 그대로 노출되기 쉽거든요.

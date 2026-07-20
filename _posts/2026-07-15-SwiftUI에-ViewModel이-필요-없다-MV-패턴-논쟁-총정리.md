@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-15
 ---
 
-🌐 **한국어** · [English](/en/SwiftUI%EC%97%90-ViewModel%EC%9D%B4-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-MV-%ED%8C%A8%ED%84%B4-%EB%85%BC%EC%9F%81-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [日本語](/ja/SwiftUI%EC%97%90-ViewModel%EC%9D%B4-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-MV-%ED%8C%A8%ED%84%B4-%EB%85%BC%EC%9F%81-%EC%B4%9D%EC%A0%95%EB%A6%AC/) · [中文](/zh/SwiftUI%EC%97%90-ViewModel%EC%9D%B4-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-MV-%ED%8C%A8%ED%84%B4-%EB%85%BC%EC%9F%81-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-{: .notice--info}
-
 iOS 커뮤니티에서 몇 년째 이어지는 뜨거운 논쟁이 있습니다.
 
 **"SwiftUI에 ViewModel이 필요한가?"**

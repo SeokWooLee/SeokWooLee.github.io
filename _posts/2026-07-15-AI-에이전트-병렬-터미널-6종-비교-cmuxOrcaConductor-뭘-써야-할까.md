@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-15
 ---
 
-🌐 **한국어** · [日本語](/ja/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B3%91%EB%A0%AC-%ED%84%B0%EB%AF%B8%EB%84%90-6%EC%A2%85-%EB%B9%84%EA%B5%90-cmuxOrcaConductor-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/) · [中文](/zh/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B3%91%EB%A0%AC-%ED%84%B0%EB%AF%B8%EB%84%90-6%EC%A2%85-%EB%B9%84%EA%B5%90-cmuxOrcaConductor-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/)
-{: .notice--info}
-
 지난번에 macOS 터미널 6종을 비교하면서 "AI 에이전트 시대를 위한 터미널은 따로 소개하겠다"고 예고드렸는데요. 오늘이 그 후속편입니다.
 
 전편을 쓸 때만 해도 터미널을 고르는 기준은 속도, 기능, 마감 같은 것들이었어요. 그런데 반년도 안 되는 사이에 판이 완전히 바뀌었습니다. Claude Code, Codex 같은 코딩 에이전트를 터미널 안에서 돌리는 게 일상이 되면서 이제는 "에이전트를 몇 개나, 얼마나 편하게 병렬로 돌릴 수 있느냐"가 터미널 선택의 핵심 기준이 됐거든요.

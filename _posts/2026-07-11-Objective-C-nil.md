@@ -22,9 +22,6 @@ toc_sticky: true
 last_modified_at: 2026-07-13
 ---
 
-🌐 **한국어** · [English](/en/Objective-C-nil/) · [日本語](/ja/Objective-C-nil/) · [中文](/zh/Objective-C-nil/)
-{: .notice--info}
-
 iOS를 처음 만지는 개발자를 제일 당황하게 하는 게 있어요.
 
 Java나 C++에서는 nil(널) 객체에 뭔가를 시키면 바로 앱이 죽잖아요. 그 유명한 NullPointerException이요.

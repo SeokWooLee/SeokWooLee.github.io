@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-15
 ---
 
-🌐 **한국어** · [English](/en/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/) · [日本語](/ja/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/) · [中文](/zh/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
-{: .notice--info}
-
 iOS 개발을 하다 보면 한 번쯤 듣게 되는 농담이 있습니다.
 
 "MVC는 Model-View-Controller가 아니라 Massive View Controller의 약자다."

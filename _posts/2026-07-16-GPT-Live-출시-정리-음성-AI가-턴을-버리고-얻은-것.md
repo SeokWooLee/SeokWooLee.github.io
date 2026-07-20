@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-16
 ---
 
-🌐 **한국어** · [English](/en/GPT-Live-%EC%B6%9C%EC%8B%9C-%EC%A0%95%EB%A6%AC-%EC%9D%8C%EC%84%B1-AI%EA%B0%80-%ED%84%B4%EC%9D%84-%EB%B2%84%EB%A6%AC%EA%B3%A0-%EC%96%BB%EC%9D%80-%EA%B2%83/) · [日本語](/ja/GPT-Live-%EC%B6%9C%EC%8B%9C-%EC%A0%95%EB%A6%AC-%EC%9D%8C%EC%84%B1-AI%EA%B0%80-%ED%84%B4%EC%9D%84-%EB%B2%84%EB%A6%AC%EA%B3%A0-%EC%96%BB%EC%9D%80-%EA%B2%83/)
-{: .notice--info}
-
 OpenAI가 새 음성 모델 GPT-Live를 출시했습니다. 발표문의 핵심 문장을 하나만 꼽으면 이겁니다. "듣기와 말하기를 동시에 수행하는 풀 듀플렉스 아키텍처." 지금까지의 음성 AI는 아무리 빨라져도 무전기였습니다. 한쪽이 말을 마쳐야 다른 쪽이 말할 수 있었죠. GPT-Live는 이 구조 자체를 전화기로 바꿨습니다. 무엇이 달라졌고 왜 중요한지, 발표 내용을 아키텍처 관점에서 정리해 봅니다.
 
 <figure>

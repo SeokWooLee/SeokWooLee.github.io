@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-16
 ---
 
-🌐 **한국어** · [English](/en/CLAUDEmd%EB%8A%94-%EC%99%9C-%EC%A7%A7%EC%95%84%EC%95%BC-%ED%95%A0%EA%B9%8C-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%83%81%EC%8B%9C-%EB%A1%9C%EB%93%9C-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EB%B2%95/) · [日本語](/ja/CLAUDEmd%EB%8A%94-%EC%99%9C-%EC%A7%A7%EC%95%84%EC%95%BC-%ED%95%A0%EA%B9%8C-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%83%81%EC%8B%9C-%EB%A1%9C%EB%93%9C-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EB%B2%95/) · [中文](/zh/CLAUDEmd%EB%8A%94-%EC%99%9C-%EC%A7%A7%EC%95%84%EC%95%BC-%ED%95%A0%EA%B9%8C-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%83%81%EC%8B%9C-%EB%A1%9C%EB%93%9C-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EB%B2%95/)
-{: .notice--info}
-
 3편에서 /clear로 대화 이력을 비우는 법을 봤습니다. 그런데 /clear 직후 컨텍스트 잔량을 확인해 보면 100%가 아닙니다. Claude Code에서 /context 명령을 쳐보면 이유가 보여요. 시스템 프롬프트, 도구 정의, CLAUDE.md, MCP 서버가 등록한 도구들이 이미 수만 토큰을 차지하고 있습니다. 대화를 시작하기도 전에요.
 
 이번 편은 이 "상시 로드 컨텍스트"를 다룹니다. 대화 이력이 변동비라면 이쪽은 고정비입니다. 매 턴 빠짐없이 실려 가고, /clear로도 사라지지 않으며, 세션 내내 모델의 주의력 일부를 점유합니다. 고정비 설계가 부실하면 어떤 세션이든 시작부터 손해를 안고 출발하는 셈이라 대화 관리보다 먼저 손봐야 할 곳이기도 합니다.

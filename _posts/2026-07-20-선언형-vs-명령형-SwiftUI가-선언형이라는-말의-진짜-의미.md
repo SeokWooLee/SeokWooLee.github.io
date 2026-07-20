@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-20
 ---
 
-🌐 **한국어** · [English](/en/%EC%84%A0%EC%96%B8%ED%98%95-vs-%EB%AA%85%EB%A0%B9%ED%98%95-SwiftUI%EA%B0%80-%EC%84%A0%EC%96%B8%ED%98%95%EC%9D%B4%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%98-%EC%A7%84%EC%A7%9C-%EC%9D%98%EB%AF%B8/) · [日本語](/ja/%EC%84%A0%EC%96%B8%ED%98%95-vs-%EB%AA%85%EB%A0%B9%ED%98%95-SwiftUI%EA%B0%80-%EC%84%A0%EC%96%B8%ED%98%95%EC%9D%B4%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%98-%EC%A7%84%EC%A7%9C-%EC%9D%98%EB%AF%B8/) · [中文](/zh/%EC%84%A0%EC%96%B8%ED%98%95-vs-%EB%AA%85%EB%A0%B9%ED%98%95-SwiftUI%EA%B0%80-%EC%84%A0%EC%96%B8%ED%98%95%EC%9D%B4%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%98-%EC%A7%84%EC%A7%9C-%EC%9D%98%EB%AF%B8/)
-{: .notice--info}
-
 SwiftUI 소개 문서 첫 줄에는 어김없이 "선언형(declarative) 프레임워크"라는 말이 나옵니다. React도, Jetpack Compose도 자신을 선언형이라 부르죠.
 
 그런데 막상 "선언형이 뭔가요?"라고 물으면 답이 궁해집니다. "코드가 깔끔한 거요"는 정답이 아니에요.

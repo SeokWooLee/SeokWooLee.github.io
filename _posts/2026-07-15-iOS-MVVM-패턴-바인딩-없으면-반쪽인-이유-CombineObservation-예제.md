@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-15
 ---
 
-🌐 **한국어** · [English](/en/iOS-MVVM-%ED%8C%A8%ED%84%B4-%EB%B0%94%EC%9D%B8%EB%94%A9-%EC%97%86%EC%9C%BC%EB%A9%B4-%EB%B0%98%EC%AA%BD%EC%9D%B8-%EC%9D%B4%EC%9C%A0-CombineObservation-%EC%98%88%EC%A0%9C/) · [日本語](/ja/iOS-MVVM-%ED%8C%A8%ED%84%B4-%EB%B0%94%EC%9D%B8%EB%94%A9-%EC%97%86%EC%9C%BC%EB%A9%B4-%EB%B0%98%EC%AA%BD%EC%9D%B8-%EC%9D%B4%EC%9C%A0-CombineObservation-%EC%98%88%EC%A0%9C/)
-{: .notice--info}
-
 지난 편에서 Massive View Controller가 생기는 이유를 다뤘습니다. 뷰컨트롤러가 View와 Controller를 겸하는 바람에, 갈 곳 없는 코드가 전부 그리로 몰린다는 이야기였죠.
 
 그 해법으로 가장 널리 쓰이는 게 **MVVM(Model-View-ViewModel)**입니다. 그런데 MVVM을 도입했다는 코드를 열어보면 이런 경우가 의외로 많습니다. 이름만 ViewModel인 클래스가 있고, 뷰컨트롤러가 여전히 값을 일일이 꺼내서 화면에 반영하고 있는 구조요.

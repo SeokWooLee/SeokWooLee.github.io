@@ -20,9 +20,6 @@ toc_sticky: true
 last_modified_at: 2026-07-16
 ---
 
-🌐 **한국어** · [English](/en/Swift-%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EC%BA%A1%EC%B2%98weak-selfescaping%EC%9D%B4-%ED%95%9C-%EB%AA%B8%EC%9D%B8-%EC%9D%B4%EC%9C%A0/) · [日本語](/ja/Swift-%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EC%BA%A1%EC%B2%98weak-selfescaping%EC%9D%B4-%ED%95%9C-%EB%AA%B8%EC%9D%B8-%EC%9D%B4%EC%9C%A0/) · [中文](/zh/Swift-%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EC%BA%A1%EC%B2%98weak-selfescaping%EC%9D%B4-%ED%95%9C-%EB%AA%B8%EC%9D%B8-%EC%9D%B4%EC%9C%A0/)
-{: .notice--info}
-
 Swift 코드에서 클로저는 공기 같은 존재입니다. 정렬 조건, 네트워크 완료 핸들러, 버튼 액션, SwiftUI의 body까지, 중괄호 블록을 넘기는 코드가 하루에도 수십 번 등장하죠. 그런데 정작 "클로저가 값을 캡처한다는 게 정확히 무슨 뜻인가", "[weak self]는 왜 쓰는가", "@escaping은 왜 붙는가"를 설명해보라고 하면 말문이 막히는 경우가 많습니다.
 
 이 세 질문은 사실 한 몸입니다. 클로저가 주변 값을 붙잡는 방식(캡처)을 이해하면, 참조 타입인 이유도, 순환 참조가 생기는 이유도, escaping 표시가 필요한 이유도 연쇄적으로 풀려요. Swift 기초 시리즈 2편, 이번 글에서 그 연결 고리를 순서대로 짚습니다.
