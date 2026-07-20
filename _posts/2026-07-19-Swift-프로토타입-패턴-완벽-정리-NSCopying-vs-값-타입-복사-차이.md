@@ -170,7 +170,7 @@ let clone = origin.copy() as! Character
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 팩토리 메서드 패턴, init 대신 쓰는 이유 (실전 정리)](/Swift-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4-init-%EB%8C%80%EC%8B%A0-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 옵저버 패턴, NotificationCenter부터 Combine까지 (실전 정리)](/Swift-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4-NotificationCenter%EB%B6%80%ED%84%B0-Combine%EA%B9%8C%EC%A7%80-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 프록시 패턴 완전정복, lazy 뒤에 숨은 대리인 객체 (예제 총정리)](/Swift-%ED%94%84%EB%A1%9D%EC%8B%9C-%ED%8C%A8%ED%84%B4-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-lazy-%EB%92%A4%EC%97%90-%EC%88%A8%EC%9D%80-%EB%8C%80%EB%A6%AC%EC%9D%B8-%EA%B0%9D%EC%B2%B4-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 컴포지트 패턴, 트리 구조를 객체 하나처럼 다루기 (예제·실전 정리)](/Swift-%EC%BB%B4%ED%8F%AC%EC%A7%80%ED%8A%B8-%ED%8C%A8%ED%84%B4-%ED%8A%B8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EA%B0%9D%EC%B2%B4-%ED%95%98%EB%82%98%EC%B2%98%EB%9F%BC-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%98%88%EC%A0%9C%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
