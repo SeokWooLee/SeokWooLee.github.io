@@ -5,6 +5,25 @@ search: false
 
 @charset "utf-8";
 
+/* 코드 하이라이트 팔레트 — Atom One Light 계열 base16으로 교체
+   (_variables.scss가 !default로 소비하므로 import 전에 선언해야 적용된다) */
+$base00: #fafafa; // 코드 블록 배경
+$base01: #f0f0f1;
+$base02: #e5e5e6;
+$base03: #a0a1a7; // 주석
+$base04: #696c77;
+$base05: #383a42; // 기본 텍스트
+$base06: #202227;
+$base07: #090a0b;
+$base08: #ca1243; // 변수·태그
+$base09: #d75f00; // 숫자·상수
+$base0a: #c18401; // 클래스명
+$base0b: #50a14f; // 문자열
+$base0c: #0184bc; // 정규식·이스케이프
+$base0d: #4078f2; // 함수
+$base0e: #a626a4; // 키워드
+$base0f: #986801;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -41,5 +60,193 @@ html {
 
   @include breakpoint($x-large) {
     font-size: 18px; // change to whatever
+  }
+}
+
+/* ==========================================================================
+   다크 모드 — 시스템 설정(prefers-color-scheme) 자동 대응
+   스킨(air)은 빌드 타임에 고정되므로, 컴파일된 셀렉터를 미디어 쿼리로 덮어쓴다
+   ========================================================================== */
+$dark-bg: #1b1f24;
+$dark-surface: #23282f;
+$dark-surface-2: #2c323b;
+$dark-text: #d4d7dd;
+$dark-muted: #9aa0a9;
+$dark-border: #3a4048;
+$dark-link: #61afef;
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .page__title,
+  .archive__item-title,
+  .archive__item-title a,
+  .toc .nav__list a {
+    color: $dark-text;
+  }
+
+  a { color: $dark-link; }
+  a:hover { color: lighten($dark-link, 12%); }
+
+  .page__content h2,
+  .archive__subtitle {
+    border-bottom-color: $dark-border;
+  }
+
+  .page__meta,
+  .page__date,
+  .archive__item-excerpt,
+  .author__bio,
+  .page__taxonomy .sep,
+  blockquote {
+    color: $dark-muted;
+  }
+
+  blockquote { border-left-color: $dark-border; }
+
+  /* 상단 내비게이션·푸터 */
+  .masthead {
+    background-color: $dark-bg;
+    border-bottom-color: $dark-border;
+  }
+  .masthead__menu-item a,
+  .greedy-nav a,
+  .site-title,
+  .site-subtitle {
+    color: $dark-text;
+  }
+  .greedy-nav {
+    background-color: $dark-bg;
+
+    a:hover { color: $dark-link; }
+    .visible-links a:before { background: $dark-link; }
+
+    .hidden-links {
+      background: $dark-surface;
+      border-color: $dark-border;
+
+      a { color: $dark-text; }
+      a:hover { background: $dark-surface-2; }
+      &:before { border-color: transparent transparent $dark-border; }
+      &:after { border-color: transparent transparent $dark-surface; }
+    }
+
+    .navicon,
+    .navicon:before,
+    .navicon:after {
+      background: $dark-text;
+    }
+  }
+  .page__footer {
+    background-color: $dark-surface;
+    color: $dark-muted !important;
+
+    a { color: $dark-link; }
+  }
+  .page__footer-copyright { color: $dark-muted; }
+
+  /* 사이드바 프로필 */
+  .author__name { color: $dark-text; }
+  .author__urls-wrapper button { background-color: $dark-surface-2; }
+  .author__urls {
+    background-color: $dark-surface;
+    border-color: $dark-border;
+    color: $dark-text;
+
+    a { color: $dark-link; }
+    &:before { border-color: transparent transparent $dark-border; }
+    &:after { border-color: transparent transparent $dark-surface; }
+  }
+
+  /* 목차(toc) */
+  .toc {
+    background-color: $dark-surface;
+    border-color: $dark-border;
+
+    .active a { background-color: $dark-surface-2; color: $dark-text; }
+  }
+  .toc__menu a { border-bottom-color: $dark-border; }
+
+  /* 공지(notice) 박스 */
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    background-color: $dark-surface !important;
+    color: $dark-text !important;
+  }
+
+  /* 표·구분선 */
+  table {
+    background-color: $dark-surface;
+    color: $dark-text;
+    border-color: $dark-border;
+  }
+  th, td { border-color: $dark-border; }
+  th { background-color: $dark-surface-2; }
+  tr:nth-child(even) { background-color: $dark-surface; }
+  hr { border-color: $dark-border; }
+
+  /* 코드 — 인라인 */
+  .page__content code,
+  .archive__item-excerpt code {
+    background-color: $dark-surface-2;
+    color: #e5c07b;
+  }
+
+  /* 코드 블록 — Atom One Dark 계열 */
+  div.highlighter-rouge,
+  figure.highlight,
+  .highlight {
+    background-color: #22272e;
+    color: #adbac7;
+  }
+  .highlight table td { border-color: transparent; background-color: transparent; }
+  .highlight .gutter { color: #545d68; }
+  .highlight {
+    .c, .c1, .cm, .cs { color: #768390; font-style: italic; } // 주석
+    .k, .kd, .kn, .kp, .kr, .kt, .kv { color: #f47067; }      // 키워드
+    .s, .s1, .s2, .sb, .sh, .sx, .dl { color: #96d0ff; }      // 문자열
+    .si, .se, .sr { color: #8ddb8c; }                         // 보간·이스케이프·정규식
+    .m, .mi, .mf, .mh, .mo, .il { color: #6cb6ff; }           // 숫자
+    .n, .nx, .py { color: #adbac7; }                          // 일반 식별자
+    .nf, .fm { color: #dcbdfb; }                              // 함수
+    .nc, .nn { color: #f69d50; }                              // 클래스·네임스페이스
+    .no, .nb, .bp { color: #6cb6ff; }                         // 상수·내장
+    .nv, .vc, .vg, .vi { color: #f47067; }                    // 변수
+    .nt { color: #8ddb8c; }                                   // 태그
+    .na { color: #dcbdfb; }                                   // 속성
+    .o, .ow { color: #f47067; }                               // 연산자
+    .p, .pi { color: #adbac7; }                               // 구두점
+    .gd { color: #ff938a; background-color: #78191b; }        // diff 삭제
+    .gi { color: #8ddb8c; background-color: #113417; }        // diff 추가
+    .err { color: #ff938a; background: none; }
+  }
+  .clipboard-copy-button {
+    background-color: $dark-surface-2;
+    color: $dark-muted;
+  }
+
+  /* 검색 */
+  .search__toggle { color: $dark-text; }
+  .search-content {
+    background-color: $dark-bg;
+
+    .search-input { background-color: $dark-bg; color: $dark-text; }
+  }
+
+  /* 페이지네이션 */
+  .pagination--pager {
+    color: $dark-text;
+    border-color: $dark-border;
+
+    &.disabled { color: $dark-muted; }
   }
 }
