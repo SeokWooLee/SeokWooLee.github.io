@@ -152,4 +152,5 @@ count가 바뀌면 화면을 어떻게 고칠지는 내가 쓰지 않습니다. 
 
 - [오버로딩 vs 오버라이딩, 이름만 닮은 두 개념 확실히 구분하기 (Swift 예제)](/%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9-vs-%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9-%EC%9D%B4%EB%A6%84%EB%A7%8C-%EB%8B%AE%EC%9D%80-%EB%91%90-%EA%B0%9C%EB%85%90-%ED%99%95%EC%8B%A4%ED%9E%88-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0-Swift-%EC%98%88%EC%A0%9C/)
 - [라이브러리 vs 프레임워크, 기준은 '누가 누구를 호출하나' (제어의 역전)](/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-vs-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B8%B0%EC%A4%80%EC%9D%80-%EB%88%84%EA%B0%80-%EB%88%84%EA%B5%AC%EB%A5%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EB%82%98-%EC%A0%9C%EC%96%B4%EC%9D%98-%EC%97%AD%EC%A0%84/)
+- [스택 vs 힙, 변수가 저장되는 곳 완벽 정리 (Swift 값 타입까지)](/%EC%8A%A4%ED%83%9D-vs-%ED%9E%99-%EB%B3%80%EC%88%98%EA%B0%80-%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94-%EA%B3%B3-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-Swift-%EA%B0%92-%ED%83%80%EC%9E%85%EA%B9%8C%EC%A7%80/)
 <!-- /RELATED-POSTS -->
