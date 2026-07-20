@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.png
 tags:
   - Swift
-  - 프로토타입패턴
-  - NSCopying
   - 값타입
   - 디자인패턴
   - iOS개발
-  - Swift복사
-  - 스위프트
-  - 깊은복사
-  - 얕은복사
 permalink: /Swift-프로토타입-패턴-완벽-정리-NSCopying-vs-값-타입-복사-차이/
 toc: true
 toc_sticky: true

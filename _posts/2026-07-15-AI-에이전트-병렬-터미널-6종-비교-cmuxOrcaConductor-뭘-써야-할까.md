@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/1.png
 tags:
   - AI에이전트
-  - cmux
-  - Orca
-  - Conductor
   - ClaudeCode
-  - git워크트리
-  - 병렬에이전트
   - 개발자도구
   - 터미널추천
-  - 개발환경
 permalink: /AI-에이전트-병렬-터미널-6종-비교-cmuxOrcaConductor-뭘-써야-할까/
 toc: true
 toc_sticky: true

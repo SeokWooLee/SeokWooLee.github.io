@@ -8,14 +8,8 @@ categories:
 tags:
   - Objective-C
   - 오브젝티브C
-  - 골뱅이문법
-  - at기호
   - 프로그래밍기초
   - iOS개발
-  - C언어
-  - NSString
-  - 코딩공부
-  - 개발자
 permalink: /Objective-C-골뱅이-문법/
 toc: true
 toc_sticky: true

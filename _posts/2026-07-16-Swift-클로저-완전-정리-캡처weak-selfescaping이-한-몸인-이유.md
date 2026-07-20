@@ -7,13 +7,7 @@ tags:
   - Swift
   - 스위프트
   - 클로저
-  - closure
-  - 캡처리스트
-  - weakself
-  - escaping
-  - 순환참조
   - iOS개발
-  - 개발공부
 permalink: /Swift-클로저-완전-정리-캡처weak-selfescaping이-한-몸인-이유/
 toc: true
 toc_sticky: true

@@ -8,12 +8,6 @@ tags:
   - MVC
   - 아키텍처
   - UIKit
-  - 뷰컨트롤러
-  - Swift
-  - iOS개발
-  - MassiveViewController
-  - 앱개발
-  - iOS아키텍처
 permalink: /iOS-MVC-패턴-Massive-View-Controller가-생기는-진짜-이유/
 toc: true
 toc_sticky: true

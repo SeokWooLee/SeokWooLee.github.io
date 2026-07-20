@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/1.png
 tags:
   - SwiftUI
-  - MV패턴
   - MVVM
   - ViewModel
-  - Observable
   - iOS
-  - 아키텍처
-  - State
-  - iOS개발
-  - iOS아키텍처
 permalink: /SwiftUI에-ViewModel이-필요-없다-MV-패턴-논쟁-총정리/
 toc: true
 toc_sticky: true

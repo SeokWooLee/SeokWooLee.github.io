@@ -7,13 +7,7 @@ tags:
   - ObjectiveC
   - iOS개발
   - ARC
-  - 메모리관리
-  - retainrelease
-  - MRC
-  - 애플개발자
   - 프로그래밍
-  - 스위프트
-  - 코딩공부
 permalink: /Objective-C-메모리-관리-역사-MRC에서-ARC까지-총정리/
 toc: true
 toc_sticky: true

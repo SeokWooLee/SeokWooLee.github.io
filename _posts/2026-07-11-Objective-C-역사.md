@@ -10,12 +10,6 @@ tags:
   - 오브젝티브C
   - 프로그래밍언어
   - iOS개발
-  - 애플
-  - Swift
-  - 스티브잡스
-  - NS접두어
-  - 개발공부
-  - 코딩역사
 permalink: /Objective-C-역사/
 toc: true
 toc_sticky: true

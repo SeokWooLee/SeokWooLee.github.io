@@ -7,13 +7,7 @@ tags:
   - ClaudeCode
   - AI에이전트
   - 컨텍스트윈도우
-  - compact
-  - clear
   - LLM
-  - AI자동화
-  - 개발생산성
-  - 프롬프트엔지니어링
-  - AI
 permalink: /clear-vs-compact-완전-정리-AI-에이전트-컨텍스트는-언제-비우고-언제-압축하나/
 toc: true
 toc_sticky: true

@@ -4,16 +4,10 @@ description: "맥을 쓰는 개발자라면 하루에 가장 오래 띄워놓는
 header:
   og_image: /assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/1.png
 tags:
-  - 맥터미널
-  - iTerm2
-  - Ghostty
-  - Warp
-  - Alacritty
-  - Kitty
   - 개발자도구
-  - macOS
   - 터미널추천
   - 개발환경
+  - 맥터미널
 permalink: /macOS-터미널-앱-6종-비교-iTerm2GhosttyWarp-뭘-써야-할까/
 toc: true
 toc_sticky: true

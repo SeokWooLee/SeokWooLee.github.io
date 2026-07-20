@@ -8,12 +8,6 @@ tags:
   - MVVM
   - 아키텍처
   - ViewModel
-  - Combine
-  - SwiftUI
-  - Observation
-  - 바인딩
-  - iOS개발
-  - iOS아키텍처
 permalink: /iOS-MVVM-패턴-바인딩-없으면-반쪽인-이유-CombineObservation-예제/
 toc: true
 toc_sticky: true

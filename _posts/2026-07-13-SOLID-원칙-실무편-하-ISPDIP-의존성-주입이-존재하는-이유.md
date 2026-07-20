@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/1.png
 tags:
   - SOLID원칙
-  - ISP
-  - DIP
   - 의존성주입
-  - 의존성역전
-  - 인터페이스분리
   - 객체지향
   - 스프링
-  - NestJS
-  - 클린코드
 permalink: /SOLID-원칙-실무편-하-ISPDIP-의존성-주입이-존재하는-이유/
 toc: true
 toc_sticky: true

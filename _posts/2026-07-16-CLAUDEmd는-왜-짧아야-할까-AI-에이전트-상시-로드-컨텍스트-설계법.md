@@ -7,13 +7,7 @@ tags:
   - CLAUDEmd
   - ClaudeCode
   - AI에이전트
-  - 시스템프롬프트
   - MCP
-  - 컨텍스트윈도우
-  - LLM
-  - AI자동화
-  - 프롬프트엔지니어링
-  - 개발생산성
 permalink: /CLAUDEmd는-왜-짧아야-할까-AI-에이전트-상시-로드-컨텍스트-설계법/
 toc: true
 toc_sticky: true

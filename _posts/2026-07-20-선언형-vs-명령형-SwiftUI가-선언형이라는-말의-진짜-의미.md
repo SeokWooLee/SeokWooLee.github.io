@@ -4,14 +4,8 @@ description: "SwiftUI 소개 문서 첫 줄에는 어김없이 \"선언형(decla
 header:
   og_image: /assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/1.png
 tags:
-  - 선언형
-  - 명령형
   - SwiftUI
   - UIKit
-  - declarative
-  - imperative
-  - 함수형
-  - 상태관리
   - 기술면접
   - CS기초
 permalink: /선언형-vs-명령형-SwiftUI가-선언형이라는-말의-진짜-의미/

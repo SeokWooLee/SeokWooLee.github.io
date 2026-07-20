@@ -7,13 +7,7 @@ tags:
   - AI에이전트
   - 컨텍스트윈도우
   - LLM
-  - lostinthemiddle
-  - contextrot
   - ClaudeCode
-  - AI
-  - 인공지능
-  - 개발공부
-  - 프롬프트엔지니어링
 permalink: /컨텍스트가-길수록-AI는-멍청해진다-lost-in-the-middle과-context-rot/
 toc: true
 toc_sticky: true

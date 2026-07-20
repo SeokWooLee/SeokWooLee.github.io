@@ -7,12 +7,8 @@ categories:
   - iOS
 tags:
   - Swift
-  - LocalizedError
-  - errorDescription
   - iOS개발
-  - 에러처리
   - SwiftUI
-  - 커스텀에러
   - 앱개발
 permalink: /error-description/
 toc: true

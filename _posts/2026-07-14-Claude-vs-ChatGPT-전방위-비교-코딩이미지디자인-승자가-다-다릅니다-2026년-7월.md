@@ -7,11 +7,7 @@ tags:
   - Claude
   - ChatGPT
   - Fable5
-  - GPT56
-  - 이미지생성
-  - UI디자인
   - AI비교
-  - GPTImage2
 permalink: /Claude-vs-ChatGPT-전방위-비교-코딩이미지디자인-승자가-다-다릅니다-2026년-7월/
 toc: true
 toc_sticky: true

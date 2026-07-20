@@ -6,14 +6,8 @@ header:
 tags:
   - Swift
   - 스위프트
-  - 크리스래트너
   - ObjectiveC
   - iOS개발
-  - 프로그래밍언어
-  - 애플개발
-  - Swift탄생배경
-  - 옵셔널
-  - 개발공부
 permalink: /Swift-탄생-배경-크리스-래트너는-왜-Objective-C를-버렸을까/
 toc: true
 toc_sticky: true

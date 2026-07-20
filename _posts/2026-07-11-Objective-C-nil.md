@@ -7,15 +7,9 @@ categories:
   - iOS
 tags:
   - ObjectiveC
-  - nil
   - iOS개발
-  - NullPointerException
-  - objcmsgSend
-  - Swift옵셔널
   - 프로그래밍
   - 런타임
-  - 개발공부
-  - 코딩
 permalink: /Objective-C-nil/
 toc: true
 toc_sticky: true

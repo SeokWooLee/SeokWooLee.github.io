@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png
 tags:
   - Swift
-  - 싱글톤패턴
   - iOS개발
   - 디자인패턴
   - 의존성주입
-  - 안티패턴
-  - shared
-  - 코틀린iOS
-  - 앱개발
-  - Swift개발자
 permalink: /Swift-싱글톤-패턴-shared가-안티패턴-소리-듣는-진짜-이유/
 toc: true
 toc_sticky: true

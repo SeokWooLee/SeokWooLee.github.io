@@ -6,12 +6,8 @@ header:
 tags:
   - AI비교
   - ChatGPT
-  - 클로드
-  - 제미나이
   - 인공지능
-  - AI추천
-  - AI구독
-  - 챗지피티
+  - 클로드
 permalink: /ChatGPT-Claude-Gemini-셋-다-구독해본-솔직-후기/
 toc: true
 toc_sticky: true

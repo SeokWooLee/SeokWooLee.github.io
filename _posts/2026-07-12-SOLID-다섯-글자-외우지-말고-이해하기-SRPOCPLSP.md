@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png
 tags:
   - SOLID원칙
-  - SRP
-  - OCP
-  - LSP
   - 객체지향
-  - 단일책임원칙
-  - 리스코프치환
   - 개발원칙
   - 클린코드
-  - 프로그래밍
 permalink: /SOLID-다섯-글자-외우지-말고-이해하기-SRPOCPLSP/
 toc: true
 toc_sticky: true

@@ -6,14 +6,8 @@ header:
 tags:
   - ClaudeCode
   - Cursor
-  - GitHubCopilot
-  - 코딩AI
-  - AI코딩툴
   - 개발자도구
   - AI비교
-  - 코딩AI추천
-  - 바이브코딩
-  - 개발생산성
 permalink: /Claude-CodeCursorCopilot-코딩-AI-어떻게-고르나요-용도별-가이드/
 toc: true
 toc_sticky: true

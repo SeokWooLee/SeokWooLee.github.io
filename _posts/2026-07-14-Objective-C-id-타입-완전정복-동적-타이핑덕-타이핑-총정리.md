@@ -5,14 +5,9 @@ header:
   og_image: /assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/1.png
 tags:
   - Objective-C
-  - id타입
-  - 동적타이핑
-  - 덕타이핑
   - iOS개발
-  - 코코아프레임워크
   - 런타임
   - 프로그래밍공부
-  - objc
 permalink: /Objective-C-id-타입-완전정복-동적-타이핑덕-타이핑-총정리/
 toc: true
 toc_sticky: true

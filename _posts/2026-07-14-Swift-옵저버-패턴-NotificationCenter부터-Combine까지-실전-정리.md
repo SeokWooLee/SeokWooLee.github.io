@@ -8,11 +8,6 @@ tags:
   - 옵저버패턴
   - NotificationCenter
   - Combine
-  - iOS개발
-  - 스위프트
-  - 반응형프로그래밍
-  - 디자인패턴
-  - iOS앱개발
 permalink: /Swift-옵저버-패턴-NotificationCenter부터-Combine까지-실전-정리/
 toc: true
 toc_sticky: true

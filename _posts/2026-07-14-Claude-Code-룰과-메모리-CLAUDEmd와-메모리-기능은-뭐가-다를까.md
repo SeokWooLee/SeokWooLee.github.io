@@ -8,10 +8,6 @@ tags:
   - CLAUDEmd
   - 메모리
   - AI에이전트
-  - 컨텍스트엔지니어링
-  - 개발생산성
-  - LLM
-  - AI자동화
 permalink: /Claude-Code-룰과-메모리-CLAUDEmd와-메모리-기능은-뭐가-다를까/
 toc: true
 toc_sticky: true

@@ -4,16 +4,10 @@ description: "OpenAI가 새 음성 모델 GPT-Live를 출시했습니다. 발표
 header:
   og_image: /assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/1.png
 tags:
+  - ChatGPT
+  - AI에이전트
   - GPT-Live
   - OpenAI
-  - 음성AI
-  - 풀듀플렉스
-  - ChatGPT
-  - GPT5.5
-  - 음성모델
-  - AI에이전트
-  - 보이스인터페이스
-  - AI트렌드
 permalink: /GPT-Live-출시-정리-음성-AI가-턴을-버리고-얻은-것/
 toc: true
 toc_sticky: true

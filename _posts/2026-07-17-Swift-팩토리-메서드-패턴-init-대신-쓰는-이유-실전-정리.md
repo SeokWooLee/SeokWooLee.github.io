@@ -5,15 +5,9 @@ header:
   og_image: /assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.png
 tags:
   - Swift
-  - 팩토리메서드패턴
   - iOS개발
   - 디자인패턴
   - 스위프트
-  - init
-  - 정적팩토리메서드
-  - 객체지향
-  - 코딩공부
-  - 앱개발
 permalink: /Swift-팩토리-메서드-패턴-init-대신-쓰는-이유-실전-정리/
 toc: true
 toc_sticky: true

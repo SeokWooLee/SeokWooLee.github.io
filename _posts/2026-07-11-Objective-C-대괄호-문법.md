@@ -10,12 +10,6 @@ tags:
   - 오브젝티브C
   - iOS개발
   - 프로그래밍언어
-  - 메시지전송
-  - Smalltalk
-  - 코딩공부
-  - 개발입문
-  - 애플개발
-  - 코딩기초
 permalink: /Objective-C-대괄호-문법/
 toc: true
 toc_sticky: true

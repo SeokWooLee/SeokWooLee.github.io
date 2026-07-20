@@ -5,13 +5,9 @@ header:
   og_image: /assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/1.png
 tags:
   - MCP
-  - Skill
   - 서브에이전트
   - ClaudeCode
   - AI에이전트
-  - AI자동화
-  - LLM
-  - 개발자AI
 permalink: /MCP-vs-Skill-vs-서브에이전트-뭘-언제-써야-할까-기준-총정리/
 toc: true
 toc_sticky: true
