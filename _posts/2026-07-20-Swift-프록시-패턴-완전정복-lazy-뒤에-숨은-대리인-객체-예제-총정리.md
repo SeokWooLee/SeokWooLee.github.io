@@ -177,7 +177,7 @@ g.cover.display()   // 여기서 비로소 생성
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 추상 팩토리 패턴, 관련 객체 통째로 갈아끼우는 법 (예제 코드)](/Swift-%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%ED%8C%A8%ED%84%B4-%EA%B4%80%EB%A0%A8-%EA%B0%9D%EC%B2%B4-%ED%86%B5%EC%A7%B8%EB%A1%9C-%EA%B0%88%EC%95%84%EB%81%BC%EC%9A%B0%EB%8A%94-%EB%B2%95-%EC%98%88%EC%A0%9C-%EC%BD%94%EB%93%9C/)
 - [Swift 컴포지트 패턴, 트리 구조를 객체 하나처럼 다루기 (예제·실전 정리)](/Swift-%EC%BB%B4%ED%8F%AC%EC%A7%80%ED%8A%B8-%ED%8C%A8%ED%84%B4-%ED%8A%B8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EA%B0%9D%EC%B2%B4-%ED%95%98%EB%82%98%EC%B2%98%EB%9F%BC-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%98%88%EC%A0%9C%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 플라이웨이트 패턴 완벽 정리 (객체 공유로 메모리 아끼는 법)](/Swift-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B3%B5%EC%9C%A0%EB%A1%9C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%95%84%EB%81%BC%EB%8A%94-%EB%B2%95/)
+- [Swift 커맨드 패턴으로 실행 취소(undo) 기능 만들기 (뼈대 코드 총정리)](/Swift-%EC%BB%A4%EB%A7%A8%EB%93%9C-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89-%EC%B7%A8%EC%86%8Cundo-%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%BC%88%EB%8C%80-%EC%BD%94%EB%93%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
