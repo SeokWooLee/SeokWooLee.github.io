@@ -135,7 +135,7 @@ struct APIConfig {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 데코레이터 패턴, 상속 없이 기능 겹겹이 입히는 법 (예제·실전 총정리)](/Swift-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4-%EC%83%81%EC%86%8D-%EC%97%86%EC%9D%B4-%EA%B8%B0%EB%8A%A5-%EA%B2%B9%EA%B2%B9%EC%9D%B4-%EC%9E%85%ED%9E%88%EB%8A%94-%EB%B2%95-%EC%98%88%EC%A0%9C%EC%8B%A4%EC%A0%84-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [Swift 옵셔널의 정체, 사실은 enum입니다 (언래핑 5종 실무 기준까지)](/Swift-%EC%98%B5%EC%85%94%EB%84%90%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%82%AC%EC%8B%A4%EC%9D%80-enum%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%B8%EB%9E%98%ED%95%91-5%EC%A2%85-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80%EA%B9%8C%EC%A7%80/)
 - [[Swift 기초 #4] Swift guard 제대로 쓰기, 파멸의 피라미드를 눕히는 조기 탈출](/Swift-%EA%B8%B0%EC%B4%88-4-Swift-guard-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%93%B0%EA%B8%B0-%ED%8C%8C%EB%A9%B8%EC%9D%98-%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C%EB%A5%BC-%EB%88%95%ED%9E%88%EB%8A%94-%EC%A1%B0%EA%B8%B0-%ED%83%88%EC%B6%9C/)
+- [[Swift 기초 #5] Swift 에러 처리 전체 지도, throws·try?·try!·Result 언제 뭘 쓸까](/Swift-%EA%B8%B0%EC%B4%88-5-Swift-%EC%97%90%EB%9F%AC-%EC%B2%98%EB%A6%AC-%EC%A0%84%EC%B2%B4-%EC%A7%80%EB%8F%84-throwstrytryResult-%EC%96%B8%EC%A0%9C-%EB%AD%98-%EC%93%B8%EA%B9%8C/)
 <!-- /RELATED-POSTS -->

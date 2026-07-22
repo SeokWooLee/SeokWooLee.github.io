@@ -156,7 +156,7 @@ fetchData { [weak self] data in
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 브릿지 패턴, 서브클래스 폭발 막는 추상화 분리 (예제 총정리)](/Swift-%EB%B8%8C%EB%A6%BF%EC%A7%80-%ED%8C%A8%ED%84%B4-%EC%84%9C%EB%B8%8C%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%8F%AD%EB%B0%9C-%EB%A7%89%EB%8A%94-%EC%B6%94%EC%83%81%ED%99%94-%EB%B6%84%EB%A6%AC-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[Swift 기초 #3] Swift 프로퍼티 총정리, 저장·연산·lazy·didSet 선택 기준 4가지](/Swift-%EA%B8%B0%EC%B4%88-3-Swift-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%A0%80%EC%9E%A5%EC%97%B0%EC%82%B0lazydidSet-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-4%EA%B0%80%EC%A7%80/)
 - [Swift 데코레이터 패턴, 상속 없이 기능 겹겹이 입히는 법 (예제·실전 총정리)](/Swift-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4-%EC%83%81%EC%86%8D-%EC%97%86%EC%9D%B4-%EA%B8%B0%EB%8A%A5-%EA%B2%B9%EA%B2%B9%EC%9D%B4-%EC%9E%85%ED%9E%88%EB%8A%94-%EB%B2%95-%EC%98%88%EC%A0%9C%EC%8B%A4%EC%A0%84-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [[Swift 기초 #5] Swift 에러 처리 전체 지도, throws·try?·try!·Result 언제 뭘 쓸까](/Swift-%EA%B8%B0%EC%B4%88-5-Swift-%EC%97%90%EB%9F%AC-%EC%B2%98%EB%A6%AC-%EC%A0%84%EC%B2%B4-%EC%A7%80%EB%8F%84-throwstrytryResult-%EC%96%B8%EC%A0%9C-%EB%AD%98-%EC%93%B8%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
