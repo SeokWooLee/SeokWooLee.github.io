@@ -136,7 +136,7 @@ A. 아닙니다. 일반 뷰는 슈퍼뷰를 가리키지만, 뷰컨트롤러의 
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 플라이웨이트 패턴(Flyweight Pattern), 객체 공유로 메모리 아끼는 법](/Swift-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B3%B5%EC%9C%A0%EB%A1%9C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%95%84%EB%81%BC%EB%8A%94-%EB%B2%95/)
 - [Swift 스테이트 패턴(State Pattern)으로 if문 지옥 탈출하기](/Swift-%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-if%EB%AC%B8-%EC%A7%80%EC%98%A5-%ED%83%88%EC%B6%9C%ED%95%98%EA%B8%B0-%EC%83%81%ED%83%9C-%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A6%AC%EB%B2%95/)
 - [Swift 프록시 패턴(Proxy Pattern), lazy 뒤에 숨은 대리인 객체](/Swift-%ED%94%84%EB%A1%9D%EC%8B%9C-%ED%8C%A8%ED%84%B4-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-lazy-%EB%92%A4%EC%97%90-%EC%88%A8%EC%9D%80-%EB%8C%80%EB%A6%AC%EC%9D%B8-%EA%B0%9D%EC%B2%B4-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 이터레이터 패턴(Iterator Pattern), Sequence와 IteratorProtocol 정체 파헤치기](/Swift-%EC%9D%B4%ED%84%B0%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4Iterator-Pattern-Sequence%EC%99%80-IteratorProtocol-%EC%A0%95%EC%B2%B4-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0/)
 <!-- /RELATED-POSTS -->
