@@ -1,5 +1,5 @@
 ---
-title: "메서드 시그니처 정확히 알기, 반환 타입은 포함될까 (Java·Swift 비교)"
+title: "메서드 시그니처(Method Signature) 정확히 알기, 반환 타입은 포함될까 (Java·Swift 비교)"
 description: "\"메서드 시그니처가 뭔가요?\"라는 질문을 받으면 대부분 \"메서드의 이름이랑 파라미터... 그런 거요\"라고 얼버무리게 됩니다."
 header:
   og_image: /assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-1.jpg

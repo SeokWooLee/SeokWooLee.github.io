@@ -1,5 +1,5 @@
 ---
-title: "얕은 복사 vs 깊은 복사, 복사했는데 원본이 같이 바뀌는 이유 (Swift COW)"
+title: "얕은 복사(Shallow Copy) vs 깊은 복사(Deep Copy), 복사했는데 원본이 같이 바뀌는 이유 (Swift COW)"
 description: "배열을 복사해서 새 변수에 담았습니다. 복사본만 고쳤는데 원본까지 바뀌어 있네요. 프로그래밍하다 한 번은 꼭 만나는 미스터리입니다."
 header:
   og_image: /assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/1.png

@@ -1,5 +1,5 @@
 ---
-title: "Swift 옵저버 패턴, NotificationCenter부터 Combine까지 (실전 정리)"
+title: "Swift 옵저버 패턴(Observer Pattern), NotificationCenter부터 Combine까지"
 description: "iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 바뀌었는데, 저 멀리 떨어진 B 화면도 같이 갱신돼야 하는 상황이요."
 header:
   og_image: /assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/1.png

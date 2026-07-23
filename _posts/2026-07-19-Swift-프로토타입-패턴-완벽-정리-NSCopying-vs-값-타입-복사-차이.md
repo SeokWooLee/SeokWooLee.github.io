@@ -1,5 +1,5 @@
 ---
-title: "Swift 프로토타입 패턴 완벽 정리 (NSCopying vs 값 타입 복사 차이)"
+title: "Swift 프로토타입 패턴(Prototype Pattern), NSCopying vs 값 타입 복사 차이"
 description: "Swift로 객체를 복사하다가 \"이게 진짜 복사된 게 맞나?\" 하고 멈칫한 적 있으신가요."
 header:
   og_image: /assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.png

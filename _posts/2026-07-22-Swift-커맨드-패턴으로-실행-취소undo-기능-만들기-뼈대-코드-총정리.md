@@ -1,5 +1,5 @@
 ---
-title: "Swift 커맨드 패턴으로 실행 취소(undo) 기능 만들기 (뼈대 코드 총정리)"
+title: "Swift 커맨드 패턴(Command Pattern)으로 실행 취소(undo) 기능 만들기"
 description: "앱을 만들다 보면 \"실행 취소 버튼 하나만 넣어달라\"는 요청이 생각보다 자주 들어옵니다."
 header:
   og_image: /assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/1.png

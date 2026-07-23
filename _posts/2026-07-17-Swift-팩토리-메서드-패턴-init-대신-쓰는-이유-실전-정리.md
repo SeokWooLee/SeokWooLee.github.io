@@ -1,5 +1,5 @@
 ---
-title: "Swift 팩토리 메서드 패턴, init 대신 쓰는 이유 (실전 정리)"
+title: "Swift 팩토리 메서드 패턴(Factory Method Pattern), init 대신 쓰는 이유"
 description: "Swift로 앱을 만들다 보면 객체 생성하는 코드를 하루에도 수십 번은 쓰게 됩니다."
 header:
   og_image: /assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.png

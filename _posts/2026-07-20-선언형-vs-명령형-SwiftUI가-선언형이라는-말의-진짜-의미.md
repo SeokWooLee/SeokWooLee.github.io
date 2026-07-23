@@ -1,5 +1,5 @@
 ---
-title: "선언형 vs 명령형, SwiftUI가 선언형이라는 말의 진짜 의미"
+title: "선언형(Declarative) vs 명령형(Imperative), SwiftUI가 선언형이라는 말의 진짜 의미"
 description: "SwiftUI 소개 문서 첫 줄에는 어김없이 \"선언형(declarative) 프레임워크\"라는 말이 나옵니다. React도, Jetpack Compose도 자신을 선언형이라 부르죠."
 header:
   og_image: /assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/1.png

@@ -1,5 +1,5 @@
 ---
-title: "Swift 싱글톤 패턴, shared가 안티패턴 소리 듣는 진짜 이유"
+title: "Swift 싱글톤 패턴(Singleton Pattern), shared가 안티패턴 소리 듣는 진짜 이유"
 description: "Swift 개발을 하다 보면 static let shared 한 줄로 만드는 싱글톤을 정말 자주 만나게 됩니다."
 header:
   og_image: /assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png

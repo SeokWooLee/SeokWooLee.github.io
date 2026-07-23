@@ -1,5 +1,5 @@
 ---
-title: "Swift 프록시 패턴 완전정복, lazy 뒤에 숨은 대리인 객체 (예제 총정리)"
+title: "Swift 프록시 패턴(Proxy Pattern), lazy 뒤에 숨은 대리인 객체"
 description: "iOS 개발을 하다 보면 lazy var 한 줄을 참 자주 쓰게 됩니다."
 header:
   og_image: /assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/1.png

@@ -1,5 +1,5 @@
 ---
-title: "Swift 클로저 완전 정리, 캡처·[weak self]·@escaping이 한 몸인 이유"
+title: "[Swift 기초 #2] Swift 클로저(Closure) 완전 정리, 캡처·[weak self]·@escaping이 한 몸인 이유"
 description: "Swift 코드에서 클로저는 공기 같은 존재입니다. 정렬 조건, 네트워크 완료 핸들러, 버튼 액션, SwiftUI의 body까지, 중괄호 블록을 넘기는 코드가 하루에도 수십 번 등장하죠. 그런데 정작 \"클로저가 값을 캡처한다는 게 정확히 무슨 뜻인가\", \"[weak self]는…"
 header:
   og_image: /assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/1.png
