@@ -177,7 +177,7 @@ g.cover.display()   // 여기서 비로소 생성
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 커맨드 패턴으로 실행 취소(undo) 기능 만들기 (뼈대 코드 총정리)](/Swift-%EC%BB%A4%EB%A7%A8%EB%93%9C-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89-%EC%B7%A8%EC%86%8Cundo-%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%BC%88%EB%8C%80-%EC%BD%94%EB%93%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [Swift 스테이트 패턴으로 if문 지옥 탈출하기 (상태 객체 정리법)](/Swift-%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-if%EB%AC%B8-%EC%A7%80%EC%98%A5-%ED%83%88%EC%B6%9C%ED%95%98%EA%B8%B0-%EC%83%81%ED%83%9C-%EA%B0%9D%EC%B2%B4-%EC%A0%95%EB%A6%AC%EB%B2%95/)
 - [Swift 책임 연쇄 패턴(Chain of Responsibility), UIResponder 체인 동작 원리 완전 정리](/Swift-%EC%B1%85%EC%9E%84-%EC%97%B0%EC%87%84-%ED%8C%A8%ED%84%B4Chain-of-Responsibility-UIResponder-%EC%B2%B4%EC%9D%B8-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC/)
+- [Swift 퍼사드 패턴(Facade Pattern), 복잡한 서브시스템을 메서드 하나로 감추기](/Swift-%ED%8D%BC%EC%82%AC%EB%93%9C-%ED%8C%A8%ED%84%B4Facade-Pattern-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%84%9C%EB%B8%8C%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EA%B0%90%EC%B6%94%EA%B8%B0/)
 <!-- /RELATED-POSTS -->
