@@ -123,7 +123,7 @@ throws와의 결정적 차이는 시간과 장소입니다. throws는 호출 즉
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[Swift 기초 #4] Swift guard 제대로 쓰기, 파멸의 피라미드를 눕히는 조기 탈출](/Swift-%EA%B8%B0%EC%B4%88-4-Swift-guard-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%93%B0%EA%B8%B0-%ED%8C%8C%EB%A9%B8%EC%9D%98-%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C%EB%A5%BC-%EB%88%95%ED%9E%88%EB%8A%94-%EC%A1%B0%EA%B8%B0-%ED%83%88%EC%B6%9C/)
 - [Swift 브릿지 패턴, 서브클래스 폭발 막는 추상화 분리 (예제 총정리)](/Swift-%EB%B8%8C%EB%A6%BF%EC%A7%80-%ED%8C%A8%ED%84%B4-%EC%84%9C%EB%B8%8C%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%8F%AD%EB%B0%9C-%EB%A7%89%EB%8A%94-%EC%B6%94%EC%83%81%ED%99%94-%EB%B6%84%EB%A6%AC-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[Swift 기초 #3] Swift 프로퍼티 총정리, 저장·연산·lazy·didSet 선택 기준 4가지](/Swift-%EA%B8%B0%EC%B4%88-3-Swift-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%A0%80%EC%9E%A5%EC%97%B0%EC%82%B0lazydidSet-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-4%EA%B0%80%EC%A7%80/)
+- [[Swift 기초 #6] Swift 문자열은 왜 text[0]이 안 될까? 그래핌 클러스터(Grapheme Cluster) 총정리](/Swift-%EA%B8%B0%EC%B4%88-6-Swift-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%80-%EC%99%9C-text0%EC%9D%B4-%EC%95%88-%EB%90%A0%EA%B9%8C-%EA%B7%B8%EB%9E%98%ED%95%8C-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0Grapheme-Cluster-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
