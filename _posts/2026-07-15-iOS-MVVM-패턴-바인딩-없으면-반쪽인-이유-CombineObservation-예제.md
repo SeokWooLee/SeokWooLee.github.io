@@ -132,7 +132,7 @@ ViewModel은 어디까지나 **프레젠테이션 로직**(화면 상태 가공)
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 옵저버 패턴, NotificationCenter부터 Combine까지 (실전 정리)](/Swift-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4-NotificationCenter%EB%B6%80%ED%84%B0-Combine%EA%B9%8C%EC%A7%80-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
 - [SwiftUI에 ViewModel이 필요 없다? MV 패턴 논쟁 총정리](/SwiftUI%EC%97%90-ViewModel%EC%9D%B4-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-MV-%ED%8C%A8%ED%84%B4-%EB%85%BC%EC%9F%81-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [[iOS 아키텍처 #4] MVP vs MVVM 차이, Presenter와 ViewModel은 뭐가 다를까 (면접 대비)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-4-MVP-vs-MVVM-%EC%B0%A8%EC%9D%B4-Presenter%EC%99%80-ViewModel%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84/)
 <!-- /RELATED-POSTS -->
