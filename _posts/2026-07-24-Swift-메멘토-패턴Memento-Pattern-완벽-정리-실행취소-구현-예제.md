@@ -144,7 +144,7 @@ final class UndoManager {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기](/Swift-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4Template-Method-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension%EC%9C%BC%EB%A1%9C-%EB%BC%88%EB%8C%80-%EC%9E%A1%EA%B8%B0/)
 - [Swift 퍼사드 패턴(Facade Pattern), 복잡한 서브시스템을 메서드 하나로 감추기](/Swift-%ED%8D%BC%EC%82%AC%EB%93%9C-%ED%8C%A8%ED%84%B4Facade-Pattern-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%84%9C%EB%B8%8C%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EA%B0%90%EC%B6%94%EA%B8%B0/)
 - [Swift 플라이웨이트 패턴(Flyweight Pattern), 객체 공유로 메모리 아끼는 법](/Swift-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B3%B5%EC%9C%A0%EB%A1%9C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%95%84%EB%81%BC%EB%8A%94-%EB%B2%95/)
+- [Swift 비지터 패턴(Visitor Pattern), 더블 디스패치가 필요한 순간](/Swift-%EB%B9%84%EC%A7%80%ED%84%B0-%ED%8C%A8%ED%84%B4Visitor-Pattern-%EB%8D%94%EB%B8%94-%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%88%9C%EA%B0%84/)
 <!-- /RELATED-POSTS -->
