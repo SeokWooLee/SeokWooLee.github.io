@@ -13,14 +13,10 @@ tags:
 permalink: /Objective-C-대괄호-문법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
-<<<<<<< HEAD
 iOS 공부를 시작하고 처음 Objective-C 코드를 보면 당황하기 쉬워요.
-=======
-iOS 공부를 시작하고 처음 Objective-C 코드를 봤을 때, 저는 솔직히 좀 당황했어요.
->>>>>>> 6497fc0c (AdSense 대응: 자동 번역 페이지(en·ja·zh) 및 언어 전환 배너 제거)
 
 온통 대괄호 `[ ]` 투성이거든요. 함수 호출인 것 같긴 한데, 다른 언어랑 생김새가 너무 다르니까요.
 
@@ -108,7 +104,7 @@ Smalltalk의 핵심 철학은 "모든 것은 객체이고, 객체끼리는 메�
 덕분에 기존 C 코드와 섞여도 충돌 없이 구분이 됐죠.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/2.png" alt="메시지를 '보낸다'는 감각이 익으면 대괄호가 편해져요">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/2.png" alt="메시지를 '보낸다'는 감각이 익으면 대괄호가 편해져요" loading="lazy">
   <figcaption>메시지를 '보낸다'는 감각이 익으면 대괄호가 편해져요</figcaption>
 </figure>
 
@@ -162,7 +158,7 @@ objc_msgSend(dog, @selector(bark));
 첫 번째 자리에 메시지를 받을 객체, 두 번째 자리에 실행할 메서드의 이름표(셀렉터)가 들어가요.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="겉모습은 달라도 결국 한곳으로 모여요">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="겉모습은 달라도 결국 한곳으로 모여요" loading="lazy">
   <figcaption>겉모습은 달라도 결국 한곳으로 모여요</figcaption>
 </figure>
 
@@ -173,7 +169,7 @@ objc_msgSend(dog, @selector(bark));
 대괄호라는 겉모습 뒤에 이런 유연한 구조가 숨어 있던 거죠.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="며칠 쓰다 보면 손에 붙는 문법이에요">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="며칠 쓰다 보면 손에 붙는 문법이에요" loading="lazy">
   <figcaption>며칠 쓰다 보면 손에 붙는 문법이에요</figcaption>
 </figure>
 
@@ -204,7 +200,7 @@ objc_msgSend(dog, @selector(bark));
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 - [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
-- [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [objc_msgSend 완벽 정리, Objective-C 메서드 호출이 함수 호출이 아닌 이유](/objcmsgSend-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-Objective-C-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%98%B8%EC%B6%9C%EC%9D%B4-%ED%95%A8%EC%88%98-%ED%98%B8%EC%B6%9C%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
