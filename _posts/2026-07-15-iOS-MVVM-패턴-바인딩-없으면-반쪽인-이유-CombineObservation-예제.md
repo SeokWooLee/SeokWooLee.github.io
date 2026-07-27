@@ -1,5 +1,5 @@
 ---
-title: "iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)"
+title: "[iOS 아키텍처 #2] iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)"
 description: "지난 편에서 Massive View Controller가 생기는 이유를 다뤘습니다. 뷰컨트롤러가 View와 Controller를 겸하는 바람에, 갈 곳 없는 코드가 전부 그리로 몰린다는 이야기였죠."
 header:
   og_image: /assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/1.png
@@ -11,7 +11,7 @@ tags:
 permalink: /iOS-MVVM-패턴-바인딩-없으면-반쪽인-이유-CombineObservation-예제/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-15
+last_modified_at: 2026-07-27
 ---
 
 지난 편에서 Massive View Controller가 생기는 이유를 다뤘습니다. 뷰컨트롤러가 View와 Controller를 겸하는 바람에, 갈 곳 없는 코드가 전부 그리로 몰린다는 이야기였죠.
@@ -68,7 +68,7 @@ ViewModel의 상태가 바뀔 때마다 뷰컨트롤러가 `refresh()`를 잊지
 MVVM이 마이크로소프트의 WPF에서 태어날 때부터 **데이터 바인딩을 전제로 설계된** 이유가 여기 있어요. "ViewModel이 바뀌면 View가 따라 바뀐다"가 자동으로 보장돼야 비로소 완성이에요.
 
 <figure>
-  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/2.png" alt="구독 한 번 걸어두면 화면이 상태를 알아서 따라옵니다">
+  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/2.png" alt="구독 한 번 걸어두면 화면이 상태를 알아서 따라옵니다" loading="lazy">
   <figcaption>구독 한 번 걸어두면 화면이 상태를 알아서 따라옵니다</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ MVVM을 도입하고 몇 달 지나면 새로운 문제를 만나게 됩니다. 
 ViewModel은 어디까지나 **프레젠테이션 로직**(화면 상태 가공)의 자리입니다. 데이터를 가져오는 일은 Repository나 Service로, 비즈니스 규칙은 Model 계층으로 내려보내야 해요. MVVM은 View와 나머지를 나누는 패턴이지, 나머지 전부를 ViewModel에 담으라는 패턴이 아닙니다.
 
 <figure>
-  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/3.png" alt="전부 밀어 넣으면 괴물의 위치만 옮긴 셈이 됩니다">
+  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/3.png" alt="전부 밀어 넣으면 괴물의 위치만 옮긴 셈이 됩니다" loading="lazy">
   <figcaption>전부 밀어 넣으면 괴물의 위치만 옮긴 셈이 됩니다</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ ViewModel은 어디까지나 **프레젠테이션 로직**(화면 상태 가공)
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[iOS 아키텍처 #4] MVP vs MVVM 차이, Presenter와 ViewModel은 뭐가 다를까 (면접 대비)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-4-MVP-vs-MVVM-%EC%B0%A8%EC%9D%B4-Presenter%EC%99%80-ViewModel%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84/)
+- [SwiftUI에 ViewModel이 필요 없다? MV 패턴 논쟁 총정리](/SwiftUI%EC%97%90-ViewModel%EC%9D%B4-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-MV-%ED%8C%A8%ED%84%B4-%EB%85%BC%EC%9F%81-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[iOS 아키텍처 #5] iOS VIPER 아키텍처, 대형 앱들이 도입했다 떠난 이유 (RIBs까지)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-5-iOS-VIPER-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EB%8C%80%ED%98%95-%EC%95%B1%EB%93%A4%EC%9D%B4-%EB%8F%84%EC%9E%85%ED%96%88%EB%8B%A4-%EB%96%A0%EB%82%9C-%EC%9D%B4%EC%9C%A0-RIBs%EA%B9%8C%EC%A7%80/)
-- [[iOS 아키텍처 #1] iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유](/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
+- [[iOS 아키텍처 #4] MVP vs MVVM 차이, Presenter와 ViewModel은 뭐가 다를까 (면접 대비)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-4-MVP-vs-MVVM-%EC%B0%A8%EC%9D%B4-Presenter%EC%99%80-ViewModel%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84/)
 <!-- /RELATED-POSTS -->

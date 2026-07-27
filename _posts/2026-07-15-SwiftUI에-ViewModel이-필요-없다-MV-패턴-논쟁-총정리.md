@@ -118,7 +118,7 @@ Apple의 공식 샘플 코드(Fruta, Food Truck 등)도 대체로 이 구조입�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유](/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
 - [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
 - [[iOS 아키텍처 #4] MVP vs MVVM 차이, Presenter와 ViewModel은 뭐가 다를까 (면접 대비)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-4-MVP-vs-MVVM-%EC%B0%A8%EC%9D%B4-Presenter%EC%99%80-ViewModel%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84/)
+- [[iOS 아키텍처 #2] iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)](/iOS-MVVM-%ED%8C%A8%ED%84%B4-%EB%B0%94%EC%9D%B8%EB%94%A9-%EC%97%86%EC%9C%BC%EB%A9%B4-%EB%B0%98%EC%AA%BD%EC%9D%B8-%EC%9D%B4%EC%9C%A0-CombineObservation-%EC%98%88%EC%A0%9C/)
 <!-- /RELATED-POSTS -->
