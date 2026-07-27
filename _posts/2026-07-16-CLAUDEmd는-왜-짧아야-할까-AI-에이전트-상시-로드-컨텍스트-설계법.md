@@ -1,5 +1,5 @@
 ---
-title: "CLAUDE.md는 왜 짧아야 할까, AI 에이전트 상시 로드 컨텍스트 설계법"
+title: "[AI 컨텍스트 #4] CLAUDE.md는 왜 짧아야 할까, AI 에이전트 상시 로드 컨텍스트 설계법"
 description: "3편에서 /clear로 대화 이력을 비우는 법을 봤습니다. 그런데 /clear 직후 컨텍스트 잔량을 확인해 보면 100%가 아닙니다. Claude Code에서 /context 명령을 쳐보면 이유가 보여요. 시스템 프롬프트, 도구 정의, CLAUDE.md, MCP 서버가 등록한…"
 header:
   og_image: /assets/images/posts/5c28e3e8-171c-46b9-a58c-3251910b2fe3/1.png
@@ -7,11 +7,11 @@ tags:
   - CLAUDEmd
   - ClaudeCode
   - AI에이전트
-  - MCP
+  - 시스템프롬프트
 permalink: /CLAUDEmd는-왜-짧아야-할까-AI-에이전트-상시-로드-컨텍스트-설계법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-16
+last_modified_at: 2026-07-27
 ---
 
 3편에서 /clear로 대화 이력을 비우는 법을 봤습니다. 그런데 /clear 직후 컨텍스트 잔량을 확인해 보면 100%가 아닙니다. Claude Code에서 /context 명령을 쳐보면 이유가 보여요. 시스템 프롬프트, 도구 정의, CLAUDE.md, MCP 서버가 등록한 도구들이 이미 수만 토큰을 차지하고 있습니다. 대화를 시작하기도 전에요.
@@ -42,7 +42,7 @@ CLAUDE.md에 뭘 넣을지의 판단 기준은 하나입니다. 이 내용이 "�
 길이에 대해서는 역설이 하나 있습니다. 지침을 많이 적을수록 잘 지켜질 것 같지만 실제로는 반대에 가깝습니다. 2편에서 본 대로 컨텍스트가 길어지면 개별 항목에 돌아가는 주의가 옅어지고, 수백 줄짜리 지침 파일에서는 정작 중요한 규칙이 lost in the middle로 묻힙니다. 규칙 50개를 적으면 50개가 다 흐릿하게 지켜지고, 10개를 적으면 10개가 또렷하게 지켜지는 쪽에 가까워요. 에이전트가 CLAUDE.md의 규칙을 자꾸 어긴다면, 규칙을 늘리기 전에 파일을 줄이는 게 맞는 순서일 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/5c28e3e8-171c-46b9-a58c-3251910b2fe3/2.png" alt="상시 로드 3층 중 직접 설계할 수 있는 층은 CLAUDE.md뿐입니다">
+  <img src="/assets/images/posts/5c28e3e8-171c-46b9-a58c-3251910b2fe3/2.png" alt="상시 로드 3층 중 직접 설계할 수 있는 층은 CLAUDE.md뿐입니다" loading="lazy">
   <figcaption>상시 로드 3층 중 직접 설계할 수 있는 층은 CLAUDE.md뿐입니다</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ CLAUDE.md에 데이터베이스 마이그레이션 절차 전문을 싣는 대�
 도구 쪽도 정리 대상입니다. 연결해 두고 안 쓰는 MCP 서버가 있다면 끄는 것만으로 수만 토큰의 고정비가 사라집니다. 도구 정의를 평소에는 이름만 두고 필요할 때 전체 스키마를 로드하는 지연 로딩을 지원하는 하네스도 늘고 있는데, 방향은 같습니다. 모든 것을 항상 싣는 대신, 필요한 것을 필요할 때 싣는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/5c28e3e8-171c-46b9-a58c-3251910b2fe3/3.png" alt="벽에는 항상 참인 규칙 몇 줄만, 상세 매뉴얼은 선반에 두고 필요할 때 꺼냅니다">
+  <img src="/assets/images/posts/5c28e3e8-171c-46b9-a58c-3251910b2fe3/3.png" alt="벽에는 항상 참인 규칙 몇 줄만, 상세 매뉴얼은 선반에 두고 필요할 때 꺼냅니다" loading="lazy">
   <figcaption>벽에는 항상 참인 규칙 몇 줄만, 상세 매뉴얼은 선반에 두고 필요할 때 꺼냅니다</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Claude Code라면 /context로 현재 컨텍스트가 어디에 얼마나 쓰이�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [프롬프트 캐시 완전 정리, AI 에이전트 API 비용이 10분의 1이 되는 원리](/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%BA%90%EC%8B%9C-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-API-%EB%B9%84%EC%9A%A9%EC%9D%B4-10%EB%B6%84%EC%9D%98-1%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%9B%90%EB%A6%AC/)
-- [[MCP·Skill #1] MCP 서버란? 연결 방법부터 보안 주의점까지](/MCP-%EC%84%9C%EB%B2%84%EB%9E%80-%EC%97%B0%EA%B2%B0-%EB%B0%A9%EB%B2%95%EB%B6%80%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%A3%BC%EC%9D%98%EC%A0%90%EA%B9%8C%EC%A7%80/)
-- [[MCP·Skill #3] MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)](/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Claude Code 룰과 메모리, CLAUDE.md와 메모리 기능은 뭐가 다를까](/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
+- [[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지](/MCPSkill-2-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-Skill-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%B6%80%ED%84%B0-%EC%9E%90%EB%8F%99-%ED%8A%B8%EB%A6%AC%EA%B1%B0%EA%B9%8C%EC%A7%80/)
+- [[AI 컨텍스트 #5] 서브에이전트는 왜 쓰나, AI 에이전트 컨텍스트 격리의 원리와 위임 기준](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-5-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%93%B0%EB%82%98-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B2%A9%EB%A6%AC%EC%9D%98-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%9C%84%EC%9E%84-%EA%B8%B0%EC%A4%80/)
 <!-- /RELATED-POSTS -->
