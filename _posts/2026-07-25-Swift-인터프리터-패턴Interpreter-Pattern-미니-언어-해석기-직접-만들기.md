@@ -151,7 +151,7 @@ func interpret(_ expr: Expr) -> Double {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기](/Swift-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4Template-Method-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension%EC%9C%BC%EB%A1%9C-%EB%BC%88%EB%8C%80-%EC%9E%A1%EA%B8%B0/)
 - [Swift 메멘토 패턴(Memento Pattern) 완벽 정리 (실행취소 구현 예제)](/Swift-%EB%A9%94%EB%A9%98%ED%86%A0-%ED%8C%A8%ED%84%B4Memento-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%B7%A8%EC%86%8C-%EA%B5%AC%ED%98%84-%EC%98%88%EC%A0%9C/)
 - [Swift 퍼사드 패턴(Facade Pattern), 복잡한 서브시스템을 메서드 하나로 감추기](/Swift-%ED%8D%BC%EC%82%AC%EB%93%9C-%ED%8C%A8%ED%84%B4Facade-Pattern-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%84%9C%EB%B8%8C%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EA%B0%90%EC%B6%94%EA%B8%B0/)
+- [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
 <!-- /RELATED-POSTS -->
