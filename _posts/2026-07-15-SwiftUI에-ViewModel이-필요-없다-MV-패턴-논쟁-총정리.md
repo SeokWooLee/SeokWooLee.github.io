@@ -1,17 +1,17 @@
 ---
-title: "SwiftUI에 ViewModel이 필요 없다? MV 패턴 논쟁 총정리"
+title: "[iOS 아키텍처 #3] SwiftUI에 ViewModel이 필요 없다? MV 패턴 논쟁 총정리"
 description: "iOS 커뮤니티에서 몇 년째 이어지는 뜨거운 논쟁이 있습니다."
 header:
   og_image: /assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/1.png
 tags:
   - SwiftUI
+  - MV패턴
   - MVVM
   - ViewModel
-  - iOS
 permalink: /SwiftUI에-ViewModel이-필요-없다-MV-패턴-논쟁-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-15
+last_modified_at: 2026-07-27
 ---
 
 iOS 커뮤니티에서 몇 년째 이어지는 뜨거운 논쟁이 있습니다.
@@ -69,7 +69,7 @@ Apple의 공식 샘플 코드(Fruta, Food Truck 등)도 대체로 이 구조입�
 이 방식의 장점은 명확합니다. 화면마다 클래스를 하나씩 만드는 보일러플레이트가 사라지고, `@State`·`@Binding` 같은 프레임워크 도구를 우회 없이 그대로 쓸 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/2.png" alt="SwiftUI의 View는 애초에 상태의 함수입니다">
+  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/2.png" alt="SwiftUI의 View는 애초에 상태의 함수입니다" loading="lazy">
   <figcaption>SwiftUI의 View는 애초에 상태의 함수입니다</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Apple의 공식 샘플 코드(Fruta, Food Truck 등)도 대체로 이 구조입�
 결국 "SwiftUI에 ViewModel이 필요 없다"는 말의 실체는 이렇게 요약할 수 있습니다. **화면마다 기계적으로 ViewModel을 만들 필요는 없다. 하지만 View 밖으로 빼야 할 로직이 사라지는 것은 아니다.**
 
 <figure>
-  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/3.png" alt="이름이 아니라 의존성 방향이 진짜 판단 기준이에요">
+  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/3.png" alt="이름이 아니라 의존성 방향이 진짜 판단 기준이에요" loading="lazy">
   <figcaption>이름이 아니라 의존성 방향이 진짜 판단 기준이에요</figcaption>
 </figure>
 
@@ -118,7 +118,5 @@ Apple의 공식 샘플 코드(Fruta, Food Truck 등)도 대체로 이 구조입�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
-- [[iOS 아키텍처 #4] MVP vs MVVM 차이, Presenter와 ViewModel은 뭐가 다를까 (면접 대비)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-4-MVP-vs-MVVM-%EC%B0%A8%EC%9D%B4-Presenter%EC%99%80-ViewModel%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84/)
 - [[iOS 아키텍처 #2] iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)](/iOS-MVVM-%ED%8C%A8%ED%84%B4-%EB%B0%94%EC%9D%B8%EB%94%A9-%EC%97%86%EC%9C%BC%EB%A9%B4-%EB%B0%98%EC%AA%BD%EC%9D%B8-%EC%9D%B4%EC%9C%A0-CombineObservation-%EC%98%88%EC%A0%9C/)
 <!-- /RELATED-POSTS -->
