@@ -11,7 +11,7 @@ tags:
 permalink: /Swift-옵저버-패턴-NotificationCenter부터-Combine까지-실전-정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-14
+last_modified_at: 2026-07-27
 ---
 
 iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 바뀌었는데, 저 멀리 떨어진 B 화면도 같이 갱신돼야 하는 상황이요.
@@ -36,7 +36,7 @@ iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 �
 핵심은 발행자와 관찰자가 서로를 직접 몰라도 된다는 점입니다.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/4-1783847822056.png" alt="발행자와 관찰자는 서로를 모른 채 알림만 주고받아요">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/4-1783847822056.png" alt="발행자와 관찰자는 서로를 모른 채 알림만 주고받아요" loading="lazy">
   <figcaption>발행자와 관찰자는 서로를 모른 채 알림만 주고받아요</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ map, filter 같은 연산자로 값을 가공하고 여러 이벤트를 합치�
 그리고 sink가 반환하는 구독(AnyCancellable)을 변수에 담아두면, 그 변수가 사라질 때 구독도 알아서 취소됩니다. 메모리 관리가 한결 편해지는 거죠.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/2.png" alt="저는 이렇게 코드 켜놓고 손으로 직접 짜보면서 감을 잡았어요">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/2.png" alt="저는 이렇게 코드 켜놓고 손으로 직접 짜보면서 감을 잡았어요" loading="lazy">
   <figcaption>저는 이렇게 코드 켜놓고 손으로 직접 짜보면서 감을 잡았어요</figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ map, filter 같은 연산자로 값을 가공하고 여러 이벤트를 합치�
 물론 요즘은 SwiftUI와 async/await가 대세라, 신규 프로젝트라면 이 둘도 함께 고려해보시길 권합니다.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/3.png" alt="알림 하나 딱 떴을 때 다른 화면까지 같이 갱신되면 그렇게 뿌듯하더라고요">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/3.png" alt="알림 하나 딱 떴을 때 다른 화면까지 같이 갱신되면 그렇게 뿌듯하더라고요" loading="lazy">
   <figcaption>알림 하나 딱 떴을 때 다른 화면까지 같이 갱신되면 그렇게 뿌듯하더라고요</figcaption>
 </figure>
 
@@ -141,7 +141,6 @@ map, filter 같은 연산자로 값을 가공하고 여러 이벤트를 합치�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 팩토리 메서드 패턴, init 대신 쓰는 이유 (실전 정리)](/Swift-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4-init-%EB%8C%80%EC%8B%A0-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
-- [Swift 프로토타입 패턴 완벽 정리 (NSCopying vs 값 타입 복사 차이)](/Swift-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-NSCopying-vs-%EA%B0%92-%ED%83%80%EC%9E%85-%EB%B3%B5%EC%82%AC-%EC%B0%A8%EC%9D%B4/)
 - [Swift Pub-Sub 패턴, 옵저버 패턴과 뭐가 다를까 (이벤트 버스 총정리)](/Swift-Pub-Sub-%ED%8C%A8%ED%84%B4-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EC%8A%A4-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 델리게이트(Delegate) vs 옵저버(Observer), 언제 뭘 써야 할까 비교 총정리](/Swift-%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%98%B5%EC%A0%80%EB%B2%84%EC%99%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-11-%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%A0%95%EC%84%9D/)
 <!-- /RELATED-POSTS -->
