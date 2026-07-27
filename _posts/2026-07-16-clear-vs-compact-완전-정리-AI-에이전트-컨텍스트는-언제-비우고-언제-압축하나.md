@@ -1,5 +1,5 @@
 ---
-title: "/clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나"
+title: "[AI 컨텍스트 #3] /clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나"
 description: "앞선 두 편에서 진단을 마쳤습니다. 컨텍스트 윈도우는 유한하고(1편), 채운다고 다 쓰이는 것도 아니며 길어질수록 오히려 성능이 떨어집니다(2편). 그럼 처방은 하나로 모입니다. 컨텍스트를 관리해야 합니다. 그리고 Claude Code를 비롯한 코딩 에이전트들이 이를 위해…"
 header:
   og_image: /assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/1.png
@@ -7,11 +7,11 @@ tags:
   - ClaudeCode
   - AI에이전트
   - 컨텍스트윈도우
-  - LLM
+  - compact
 permalink: /clear-vs-compact-완전-정리-AI-에이전트-컨텍스트는-언제-비우고-언제-압축하나/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-16
+last_modified_at: 2026-07-27
 ---
 
 앞선 두 편에서 진단을 마쳤습니다. 컨텍스트 윈도우는 유한하고(1편), 채운다고 다 쓰이는 것도 아니며 길어질수록 오히려 성능이 떨어집니다(2편). 그럼 처방은 하나로 모입니다. 컨텍스트를 관리해야 합니다. 그리고 Claude Code를 비롯한 코딩 에이전트들이 이를 위해 쥐여주는 가장 기본 도구가 /clear와 /compact입니다.
@@ -40,7 +40,7 @@ last_modified_at: 2026-07-16
 다행히 통제 수단이 아예 없지는 않습니다. Claude Code의 /compact는 뒤에 지시를 붙일 수 있어요. "/compact 이번 마이그레이션에서 확정한 스키마 변경과 남은 파일 목록 위주로 남겨줘"처럼 쓰면 요약의 초점을 지정할 수 있습니다. 무엇이 중요한지는 사용자가 제일 잘 아니, 압축을 맡기더라도 방향은 잡아주는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/2.png" alt="clear·compact 사이에는 상태를 파일로 내리고 새로 시작하는 제3의 길이 있습니다">
+  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/2.png" alt="clear·compact 사이에는 상태를 파일로 내리고 새로 시작하는 제3의 길이 있습니다" loading="lazy">
   <figcaption>clear·compact 사이에는 상태를 파일로 내리고 새로 시작하는 제3의 길이 있습니다</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ auto-compact의 발동 시점은 토큰 잔량이 정합니다. 작업 흐름과
 그래서 숙련자일수록 잔량 표시를 게이지처럼 관리합니다. 논리적 매듭(커밋, 테스트 통과, 결정 확정)마다 상태를 파일로 정리해 두고 잔량이 20~30% 남았을 때 매듭을 지으며 스스로 /clear나 /compact 타이밍을 정하는 거죠. 압축은 피할 수 없더라도, 언제 어떻게 압축될지는 통제하는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/3.png" alt="압축 타이밍은 잔량이 아니라 작업 매듭에 맞춰 직접 정합니다">
+  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/3.png" alt="압축 타이밍은 잔량이 아니라 작업 매듭에 맞춰 직접 정합니다" loading="lazy">
   <figcaption>압축 타이밍은 잔량이 아니라 작업 매듭에 맞춰 직접 정합니다</figcaption>
 </figure>
 
@@ -80,6 +80,6 @@ auto-compact의 발동 시점은 토큰 잔량이 정합니다. 작업 흐름과
 ## 함께 보면 좋은 글
 
 - [[AI 컨텍스트 #5] 서브에이전트는 왜 쓰나, AI 에이전트 컨텍스트 격리의 원리와 위임 기준](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-5-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%93%B0%EB%82%98-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B2%A9%EB%A6%AC%EC%9D%98-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%9C%84%EC%9E%84-%EA%B8%B0%EC%A4%80/)
-- [[AI 컨텍스트 #1] AI 컨텍스트 윈도우(Context Window)의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
-- [[AI 컨텍스트 #2] 컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot](/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EA%B8%B8%EC%88%98%EB%A1%9D-AI%EB%8A%94-%EB%A9%8D%EC%B2%AD%ED%95%B4%EC%A7%84%EB%8B%A4-lost-in-the-middle%EA%B3%BC-context-rot/)
+- [AI 에이전트 메모리 설계, 컨텍스트 밖에 두는 기술 (계획 파일·메모리·RAG)](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EA%B3%84-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%96%EC%97%90-%EB%91%90%EB%8A%94-%EA%B8%B0%EC%88%A0-%EA%B3%84%ED%9A%8D-%ED%8C%8C%EC%9D%BC%EB%A9%94%EB%AA%A8%EB%A6%ACRAG/)
+- [[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지](/MCPSkill-2-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-Skill-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%B6%80%ED%84%B0-%EC%9E%90%EB%8F%99-%ED%8A%B8%EB%A6%AC%EA%B1%B0%EA%B9%8C%EC%A7%80/)
 <!-- /RELATED-POSTS -->
