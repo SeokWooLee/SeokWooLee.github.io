@@ -1,17 +1,17 @@
 ---
-title: "SOLID 다섯 글자, 외우지 말고 이해하기 (SRP·OCP·LSP)"
+title: "[SOLID #1] SOLID 다섯 글자, 외우지 말고 이해하기 (SRP·OCP·LSP)"
 description: "면접에서 \"SOLID 원칙 설명해보세요\"라는 질문, 다들 한 번쯤 받아보셨을 거예요."
 header:
   og_image: /assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png
 tags:
   - SOLID원칙
-  - 객체지향
-  - 개발원칙
-  - 클린코드
+  - SRP
+  - OCP
+  - LSP
 permalink: /SOLID-다섯-글자-외우지-말고-이해하기-SRPOCPLSP/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 면접에서 "SOLID 원칙 설명해보세요"라는 질문, 다들 한 번쯤 받아보셨을 거예요.
@@ -92,12 +92,12 @@ func pay(method: String, amount: Int) {
 기존 코드는 안 건드리고(수정에 닫힘), 새 클래스를 추가하는 것만으로 기능이 늘어납니다(확장에 열림). 자주 바뀌는 지점에만 이 구조를 깔아두는 게 요령이에요. 모든 코드에 깔면 지난 편에서 말한 YAGNI 위반이 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/4-1783848080106.png" alt="토스페이 추가는 클래스 하나 얹는 걸로 끝">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/4-1783848080106.png" alt="토스페이 추가는 클래스 하나 얹는 걸로 끝" loading="lazy">
   <figcaption>토스페이 추가는 클래스 하나 얹는 걸로 끝</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.png" alt="수정 대신 추가로 대응하는 게 OCP예요">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.png" alt="수정 대신 추가로 대응하는 게 OCP예요" loading="lazy">
   <figcaption>수정 대신 추가로 대응하는 게 OCP예요</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Square를 넣는 순간 "너비 5, 높이 4면 넓이 20"이라는 당연한 기
 실무 신호는 이겁니다. 자식 클래스에서 부모 메서드를 오버라이드해서 예외를 던지거나 빈 구현으로 두고 있다면, 그 상속은 LSP 위반일 가능성이 높습니다.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/3.png" alt="정사각형은 직사각형 자리에 못 들어가더라고요">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/3.png" alt="정사각형은 직사각형 자리에 못 들어가더라고요" loading="lazy">
   <figcaption>정사각형은 직사각형 자리에 못 들어가더라고요</figcaption>
 </figure>
 
@@ -152,11 +152,3 @@ Square를 넣는 순간 "너비 5, 높이 4면 넓이 20"이라는 당연한 기
 - **LSP** — 자식은 부모의 약속을 깨지 마라. 깨야 한다면 상속이 잘못된 거다.
 
 다음 편에서 나머지 두 글자, ISP(인터페이스 분리)와 DIP(의존성 역전)를 다룰게요. 특히 DIP는 요즘 프레임워크들이 왜 다 의존성 주입을 쓰는지와 바로 연결되는 얘기라 재미있을 겁니다.
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [KISS 원칙, 코드를 단순하게 짜라는 말의 진짜 의미](/KISS-%EC%9B%90%EC%B9%99/)
-- [디미터의 법칙, 메서드 체이닝이 나쁜 코드가 되는 순간 (기준·예시)](/%EB%94%94%EB%AF%B8%ED%84%B0%EC%9D%98-%EB%B2%95%EC%B9%99-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%B2%B4%EC%9D%B4%EB%8B%9D%EC%9D%B4-%EB%82%98%EC%81%9C-%EC%BD%94%EB%93%9C%EA%B0%80-%EB%90%98%EB%8A%94-%EC%88%9C%EA%B0%84-%EA%B8%B0%EC%A4%80%EC%98%88%EC%8B%9C/)
-- [SOLID 원칙 실무편 (하) ISP·DIP, 의존성 주입이 존재하는 이유](/SOLID-%EC%9B%90%EC%B9%99-%EC%8B%A4%EB%AC%B4%ED%8E%B8-%ED%95%98-ISPDIP-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85%EC%9D%B4-%EC%A1%B4%EC%9E%AC%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
-<!-- /RELATED-POSTS -->
