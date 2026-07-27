@@ -11,7 +11,7 @@ tags:
 permalink: /Claude-Code-룰과-메모리-CLAUDEmd와-메모리-기능은-뭐가-다를까/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-14
+last_modified_at: 2026-07-27
 ---
 
 Claude Code를 프로젝트에 붙여 쓰다 보면 두 가지 요구가 생깁니다. "이 규칙은 매번 지켜라"와 "지난번에 알아낸 걸 기억해라".
@@ -59,7 +59,7 @@ CLAUDE.md가 사람이 작성하는 하향식 규칙이라면, 메모리는 반�
 동작 구조는 단순합니다. 메모리 하나가 파일 하나이고 인덱스 파일(MEMORY.md)에 한 줄 요약이 쌓입니다. 세션 시작 시 인덱스만 컨텍스트에 올라가고 개별 메모리의 본문은 관련 작업을 할 때 읽는 식이에요.
 
 <figure>
-  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/2.png" alt="룰은 매 세션 통째로, 메모리는 인덱스만 올라가고 본문은 필요할 때 읽습니다">
+  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/2.png" alt="룰은 매 세션 통째로, 메모리는 인덱스만 올라가고 본문은 필요할 때 읽습니다" loading="lazy">
   <figcaption>룰은 매 세션 통째로, 메모리는 인덱스만 올라가고 본문은 필요할 때 읽습니다</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ CLAUDE.md가 사람이 작성하는 하향식 규칙이라면, 메모리는 반�
 셋째, 코드나 문서로 이미 알 수 있는가. 저장소만 읽어도 알 수 있는 내용은 어느 쪽에도 넣지 않는 게 원칙입니다. 컨텍스트만 낭비하고, 코드가 바뀌면 거짓 정보가 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/3.png" alt="에디터의 룰 파일과 손으로 쓰는 노트, 딱 그 관계예요">
+  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/3.png" alt="에디터의 룰 파일과 손으로 쓰는 노트, 딱 그 관계예요" loading="lazy">
   <figcaption>에디터의 룰 파일과 손으로 쓰는 노트, 딱 그 관계예요</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ CLAUDE.md는 헌법이고 메모리는 업무 일지입니다. 사람이 정한 
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot](/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EA%B8%B8%EC%88%98%EB%A1%9D-AI%EB%8A%94-%EB%A9%8D%EC%B2%AD%ED%95%B4%EC%A7%84%EB%8B%A4-lost-in-the-middle%EA%B3%BC-context-rot/)
-- [/clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나](/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/)
+- [AI 에이전트 메모리 설계, 컨텍스트 밖에 두는 기술 (계획 파일·메모리·RAG)](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EA%B3%84-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%96%EC%97%90-%EB%91%90%EB%8A%94-%EA%B8%B0%EC%88%A0-%EA%B3%84%ED%9A%8D-%ED%8C%8C%EC%9D%BC%EB%A9%94%EB%AA%A8%EB%A6%ACRAG/)
 - [CLAUDE.md는 왜 짧아야 할까, AI 에이전트 상시 로드 컨텍스트 설계법](/CLAUDEmd%EB%8A%94-%EC%99%9C-%EC%A7%A7%EC%95%84%EC%95%BC-%ED%95%A0%EA%B9%8C-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%83%81%EC%8B%9C-%EB%A1%9C%EB%93%9C-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EB%B2%95/)
+- [[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지](/MCPSkill-2-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-Skill-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%B6%80%ED%84%B0-%EC%9E%90%EB%8F%99-%ED%8A%B8%EB%A6%AC%EA%B1%B0%EA%B9%8C%EC%A7%80/)
 <!-- /RELATED-POSTS -->
