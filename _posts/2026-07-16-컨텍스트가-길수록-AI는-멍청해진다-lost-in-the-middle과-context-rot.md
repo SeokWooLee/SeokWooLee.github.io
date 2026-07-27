@@ -1,5 +1,5 @@
 ---
-title: "컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot"
+title: "[AI 컨텍스트 #2] 컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot"
 description: "1편에서 컨텍스트 윈도우가 왜 유한한지를 봤습니다. 그런데 요즘 모델 스펙을 보면 이런 생각이 듭니다. 이미 100만 토큰짜리 모델이 나왔는데, 그냥 코드베이스든 문서든 통째로 넣으면 되는 것 아닐까. 아껴 쓰고 말고 할 게 있나."
 header:
   og_image: /assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/1.png
@@ -7,11 +7,11 @@ tags:
   - AI에이전트
   - 컨텍스트윈도우
   - LLM
-  - ClaudeCode
+  - lostinthemiddle
 permalink: /컨텍스트가-길수록-AI는-멍청해진다-lost-in-the-middle과-context-rot/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-16
+last_modified_at: 2026-07-27
 ---
 
 1편에서 컨텍스트 윈도우가 왜 유한한지를 봤습니다. 그런데 요즘 모델 스펙을 보면 이런 생각이 듭니다. 이미 100만 토큰짜리 모델이 나왔는데, 그냥 코드베이스든 문서든 통째로 넣으면 되는 것 아닐까. 아껴 쓰고 말고 할 게 있나.
@@ -40,7 +40,7 @@ last_modified_at: 2026-07-16
 그래서 실무에서는 "실효 컨텍스트"라는 감각이 필요합니다. 스펙이 20만 토큰이어도 복잡한 추론 과제에서 품질이 유지되는 구간은 그보다 훨씬 짧다고 보는 게 안전합니다. 스펙 숫자는 "여기까지 넣어도 에러가 안 난다"는 뜻이지, "여기까지 넣어도 똑똑하다"는 뜻이 아닙니다.
 
 <figure>
-  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/2.png" alt="스펙은 상한일 뿐, 어텐션 예산은 토큰이 늘수록 얇게 쪼개집니다">
+  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/2.png" alt="스펙은 상한일 뿐, 어텐션 예산은 토큰이 늘수록 얇게 쪼개집니다" loading="lazy">
   <figcaption>스펙은 상한일 뿐, 어텐션 예산은 토큰이 늘수록 얇게 쪼개집니다</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ last_modified_at: 2026-07-16
 이런 실패 양상에는 이름도 붙어 있습니다. 잘못된 정보(예: 환각이 섞인 요약)가 컨텍스트에 들어가 이후 판단을 연쇄로 오염시키는 context poisoning, 쌓인 이력이 너무 길어 모델이 새 지시보다 과거 패턴 반복에 끌리는 context distraction, 비슷하지만 다른 정보가 섞여 혼선을 부르는 context confusion, 그리고 모순된 정보가 충돌하는 context clash. 이름은 몰라도 증상은 익숙하실 겁니다. 세션 후반의 에이전트가 유독 같은 실수를 반복하고, 하지 말라던 걸 하는 이유가 대부분 이 넷 중 하나예요.
 
 <figure>
-  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/3.png" alt="세션 후반 품질 저하의 주범, 네 가지 컨텍스트 실패 양상">
+  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/3.png" alt="세션 후반 품질 저하의 주범, 네 가지 컨텍스트 실패 양상" loading="lazy">
   <figcaption>세션 후반 품질 저하의 주범, 네 가지 컨텍스트 실패 양상</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ last_modified_at: 2026-07-16
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [AI 에이전트 메모리 설계, 컨텍스트 밖에 두는 기술 (계획 파일·메모리·RAG)](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EA%B3%84-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%96%EC%97%90-%EB%91%90%EB%8A%94-%EA%B8%B0%EC%88%A0-%EA%B3%84%ED%9A%8D-%ED%8C%8C%EC%9D%BC%EB%A9%94%EB%AA%A8%EB%A6%ACRAG/)
-- [[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지](/MCPSkill-2-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-Skill-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%B6%80%ED%84%B0-%EC%9E%90%EB%8F%99-%ED%8A%B8%EB%A6%AC%EA%B1%B0%EA%B9%8C%EC%A7%80/)
+- [[AI 컨텍스트 #7] 프롬프트 캐시(Prompt Caching) 완전 정리, AI 에이전트 API 비용이 10분의 1이 되는 원리](/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%BA%90%EC%8B%9C-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-API-%EB%B9%84%EC%9A%A9%EC%9D%B4-10%EB%B6%84%EC%9D%98-1%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%9B%90%EB%A6%AC/)
+- [/clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나](/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/)
 - [[AI 컨텍스트 #1] AI 컨텍스트 윈도우(Context Window)의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
 <!-- /RELATED-POSTS -->
