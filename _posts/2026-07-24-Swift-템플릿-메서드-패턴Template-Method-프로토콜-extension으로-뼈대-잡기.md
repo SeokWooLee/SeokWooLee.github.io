@@ -159,7 +159,7 @@ UIKit처럼 클래스 계층이 이미 깔린 곳에선 상속 override가 자�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 비지터 패턴(Visitor Pattern), 더블 디스패치가 필요한 순간](/Swift-%EB%B9%84%EC%A7%80%ED%84%B0-%ED%8C%A8%ED%84%B4Visitor-Pattern-%EB%8D%94%EB%B8%94-%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%88%9C%EA%B0%84/)
 - [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
 - [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
+- [Swift 싱글톤 패턴(Singleton Pattern), shared가 안티패턴 소리 듣는 진짜 이유](/Swift-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4-shared%EA%B0%80-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4-%EC%86%8C%EB%A6%AC-%EB%93%A3%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
 <!-- /RELATED-POSTS -->

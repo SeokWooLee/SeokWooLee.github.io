@@ -5,13 +5,13 @@ header:
   og_image: /assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png
 tags:
   - Swift
+  - 싱글톤패턴
   - iOS개발
   - 디자인패턴
-  - 의존성주입
 permalink: /Swift-싱글톤-패턴-shared가-안티패턴-소리-듣는-진짜-이유/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 Swift 개발을 하다 보면 `static let shared` 한 줄로 만드는 싱글톤을 정말 자주 만나게 됩니다.
@@ -78,7 +78,7 @@ final class NetworkManager {
 인스턴스 생성은 안전해도 그 안의 상태 변경까지 안전한 건 아니에요. 이 둘을 헷갈리면 크래시를 만나게 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/2.png" alt="shared 도배하던 시절 제 코드, 지금 보면 아찔합니다">
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/2.png" alt="shared 도배하던 시절 제 코드, 지금 보면 아찔합니다" loading="lazy">
   <figcaption>shared 도배하던 시절 제 코드, 지금 보면 아찔합니다</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ final class NetworkManager {
 핵심은 "shared를 코드 안에서 직접 부르지 말고, 밖에서 주입받자"는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/3-1783847709763.png" alt="shared는 기본값으로, 테스트엔 가짜를 주입하는 구조">
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/3-1783847709763.png" alt="shared는 기본값으로, 테스트엔 가짜를 주입하는 구조" loading="lazy">
   <figcaption>shared는 기본값으로, 테스트엔 가짜를 주입하는 구조</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ final class FeedViewModel {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유](/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
-- [Swift 델리게이트 패턴, 옵저버와 뭐가 다를까 (1:1 통신의 정석)](/Swift-%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%98%B5%EC%A0%80%EB%B2%84%EC%99%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-11-%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%A0%95%EC%84%9D/)
-- [생성자 주입 vs 프로퍼티 주입 vs 메서드 주입, 뭘 써야 할까 (Swift DI 총정리)](/%EC%83%9D%EC%84%B1%EC%9E%90-%EC%A3%BC%EC%9E%85-vs-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%A3%BC%EC%9E%85-vs-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%A3%BC%EC%9E%85-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-Swift-DI-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+- [Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기](/Swift-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4Template-Method-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension%EC%9C%BC%EB%A1%9C-%EB%BC%88%EB%8C%80-%EC%9E%A1%EA%B8%B0/)
+- [Swift 메멘토 패턴(Memento Pattern) 완벽 정리 (실행취소 구현 예제)](/Swift-%EB%A9%94%EB%A9%98%ED%86%A0-%ED%8C%A8%ED%84%B4Memento-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%B7%A8%EC%86%8C-%EA%B5%AC%ED%98%84-%EC%98%88%EC%A0%9C/)
 <!-- /RELATED-POSTS -->

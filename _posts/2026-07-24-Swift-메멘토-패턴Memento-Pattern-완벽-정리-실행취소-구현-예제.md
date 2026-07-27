@@ -144,7 +144,7 @@ final class UndoManager {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 플라이웨이트 패턴(Flyweight Pattern), 객체 공유로 메모리 아끼는 법](/Swift-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B3%B5%EC%9C%A0%EB%A1%9C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%95%84%EB%81%BC%EB%8A%94-%EB%B2%95/)
 - [Swift 비지터 패턴(Visitor Pattern), 더블 디스패치가 필요한 순간](/Swift-%EB%B9%84%EC%A7%80%ED%84%B0-%ED%8C%A8%ED%84%B4Visitor-Pattern-%EB%8D%94%EB%B8%94-%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%88%9C%EA%B0%84/)
 - [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+- [Swift 싱글톤 패턴(Singleton Pattern), shared가 안티패턴 소리 듣는 진짜 이유](/Swift-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4-shared%EA%B0%80-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4-%EC%86%8C%EB%A6%AC-%EB%93%A3%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
 <!-- /RELATED-POSTS -->
