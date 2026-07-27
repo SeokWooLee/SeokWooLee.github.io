@@ -13,7 +13,7 @@ tags:
 permalink: /Objective-C-역사/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 iOS 개발 공부를 시작하면 꼭 한 번 마주치는 언어가 있어요. 대괄호가 잔뜩 들어간 낯선 문법, `NSString` 같은 알 수 없는 접두어.
@@ -74,7 +74,7 @@ C++과 거의 같은 시기에, 같은 재료(C + 객체지향)로 완전히 다
 ## NS 접두어는 무슨 뜻일까요?
 
 <figure>
-  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/2.png" alt="NS 접두어의 정체는 이 NeXT 시절에 있었어요">
+  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/2.png" alt="NS 접두어의 정체는 이 NeXT 시절에 있었어요" loading="lazy">
   <figcaption>NS 접두어의 정체는 이 NeXT 시절에 있었어요</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ NeXTSTEP은 Mac OS X의 뼈대가 됐고, Objective-C는 애플 공식 언어가
 언어 인기 지표인 TIOBE 인덱스 기준으로 2012년과 2014년 두 차례 '올해의 언어'로 뽑혔고, 한때 C와 Java 다음인 3위까지 올랐습니다.
 
 <figure>
-  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/3.png" alt="앱스토어 초창기엔 다들 이 언어로 앱을 만들었죠">
+  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/3.png" alt="앱스토어 초창기엔 다들 이 언어로 앱을 만들었죠" loading="lazy">
   <figcaption>앱스토어 초창기엔 다들 이 언어로 앱을 만들었죠</figcaption>
 </figure>
 
@@ -147,7 +147,7 @@ Objective-C는 죽은 언어가 아니라 은퇴를 준비하는 베테랑에 �
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
 - [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
 - [objc_msgSend 완벽 정리, Objective-C 메서드 호출이 함수 호출이 아닌 이유](/objcmsgSend-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-Objective-C-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%98%B8%EC%B6%9C%EC%9D%B4-%ED%95%A8%EC%88%98-%ED%98%B8%EC%B6%9C%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
