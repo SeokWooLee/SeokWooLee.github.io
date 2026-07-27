@@ -5,13 +5,13 @@ header:
   og_image: /assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.png
 tags:
   - Swift
+  - 팩토리메서드패턴
   - iOS개발
   - 디자인패턴
-  - 스위프트
 permalink: /Swift-팩토리-메서드-패턴-init-대신-쓰는-이유-실전-정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-17
+last_modified_at: 2026-07-27
 ---
 
 Swift로 앱을 만들다 보면 객체 생성하는 코드를 하루에도 수십 번은 쓰게 됩니다.
@@ -83,7 +83,7 @@ init은 무조건 새 객체를 반환하지만, 팩토리는 캐시된 값이�
 **넷째, 실패 처리를 더 명확하게 표현할 수 있어요.**
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/2.png" alt="static func 한 줄 붙이는 것만으로 코드가 확 읽기 편해집니다">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/2.png" alt="static func 한 줄 붙이는 것만으로 코드가 확 읽기 편해집니다" loading="lazy">
   <figcaption>static func 한 줄 붙이는 것만으로 코드가 확 읽기 편해집니다</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ final class IconCache {
 같은 아이콘을 여러 번 부를 때 메모리를 아낄 수 있어요.
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/4-1783847712458.png" alt="있으면 꺼내주고, 없으면 만들어서 채워둬요">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/4-1783847712458.png" alt="있으면 꺼내주고, 없으면 만들어서 채워둬요" loading="lazy">
   <figcaption>있으면 꺼내주고, 없으면 만들어서 채워둬요</figcaption>
 </figure>
 
@@ -151,7 +151,7 @@ Swift 표준 라이브러리도 이렇게 나눠 써요.
 | 초기화가 한 줄로 끝남 | init |
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/3.png" alt="저는 헷갈릴 때마다 이 표를 떠올리면서 골라요">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/3.png" alt="저는 헷갈릴 때마다 이 표를 떠올리면서 골라요" loading="lazy">
   <figcaption>저는 헷갈릴 때마다 이 표를 떠올리면서 골라요</figcaption>
 </figure>
 
@@ -166,7 +166,7 @@ Swift 표준 라이브러리도 이렇게 나눠 써요.
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 프로토타입 패턴 완벽 정리 (NSCopying vs 값 타입 복사 차이)](/Swift-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-NSCopying-vs-%EA%B0%92-%ED%83%80%EC%9E%85-%EB%B3%B5%EC%82%AC-%EC%B0%A8%EC%9D%B4/)
-- [Swift 데코레이터 패턴, 상속 없이 기능 겹겹이 입히는 법 (예제·실전 총정리)](/Swift-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4-%EC%83%81%EC%86%8D-%EC%97%86%EC%9D%B4-%EA%B8%B0%EB%8A%A5-%EA%B2%B9%EA%B2%B9%EC%9D%B4-%EC%9E%85%ED%9E%88%EB%8A%94-%EB%B2%95-%EC%98%88%EC%A0%9C%EC%8B%A4%EC%A0%84-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [Swift 브릿지 패턴, 서브클래스 폭발 막는 추상화 분리 (예제 총정리)](/Swift-%EB%B8%8C%EB%A6%BF%EC%A7%80-%ED%8C%A8%ED%84%B4-%EC%84%9C%EB%B8%8C%ED%81%B4%EB%9E%98%EC%8A%A4-%ED%8F%AD%EB%B0%9C-%EB%A7%89%EB%8A%94-%EC%B6%94%EC%83%81%ED%99%94-%EB%B6%84%EB%A6%AC-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+- [Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기](/Swift-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4Template-Method-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension%EC%9C%BC%EB%A1%9C-%EB%BC%88%EB%8C%80-%EC%9E%A1%EA%B8%B0/)
+- [Swift 메멘토 패턴(Memento Pattern) 완벽 정리 (실행취소 구현 예제)](/Swift-%EB%A9%94%EB%A9%98%ED%86%A0-%ED%8C%A8%ED%84%B4Memento-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%B7%A8%EC%86%8C-%EA%B5%AC%ED%98%84-%EC%98%88%EC%A0%9C/)
 <!-- /RELATED-POSTS -->

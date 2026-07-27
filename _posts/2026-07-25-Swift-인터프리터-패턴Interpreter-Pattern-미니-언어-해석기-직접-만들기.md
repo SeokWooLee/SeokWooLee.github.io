@@ -151,7 +151,7 @@ func interpret(_ expr: Expr) -> Double {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 퍼사드 패턴(Facade Pattern), 복잡한 서브시스템을 메서드 하나로 감추기](/Swift-%ED%8D%BC%EC%82%AC%EB%93%9C-%ED%8C%A8%ED%84%B4Facade-Pattern-%EB%B3%B5%EC%9E%A1%ED%95%9C-%EC%84%9C%EB%B8%8C%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%95%98%EB%82%98%EB%A1%9C-%EA%B0%90%EC%B6%94%EA%B8%B0/)
 - [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
 - [Swift 싱글톤 패턴(Singleton Pattern), shared가 안티패턴 소리 듣는 진짜 이유](/Swift-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4-shared%EA%B0%80-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4-%EC%86%8C%EB%A6%AC-%EB%93%A3%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
+- [Swift 팩토리 메서드 패턴(Factory Method Pattern), init 대신 쓰는 이유](/Swift-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4-init-%EB%8C%80%EC%8B%A0-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
