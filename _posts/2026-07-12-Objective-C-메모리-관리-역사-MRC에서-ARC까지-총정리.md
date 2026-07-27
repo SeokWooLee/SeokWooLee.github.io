@@ -7,11 +7,11 @@ tags:
   - ObjectiveC
   - iOS개발
   - ARC
-  - 프로그래밍
+  - 메모리관리
 permalink: /Objective-C-메모리-관리-역사-MRC에서-ARC까지-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
@@ -52,7 +52,7 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 이 단순한 규칙이 Objective-C 메모리 관리의 뿌리입니다.
 
 <figure>
-  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/3-1783847918895.png" alt="숫자 하나로 생사가 갈리는 참조 카운트 흐름">
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/3-1783847918895.png" alt="숫자 하나로 생사가 갈리는 참조 카운트 흐름" loading="lazy">
   <figcaption>숫자 하나로 생사가 갈리는 참조 카운트 흐름</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 ARC 이전, 그러니까 MRC(Manual Retain Count) 시대에는 이 숫자를 사람이 손으로 관리했어요.
 
 <figure>
-  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/2.png" alt="retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠">
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/2.png" alt="retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠" loading="lazy">
   <figcaption>retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠</figcaption>
 </figure>
 
@@ -205,7 +205,7 @@ iOS 개발 공부하시는 분들께 이 흐름이 작은 지도가 되었으면
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [바이브 코딩, 코드 안 읽고 개발하면 생기는 일과 해결책 3가지](/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9-%EC%BD%94%EB%93%9C-%EC%95%88-%EC%9D%BD%EA%B3%A0-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%A9%B4-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%9D%BC%EA%B3%BC-%ED%95%B4%EA%B2%B0%EC%B1%85-3%EA%B0%80%EC%A7%80/)
 - [objc_msgSend 완벽 정리, Objective-C 메서드 호출이 함수 호출이 아닌 이유](/objcmsgSend-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-Objective-C-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%98%B8%EC%B6%9C%EC%9D%B4-%ED%95%A8%EC%88%98-%ED%98%B8%EC%B6%9C%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
-- [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
+- [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
 <!-- /RELATED-POSTS -->
