@@ -7,11 +7,11 @@ tags:
   - Claude
   - ChatGPT
   - Fable5
-  - AI비교
+  - GPT56
 permalink: /Claude-vs-ChatGPT-전방위-비교-코딩이미지디자인-승자가-다-다릅니다-2026년-7월/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-14
+last_modified_at: 2026-07-27
 ---
 
 "Claude랑 ChatGPT 중에 뭘 구독할까"라는 질문은 이제 모델 성능 비교로는 답이 안 나옵니다. 2026년 7월 기준 양쪽 최상위 모델(Claude Fable 5, GPT-5.6 Sol)의 종합 지능 점수는 60 대 59, 사실상 동점이거든요. 갈리는 지점은 모델이 아니라 생태계입니다. 뭘 만들어 주고 뭘 아예 못 하느냐가 다릅니다.
@@ -54,7 +54,7 @@ last_modified_at: 2026-07-14
 썸네일, 마케팅 비주얼, 발표 자료 삽화처럼 그림 산출물이 필요한 작업이 하나라도 있다면 이 영역만으로 ChatGPT 구독의 이유가 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/2.png" alt="OpenAI는 그림으로, Anthropic은 코드로 답합니다">
+  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/2.png" alt="OpenAI는 그림으로, Anthropic은 코드로 답합니다" loading="lazy">
   <figcaption>OpenAI는 그림으로, Anthropic은 코드로 답합니다</figcaption>
 </figure>
 
@@ -98,13 +98,6 @@ ChatGPT는 글 자체의 품질보다 주변 기능으로 승부합니다. 검�
 물론 가장 흔한 현실적인 답은 둘 다 쓰는 겁니다. 주력 하나를 구독하고 나머지는 무료 티어나 최저 요금제로 보완하는 조합이면, 월 $28로 양쪽 생태계의 강점을 다 가져갈 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/3.png" alt="결국 내 산출물이 코드에 가까운지가 선택 기준이에요">
+  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/3.png" alt="결국 내 산출물이 코드에 가까운지가 선택 기준이에요" loading="lazy">
   <figcaption>결국 내 산출물이 코드에 가까운지가 선택 기준이에요</figcaption>
 </figure>
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [코딩 AI 하나만 골라야 한다면? 1년 실사용자의 선택](/%EC%BD%94%EB%94%A9-AI-%ED%95%98%EB%82%98%EB%A7%8C-%EA%B3%A8%EB%9D%BC%EC%95%BC-%ED%95%9C%EB%8B%A4%EB%A9%B4-1%EB%85%84-%EC%8B%A4%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9D%98-%EC%84%A0%ED%83%9D/)
-- [ChatGPT Claude Gemini 셋 다 구독해본 솔직 후기](/ChatGPT-Claude-Gemini-%EC%85%8B-%EB%8B%A4-%EA%B5%AC%EB%8F%85%ED%95%B4%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/)
-<!-- /RELATED-POSTS -->
