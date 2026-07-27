@@ -165,7 +165,7 @@ SwiftUI는 `NavigationStack`과 `path` 기반 라우팅이 있어 결이 조금 
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유](/Swift-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9CStatic-Factory-Method-init-%EB%8C%80%EC%8B%A0-static-func-make-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
 - [Swift 미디에이터 패턴(Mediator Pattern) 완벽 정리 (객체 간 통신 중재자에게 맡기기)](/Swift-%EB%AF%B8%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4Mediator-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B0%84-%ED%86%B5%EC%8B%A0-%EC%A4%91%EC%9E%AC%EC%9E%90%EC%97%90%EA%B2%8C-%EB%A7%A1%EA%B8%B0%EA%B8%B0/)
 - [[Swift 기초 #6] Swift 문자열은 왜 text[0]이 안 될까? 그래핌 클러스터(Grapheme Cluster) 총정리](/Swift-%EA%B8%B0%EC%B4%88-6-Swift-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%80-%EC%99%9C-text0%EC%9D%B4-%EC%95%88-%EB%90%A0%EA%B9%8C-%EA%B7%B8%EB%9E%98%ED%95%8C-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0Grapheme-Cluster-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 클래스(class)와 구조체(struct) 차이 총정리 (값 타입·참조 타입)](/Swift-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B5%AC%EC%A1%B0%EC%B2%B4-%EC%B0%A8%EC%9D%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EA%B0%92-%ED%83%80%EC%9E%85%EC%B0%B8%EC%A1%B0-%ED%83%80%EC%9E%85/)
 <!-- /RELATED-POSTS -->
