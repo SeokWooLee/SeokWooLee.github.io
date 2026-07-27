@@ -8,12 +8,12 @@ categories:
 tags:
   - Objective-C
   - 오브젝티브C
-  - 프로그래밍기초
-  - iOS개발
+  - 골뱅이문법
+  - at기호
 permalink: /Objective-C-골뱅이-문법/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 Objective-C 코드를 처음 열어보면 제일 먼저 눈에 걸리는 게 있어요.
@@ -80,7 +80,7 @@ C에서 쓰는 글자를 한번 떠올려 볼게요.
 쉽게 비유하면, @는 Objective-C 전용 문법들을 모아두는 별도의 서랍 손잡이 같은 거예요.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/2.png" alt="C에서 온 것과 Objective-C가 얹은 것, @가 그 경계선입니다">
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/2.png" alt="C에서 온 것과 Objective-C가 얹은 것, @가 그 경계선입니다" loading="lazy">
   <figcaption>C에서 온 것과 Objective-C가 얹은 것, @가 그 경계선입니다</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ NSString *greeting = @"안녕하세요"; // 따옴표 앞 @ → NSString 객체
 이렇게 @ 유무만 봐도 "아, 이건 Objective-C 확장이구나" 하고 눈으로 바로 구분이 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/3.png" alt="@만 눈에 들어와도 코드 읽기가 한결 수월해집니다">
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/3.png" alt="@만 눈에 들어와도 코드 읽기가 한결 수월해집니다" loading="lazy">
   <figcaption>@만 눈에 들어와도 코드 읽기가 한결 수월해집니다</figcaption>
 </figure>
 
@@ -164,11 +164,3 @@ NSString *greeting = @"안녕하세요"; // 따옴표 앞 @ → NSString 객체
 코드마다 붙은 골뱅이가 낯설게 느껴질 수 있지만, "C와 Objective-C를 나누는 경계선"이라는 걸 알고 나면 오히려 반갑게 보여요.
 
 @만 따라가도 어디부터가 객체지향 문법인지 딱 보이니까요. Objective-C 코드 읽으실 때 이 관점 하나만 기억하시면 훨씬 수월하실 거예요. 오늘도 즐거운 코딩 되세요!
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)](/Objective-C-%EC%97%AD%EC%82%AC/)
-- [Objective-C id 타입 완전정복 (동적 타이핑·덕 타이핑 총정리)](/Objective-C-id-%ED%83%80%EC%9E%85-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EB%8D%95-%ED%83%80%EC%9D%B4%ED%95%91-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-<!-- /RELATED-POSTS -->
