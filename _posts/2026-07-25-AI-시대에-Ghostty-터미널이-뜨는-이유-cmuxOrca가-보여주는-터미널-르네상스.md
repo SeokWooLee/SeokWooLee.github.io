@@ -134,3 +134,9 @@ highlights:
 residual_findings: (없음) — B-1 괄호 영어 병기는 프로젝트 CLAUDE.md '축약어 첫 등장 설명 룰'에 따라 의도적 보존
 grade_reason: "A — S1 잔존 0건, 변경률 1.0%, 자체검증 6항 통과. 블로그 존댓말 그대로. 원문이 이미 정제돼 있어 최소 개입."
 -->
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [AI 에이전트 병렬 터미널 6종 비교, cmux·Orca·Conductor 뭘 써야 할까](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B3%91%EB%A0%AC-%ED%84%B0%EB%AF%B8%EB%84%90-6%EC%A2%85-%EB%B9%84%EA%B5%90-cmuxOrcaConductor-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/)
+<!-- /RELATED-POSTS -->

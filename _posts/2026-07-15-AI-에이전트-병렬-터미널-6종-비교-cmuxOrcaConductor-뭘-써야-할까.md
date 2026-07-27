@@ -5,13 +5,13 @@ header:
   og_image: /assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/1.png
 tags:
   - AI에이전트
-  - ClaudeCode
-  - 개발자도구
-  - 터미널추천
+  - cmux
+  - Orca
+  - Conductor
 permalink: /AI-에이전트-병렬-터미널-6종-비교-cmuxOrcaConductor-뭘-써야-할까/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-15
+last_modified_at: 2026-07-27
 ---
 
 지난번에 macOS 터미널 6종을 비교하면서 "AI 에이전트 시대를 위한 터미널은 따로 소개하겠다"고 예고드렸는데요. 오늘이 그 후속편입니다.
@@ -74,7 +74,7 @@ Claude Code·Codex·Cursor 에이전트를 각각 격리된 worktree에서 돌�
 이제 스스로를 터미널이 아니라 ADE라고 부르고, 소스도 공개(MIT·AGPL 듀얼 라이선스)했어요. 2026년 4월부터는 Claude Code·Codex·Gemini CLI·OpenCode를 일반 셸 프로세스가 아닌 1급 시민으로 통합해서 에이전트마다 상태 배지가 붙은 세로 탭을 줍니다. Oz라는 클라우드 오케스트레이터로 원격 에이전트도 돌릴 수 있고요.
 
 <figure>
-  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/2.png" alt="병렬 에이전트 도구 6종 한눈에 보기">
+  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/2.png" alt="병렬 에이전트 도구 6종 한눈에 보기" loading="lazy">
   <figcaption>병렬 에이전트 도구 6종 한눈에 보기</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ diff 라인에 마크다운 코멘트를 달아 모아서 에이전트에게 되
 물론 만능은 아닙니다. cmux처럼 네이티브 앱 특유의 가벼움을 원하시면 Electron 계열인 Orca가 무겁게 느껴질 수 있고 기능이 많은 만큼 처음 익힐 게 좀 있어요.
 
 <figure>
-  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/3.png" alt="데스크톱 worktree와 모바일 앱이 이어지는 Orca 워크플로우">
+  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/3.png" alt="데스크톱 worktree와 모바일 앱이 이어지는 Orca 워크플로우" loading="lazy">
   <figcaption>데스크톱 worktree와 모바일 앱이 이어지는 Orca 워크플로우</figcaption>
 </figure>
 
@@ -169,7 +169,5 @@ tmux에 익숙하고 키보드 중심으로 일하는 분들께 맞습니다.
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Claude Code 룰과 메모리, CLAUDE.md와 메모리 기능은 뭐가 다를까](/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
-- [macOS 터미널 앱 6종 비교, iTerm2·Ghostty·Warp 뭘 써야 할까](/macOS-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%95%B1-6%EC%A2%85-%EB%B9%84%EA%B5%90-iTerm2GhosttyWarp-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/)
-- [AI 컨텍스트 윈도우의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
+- [AI 시대에 Ghostty 터미널이 뜨는 이유, cmux·Orca가 보여주는 터미널 르네상스](/AI-%EC%8B%9C%EB%8C%80%EC%97%90-Ghostty-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%B4-%EB%9C%A8%EB%8A%94-%EC%9D%B4%EC%9C%A0-cmuxOrca%EA%B0%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EB%8A%94-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%A5%B4%EB%84%A4%EC%83%81%EC%8A%A4/)
 <!-- /RELATED-POSTS -->
