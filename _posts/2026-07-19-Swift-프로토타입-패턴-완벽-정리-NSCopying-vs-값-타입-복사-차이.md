@@ -5,13 +5,13 @@ header:
   og_image: /assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.png
 tags:
   - Swift
+  - 프로토타입패턴
+  - NSCopying
   - 값타입
-  - 디자인패턴
-  - iOS개발
 permalink: /Swift-프로토타입-패턴-완벽-정리-NSCopying-vs-값-타입-복사-차이/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-19
+last_modified_at: 2026-07-27
 ---
 
 Swift로 객체를 복사하다가 "이게 진짜 복사된 게 맞나?" 하고 멈칫한 적 있으신가요.
@@ -132,7 +132,7 @@ let clone = origin.copy() as! Character
 이럴 때 프로토타입 패턴을 `NSCopying`으로 구현하면 깔끔하게 맞아떨어져요.
 
 <figure>
-  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/2.png" alt="저는 struct부터 떠올리는 편이에요, 대입만 해도 복사되니까요">
+  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/2.png" alt="저는 struct부터 떠올리는 편이에요, 대입만 해도 복사되니까요" loading="lazy">
   <figcaption>저는 struct부터 떠올리는 편이에요, 대입만 해도 복사되니까요</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ let clone = origin.copy() as! Character
 아니에요. 내부 객체를 공유해도 되는 상황이라면 얕은 복사가 성능상 더 유리할 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/3.png" alt="원본 도장 하나 잘 파두면 그다음은 찍기만 하면 됩니다">
+  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/3.png" alt="원본 도장 하나 잘 파두면 그다음은 찍기만 하면 됩니다" loading="lazy">
   <figcaption>원본 도장 하나 잘 파두면 그다음은 찍기만 하면 됩니다</figcaption>
 </figure>
 
@@ -166,11 +166,3 @@ let clone = origin.copy() as! Character
 값 타입은 그 고민을 Swift가 대신 해주고, 클래스는 `NSCopying`으로 우리가 직접 챙기면 됩니다.
 
 오늘 정리한 내용이 복사 때문에 밤새 헤매는 일을 조금이나마 줄여드리길 바라요. 화이팅입니다!
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [Swift 옵저버 패턴, NotificationCenter부터 Combine까지 (실전 정리)](/Swift-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4-NotificationCenter%EB%B6%80%ED%84%B0-Combine%EA%B9%8C%EC%A7%80-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
-- [Swift 프록시 패턴 완전정복, lazy 뒤에 숨은 대리인 객체 (예제 총정리)](/Swift-%ED%94%84%EB%A1%9D%EC%8B%9C-%ED%8C%A8%ED%84%B4-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-lazy-%EB%92%A4%EC%97%90-%EC%88%A8%EC%9D%80-%EB%8C%80%EB%A6%AC%EC%9D%B8-%EA%B0%9D%EC%B2%B4-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [Swift 컴포지트 패턴, 트리 구조를 객체 하나처럼 다루기 (예제·실전 정리)](/Swift-%EC%BB%B4%ED%8F%AC%EC%A7%80%ED%8A%B8-%ED%8C%A8%ED%84%B4-%ED%8A%B8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EA%B0%9D%EC%B2%B4-%ED%95%98%EB%82%98%EC%B2%98%EB%9F%BC-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%98%88%EC%A0%9C%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
-<!-- /RELATED-POSTS -->
