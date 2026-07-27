@@ -6,12 +6,12 @@ header:
 tags:
   - ClaudeCode
   - Cursor
-  - 개발자도구
-  - AI비교
+  - GitHubCopilot
+  - 코딩AI
 permalink: /Claude-CodeCursorCopilot-코딩-AI-어떻게-고르나요-용도별-가이드/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 요즘 개발자 커뮤니티에서 가장 많이 나오는 질문이 바로 이거예요. "Claude Code, Cursor, Copilot 중에 대체 뭘 써야 하나요?"
@@ -105,7 +105,7 @@ Copilot은 자율성보다 속도예요.
 몇 달 셋 다 써보고 정착한 제 조합은, 지금은 Claude Code를 메인으로 쓰고 OpenAI의 Codex를 병행하는 에이전트 체제입니다. 개발이 본업이다 보니 자동완성보다는 작업을 통째로 맡기는 쪽이 시간이 훨씬 절약되더라고요.
 
 <figure>
-  <img src="/assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/2.png" alt="저는 에디터랑 터미널을 이렇게 나눠서 씁니다">
+  <img src="/assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/2.png" alt="저는 에디터랑 터미널을 이렇게 나눠서 씁니다" loading="lazy">
   <figcaption>저는 에디터랑 터미널을 이렇게 나눠서 씁니다</figcaption>
 </figure>
 
@@ -126,11 +126,3 @@ Copilot은 자율성보다 속도예요.
 - [Claude Code vs GitHub Copilot vs Cursor (2026): Pricing, Features, and Verdict](https://www.cosmicjs.com/blog/claude-code-vs-github-copilot-vs-cursor-which-ai-coding-agent-should-you-use-2026)
 - [Cursor vs Claude Code vs GitHub Copilot 2026: The Ultimate Comparison](https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison)
 - [GitHub Copilot · Plans & pricing](https://github.com/features/copilot/plans)
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [코딩 AI 하나만 골라야 한다면? 1년 실사용자의 선택](/%EC%BD%94%EB%94%A9-AI-%ED%95%98%EB%82%98%EB%A7%8C-%EA%B3%A8%EB%9D%BC%EC%95%BC-%ED%95%9C%EB%8B%A4%EB%A9%B4-1%EB%85%84-%EC%8B%A4%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9D%98-%EC%84%A0%ED%83%9D/)
-- [Claude Code 룰과 메모리, CLAUDE.md와 메모리 기능은 뭐가 다를까](/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
-- [AI 코드 리뷰 실사용 후기, 사람 리뷰어 대체할 수 있을까 (3개월 총정리)](/AI-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0-%EC%8B%A4%EC%82%AC%EC%9A%A9-%ED%9B%84%EA%B8%B0-%EC%82%AC%EB%9E%8C-%EB%A6%AC%EB%B7%B0%EC%96%B4-%EB%8C%80%EC%B2%B4%ED%95%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-3%EA%B0%9C%EC%9B%94-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-<!-- /RELATED-POSTS -->
