@@ -4,14 +4,14 @@ description: "맥을 쓰는 개발자라면 하루에 가장 오래 띄워놓는
 header:
   og_image: /assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/1.png
 tags:
-  - 개발자도구
-  - 터미널추천
-  - 개발환경
   - 맥터미널
+  - iTerm2
+  - Ghostty
+  - Warp
 permalink: /macOS-터미널-앱-6종-비교-iTerm2GhosttyWarp-뭘-써야-할까/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-16
+last_modified_at: 2026-07-27
 ---
 
 맥을 쓰는 개발자라면 하루에 가장 오래 띄워놓는 앱이 아마 터미널일 거예요. 그런데 의외로 기본 터미널만 몇 년째 쓰는 분들이 많더라고요.
@@ -87,7 +87,7 @@ ls 치고 git status 확인하는 정도로는 Terminal.app도 전혀 답답하�
 반대로 Warp는 기능이 많은 만큼 메모리를 꽤 먹는 편이에요. 저사양 맥이라면 이 부분은 감안하셔야 합니다.
 
 <figure>
-  <img src="/assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/2.png" alt="GPU 가속 유무에 따라 대량 출력 체감이 크게 갈립니다">
+  <img src="/assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/2.png" alt="GPU 가속 유무에 따라 대량 출력 체감이 크게 갈립니다" loading="lazy">
   <figcaption>GPU 가속 유무에 따라 대량 출력 체감이 크게 갈립니다</figcaption>
 </figure>
 
@@ -142,9 +142,3 @@ Warp의 최대 셀링 포인트는 AI입니다.
 한 가지 예고를 드리면, 요즘은 Claude Code 같은 AI 에이전트를 여러 개 병렬로 돌리는 데 특화된 새로운 세대의 터미널들(cmux, Orca 등)이 빠르게 크고 있는데요. 이쪽은 결이 꽤 달라서 따로 한 편으로 정리해 소개해드릴 예정입니다.
 
 여러분은 어떤 터미널 쓰고 계신가요? 댓글로 추천 이유도 함께 남겨주세요.
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [AI 에이전트 병렬 터미널 6종 비교, cmux·Orca·Conductor 뭘 써야 할까](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B3%91%EB%A0%AC-%ED%84%B0%EB%AF%B8%EB%84%90-6%EC%A2%85-%EB%B9%84%EA%B5%90-cmuxOrcaConductor-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C/)
-<!-- /RELATED-POSTS -->
