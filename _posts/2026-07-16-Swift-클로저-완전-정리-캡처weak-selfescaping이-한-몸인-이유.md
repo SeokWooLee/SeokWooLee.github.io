@@ -7,11 +7,11 @@ tags:
   - Swift
   - 스위프트
   - 클로저
-  - iOS개발
+  - closure
 permalink: /Swift-클로저-완전-정리-캡처weak-selfescaping이-한-몸인-이유/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-16
+last_modified_at: 2026-07-27
 ---
 
 Swift 코드에서 클로저는 공기 같은 존재입니다. 정렬 조건, 네트워크 완료 핸들러, 버튼 액션, SwiftUI의 body까지, 중괄호 블록을 넘기는 코드가 하루에도 수십 번 등장하죠. 그런데 정작 "클로저가 값을 캡처한다는 게 정확히 무슨 뜻인가", "[weak self]는 왜 쓰는가", "@escaping은 왜 붙는가"를 설명해보라고 하면 말문이 막히는 경우가 많습니다.
@@ -83,7 +83,7 @@ times(10)      // 20 — 만든 시점의 2로 고정
 그리고 이 캡처 저장소 때문에 클로저는 참조 타입입니다. 캡처된 변수들은 클로저와 수명을 같이해야 하니 힙에 저장되고, 클로저 값을 복사하면 그 저장소를 공유하는 참조가 하나 늘어나는 구조예요. struct 중심의 Swift에서 클로저가 클래스처럼 행동하는 이유입니다. 값 타입과 참조 타입의 구분이 낯설다면 값 타입 우선주의 편을 먼저 읽고 오시면 좋습니다.
 
 <figure>
-  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/2.png" alt="기본 캡처는 살아 있는 연결, 캡처 리스트는 생성 시점의 스냅숏">
+  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/2.png" alt="기본 캡처는 살아 있는 연결, 캡처 리스트는 생성 시점의 스냅숏" loading="lazy">
   <figcaption>기본 캡처는 살아 있는 연결, 캡처 리스트는 생성 시점의 스냅숏</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ func fetchUser(completion: @escaping (User) -> Void) {
 참고로 completion 핸들러 스타일의 escaping 클로저는 async/await가 도입되면서 새 코드에서는 줄어드는 추세지만 기존 API를 읽고 브리징하려면 여전히 정확히 이해해야 하는 개념입니다.
 
 <figure>
-  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/3.png" alt="서로를 붙잡은 고리를 weak가 끊습니다">
+  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/3.png" alt="서로를 붙잡은 고리를 weak가 끊습니다" loading="lazy">
   <figcaption>서로를 붙잡은 고리를 weak가 끊습니다</figcaption>
 </figure>
 
@@ -164,7 +164,7 @@ func fetchUser(completion: @escaping (User) -> Void) {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
-- [Swift 모노스테이트 패턴, 싱글톤의 대안이 될 수 있을까 (실전 정리)](/Swift-%EB%AA%A8%EB%85%B8%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%8B%B1%EA%B8%80%ED%86%A4%EC%9D%98-%EB%8C%80%EC%95%88%EC%9D%B4-%EB%90%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
-- [Swift 옵셔널의 정체, 사실은 enum입니다 (언래핑 5종 실무 기준까지)](/Swift-%EC%98%B5%EC%85%94%EB%84%90%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%82%AC%EC%8B%A4%EC%9D%80-enum%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%B8%EB%9E%98%ED%95%91-5%EC%A2%85-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80%EA%B9%8C%EC%A7%80/)
+- [Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유](/Swift-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9CStatic-Factory-Method-init-%EB%8C%80%EC%8B%A0-static-func-make-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
+- [iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법](/iOS-Coordinator-%ED%8C%A8%ED%84%B4-%ED%99%94%EB%A9%B4-%EC%A0%84%ED%99%98-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B7%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%97%90%EC%84%9C-%EB%96%BC%EC%96%B4%EB%82%B4%EB%8A%94-%EB%B2%95/)
+- [Swift 미디에이터 패턴(Mediator Pattern) 완벽 정리 (객체 간 통신 중재자에게 맡기기)](/Swift-%EB%AF%B8%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4Mediator-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B0%84-%ED%86%B5%EC%8B%A0-%EC%A4%91%EC%9E%AC%EC%9E%90%EC%97%90%EA%B2%8C-%EB%A7%A1%EA%B8%B0%EA%B8%B0/)
 <!-- /RELATED-POSTS -->
