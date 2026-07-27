@@ -6,12 +6,12 @@ header:
 tags:
   - Swift
   - 스위프트
+  - 크리스래트너
   - ObjectiveC
-  - iOS개발
 permalink: /Swift-탄생-배경-크리스-래트너는-왜-Objective-C를-버렸을까/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-12
+last_modified_at: 2026-07-27
 ---
 
 iOS 개발을 시작하면 누구나 한 번쯤 궁금해합니다. "애플은 잘 쓰던 Objective-C 놔두고 왜 굳이 Swift를 새로 만들었을까?" 하고요.
@@ -120,7 +120,7 @@ Swift는 발표 이후 빠르게 자리를 잡았습니다.
 그럼에도 Swift는 지금까지 애플 생태계의 중심 언어로 굳건히 자리 잡고 있습니다. 오픈소스가 되면서 리눅스, 서버 사이드로도 영역을 넓혔고요.
 
 <figure>
-  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/2-1783765666000.png" alt="래트너가 떠난 뒤에도 Swift는 계속 자라고 있어요">
+  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/2-1783765666000.png" alt="래트너가 떠난 뒤에도 Swift는 계속 자라고 있어요" loading="lazy">
   <figcaption>래트너가 떠난 뒤에도 Swift는 계속 자라고 있어요</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Swift는 발표 이후 빠르게 자리를 잡았습니다.
 "왜?"라는 질문 하나에서 출발한 언어라, 배경을 알고 나면 Swift 문법 하나하나가 다르게 보이더라고요.
 
 <figure>
-  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/3.png" alt="배경을 알고 다시 보면 코드 한 줄이 다르게 읽힙니다">
+  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/3.png" alt="배경을 알고 다시 보면 코드 한 줄이 다르게 읽힙니다" loading="lazy">
   <figcaption>배경을 알고 다시 보면 코드 한 줄이 다르게 읽힙니다</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ Swift를 이제 막 시작하셨다면, 옵셔널 하나만 제대로 이해해�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
-- [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
-- [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유](/Swift-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9CStatic-Factory-Method-init-%EB%8C%80%EC%8B%A0-static-func-make-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
+- [iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법](/iOS-Coordinator-%ED%8C%A8%ED%84%B4-%ED%99%94%EB%A9%B4-%EC%A0%84%ED%99%98-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B7%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%97%90%EC%84%9C-%EB%96%BC%EC%96%B4%EB%82%B4%EB%8A%94-%EB%B2%95/)
+- [Swift 미디에이터 패턴(Mediator Pattern) 완벽 정리 (객체 간 통신 중재자에게 맡기기)](/Swift-%EB%AF%B8%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4Mediator-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B0%84-%ED%86%B5%EC%8B%A0-%EC%A4%91%EC%9E%AC%EC%9E%90%EC%97%90%EA%B2%8C-%EB%A7%A1%EA%B8%B0%EA%B8%B0/)
 <!-- /RELATED-POSTS -->

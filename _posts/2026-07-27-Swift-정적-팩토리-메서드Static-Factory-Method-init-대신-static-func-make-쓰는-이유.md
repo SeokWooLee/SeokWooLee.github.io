@@ -151,7 +151,7 @@ enum ShapeFactory {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법](/iOS-Coordinator-%ED%8C%A8%ED%84%B4-%ED%99%94%EB%A9%B4-%EC%A0%84%ED%99%98-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B7%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%97%90%EC%84%9C-%EB%96%BC%EC%96%B4%EB%82%B4%EB%8A%94-%EB%B2%95/)
 - [Swift 클래스(class)와 구조체(struct) 차이 총정리 (값 타입·참조 타입)](/Swift-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B5%AC%EC%A1%B0%EC%B2%B4-%EC%B0%A8%EC%9D%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EA%B0%92-%ED%83%80%EC%9E%85%EC%B0%B8%EC%A1%B0-%ED%83%80%EC%9E%85/)
 - [Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)](/error-description/)
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
