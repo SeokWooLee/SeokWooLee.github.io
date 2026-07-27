@@ -92,7 +92,7 @@ Swift의 `"👨‍👩‍👧‍👦".count`는 1입니다. Swift의 Character �
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 미디에이터 패턴(Mediator Pattern) 완벽 정리 (객체 간 통신 중재자에게 맡기기)](/Swift-%EB%AF%B8%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0-%ED%8C%A8%ED%84%B4Mediator-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EA%B0%9D%EC%B2%B4-%EA%B0%84-%ED%86%B5%EC%8B%A0-%EC%A4%91%EC%9E%AC%EC%9E%90%EC%97%90%EA%B2%8C-%EB%A7%A1%EA%B8%B0%EA%B8%B0/)
 - [[Swift 기초 #5] Swift 에러 처리 전체 지도, throws·try?·try!·Result 언제 뭘 쓸까](/Swift-%EA%B8%B0%EC%B4%88-5-Swift-%EC%97%90%EB%9F%AC-%EC%B2%98%EB%A6%AC-%EC%A0%84%EC%B2%B4-%EC%A7%80%EB%8F%84-throwstrytryResult-%EC%96%B8%EC%A0%9C-%EB%AD%98-%EC%93%B8%EA%B9%8C/)
 - [[Swift 기초 #4] Swift guard 제대로 쓰기, 파멸의 피라미드를 눕히는 조기 탈출](/Swift-%EA%B8%B0%EC%B4%88-4-Swift-guard-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%93%B0%EA%B8%B0-%ED%8C%8C%EB%A9%B8%EC%9D%98-%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C%EB%A5%BC-%EB%88%95%ED%9E%88%EB%8A%94-%EC%A1%B0%EA%B8%B0-%ED%83%88%EC%B6%9C/)
+- [iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법](/iOS-Coordinator-%ED%8C%A8%ED%84%B4-%ED%99%94%EB%A9%B4-%EC%A0%84%ED%99%98-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B7%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%97%90%EC%84%9C-%EB%96%BC%EC%96%B4%EB%82%B4%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->
