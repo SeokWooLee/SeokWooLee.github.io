@@ -126,7 +126,7 @@ Skill은 결국 프롬프트의 함수화입니다. 반복되는 지시를 복�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [AI 에이전트 메모리 설계, 컨텍스트 밖에 두는 기술 (계획 파일·메모리·RAG)](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EA%B3%84-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%96%EC%97%90-%EB%91%90%EB%8A%94-%EA%B8%B0%EC%88%A0-%EA%B3%84%ED%9A%8D-%ED%8C%8C%EC%9D%BC%EB%A9%94%EB%AA%A8%EB%A6%ACRAG/)
 - [컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot](/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EA%B8%B8%EC%88%98%EB%A1%9D-AI%EB%8A%94-%EB%A9%8D%EC%B2%AD%ED%95%B4%EC%A7%84%EB%8B%A4-lost-in-the-middle%EA%B3%BC-context-rot/)
 - [Claude Code 룰과 메모리, CLAUDE.md와 메모리 기능은 뭐가 다를까](/Claude-Code-%EB%A3%B0%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-CLAUDEmd%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B8%B0%EB%8A%A5%EC%9D%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
+- [[MCP·Skill #3] MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)](/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->

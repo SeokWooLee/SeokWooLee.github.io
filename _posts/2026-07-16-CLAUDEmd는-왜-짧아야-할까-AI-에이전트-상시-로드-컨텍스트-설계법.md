@@ -78,7 +78,7 @@ Claude Code라면 /context로 현재 컨텍스트가 어디에 얼마나 쓰이�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot](/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EA%B8%B8%EC%88%98%EB%A1%9D-AI%EB%8A%94-%EB%A9%8D%EC%B2%AD%ED%95%B4%EC%A7%84%EB%8B%A4-lost-in-the-middle%EA%B3%BC-context-rot/)
 - [프롬프트 캐시 완전 정리, AI 에이전트 API 비용이 10분의 1이 되는 원리](/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%BA%90%EC%8B%9C-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-API-%EB%B9%84%EC%9A%A9%EC%9D%B4-10%EB%B6%84%EC%9D%98-1%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%9B%90%EB%A6%AC/)
 - [[MCP·Skill #1] MCP 서버란? 연결 방법부터 보안 주의점까지](/MCP-%EC%84%9C%EB%B2%84%EB%9E%80-%EC%97%B0%EA%B2%B0-%EB%B0%A9%EB%B2%95%EB%B6%80%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%A3%BC%EC%9D%98%EC%A0%90%EA%B9%8C%EC%A7%80/)
+- [[MCP·Skill #3] MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)](/MCP-vs-Skill-vs-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AD%98-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B8%B0%EC%A4%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->

@@ -1,17 +1,17 @@
 ---
-title: "MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)"
+title: "[MCP·Skill #3] MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)"
 description: "AI 코딩 도구를 확장하는 방법이 요즘 부쩍 늘었습니다. MCP로 도구를 붙이고, Skill로 절차를 등록하고, 서브에이전트로 작업을 위임하고요."
 header:
   og_image: /assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/1.png
 tags:
   - MCP
+  - Skill
   - 서브에이전트
   - ClaudeCode
-  - AI에이전트
 permalink: /MCP-vs-Skill-vs-서브에이전트-뭘-언제-써야-할까-기준-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-14
+last_modified_at: 2026-07-27
 ---
 
 AI 코딩 도구를 확장하는 방법이 요즘 부쩍 늘었습니다. MCP로 도구를 붙이고, Skill로 절차를 등록하고, 서브에이전트로 작업을 위임하고요.
@@ -67,7 +67,7 @@ Skill은 새 능력을 주는 게 아니라 이미 가능한 일을 잘하게 �
 > 반대로 말하면 이렇게 됩니다. 접근이 없으면 MCP, 요령이 없으면 Skill, 컨텍스트가 없으면(모자라면) 서브에이전트.
 
 <figure>
-  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/2.png" alt="세 질문만 순서대로 던지면 선택이 끝납니다">
+  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/2.png" alt="세 질문만 순서대로 던지면 선택이 끝납니다" loading="lazy">
   <figcaption>세 질문만 순서대로 던지면 선택이 끝납니다</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Skill은 새 능력을 주는 게 아니라 이미 가능한 일을 잘하게 �
 역할이 겹치는 게 아니라 층이 다르다는 게 보이실 거예요. 누가 / 어떻게 / 무엇으로, 세 질문에 하나씩 대응합니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/3.png" alt="조합 설계는 화이트보드에서 세 층을 나누는 것부터 시작해요">
+  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/3.png" alt="조합 설계는 화이트보드에서 세 층을 나누는 것부터 시작해요" loading="lazy">
   <figcaption>조합 설계는 화이트보드에서 세 층을 나누는 것부터 시작해요</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Skill은 새 능력을 주는 게 아니라 이미 가능한 일을 잘하게 �
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [AI 컨텍스트 윈도우의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
-- [컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot](/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EA%B8%B8%EC%88%98%EB%A1%9D-AI%EB%8A%94-%EB%A9%8D%EC%B2%AD%ED%95%B4%EC%A7%84%EB%8B%A4-lost-in-the-middle%EA%B3%BC-context-rot/)
-- [[MCP·Skill #1] MCP 서버란? 연결 방법부터 보안 주의점까지](/MCP-%EC%84%9C%EB%B2%84%EB%9E%80-%EC%97%B0%EA%B2%B0-%EB%B0%A9%EB%B2%95%EB%B6%80%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%A3%BC%EC%9D%98%EC%A0%90%EA%B9%8C%EC%A7%80/)
+- [[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지](/MCPSkill-2-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-Skill-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%B6%80%ED%84%B0-%EC%9E%90%EB%8F%99-%ED%8A%B8%EB%A6%AC%EA%B1%B0%EA%B9%8C%EC%A7%80/)
+- [[AI 컨텍스트 #5] 서브에이전트는 왜 쓰나, AI 에이전트 컨텍스트 격리의 원리와 위임 기준](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-5-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%93%B0%EB%82%98-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B2%A9%EB%A6%AC%EC%9D%98-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%9C%84%EC%9E%84-%EA%B8%B0%EC%A4%80/)
+- [CLAUDE.md는 왜 짧아야 할까, AI 에이전트 상시 로드 컨텍스트 설계법](/CLAUDEmd%EB%8A%94-%EC%99%9C-%EC%A7%A7%EC%95%84%EC%95%BC-%ED%95%A0%EA%B9%8C-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%83%81%EC%8B%9C-%EB%A1%9C%EB%93%9C-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EB%B2%95/)
 <!-- /RELATED-POSTS -->
