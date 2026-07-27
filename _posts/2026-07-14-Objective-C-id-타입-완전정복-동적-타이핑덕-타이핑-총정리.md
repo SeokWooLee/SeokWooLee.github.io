@@ -5,13 +5,13 @@ header:
   og_image: /assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/1.png
 tags:
   - Objective-C
-  - iOS개발
-  - 런타임
-  - 프로그래밍공부
+  - id타입
+  - 동적타이핑
+  - 덕타이핑
 permalink: /Objective-C-id-타입-완전정복-동적-타이핑덕-타이핑-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-14
+last_modified_at: 2026-07-27
 ---
 
 Objective-C를 처음 공부하다 보면 `id`라는 타입 앞에서 한 번쯤 멈칫하게 됩니다.
@@ -45,7 +45,7 @@ typedef struct objc_object {
 즉 `id`는 `isa`라는 포인터 하나를 가진 구조체의 포인터입니다.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/4-1783847906422.png" alt="id의 정체, 결국 isa 하나 든 포인터였다">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/4-1783847906422.png" alt="id의 정체, 결국 isa 하나 든 포인터였다" loading="lazy">
   <figcaption>id의 정체, 결국 isa 하나 든 포인터였다</figcaption>
 </figure>
 
@@ -119,7 +119,7 @@ if ([obj respondsToSelector:@selector(quack)]) {
 바로 이 유연함이 델리게이트 패턴이나 타깃-액션 같은 코코아의 핵심 설계를 가능하게 만든 밑바탕입니다.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/2.png" alt="메서드에 응답만 하면 오리로 쳐준다는 발상이 재미있죠">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/2.png" alt="메서드에 응답만 하면 오리로 쳐준다는 발상이 재미있죠" loading="lazy">
   <figcaption>메서드에 응답만 하면 오리로 쳐준다는 발상이 재미있죠</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ if ([obj respondsToSelector:@selector(quack)]) {
 그래도 프레임워크 밑바닥, 런타임을 다루는 코드에서는 여전히 `id`가 심장처럼 뛰고 있어요.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/3.png" alt="이 빨간 로그, id 잘못 쓰면 제일 자주 만나는 얼굴입니다">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/3.png" alt="이 빨간 로그, id 잘못 쓰면 제일 자주 만나는 얼굴입니다" loading="lazy">
   <figcaption>이 빨간 로그, id 잘못 쓰면 제일 자주 만나는 얼굴입니다</figcaption>
 </figure>
 
@@ -155,11 +155,3 @@ if ([obj respondsToSelector:@selector(quack)]) {
 처음엔 낯설고 위험해 보이지만, 이 원리를 이해하고 나면 코코아 프레임워크의 설계가 훨씬 선명하게 보일 거예요.
 
 오늘 헤매던 `id` 앞에서 조금은 덜 막막해지셨길 바랍니다. 즐거운 Objective-C 공부 되세요!
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [Swift 클래스와 구조체 차이 총정리 (값 타입·참조 타입)](/Swift-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EA%B5%AC%EC%A1%B0%EC%B2%B4-%EC%B0%A8%EC%9D%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EA%B0%92-%ED%83%80%EC%9E%85%EC%B0%B8%EC%A1%B0-%ED%83%80%EC%9E%85/)
-- [Objective-C 골뱅이(@) 문법, 왜 전부 @로 시작할까? (완벽 정리)](/Objective-C-%EA%B3%A8%EB%B1%85%EC%9D%B4-%EB%AC%B8%EB%B2%95/)
-- [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
-<!-- /RELATED-POSTS -->
