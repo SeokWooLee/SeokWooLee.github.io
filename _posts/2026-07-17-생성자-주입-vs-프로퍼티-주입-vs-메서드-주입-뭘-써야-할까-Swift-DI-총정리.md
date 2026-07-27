@@ -4,14 +4,14 @@ description: "Swift로 iOS 앱을 만들다 보면 꼭 마주치는 고민이 �
 header:
   og_image: /assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/1.png
 tags:
+  - SwiftDI
   - 의존성주입
   - 생성자주입
-  - Swift
-  - iOS개발
+  - 프로퍼티주입
 permalink: /생성자-주입-vs-프로퍼티-주입-vs-메서드-주입-뭘-써야-할까-Swift-DI-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-17
+last_modified_at: 2026-07-27
 ---
 
 Swift로 iOS 앱을 만들다 보면 꼭 마주치는 고민이 있어요.
@@ -86,12 +86,12 @@ A가 B를, B가 A를 서로 참조하면 프로퍼티 주입은 앱이 실행될
 생성자 주입은 객체를 만드는 시점에 바로 문제가 드러나서(설계가 꼬였다면 아예 컴파일이 안 돼서) 문제를 훨씬 빨리 잡을 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/4-1783847681137.png" alt="순환 참조, 터지는 타이밍부터가 다릅니다">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/4-1783847681137.png" alt="순환 참조, 터지는 타이밍부터가 다릅니다" loading="lazy">
   <figcaption>순환 참조, 터지는 타이밍부터가 다릅니다</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/2.png" alt="필드 주입만 쓰던 시절엔 테스트 짤 때마다 애먹었어요">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/2.png" alt="필드 주입만 쓰던 시절엔 테스트 짤 때마다 애먹었어요" loading="lazy">
   <figcaption>필드 주입만 쓰던 시절엔 테스트 짤 때마다 애먹었어요</figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ A가 B를, B가 A를 서로 참조하면 프로퍼티 주입은 앱이 실행될
 아니요. 화면 몇 개 규모라면 `init`으로 직접 넘기는 순수 생성자 주입만으로 충분합니다.
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/3.png" alt="고민될 땐 이 순서대로 골라보시면 편합니다">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/3.png" alt="고민될 땐 이 순서대로 골라보시면 편합니다" loading="lazy">
   <figcaption>고민될 땐 이 순서대로 골라보시면 편합니다</figcaption>
 </figure>
 
@@ -159,11 +159,3 @@ A가 B를, B가 A를 서로 참조하면 프로퍼티 주입은 앱이 실행될
 처음엔 프로퍼티 주입의 간편함에 끌리기 쉽지만, 테스트를 짜고 협업을 하다 보면 생성자 주입의 장점이 왜 그렇게 강조되는지 몸으로 체감하게 됩니다.
 
 고민되신다면 일단 생성자 주입으로 시작해 보세요. 나중에 코드가 커질수록 고마워질 선택입니다.
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [Swift 싱글톤 패턴, shared가 안티패턴 소리 듣는 진짜 이유](/Swift-%EC%8B%B1%EA%B8%80%ED%86%A4-%ED%8C%A8%ED%84%B4-shared%EA%B0%80-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4-%EC%86%8C%EB%A6%AC-%EB%93%A3%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
-- [iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유](/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
-- [의존성 주입(DI)이란? new를 클래스 밖으로 꺼내는 것부터 (예제·비유 총정리)](/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85DI%EC%9D%B4%EB%9E%80-new%EB%A5%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EA%BA%BC%EB%82%B4%EB%8A%94-%EA%B2%83%EB%B6%80%ED%84%B0-%EC%98%88%EC%A0%9C%EB%B9%84%EC%9C%A0-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-<!-- /RELATED-POSTS -->
