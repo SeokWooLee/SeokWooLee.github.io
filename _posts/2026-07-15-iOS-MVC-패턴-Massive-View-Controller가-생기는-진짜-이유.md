@@ -1,5 +1,5 @@
 ---
-title: "iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유"
+title: "[iOS 아키텍처 #1] iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유"
 description: "iOS 개발을 하다 보면 한 번쯤 듣게 되는 농담이 있습니다."
 header:
   og_image: /assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/1.png
@@ -11,7 +11,7 @@ tags:
 permalink: /iOS-MVC-패턴-Massive-View-Controller가-생기는-진짜-이유/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-15
+last_modified_at: 2026-07-27
 ---
 
 iOS 개발을 하다 보면 한 번쯤 듣게 되는 농담이 있습니다.
@@ -58,7 +58,7 @@ Apple MVC의 Controller는 iOS에서 UIViewController로 구현됩니다. 그런
 여기까지는 그래도 뷰 관련 일입니다. 문제는 "그럼 네트워크 요청은 어디에 쓰지?", "화면 전환은?", "데이터 포매팅은?"이라는 질문에 마땅한 답이 없다는 거예요. Model도 View도 아니니, 결국 전부 뷰컨트롤러로 들어갑니다.
 
 <figure>
-  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/2.png" alt="이름부터 View+Controller, 혼자서 다 하는 게 기본값이에요">
+  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/2.png" alt="이름부터 View+Controller, 혼자서 다 하는 게 기본값이에요" loading="lazy">
   <figcaption>이름부터 View+Controller, 혼자서 다 하는 게 기본값이에요</figcaption>
 </figure>
 
@@ -113,7 +113,7 @@ final class ProfileViewController: UIViewController {
 그리고 "화면에 보여줄 상태를 만드는 로직"까지 분리하고 싶어지는 순간이 옵니다. 그 답이 바로 다음 편에서 다룰 **MVVM**입니다. ViewModel이라는 객체가 왜 필요한지, 그리고 바인딩이 없으면 왜 반쪽짜리인지 이어서 정리해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/3.png" alt="떼어낼 수 있는 책임부터 의식적으로 분리하는 게 시작입니다">
+  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/3.png" alt="떼어낼 수 있는 책임부터 의식적으로 분리하는 게 시작입니다" loading="lazy">
   <figcaption>떼어낼 수 있는 책임부터 의식적으로 분리하는 게 시작입니다</figcaption>
 </figure>
 
@@ -129,7 +129,6 @@ final class ProfileViewController: UIViewController {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [SwiftUI에 ViewModel이 필요 없다? MV 패턴 논쟁 총정리](/SwiftUI%EC%97%90-ViewModel%EC%9D%B4-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-MV-%ED%8C%A8%ED%84%B4-%EB%85%BC%EC%9F%81-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [생성자 주입 vs 프로퍼티 주입 vs 메서드 주입, 뭘 써야 할까 (Swift DI 총정리)](/%EC%83%9D%EC%84%B1%EC%9E%90-%EC%A3%BC%EC%9E%85-vs-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EC%A3%BC%EC%9E%85-vs-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%A3%BC%EC%9E%85-%EB%AD%98-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C-Swift-DI-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[iOS 아키텍처 #5] iOS VIPER 아키텍처, 대형 앱들이 도입했다 떠난 이유 (RIBs까지)](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-5-iOS-VIPER-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EB%8C%80%ED%98%95-%EC%95%B1%EB%93%A4%EC%9D%B4-%EB%8F%84%EC%9E%85%ED%96%88%EB%8B%A4-%EB%96%A0%EB%82%9C-%EC%9D%B4%EC%9C%A0-RIBs%EA%B9%8C%EC%A7%80/)
+- [iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)](/iOS-MVVM-%ED%8C%A8%ED%84%B4-%EB%B0%94%EC%9D%B8%EB%94%A9-%EC%97%86%EC%9C%BC%EB%A9%B4-%EB%B0%98%EC%AA%BD%EC%9D%B8-%EC%9D%B4%EC%9C%A0-CombineObservation-%EC%98%88%EC%A0%9C/)
 <!-- /RELATED-POSTS -->
