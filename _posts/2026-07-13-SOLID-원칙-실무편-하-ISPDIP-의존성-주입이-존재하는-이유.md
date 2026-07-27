@@ -1,17 +1,17 @@
 ---
-title: "SOLID 원칙 실무편 (하) ISP·DIP, 의존성 주입이 존재하는 이유"
+title: "[SOLID #2] SOLID 원칙 실무편 (하) ISP·DIP, 의존성 주입이 존재하는 이유"
 description: "지난 편에서 SOLID의 앞 세 글자, SRP·OCP·LSP를 다뤘는데요. 오늘은 나머지 두 글자를 마저 정리합니다."
 header:
   og_image: /assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/1.png
 tags:
   - SOLID원칙
+  - ISP
+  - DIP
   - 의존성주입
-  - 객체지향
-  - 스프링
 permalink: /SOLID-원칙-실무편-하-ISPDIP-의존성-주입이-존재하는-이유/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 지난 편에서 SOLID의 앞 세 글자, SRP·OCP·LSP를 다뤘는데요. 오늘은 나머지 두 글자를 마저 정리합니다.
@@ -122,12 +122,12 @@ class FakeSender: NotificationSender { ... }  // 테스트용
 원래는 "주문 서비스 → SendGrid"로 향하던 의존성이, 이제 "주문 서비스 → 프로토콜 ← SendGrid"가 됐어요. 세부사항이 도메인을 향해 고개를 숙이는 모양새라 '역전'이라고 부릅니다.
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/4-1783847948960.png" alt="화살표 방향이 뒤집히는 지점이 DIP의 전부예요">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/4-1783847948960.png" alt="화살표 방향이 뒤집히는 지점이 DIP의 전부예요" loading="lazy">
   <figcaption>화살표 방향이 뒤집히는 지점이 DIP의 전부예요</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/2.png" alt="화살표 방향이 바뀌는 게 '역전'의 정체예요">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/2.png" alt="화살표 방향이 바뀌는 게 '역전'의 정체예요" loading="lazy">
   <figcaption>화살표 방향이 바뀌는 게 '역전'의 정체예요</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ class FakeSender: NotificationSender { ... }  // 테스트용
 DIP는 원칙(방향)이고, DI는 그걸 실현하는 기법(도구)입니다. 이 구분만 잡아도 면접 답변이 한 급 올라가요.
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/3.png" alt="구현체는 꽂았다 뺐다, 조립은 프레임워크 몫입니다">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/3.png" alt="구현체는 꽂았다 뺐다, 조립은 프레임워크 몫입니다" loading="lazy">
   <figcaption>구현체는 꽂았다 뺐다, 조립은 프레임워크 몫입니다</figcaption>
 </figure>
 
@@ -163,11 +163,3 @@ DIP는 원칙(방향)이고, DI는 그걸 실현하는 기법(도구)입니다. 
 다섯 개 전부 결국 한 방향을 가리킵니다. 변경의 파급 범위를 줄여라.
 
 다만 이 원칙들을 모든 코드에 기계적으로 적용하면 오히려 KISS와 YAGNI를 깨게 됩니다. 원칙은 변경이 실제로 자주 일어나는 곳에 골라서 쓰는 도구예요. 이 균형 감각이 진짜 실력이라고 생각합니다.
-
-<!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
-
-- [디미터의 법칙, 메서드 체이닝이 나쁜 코드가 되는 순간 (기준·예시)](/%EB%94%94%EB%AF%B8%ED%84%B0%EC%9D%98-%EB%B2%95%EC%B9%99-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%B2%B4%EC%9D%B4%EB%8B%9D%EC%9D%B4-%EB%82%98%EC%81%9C-%EC%BD%94%EB%93%9C%EA%B0%80-%EB%90%98%EB%8A%94-%EC%88%9C%EA%B0%84-%EA%B8%B0%EC%A4%80%EC%98%88%EC%8B%9C/)
-- [결합도와 응집도, 소프트웨어 설계의 뿌리 (개념·예시 총정리)](/%EA%B2%B0%ED%95%A9%EB%8F%84%EC%99%80-%EC%9D%91%EC%A7%91%EB%8F%84-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%84%A4%EA%B3%84%EC%9D%98-%EB%BF%8C%EB%A6%AC-%EA%B0%9C%EB%85%90%EC%98%88%EC%8B%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [의존성 주입(DI)이란? new를 클래스 밖으로 꺼내는 것부터 (예제·비유 총정리)](/%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85DI%EC%9D%B4%EB%9E%80-new%EB%A5%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%B0%96%EC%9C%BC%EB%A1%9C-%EA%BA%BC%EB%82%B4%EB%8A%94-%EA%B2%83%EB%B6%80%ED%84%B0-%EC%98%88%EC%A0%9C%EB%B9%84%EC%9C%A0-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-<!-- /RELATED-POSTS -->
