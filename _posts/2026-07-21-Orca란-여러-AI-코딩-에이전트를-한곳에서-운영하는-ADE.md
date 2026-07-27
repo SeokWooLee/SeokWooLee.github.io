@@ -11,7 +11,7 @@ tags:
 permalink: /Orca란-여러-AI-코딩-에이전트를-한곳에서-운영하는-ADE/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-21
+last_modified_at: 2026-07-27
 ---
 
 여러 AI 코딩 에이전트를 쓰다 보면 코드를 작성하는 시간보다 “누가 어느 브랜치에서 무엇을 하고 있는지” 확인하는 시간이 더 길어질 때가 있습니다. 터미널을 여러 개 띄우고, 브랜치를 바꾸고, 변경 사항을 비교하다 보면 병렬 작업의 장점도 금세 흐려집니다.
@@ -74,7 +74,7 @@ Orca는 [Git worktree](https://www.onorca.dev/docs/model/worktrees)를 작업 �
 
 Orca 안에서 GitHub PR과 이슈를 열고, 해당 작업에서 바로 worktree를 만든 뒤 에이전트에게 리뷰를 맡길 수 있습니다. 다음 영상은 Orca 공식 X 계정이 공개한 **AI를 이용한 PR 검토 흐름**입니다.
 
-<video controls src="/generated/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/videos/orca-ai-pr-review-workflow.mp4" data-title="Orca에서 AI로 PR 리뷰하는 방법"></video>
+<video controls src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/videos/orca-ai-pr-review-workflow.mp4" data-title="Orca에서 AI로 PR 리뷰하는 방법"></video>
 
 원본 영상은 [Orca 공식 X 게시물](https://x.com/orca_build/status/2048192633688997940)에서도 볼 수 있습니다.
 
