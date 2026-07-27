@@ -11,12 +11,12 @@ tags:
 permalink: /모듈화-4-iOS-모듈화-SPM으로-시작하기-로컬-패키지staticdynamic-총정리/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-23
+last_modified_at: 2026-07-27
 ---
 
 앞선 모듈화 시리즈에서 경계·의존 방향·레이어 구조까지 원론을 정리했습니다. 이제 iOS 프로젝트에 실제로 적용할 차례입니다.
 
-iOS에서 모듈을 나누는 도구는 사실상 두 가지입니다. Xcode 프레임워크 타깃, 그리고 Swift Package(SPM).
+iOS에서 모듈을 나누는 도구는 사실상 두 가지입니다. Xcode 프레임워크 타깃, 그리고 Swift Package(SPM, Swift Package Manager).
 
 결론부터 드리면, 2026년 기준 새로 시작하는 모듈화라면 SPM이 기본 선택지입니다. 프로젝트 파일(pbxproj) 충돌 없이 폴더와 Package.swift만으로 모듈이 만들어지거든요.
 
