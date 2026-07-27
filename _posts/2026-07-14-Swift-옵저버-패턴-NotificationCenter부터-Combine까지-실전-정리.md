@@ -141,7 +141,7 @@ map, filter 같은 연산자로 값을 가공하고 여러 이벤트를 합치�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 어댑터 패턴, 레거시 API를 프로토콜로 감싸는 법 (실전 예제)](/Swift-%EC%96%B4%EB%8C%91%ED%84%B0-%ED%8C%A8%ED%84%B4-%EB%A0%88%EA%B1%B0%EC%8B%9C-API%EB%A5%BC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EB%A1%9C-%EA%B0%90%EC%8B%B8%EB%8A%94-%EB%B2%95-%EC%8B%A4%EC%A0%84-%EC%98%88%EC%A0%9C/)
 - [Swift 팩토리 메서드 패턴, init 대신 쓰는 이유 (실전 정리)](/Swift-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4-init-%EB%8C%80%EC%8B%A0-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 프로토타입 패턴 완벽 정리 (NSCopying vs 값 타입 복사 차이)](/Swift-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-NSCopying-vs-%EA%B0%92-%ED%83%80%EC%9E%85-%EB%B3%B5%EC%82%AC-%EC%B0%A8%EC%9D%B4/)
+- [Swift Pub-Sub 패턴, 옵저버 패턴과 뭐가 다를까 (이벤트 버스 총정리)](/Swift-Pub-Sub-%ED%8C%A8%ED%84%B4-%EC%98%B5%EC%A0%80%EB%B2%84-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%B2%84%EC%8A%A4-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
