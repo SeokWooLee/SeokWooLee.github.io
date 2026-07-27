@@ -7,13 +7,13 @@ categories:
   - iOS
 tags:
   - ObjectiveC
+  - nil
   - iOS개발
-  - 프로그래밍
-  - 런타임
+  - NullPointerException
 permalink: /Objective-C-nil/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-13
+last_modified_at: 2026-07-27
 ---
 
 iOS를 처음 만지는 개발자를 제일 당황하게 하는 게 있어요.
@@ -48,7 +48,7 @@ Java나 C++에서는 nil(널) 객체에 뭔가를 시키면 바로 앱이 죽잖
 그런데 이 `objc_msgSend` 함수는 맨 처음에 받는 객체가 nil인지 아닌지를 확인합니다.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/4-1783847973933.png" alt="objc_msgSend가 nil을 조용히 삼키는 지점">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/4-1783847973933.png" alt="objc_msgSend가 nil을 조용히 삼키는 지점" loading="lazy">
   <figcaption>objc_msgSend가 nil을 조용히 삼키는 지점</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ Java는 null 참조에 접근하는 순간 "그런 객체 없는데?" 하면서 
 크래시라도 나면 금방 찾을 텐데, 조용히 넘어가니 원인 추적이 더 오래 걸리죠.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.png" alt="직접 돌려보면 정말 안 죽는지 금방 확인됩니다">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.png" alt="직접 돌려보면 정말 안 죽는지 금방 확인됩니다" loading="lazy">
   <figcaption>직접 돌려보면 정말 안 죽는지 금방 확인됩니다</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ nil일 수 있는 값은 반드시 물음표를 붙여 표시하고 풀어서 �
 말하자면 Objective-C의 "조용히 넘어가기"를 Swift는 "미리 드러내기"로 바꾼 셈이에요.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/3.png" alt="Swift와 나란히 보면 설계 철학 차이가 보여요">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/3.png" alt="Swift와 나란히 보면 설계 철학 차이가 보여요" loading="lazy">
   <figcaption>Swift와 나란히 보면 설계 철학 차이가 보여요</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ Objective-C가 nil 메시지에 안 죽는 건 버그가 아니라 철학입니�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [코더 vs 소프트웨어 엔지니어, 진짜 뭐가 다를까? (연봉·역할 총정리)](/Coder-vs.-Software-Engineer/)
-- [Objective-C id 타입 완전정복 (동적 타이핑·덕 타이핑 총정리)](/Objective-C-id-%ED%83%80%EC%9E%85-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%8F%99%EC%A0%81-%ED%83%80%EC%9D%B4%ED%95%91%EB%8D%95-%ED%83%80%EC%9D%B4%ED%95%91-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [테스트 코드 왜 짜야 할까? 귀찮은데도 짜는 진짜 이유 (실무 정리)](/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%99%9C-%EC%A7%9C%EC%95%BC-%ED%95%A0%EA%B9%8C-%EA%B7%80%EC%B0%AE%EC%9D%80%EB%8D%B0%EB%8F%84-%EC%A7%9C%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0-%EC%8B%A4%EB%AC%B4-%EC%A0%95%EB%A6%AC/)
+- [objc_msgSend 완벽 정리, Objective-C 메서드 호출이 함수 호출이 아닌 이유](/objcmsgSend-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-Objective-C-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%98%B8%EC%B6%9C%EC%9D%B4-%ED%95%A8%EC%88%98-%ED%98%B8%EC%B6%9C%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
+- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
+- [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
