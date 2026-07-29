@@ -161,4 +161,5 @@ func greeting() -> String {
 ## 함께 보면 좋은 글
 
 - [Swift 빌더 패턴(Builder Pattern)으로 매개변수 8개 초기화 지옥 탈출하기](/Swift-%EB%B9%8C%EB%8D%94-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-8%EA%B0%9C-%EC%B4%88%EA%B8%B0%ED%99%94-%EC%A7%80%EC%98%A5-%ED%83%88%EC%B6%9C%ED%95%98%EA%B8%B0-%EC%8B%A4%EC%A0%84-%EC%98%88%EC%A0%9C/)
+- [[Swift 철학 #2] print 한 줄로 시작하는 언어의 비밀, Swift Progressive Disclosure](/Swift-%EC%B2%A0%ED%95%99-2-print-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B9%84%EB%B0%80-Swift-Progressive-Disclosure/)
 <!-- /RELATED-POSTS -->

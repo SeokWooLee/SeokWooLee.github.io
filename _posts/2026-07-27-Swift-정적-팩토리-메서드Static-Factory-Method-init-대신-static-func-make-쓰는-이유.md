@@ -151,7 +151,7 @@ enum ShapeFactory {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[Swift 기초 #1] Swift 옵셔널(Optional)의 정체, 사실은 enum입니다 (언래핑 5종 실무 기준까지)](/Swift-%EC%98%B5%EC%85%94%EB%84%90%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%82%AC%EC%8B%A4%EC%9D%80-enum%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%B8%EB%9E%98%ED%95%91-5%EC%A2%85-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80%EA%B9%8C%EC%A7%80/)
 - [[Swift 기초 #2] Swift 클로저(Closure) 완전 정리, 캡처·[weak self]·@escaping이 한 몸인 이유](/Swift-%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EC%BA%A1%EC%B2%98weak-selfescaping%EC%9D%B4-%ED%95%9C-%EB%AA%B8%EC%9D%B8-%EC%9D%B4%EC%9C%A0/)
 - [[Swift 철학 #1] Swift는 왜 이렇게 깐깐할까? Safe·Fast·Expressive 3대 철학 총정리](/Swift-%EC%B2%A0%ED%95%99-1-Swift%EB%8A%94-%EC%99%9C-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EA%B9%90%EA%B9%90%ED%95%A0%EA%B9%8C-SafeFastExpressive-3%EB%8C%80-%EC%B2%A0%ED%95%99-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [[Swift 철학 #2] print 한 줄로 시작하는 언어의 비밀, Swift Progressive Disclosure](/Swift-%EC%B2%A0%ED%95%99-2-print-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B9%84%EB%B0%80-Swift-Progressive-Disclosure/)
 <!-- /RELATED-POSTS -->

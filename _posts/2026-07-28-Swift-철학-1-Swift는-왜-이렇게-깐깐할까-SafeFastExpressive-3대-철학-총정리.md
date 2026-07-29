@@ -146,7 +146,7 @@ let upper = names.map { $0.uppercased() }
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[Swift 기초 #1] Swift 옵셔널(Optional)의 정체, 사실은 enum입니다 (언래핑 5종 실무 기준까지)](/Swift-%EC%98%B5%EC%85%94%EB%84%90%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%82%AC%EC%8B%A4%EC%9D%80-enum%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%B8%EB%9E%98%ED%95%91-5%EC%A2%85-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80%EA%B9%8C%EC%A7%80/)
 - [Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유](/Swift-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9CStatic-Factory-Method-init-%EB%8C%80%EC%8B%A0-static-func-make-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
 - [iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법](/iOS-Coordinator-%ED%8C%A8%ED%84%B4-%ED%99%94%EB%A9%B4-%EC%A0%84%ED%99%98-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B7%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%97%90%EC%84%9C-%EB%96%BC%EC%96%B4%EB%82%B4%EB%8A%94-%EB%B2%95/)
+- [[Swift 철학 #2] print 한 줄로 시작하는 언어의 비밀, Swift Progressive Disclosure](/Swift-%EC%B2%A0%ED%95%99-2-print-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B9%84%EB%B0%80-Swift-Progressive-Disclosure/)
 <!-- /RELATED-POSTS -->
