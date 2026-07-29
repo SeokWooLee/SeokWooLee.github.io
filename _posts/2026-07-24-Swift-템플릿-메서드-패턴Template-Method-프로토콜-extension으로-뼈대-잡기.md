@@ -159,7 +159,7 @@ UIKit처럼 클래스 계층이 이미 깔린 곳에선 상속 override가 자�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 모노스테이트 패턴(Monostate Pattern), 싱글톤의 대안이 될 수 있을까](/Swift-%EB%AA%A8%EB%85%B8%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%8B%B1%EA%B8%80%ED%86%A4%EC%9D%98-%EB%8C%80%EC%95%88%EC%9D%B4-%EB%90%A0-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC/)
 - [Swift 미들웨어 패턴(Middleware Pattern), 데코레이터와 책임 연쇄 실전 조합](/Swift-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-%ED%8C%A8%ED%84%B4Middleware-Pattern-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0%EC%99%80-%EC%B1%85%EC%9E%84-%EC%97%B0%EC%87%84-%EC%8B%A4%EC%A0%84-%EC%A1%B0%ED%95%A9/)
 - [Swift Copy-on-Write, 값 타입이 프로토타입 패턴을 대체하는 방식 (개념 정리)](/Swift-Copy-on-Write-%EA%B0%92-%ED%83%80%EC%9E%85%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4%EC%9D%84-%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC/)
+- [Swift 오브젝트 풀 패턴(Object Pool Pattern) 완전정리 (플라이웨이트와 차이·재사용법)](/Swift-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%ED%92%80-%ED%8C%A8%ED%84%B4Object-Pool-Pattern-%EC%99%84%EC%A0%84%EC%A0%95%EB%A6%AC-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8%EC%99%80-%EC%B0%A8%EC%9D%B4%EC%9E%AC%EC%82%AC%EC%9A%A9%EB%B2%95/)
 <!-- /RELATED-POSTS -->
