@@ -151,7 +151,7 @@ enum ShapeFactory {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[Swift 철학 #1] Swift는 왜 이렇게 깐깐할까? Safe·Fast·Expressive 3대 철학 총정리](/Swift-%EC%B2%A0%ED%95%99-1-Swift%EB%8A%94-%EC%99%9C-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EA%B9%90%EA%B9%90%ED%95%A0%EA%B9%8C-SafeFastExpressive-3%EB%8C%80-%EC%B2%A0%ED%95%99-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[Swift 철학 #2] print 한 줄로 시작하는 언어의 비밀, Swift Progressive Disclosure](/Swift-%EC%B2%A0%ED%95%99-2-print-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B9%84%EB%B0%80-Swift-Progressive-Disclosure/)
 - [Swift Copy-on-Write, 값 타입이 프로토타입 패턴을 대체하는 방식 (개념 정리)](/Swift-Copy-on-Write-%EA%B0%92-%ED%83%80%EC%9E%85%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4%EC%9D%84-%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC/)
+- [Swift enum 상태 기계(FSM) 만들기, 스테이트 패턴 없이 상태 관리하는 법](/Swift-enum-%EC%83%81%ED%83%9C-%EA%B8%B0%EA%B3%84FSM-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EC%97%86%EC%9D%B4-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->
