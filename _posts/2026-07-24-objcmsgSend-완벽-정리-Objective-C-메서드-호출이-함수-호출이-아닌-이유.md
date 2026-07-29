@@ -137,7 +137,7 @@ Objective-C 레거시 코드를 만질 일이 없더라도, UIKit 아래에서 �
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)](/Objective-C-%EB%8C%80%EA%B4%84%ED%98%B8-%EB%AC%B8%EB%B2%95/)
 - [Objective-C nil vs Java null 비교, 왜 다르게 동작할까](/Objective-C-nil/)
 - [Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리](/Objective-C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%97%AD%EC%82%AC-MRC%EC%97%90%EC%84%9C-ARC%EA%B9%8C%EC%A7%80-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [Objective-C 메시지 포워딩 3단계, unrecognized selector 크래시 전 마지막 세 번의 기회](/Objective-C-%EB%A9%94%EC%8B%9C%EC%A7%80-%ED%8F%AC%EC%9B%8C%EB%94%A9-3%EB%8B%A8%EA%B3%84-unrecognized-selector-%ED%81%AC%EB%9E%98%EC%8B%9C-%EC%A0%84-%EB%A7%88%EC%A7%80%EB%A7%89-%EC%84%B8-%EB%B2%88%EC%9D%98-%EA%B8%B0%ED%9A%8C/)
 <!-- /RELATED-POSTS -->
