@@ -11,7 +11,7 @@ tags:
 permalink: /Agentation에이젠테이션-사용법-이-버튼-말고-저-버튼-설명-없이-AI에게-웹-디자인-수정-시키기/
 toc: true
 toc_sticky: true
-last_modified_at: 2026-07-29
+last_modified_at: 2026-07-30
 ---
 
 <figure>
