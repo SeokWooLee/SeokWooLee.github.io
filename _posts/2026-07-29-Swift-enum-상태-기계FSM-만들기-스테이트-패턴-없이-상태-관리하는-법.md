@@ -158,7 +158,7 @@ mutating func fetch() {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift Copy-on-Write, 값 타입이 프로토타입 패턴을 대체하는 방식 (개념 정리)](/Swift-Copy-on-Write-%EA%B0%92-%ED%83%80%EC%9E%85%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%ED%8C%A8%ED%84%B4%EC%9D%84-%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC/)
 - [Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유](/Swift-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9CStatic-Factory-Method-init-%EB%8C%80%EC%8B%A0-static-func-make-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
 - [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+- [Swift Service Locator 패턴, DI의 대안일까 안티패턴일까 (실무 정리)](/Swift-Service-Locator-%ED%8C%A8%ED%84%B4-DI%EC%9D%98-%EB%8C%80%EC%95%88%EC%9D%BC%EA%B9%8C-%EC%95%88%ED%8B%B0%ED%8C%A8%ED%84%B4%EC%9D%BC%EA%B9%8C-%EC%8B%A4%EB%AC%B4-%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
