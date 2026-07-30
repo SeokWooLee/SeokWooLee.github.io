@@ -146,7 +146,7 @@ let upper = names.map { $0.uppercased() }
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법](/iOS-Coordinator-%ED%8C%A8%ED%84%B4-%ED%99%94%EB%A9%B4-%EC%A0%84%ED%99%98-%EC%BD%94%EB%93%9C%EB%A5%BC-%EB%B7%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EC%97%90%EC%84%9C-%EB%96%BC%EC%96%B4%EB%82%B4%EB%8A%94-%EB%B2%95/)
 - [[Swift 철학 #2] print 한 줄로 시작하는 언어의 비밀, Swift Progressive Disclosure](/Swift-%EC%B2%A0%ED%95%99-2-print-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B9%84%EB%B0%80-Swift-Progressive-Disclosure/)
 - [[Swift 철학 #3] Swift는 왜 전부 struct일까? 값 타입 우선주의 총정리](/Swift-%EC%B2%A0%ED%95%99-3-Swift%EB%8A%94-%EC%99%9C-%EC%A0%84%EB%B6%80-struct%EC%9D%BC%EA%B9%8C-%EA%B0%92-%ED%83%80%EC%9E%85-%EC%9A%B0%EC%84%A0%EC%A3%BC%EC%9D%98-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [[Swift 철학 #4] SE-0296이 뭐길래? Swift 문법이 태어나는 절차, Swift Evolution 총정리](/Swift-%EC%B2%A0%ED%95%99-4-SE-0296%EC%9D%B4-%EB%AD%90%EA%B8%B8%EB%9E%98-Swift-%EB%AC%B8%EB%B2%95%EC%9D%B4-%ED%83%9C%EC%96%B4%EB%82%98%EB%8A%94-%EC%A0%88%EC%B0%A8-Swift-Evolution-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->

@@ -175,7 +175,7 @@ Swift 팀도 이 긴장을 인지하고 있습니다. Swift 6.1 이후의 여러
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유](/Swift-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9CStatic-Factory-Method-init-%EB%8C%80%EC%8B%A0-static-func-make-%EC%93%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
 - [Swift resultBuilder 완전정복, 빌더 패턴이 언어로 진화한 이유](/Swift-resultBuilder-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5-%EB%B9%8C%EB%8D%94-%ED%8C%A8%ED%84%B4%EC%9D%B4-%EC%96%B8%EC%96%B4%EB%A1%9C-%EC%A7%84%ED%99%94%ED%95%9C-%EC%9D%B4%EC%9C%A0/)
 - [[Swift 철학 #3] Swift는 왜 전부 struct일까? 값 타입 우선주의 총정리](/Swift-%EC%B2%A0%ED%95%99-3-Swift%EB%8A%94-%EC%99%9C-%EC%A0%84%EB%B6%80-struct%EC%9D%BC%EA%B9%8C-%EA%B0%92-%ED%83%80%EC%9E%85-%EC%9A%B0%EC%84%A0%EC%A3%BC%EC%9D%98-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
+- [[Swift 철학 #4] SE-0296이 뭐길래? Swift 문법이 태어나는 절차, Swift Evolution 총정리](/Swift-%EC%B2%A0%ED%95%99-4-SE-0296%EC%9D%B4-%EB%AD%90%EA%B8%B8%EB%9E%98-Swift-%EB%AC%B8%EB%B2%95%EC%9D%B4-%ED%83%9C%EC%96%B4%EB%82%98%EB%8A%94-%EC%A0%88%EC%B0%A8-Swift-Evolution-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
