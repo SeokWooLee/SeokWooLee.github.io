@@ -159,7 +159,7 @@ func buildChain(_ middlewares: [Middleware],
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
 - [Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기](/Swift-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4Template-Method-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension%EC%9C%BC%EB%A1%9C-%EB%BC%88%EB%8C%80-%EC%9E%A1%EA%B8%B0/)
 - [Swift 오브젝트 풀 패턴(Object Pool Pattern) 완전정리 (플라이웨이트와 차이·재사용법)](/Swift-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%ED%92%80-%ED%8C%A8%ED%84%B4Object-Pool-Pattern-%EC%99%84%EC%A0%84%EC%A0%95%EB%A6%AC-%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%9B%A8%EC%9D%B4%ED%8A%B8%EC%99%80-%EC%B0%A8%EC%9D%B4%EC%9E%AC%EC%82%AC%EC%9A%A9%EB%B2%95/)
+- [어댑터 vs 퍼사드 vs 프록시 vs 데코레이터(Adapter·Facade·Proxy·Decorator), 래핑 패턴 4형제 완벽 구분법](/%EC%96%B4%EB%8C%91%ED%84%B0-vs-%ED%8D%BC%EC%82%AC%EB%93%9C-vs-%ED%94%84%EB%A1%9D%EC%8B%9C-vs-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0AdapterFacadeProxyDecorator-%EB%9E%98%ED%95%91-%ED%8C%A8%ED%84%B4-4%ED%98%95%EC%A0%9C-%EC%99%84%EB%B2%BD-%EA%B5%AC%EB%B6%84%EB%B2%95/)
 <!-- /RELATED-POSTS -->
