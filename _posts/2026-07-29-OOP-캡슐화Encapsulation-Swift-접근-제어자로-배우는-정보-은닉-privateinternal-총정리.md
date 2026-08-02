@@ -202,3 +202,9 @@ print(board.score)   // 읽기는 자유
 접근 제어자는 문법 몇 개라 외우면 끝처럼 보이지만 사실 "이 값을 누가 건드려도 되는가"를 설계하는 사고 훈련이에요.
 
 오늘 본 계좌 예제 하나만 직접 타이핑해보셔도 감이 확 올 거예요. 작은 프로젝트에서 `private`부터 붙여보시길 추천드려요!
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [OOP 추상화(Abstraction)와 캡슐화(Encapsulation), 매번 헷갈렸다면 이 글로 끝내세요](/OOP-%EC%B6%94%EC%83%81%ED%99%94Abstraction%EC%99%80-%EC%BA%A1%EC%8A%90%ED%99%94Encapsulation-%EB%A7%A4%EB%B2%88-%ED%97%B7%EA%B0%88%EB%A0%B8%EB%8B%A4%EB%A9%B4-%EC%9D%B4-%EA%B8%80%EB%A1%9C-%EB%81%9D%EB%82%B4%EC%84%B8%EC%9A%94/)
+<!-- /RELATED-POSTS -->
