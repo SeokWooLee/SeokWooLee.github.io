@@ -84,4 +84,5 @@ LLM의 지식은 학습을 마친 시점에서 멈춥니다. 이 시점을 지�
 ## 함께 보면 좋은 글
 
 - [[AI 사용설명서 #2] AI는 왜 그럴싸한 거짓말을 할까, 환각(Hallucination) 구별법과 대처법](/AI-%EC%82%AC%EC%9A%A9%EC%84%A4%EB%AA%85%EC%84%9C-2-AI%EB%8A%94-%EC%99%9C-%EA%B7%B8%EB%9F%B4%EC%8B%B8%ED%95%9C-%EA%B1%B0%EC%A7%93%EB%A7%90%EC%9D%84-%ED%95%A0%EA%B9%8C-%ED%99%98%EA%B0%81Hallucination-%EA%B5%AC%EB%B3%84%EB%B2%95%EA%B3%BC-%EB%8C%80%EC%B2%98%EB%B2%95/)
+- [[AI 사용설명서 #5] 대화가 길어지면 AI가 헤매는 이유, 새 채팅은 언제 열어야 할까](/AI-%EC%82%AC%EC%9A%A9%EC%84%A4%EB%AA%85%EC%84%9C-5-%EB%8C%80%ED%99%94%EA%B0%80-%EA%B8%B8%EC%96%B4%EC%A7%80%EB%A9%B4-AI%EA%B0%80-%ED%97%A4%EB%A7%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%83%88-%EC%B1%84%ED%8C%85%EC%9D%80-%EC%96%B8%EC%A0%9C-%EC%97%B4%EC%96%B4%EC%95%BC-%ED%95%A0%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
