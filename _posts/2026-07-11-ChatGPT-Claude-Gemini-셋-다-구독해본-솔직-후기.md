@@ -170,4 +170,5 @@ AI 선택에 정답은 없지만, 오답은 있어요. 남들이 좋다는 것�
 ## 함께 보면 좋은 글
 
 - [Claude vs ChatGPT 전방위 비교, 코딩·이미지·디자인 승자가 다 다릅니다 (2026년 7월)](/Claude-vs-ChatGPT-%EC%A0%84%EB%B0%A9%EC%9C%84-%EB%B9%84%EA%B5%90-%EC%BD%94%EB%94%A9%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8A%B9%EC%9E%90%EA%B0%80-%EB%8B%A4-%EB%8B%A4%EB%A6%85%EB%8B%88%EB%8B%A4-2026%EB%85%84-7%EC%9B%94/)
+- [[AI 사용설명서 #6] ChatGPT·Claude·Gemini 뭘 쓸까, 무료·유료 선택 가이드 (2026)](/AI-%EC%82%AC%EC%9A%A9%EC%84%A4%EB%AA%85%EC%84%9C-6-ChatGPTClaudeGemini-%EB%AD%98-%EC%93%B8%EA%B9%8C-%EB%AC%B4%EB%A3%8C%EC%9C%A0%EB%A3%8C-%EC%84%A0%ED%83%9D-%EA%B0%80%EC%9D%B4%EB%93%9C-2026/)
 <!-- /RELATED-POSTS -->

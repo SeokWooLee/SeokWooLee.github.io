@@ -101,3 +101,9 @@ ChatGPT는 글 자체의 품질보다 주변 기능으로 승부합니다. 검�
   <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/3.png" alt="결국 내 산출물이 코드에 가까운지가 선택 기준이에요" loading="lazy">
   <figcaption>결국 내 산출물이 코드에 가까운지가 선택 기준이에요</figcaption>
 </figure>
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [[AI 사용설명서 #6] ChatGPT·Claude·Gemini 뭘 쓸까, 무료·유료 선택 가이드 (2026)](/AI-%EC%82%AC%EC%9A%A9%EC%84%A4%EB%AA%85%EC%84%9C-6-ChatGPTClaudeGemini-%EB%AD%98-%EC%93%B8%EA%B9%8C-%EB%AC%B4%EB%A3%8C%EC%9C%A0%EB%A3%8C-%EC%84%A0%ED%83%9D-%EA%B0%80%EC%9D%B4%EB%93%9C-2026/)
+<!-- /RELATED-POSTS -->
