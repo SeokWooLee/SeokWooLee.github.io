@@ -105,4 +105,5 @@ VIPER의 다섯 조각을 통째로 쓰는 팀은 줄었지만, **그 다섯 조
 
 - [iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)](/iOS-MVVM-%ED%8C%A8%ED%84%B4-%EB%B0%94%EC%9D%B8%EB%94%A9-%EC%97%86%EC%9C%BC%EB%A9%B4-%EB%B0%98%EC%AA%BD%EC%9D%B8-%EC%9D%B4%EC%9C%A0-CombineObservation-%EC%98%88%EC%A0%9C/)
 - [iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유](/iOS-MVC-%ED%8C%A8%ED%84%B4-Massive-View-Controller%EA%B0%80-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0/)
+- [[iOS 아키텍처 #8] iOS 아키텍처 선택 가이드, 팀 규모·앱 수명·상태 복잡도로 고르는 법](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-8-iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%84%A0%ED%83%9D-%EA%B0%80%EC%9D%B4%EB%93%9C-%ED%8C%80-%EA%B7%9C%EB%AA%A8%EC%95%B1-%EC%88%98%EB%AA%85%EC%83%81%ED%83%9C-%EB%B3%B5%EC%9E%A1%EB%8F%84%EB%A1%9C-%EA%B3%A0%EB%A5%B4%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->
