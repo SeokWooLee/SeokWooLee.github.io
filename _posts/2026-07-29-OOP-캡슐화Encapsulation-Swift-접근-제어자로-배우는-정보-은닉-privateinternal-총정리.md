@@ -207,4 +207,5 @@ print(board.score)   // 읽기는 자유
 ## 함께 보면 좋은 글
 
 - [OOP 추상화(Abstraction)와 캡슐화(Encapsulation), 매번 헷갈렸다면 이 글로 끝내세요](/OOP-%EC%B6%94%EC%83%81%ED%99%94Abstraction%EC%99%80-%EC%BA%A1%EC%8A%90%ED%99%94Encapsulation-%EB%A7%A4%EB%B2%88-%ED%97%B7%EA%B0%88%EB%A0%B8%EB%8B%A4%EB%A9%B4-%EC%9D%B4-%EA%B8%80%EB%A1%9C-%EB%81%9D%EB%82%B4%EC%84%B8%EC%9A%94/)
+- [Swift final 키워드, 클래스에 붙이라는 진짜 이유 (성능·설계 총정리)](/Swift-final-%ED%82%A4%EC%9B%8C%EB%93%9C-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90-%EB%B6%99%EC%9D%B4%EB%9D%BC%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%9D%B4%EC%9C%A0-%EC%84%B1%EB%8A%A5%EC%84%A4%EA%B3%84-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
