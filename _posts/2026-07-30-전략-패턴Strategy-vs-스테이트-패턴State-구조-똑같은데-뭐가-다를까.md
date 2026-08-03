@@ -207,4 +207,5 @@ light.change()
 
 - [디자인 패턴 왜 필요할까, 그리고 왜 맹신하면 안 될까 (실무 기준 정리)](/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%99%9C-%EB%A7%B9%EC%8B%A0%ED%95%98%EB%A9%B4-%EC%95%88-%EB%90%A0%EA%B9%8C-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80-%EC%A0%95%EB%A6%AC/)
 - [Swift 전략 패턴(Strategy Pattern), 프로토콜·클로저로 알고리즘 갈아끼우기](/Swift-%EC%A0%84%EB%9E%B5-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%ED%81%B4%EB%A1%9C%EC%A0%80%EB%A1%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%88%EC%95%84%EB%81%BC%EC%9A%B0%EA%B8%B0/)
+- [전략 vs 템플릿 메서드 vs 커맨드(Strategy·Template Method·Command), 알고리즘 교체 3형제 총정리](/%EC%A0%84%EB%9E%B5-vs-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-vs-%EC%BB%A4%EB%A7%A8%EB%93%9CStrategyTemplate-MethodCommand-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B5%90%EC%B2%B4-3%ED%98%95%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
