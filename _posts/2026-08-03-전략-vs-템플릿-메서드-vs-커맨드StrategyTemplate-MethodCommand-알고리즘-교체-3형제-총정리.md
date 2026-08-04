@@ -187,7 +187,7 @@ button.execute()   // 실행 시점을 내가 정한다
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [전략 패턴(Strategy) vs 스테이트 패턴(State), 구조 똑같은데 뭐가 다를까](/%EC%A0%84%EB%9E%B5-%ED%8C%A8%ED%84%B4Strategy-vs-%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8-%ED%8C%A8%ED%84%B4State-%EA%B5%AC%EC%A1%B0-%EB%98%91%EA%B0%99%EC%9D%80%EB%8D%B0-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
 - [Swift 커맨드 패턴(Command Pattern)으로 실행 취소(undo) 기능 만들기](/Swift-%EC%BB%A4%EB%A7%A8%EB%93%9C-%ED%8C%A8%ED%84%B4%EC%9C%BC%EB%A1%9C-%EC%8B%A4%ED%96%89-%EC%B7%A8%EC%86%8Cundo-%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%BC%88%EB%8C%80-%EC%BD%94%EB%93%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [Swift 전략 패턴(Strategy Pattern), 프로토콜·클로저로 알고리즘 갈아끼우기](/Swift-%EC%A0%84%EB%9E%B5-%ED%8C%A8%ED%84%B4-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%ED%81%B4%EB%A1%9C%EC%A0%80%EB%A1%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%88%EC%95%84%EB%81%BC%EC%9A%B0%EA%B8%B0/)
+- [커맨드(Command) vs 메멘토(Memento), 실행취소(undo) 구현 두 가지 접근 총정리](/%EC%BB%A4%EB%A7%A8%EB%93%9CCommand-vs-%EB%A9%94%EB%A9%98%ED%86%A0Memento-%EC%8B%A4%ED%96%89%EC%B7%A8%EC%86%8Cundo-%EA%B5%AC%ED%98%84-%EB%91%90-%EA%B0%80%EC%A7%80-%EC%A0%91%EA%B7%BC-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
