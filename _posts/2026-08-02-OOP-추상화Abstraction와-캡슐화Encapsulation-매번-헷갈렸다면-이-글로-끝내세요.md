@@ -160,7 +160,7 @@ Q. 캡슐화가 왜 필요한가요?
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [OOP 캡슐화(Encapsulation), Swift 접근 제어자로 배우는 정보 은닉 (private·internal 총정리)](/OOP-%EC%BA%A1%EC%8A%90%ED%99%94Encapsulation-Swift-%EC%A0%91%EA%B7%BC-%EC%A0%9C%EC%96%B4%EC%9E%90%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EC%A0%95%EB%B3%B4-%EC%9D%80%EB%8B%89-privateinternal-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [객체지향 프로그래밍(OOP)이란? 절차지향과 뭐가 다를까](/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DOOP%EC%9D%B4%EB%9E%80-%EC%A0%88%EC%B0%A8%EC%A7%80%ED%96%A5%EA%B3%BC-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
 - [컴포지션(Composition) vs 상속(Inheritance), "상속 쓰지 말라"는 말의 진짜 의미](/%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98-vs-%EC%83%81%EC%86%8D-%EC%83%81%EC%86%8D-%EC%93%B0%EC%A7%80-%EB%A7%90%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%98-%EC%A7%84%EC%A7%9C-%EC%9D%98%EB%AF%B8-%EC%B4%88%EB%B3%B4-%EC%A0%95%EB%A6%AC/)
+- [객체지향의 본질은 메시지, 앨런 케이가 말한 진짜 OOP](/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98-%EB%B3%B8%EC%A7%88%EC%9D%80-%EB%A9%94%EC%8B%9C%EC%A7%80-%EC%95%A8%EB%9F%B0-%EC%BC%80%EC%9D%B4%EA%B0%80-%EB%A7%90%ED%95%9C-%EC%A7%84%EC%A7%9C-OOP/)
 <!-- /RELATED-POSTS -->
