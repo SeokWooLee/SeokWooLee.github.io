@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "ko-KR"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+direction                : # "ltr" (default), "rtl" # set the direction of the page
 title                    : "iOS 개발 블로그"
 title_separator          : "-"
 subtitle                 : "Swift와 iOS, 그리고 소프트웨어 엔지니어링"
@@ -97,6 +97,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
+og_image_alt             : # Alt text for Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -120,6 +121,7 @@ author:
   bio              : "현직 iOS 개발자로 활동하고 있습니다."
   location         : "Korea"
   email            : "mailto:skwu658@gmail.com"
+  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -191,6 +193,8 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  quiet_deps: true
+  silence_deprecations: ['import']
 
 
 # Outputting
@@ -235,6 +239,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+# show_taxonomy: false  # set to false to hide tag/category lists on posts
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
