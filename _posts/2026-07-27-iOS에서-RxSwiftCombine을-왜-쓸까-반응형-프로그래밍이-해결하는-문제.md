@@ -181,3 +181,9 @@ RxSwift와 Combine을 쓰는 이유를 한 문장으로 줄이면 이렇습니�
 - MVVM 바인딩의 사실상 표준 부품입니다
 
 문법이 낯설어서 진입 장벽이 높아 보이지만, "이벤트를 값의 스트림으로 본다"는 관점 하나만 잡히면 연산자들은 배열의 `map`, `filter`를 시간 축으로 확장한 것에 지나지 않습니다. 다음 편에서는 Combine의 Publisher와 Subscriber가 실제로 어떻게 맞물려 돌아가는지 내부 동작을 뜯어보겠습니다.
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [[iOS 아키텍처 #9] ReactorKit 정리, 단방향 아키텍처의 표준](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-9-ReactorKit-%EC%A0%95%EB%A6%AC-%EB%8B%A8%EB%B0%A9%ED%96%A5-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%9D%98-%ED%91%9C%EC%A4%80/)
+<!-- /RELATED-POSTS -->
