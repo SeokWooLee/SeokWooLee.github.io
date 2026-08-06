@@ -126,3 +126,9 @@ Swift에는 이 고민 자체가 없습니다. Swift는 `+load`에 해당하는 
 - `+load` 남발은 앱 시작 시간을 직접 늦춥니다 — 무거운 초기화는 lazy로 미루는 게 정답입니다
 
 런타임 시리즈의 다른 글(objc_msgSend, 메시지 포워딩, 스위즐링, KVO)과 겹쳐 보면, `+load`와 `+initialize`의 차이가 결국 "msgSend를 거치느냐"라는 하나의 축에서 갈라진다는 게 보입니다. 호출 경로를 이해하면 규칙을 외울 필요가 없어집니다.
+
+<!-- RELATED-POSTS -->
+## 함께 보면 좋은 글
+
+- [Objective-C 메서드 스위즐링(Method Swizzling) 완벽 정리](/Objective-C-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%8A%A4%EC%9C%84%EC%A6%90%EB%A7%81Method-Swizzling-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC/)
+<!-- /RELATED-POSTS -->
