@@ -186,7 +186,7 @@ Swift에서는 Combine이나 NotificationCenter가 옵저버 계열에 가깝고
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까](/Swift-%ED%83%84%EC%83%9D-%EB%B0%B0%EA%B2%BD-%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%9E%98%ED%8A%B8%EB%84%88%EB%8A%94-%EC%99%9C-Objective-C%EB%A5%BC-%EB%B2%84%EB%A0%B8%EC%9D%84%EA%B9%8C/)
 - [[Swift 기초 #1] Swift 옵셔널(Optional)의 정체, 사실은 enum입니다 (언래핑 5종 실무 기준까지)](/Swift-%EC%98%B5%EC%85%94%EB%84%90%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%82%AC%EC%8B%A4%EC%9D%80-enum%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%96%B8%EB%9E%98%ED%95%91-5%EC%A2%85-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EC%A4%80%EA%B9%8C%EC%A7%80/)
 - [[Swift 기초 #2] Swift 클로저(Closure) 완전 정리, 캡처·[weak self]·@escaping이 한 몸인 이유](/Swift-%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EC%BA%A1%EC%B2%98weak-selfescaping%EC%9D%B4-%ED%95%9C-%EB%AA%B8%EC%9D%B8-%EC%9D%B4%EC%9C%A0/)
+- [미디에이터 vs 옵저버 vs 퍼사드 완벽 비교, 객체 통신 패턴 3가지](/%EB%AF%B8%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0-vs-%EC%98%B5%EC%A0%80%EB%B2%84-vs-%ED%8D%BC%EC%82%AC%EB%93%9C-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90-%EA%B0%9D%EC%B2%B4-%ED%86%B5%EC%8B%A0-%ED%8C%A8%ED%84%B4-3%EA%B0%80%EC%A7%80/)
 <!-- /RELATED-POSTS -->

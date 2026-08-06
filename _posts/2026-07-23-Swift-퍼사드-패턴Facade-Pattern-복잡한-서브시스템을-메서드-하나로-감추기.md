@@ -169,7 +169,7 @@ struct SignUpFacade {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기](/Swift-%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A9%94%EC%84%9C%EB%93%9C-%ED%8C%A8%ED%84%B4Template-Method-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-extension%EC%9C%BC%EB%A1%9C-%EB%BC%88%EB%8C%80-%EC%9E%A1%EA%B8%B0/)
 - [Swift 메멘토 패턴(Memento Pattern) 완벽 정리 (실행취소 구현 예제)](/Swift-%EB%A9%94%EB%A9%98%ED%86%A0-%ED%8C%A8%ED%84%B4Memento-Pattern-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8B%A4%ED%96%89%EC%B7%A8%EC%86%8C-%EA%B5%AC%ED%98%84-%EC%98%88%EC%A0%9C/)
 - [Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기](/Swift-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%ED%8C%A8%ED%84%B4Interpreter-Pattern-%EB%AF%B8%EB%8B%88-%EC%96%B8%EC%96%B4-%ED%95%B4%EC%84%9D%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0/)
+- [미디에이터 vs 옵저버 vs 퍼사드 완벽 비교, 객체 통신 패턴 3가지](/%EB%AF%B8%EB%94%94%EC%97%90%EC%9D%B4%ED%84%B0-vs-%EC%98%B5%EC%A0%80%EB%B2%84-vs-%ED%8D%BC%EC%82%AC%EB%93%9C-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90-%EA%B0%9D%EC%B2%B4-%ED%86%B5%EC%8B%A0-%ED%8C%A8%ED%84%B4-3%EA%B0%80%EC%A7%80/)
 <!-- /RELATED-POSTS -->
