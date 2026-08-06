@@ -24,6 +24,9 @@ $base0d: #4078f2; // 함수
 $base0e: #a626a4; // 키워드
 $base0f: #986801;
 
+/* Air 스킨의 기존 청색보다 대비가 높은 브랜드 포인트 색상 */
+$primary-color: #0066cc;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -33,40 +36,240 @@ $base0f: #986801;
   font-weight: bold;
 }
 
-/*
-GS: override any CSS with new CSS styles AFTER the `@import "minimal-mistakes";` line just above!
-See: https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-326809412
-Anything you place after this point will therefore "cascade and override" the previous CSS styles.
-*/
-
-/*
-GS: Decrease font sizes of the entire website.
-Defaults for small, medium, large, and x-large screens are:
-16, 18, 20, and 22px, in that order. All other font sizes are "em"
-[typography unit](https://en.wikipedia.org/wiki/Em_(typography)) multipliers of these pixel
-(px) values, and are therefore relative to and changed by these singular pixel values.
-See: https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-326809412
-- It looks like the screen pixel sizes to move into each new "size" category are defined in
-  the "Breakpoints" section of "_variables.scss"?
-*/
+/* 모바일 가독성을 16px에서 시작하고 데스크톱은 18px로 제한한다. */
 html {
-  font-size: 12px; // change to whatever
+  font-size: 16px;
 
   @include breakpoint($small) {
-    font-size: 12px; // change to whatever
+    font-size: 16px;
   }
 
   @include breakpoint($medium) {
-    font-size: 14px; // change to whatever
+    font-size: 17px;
   }
 
   @include breakpoint($large) {
-    font-size: 16px; // change to whatever
+    font-size: 18px;
   }
 
   @include breakpoint($x-large) {
-    font-size: 18px; // change to whatever
+    font-size: 18px;
   }
+}
+
+/* ==========================================================================
+   홈 — 소개, 대표 글, 최근 글 위계
+   ========================================================================== */
+.layout--home {
+  .archive {
+    @include breakpoint($large) {
+      padding-inline-end: 0;
+    }
+  }
+
+  .archive > .page__title {
+    position: relative;
+    max-width: 18ch;
+    margin-bottom: 0.65rem;
+    padding-bottom: 0.7rem;
+    line-height: 1.25;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset-inline-start: 0;
+      bottom: 0;
+      width: 3rem;
+      height: 3px;
+      border-radius: 999px;
+      background-color: $primary-color;
+    }
+  }
+
+  .home-intro {
+    max-width: 42rem;
+    margin: 0 0 2rem;
+    color: $muted-text-color;
+    font-size: 1rem;
+    line-height: 1.75;
+    word-break: keep-all;
+  }
+
+  .home-featured {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-top: 3px solid $primary-color;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(#222831, 0.08);
+
+    @include breakpoint($medium) {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    }
+
+    &--text-only {
+      display: block;
+    }
+  }
+
+  .home-featured__media {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background-color: #080b10;
+
+    @include breakpoint($medium) {
+      min-height: 15rem;
+      aspect-ratio: auto;
+    }
+  }
+
+  .home-featured__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .home-featured__body {
+    align-self: center;
+    padding: 1.4rem;
+
+    @include breakpoint($medium) {
+      padding: 1.75rem;
+    }
+  }
+
+  .home-featured__eyebrow {
+    margin: 0 0 0.65rem;
+    color: $primary-color;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .home-featured__title {
+    margin: 0 0 0.6rem;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    word-break: keep-all;
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus-visible {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .home-featured .page__meta {
+    margin-bottom: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .home-featured__excerpt {
+    margin: 0 0 1rem;
+    color: $muted-text-color;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    word-break: keep-all;
+  }
+
+  .home-featured__link {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.65rem 1rem;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: $primary-color;
+    border-radius: 6px;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: #fff;
+      background-color: mix(#000, $primary-color, 18%);
+    }
+  }
+
+  .archive__subtitle {
+    max-width: 46rem;
+    margin-top: 0;
+    border-bottom-color: mix(#fff, $primary-color, 65%);
+  }
+
+  .entries-list,
+  .pagination {
+    max-width: 46rem;
+  }
+
+  .list__item {
+    padding-block: 1.15rem;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .page__meta {
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    word-break: keep-all;
+
+    a {
+      text-decoration-color: mix(#fff, $primary-color, 55%);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+
+      &:hover,
+      &:focus-visible {
+        color: $primary-color;
+        text-decoration-color: $primary-color;
+      }
+    }
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    word-break: keep-all;
+  }
+}
+
+.search__toggle,
+.greedy-nav__toggle {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.site-subtitle {
+  font-size: 0.75rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+.search__toggle:focus-visible {
+  outline: 3px solid $primary-color;
+  outline-offset: 3px;
 }
 
 /* ==========================================================================
@@ -88,6 +291,12 @@ $dark-link: #61afef;
     color: $dark-text;
   }
 
+  a:focus-visible,
+  button:focus-visible,
+  .search__toggle:focus-visible {
+    outline-color: $dark-link;
+  }
+
   h1, h2, h3, h4, h5, h6,
   .page__title,
   .archive__item-title,
@@ -97,6 +306,7 @@ $dark-link: #61afef;
   }
 
   a { color: $dark-link; }
+  a:visited { color: mix($dark-link, $dark-muted, 78%); }
   a:hover { color: lighten($dark-link, 12%); }
 
   .page__content h2,
@@ -155,6 +365,49 @@ $dark-link: #61afef;
     a { color: $dark-link; }
   }
   .page__footer-copyright { color: $dark-muted; }
+
+  /* 홈 */
+  .layout--home {
+    .archive > .page__title::after { background-color: $dark-link; }
+    .home-intro,
+    .home-featured__excerpt { color: $dark-muted; }
+    .home-featured {
+      background-color: $dark-surface;
+      border-color: $dark-border;
+      border-top-color: $dark-link;
+      box-shadow: none;
+    }
+    .home-featured__media { background-color: $dark-surface-2; }
+    .home-featured__eyebrow { color: $dark-link; }
+    .home-featured__title a {
+      color: $dark-text;
+
+      &:hover,
+      &:focus-visible { color: $dark-link; }
+    }
+    .home-featured__link {
+      color: $dark-bg;
+      background-color: $dark-link;
+
+      &:visited { color: $dark-bg; }
+      &:hover,
+      &:focus-visible {
+        color: $dark-bg;
+        background-color: lighten($dark-link, 10%);
+      }
+    }
+    .archive__subtitle { border-bottom-color: $dark-border; }
+    .list__item { border-bottom-color: $dark-border; }
+    .archive__item-title a {
+      text-decoration-color: mix($dark-bg, $dark-link, 45%);
+
+      &:hover,
+      &:focus-visible {
+        color: $dark-link;
+        text-decoration-color: $dark-link;
+      }
+    }
+  }
 
   /* 사이드바 프로필 */
   .author__name { color: $dark-text; }
