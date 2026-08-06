@@ -14,7 +14,7 @@ toc_sticky: true
 last_modified_at: 2026-07-27
 ---
 
-# ChatGPT vs Claude vs Gemini 비교, 뭐가 다를까? (2026년 7월 최신판)
+## ChatGPT vs Claude vs Gemini 비교, 뭐가 다를까? (2026년 7월 최신판)
 
 요즘 AI 하나쯤 안 쓰는 분이 없죠. 그런데 막상 시작하려면 고민이 됩니다.
 

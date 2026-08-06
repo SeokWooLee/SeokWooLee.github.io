@@ -14,7 +14,7 @@ toc_sticky: true
 last_modified_at: 2026-07-27
 ---
 
-# Swift resultBuilder 완전정복, 빌더 패턴이 언어 문법으로 진화하기까지
+## Swift resultBuilder 완전정복, 빌더 패턴이 언어 문법으로 진화하기까지
 
 SwiftUI를 처음 봤을 때 이런 생각 안 드셨나요?
 
