@@ -23,7 +23,7 @@ TCA(The Composable Architecture) 편에서 단방향 데이터 흐름을 다뤘�
 오늘은 ReactorKit이 어떤 구조인지, TCA와 무엇이 다른지, 그리고 지금 시점에 어떤 위치인지 정리해보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/317cfd0d-2a59-49f9-9bce-a85ec25ae593/reactorkit-unidirectional-flow-1.jpg" alt="ReactorKit 단방향 데이터 흐름 View Action Reactor State 순환 다이어그램" width="1200" height="800">
+  <img src="/assets/images/posts/317cfd0d-2a59-49f9-9bce-a85ec25ae593/reactorkit-unidirectional-flow-1.jpg" alt="ReactorKit 단방향 데이터 흐름 View Action Reactor State 순환 다이어그램" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>View에서 나간 액션이 State로 돌아오는 길은 하나뿐입니다</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ final class SearchReactor: Reactor {
 Reactor는 UI를 모르는 순수 로직이라 테스트도 간단합니다. Action을 넣고 State를 확인하면 끝이에요.
 
 <figure>
-  <img src="/assets/images/posts/317cfd0d-2a59-49f9-9bce-a85ec25ae593/reactorkit-unidirectional-flow-2.png" alt="ReactorKit Action mutate Mutation reduce State 단방향 플로우 다이어그램" width="1200" height="351" loading="lazy">
+  <img src="/assets/images/posts/317cfd0d-2a59-49f9-9bce-a85ec25ae593/reactorkit-unidirectional-flow-2.png" alt="ReactorKit Action mutate Mutation reduce State 단방향 플로우 다이어그램" width="1200" height="351" loading="lazy" decoding="async">
   <figcaption>비동기는 mutate()에, 순수 계산은 reduce()에 격리됩니다</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ ReactorKit의 실용성은 도입 방식에서 나옵니다. 기존 MVC(Model-Vi
 기존 UIKit + RxSwift 코드베이스를 유지보수하고 있다면 ReactorKit은 여전히 검증된 선택입니다. 화면 단위로 붙었다 떨어지는 구조 덕분에, 나중에 화면별로 걷어내며 마이그레이션하기도 상대적으로 수월하고요.
 
 <figure>
-  <img src="/assets/images/posts/317cfd0d-2a59-49f9-9bce-a85ec25ae593/reactorkit-tca-baton-handoff-3.jpg" alt="ReactorKit에서 TCA로 단방향 흐름 바통을 넘기는 릴레이 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/317cfd0d-2a59-49f9-9bce-a85ec25ae593/reactorkit-tca-baton-handoff-3.jpg" alt="ReactorKit에서 TCA로 단방향 흐름 바통을 넘기는 릴레이 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>단방향이라는 감각은 ReactorKit이 먼저 심었고 TCA가 이어받았어요</figcaption>
 </figure>
 

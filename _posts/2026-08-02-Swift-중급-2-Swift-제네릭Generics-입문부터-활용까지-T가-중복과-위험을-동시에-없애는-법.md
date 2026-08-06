@@ -2,7 +2,7 @@
 title: "[Swift 중급 #2] Swift 제네릭(Generics) 입문부터 활용까지, <T>가 중복과 위험을 동시에 없애는 법"
 description: "Swift 코드에서 꺾쇠괄호 <T>를 처음 만나면 눈이 한 번 멈춥니다. 함수 이름 옆에 웬 대문자 알파벳이 붙어 있고, 문서를 열면 func map<T>( transform: (Element) -> T) -> [T] 같은 시그니처가 기다리고 있죠. 제네릭은 Swift 중급의…"
 header:
-  og_image: /assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/1.png
+  og_image: /assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ Swift 코드에서 꺾쇠괄호 `<T>`를 처음 만나면 눈이 한 번 멈춥�
 중급 시리즈 2편입니다. 제네릭이 어떤 문제를 푸는지, 제약(constraint)과 where 절은 언제 필요한지, 그리고 성능은 어떻게 되는지까지 정리합니다.
 
 <figure>
-  <img src="/assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/1.png" alt="T는 타입을 나중에 채우는 빈칸, 코드는 한 벌이면 됩니다">
+  <img src="/assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/1.jpg" alt="T는 타입을 나중에 채우는 빈칸, 코드는 한 벌이면 됩니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>T는 타입을 나중에 채우는 빈칸, 코드는 한 벌이면 됩니다</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ func allEqual<C: Collection>(_ items: C) -> Bool where C.Element: Equatable {
 실무 감각 하나를 덧붙이면, 제약은 필요한 만큼만 거는 게 좋습니다. Comparable이면 충분한 함수에 Hashable까지 요구하면 쓸 수 있는 타입만 줄어들어요. 함수 본문이 실제로 사용하는 능력이 제약의 정확한 목록입니다.
 
 <figure>
-  <img src="/assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/2.png" alt="제약은 문을 좁히는 대신 안에서 할 수 있는 일을 늘립니다" loading="lazy">
+  <img src="/assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/2.jpg" alt="제약은 문을 좁히는 대신 안에서 할 수 있는 일을 늘립니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>제약은 문을 좁히는 대신 안에서 할 수 있는 일을 늘립니다</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ func allEqual<C: Collection>(_ items: C) -> Bool where C.Element: Equatable {
 **시그니처의 복잡도가 사용처의 이득을 넘으면 후퇴 신호입니다.** 타입 파라미터가 서너 개 붙고 where 절이 세 줄이 되면, 호출하는 동료가 읽을 수 있는지 자문해볼 때입니다. Progressive Disclosure 편에서 본 원칙이 여기도 적용돼요. 복잡성은 선언 쪽이 흡수해야지, 사용 쪽으로 새어 나가면 안 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/3.png" alt="특수화가 추상화를 벗겨 손으로 쓴 코드와 같은 기계어를 만듭니다" loading="lazy">
+  <img src="/assets/images/posts/7d69dc2a-8c58-4422-956e-940173ebaf99/3.jpg" alt="특수화가 추상화를 벗겨 손으로 쓴 코드와 같은 기계어를 만듭니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>특수화가 추상화를 벗겨 손으로 쓴 코드와 같은 기계어를 만듭니다</figcaption>
 </figure>
 

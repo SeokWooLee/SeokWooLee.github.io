@@ -2,7 +2,7 @@
 title: "[Swift 기초 #5] Swift 에러 처리 전체 지도, throws·try?·try!·Result 언제 뭘 쓸까"
 description: "Swift 에러 처리를 배우다 보면 도구가 너무 많다는 인상을 받게 됩니다. throws와 do-catch, try에 붙는 물음표와 느낌표, 거기에 Result 타입까지. 어떤 API는 에러를 던지고, 어떤 API는 Result를 돌려주고, 어떤 코드는 그냥 try?로 뭉개고…"
 header:
-  og_image: /assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/1.png
+  og_image: /assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ Swift 에러 처리를 배우다 보면 도구가 너무 많다는 인상을 받
 사실 이 도구들은 경쟁 관계가 아니라 역할 분담 관계입니다. 기본은 throws고, try의 변형들은 "에러에 얼마나 관심 있는지"의 스펙트럼이고, Result는 에러를 값으로 들고 다녀야 할 때의 보완재예요. Swift 기초 시리즈 5편, 이번 글에서 이 지도를 그립니다.
 
 <figure>
-  <img src="/assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/1.png" alt="에러 처리 도구들은 경쟁이 아니라 역할 분담 관계입니다">
+  <img src="/assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/1.jpg" alt="에러 처리 도구들은 경쟁이 아니라 역할 분담 관계입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>에러 처리 도구들은 경쟁이 아니라 역할 분담 관계입니다</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ try에는 세 가지 표기가 있고, 각각 "에러를 어떻게 대할 것인
 **try! — 실패는 프로그래머 버그다.** 실패하면 즉시 크래시입니다. 강제 언래핑 `!`와 정확히 같은 논리로, 앱 번들 내장 리소스 로딩처럼 "실패한다면 코드가 잘못된 것"인 자리에만 허용됩니다. 옵셔널 편에서 세운 기준이 그대로 적용돼요. nil이(여기서는 에러가) 정상 시나리오라면 절대 금지입니다.
 
 <figure>
-  <img src="/assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/2.png" alt="try 세 변형은 에러를 대하는 태도의 선언입니다" loading="lazy">
+  <img src="/assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/2.jpg" alt="try 세 변형은 에러를 대하는 태도의 선언입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>try 세 변형은 에러를 대하는 태도의 선언입니다</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ throws와의 결정적 차이는 시간과 장소입니다. throws는 호출 즉
 **사용자에게 보여줄 메시지는 에러 타입에 함께 설계합니다.** LocalizedError를 채택하면 에러 자신이 표시용 메시지를 들고 다니게 할 수 있는데, 이 부분은 별도 글에서 자세히 다뤘습니다.
 
 <figure>
-  <img src="/assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/3.png" alt="throws는 즉시 받아야 하는 공, Result는 상자에 담긴 값" loading="lazy">
+  <img src="/assets/images/posts/79164702-137a-40ab-b9c5-28127ec6c2df/3.jpg" alt="throws는 즉시 받아야 하는 공, Result는 상자에 담긴 값" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>throws는 즉시 받아야 하는 공, Result는 상자에 담긴 값</figcaption>
 </figure>
 

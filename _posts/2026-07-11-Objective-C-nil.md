@@ -2,7 +2,7 @@
 title: "Objective-C nil vs Java null 비교, 왜 다르게 동작할까"
 description: "iOS를 처음 만지는 개발자를 제일 당황하게 하는 게 있어요."
 header:
-  og_image: /assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png
+  og_image: /assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.jpg
 categories:
   - iOS
 tags:
@@ -25,7 +25,7 @@ Java나 C++에서는 nil(널) 객체에 뭔가를 시키면 바로 앱이 죽잖
 처음 보면 "이거 버그 아니야?" 싶은데, 사실 언어가 일부러 그렇게 설계된 거예요.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.png" alt="Objective-C nil 메시지는 예외 대신 조용히 넘어갑니다">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/1-1783736148637.jpg" alt="Objective-C nil 메시지는 예외 대신 조용히 넘어갑니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Objective-C nil 메시지는 예외 대신 조용히 넘어갑니다</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Java나 C++에서는 nil(널) 객체에 뭔가를 시키면 바로 앱이 죽잖
 그런데 이 `objc_msgSend` 함수는 맨 처음에 받는 객체가 nil인지 아닌지를 확인합니다.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/4-1783847973933.png" alt="objc_msgSend가 nil을 조용히 삼키는 지점" loading="lazy">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/4-1783847973933.png" alt="objc_msgSend가 nil을 조용히 삼키는 지점" width="840" height="1288" loading="lazy" decoding="async">
   <figcaption>objc_msgSend가 nil을 조용히 삼키는 지점</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ Java는 null 참조에 접근하는 순간 "그런 객체 없는데?" 하면서 
 크래시라도 나면 금방 찾을 텐데, 조용히 넘어가니 원인 추적이 더 오래 걸리죠.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.png" alt="직접 돌려보면 정말 안 죽는지 금방 확인됩니다" loading="lazy">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/2.jpg" alt="직접 돌려보면 정말 안 죽는지 금방 확인됩니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>직접 돌려보면 정말 안 죽는지 금방 확인됩니다</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ nil일 수 있는 값은 반드시 물음표를 붙여 표시하고 풀어서 �
 말하자면 Objective-C의 "조용히 넘어가기"를 Swift는 "미리 드러내기"로 바꾼 셈이에요.
 
 <figure>
-  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/3.png" alt="Swift와 나란히 보면 설계 철학 차이가 보여요" loading="lazy">
+  <img src="/assets/images/posts/ccb29b56-1e71-490d-bbad-54fb19a35880/3.jpg" alt="Swift와 나란히 보면 설계 철학 차이가 보여요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>Swift와 나란히 보면 설계 철학 차이가 보여요</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #6] iOS 클린 아키텍처(Clean Architecture), UseCase와 Repository가 진짜 하는 일"
 description: "채용 공고나 기술 블로그에서 \"클린 아키텍처 기반\"이라는 문구를 자주 보게 됩니다. 그런데 막상 코드를 열어보면 팀마다 모습이 제각각이에요. UseCase가 있는 곳도 있고 없는 곳도 있고, Repository의 역할도 다 다릅니다."
 header:
-  og_image: /assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/1.png
+  og_image: /assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/1.jpg
 tags:
   - iOS
   - 클린아키텍처
@@ -21,7 +21,7 @@ last_modified_at: 2026-08-01
 오늘은 그 원칙이 뭔지, 그리고 iOS에서 UseCase와 Repository라는 형태로 구현될 때 각각 뭘 담당하는지 정리해보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/1.png" alt="규칙은 단 하나, 의존성은 안쪽으로만">
+  <img src="/assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/1.jpg" alt="규칙은 단 하나, 의존성은 안쪽으로만" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>규칙은 단 하나, 의존성은 안쪽으로만</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ final class RemotePostRepository: PostRepository {
 포인트는 프로토콜의 위치입니다. 인터페이스를 도메인이 소유하니까, 도메인은 "포스트를 가져올 수 있다"는 사실만 알고 그게 서버인지 캐시인지 로컬 DB인지는 모릅니다. 서버 응답 형식이 바뀌면 DTO(Data Transfer Object, 서버 응답을 옮겨 담는 데이터 전송 객체)와 구현체만 고치면 되고, 테스트에서는 가짜 Repository를 꽂으면 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/2.png" alt="도메인은 데이터가 어디서 오는지 몰라도 됩니다" loading="lazy">
+  <img src="/assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/2.jpg" alt="도메인은 데이터가 어디서 오는지 몰라도 됩니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>도메인은 데이터가 어디서 오는지 몰라도 됩니다</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ final class LoadFeedUseCase {
 - **계층별 모델 분리(DTO/도메인/화면 모델)는 규모가 커진 뒤에.** 처음부터 전부 나누면 Mapper 코드만 쌓입니다.
 
 <figure>
-  <img src="/assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/3.png" alt="전부 갖추는 게 아니라 필요할 때 한 층씩 쌓는 겁니다" loading="lazy">
+  <img src="/assets/images/posts/4a332cf7-d161-401b-ab7c-f15324e48609/3.jpg" alt="전부 갖추는 게 아니라 필요할 때 한 층씩 쌓는 겁니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>전부 갖추는 게 아니라 필요할 때 한 층씩 쌓는 겁니다</figcaption>
 </figure>
 

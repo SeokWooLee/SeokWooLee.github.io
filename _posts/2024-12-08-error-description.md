@@ -2,7 +2,7 @@
 title: "Swift 커스텀 에러 메시지 정의, LocalizedError 완벽 정리 (예제 포함)"
 description: "Swift로 앱을 만들다 보면 do-catch로 에러를 잡았는데, 정작 화면에 띄울 메시지가 영 시원찮았던 경험 있으실 거예요."
 header:
-  og_image: /assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/1.png
+  og_image: /assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/1.jpg
 categories:
   - iOS
 tags:
@@ -27,7 +27,7 @@ Swift로 앱을 만들다 보면 `do-catch`로 에러를 잡았는데, 정작 �
 오늘은 이 방법을 예제와 함께 하나씩 풀어볼게요.
 
 <figure>
-  <img src="/assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/1.png" alt="Error 대신 LocalizedError를 쓰면 커스텀 에러 메시지가 이렇게 달라집니다">
+  <img src="/assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/1.jpg" alt="Error 대신 LocalizedError를 쓰면 커스텀 에러 메시지가 이렇게 달라집니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Error 대신 LocalizedError를 쓰면 커스텀 에러 메시지가 이렇게 달라집니다</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ extension LoginError: LocalizedError {
 여기서 `nil`을 반환하면 다시 시스템 기본 메시지로 돌아가 버립니다. 그래서 모든 케이스에 값을 채워주는 게 중요해요.
 
 <figure>
-  <img src="/assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/2-1783751475406.png" alt="케이스마다 문자열을 채워주는 게 포인트예요" loading="lazy">
+  <img src="/assets/images/posts/a4fd42cd-dc7b-4c76-a180-5b1868371ad2/2-1783751475406.jpg" alt="케이스마다 문자열을 채워주는 게 포인트예요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>케이스마다 문자열을 채워주는 게 포인트예요</figcaption>
 </figure>
 

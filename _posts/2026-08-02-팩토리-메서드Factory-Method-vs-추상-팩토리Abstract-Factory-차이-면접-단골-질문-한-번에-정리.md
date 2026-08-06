@@ -2,7 +2,7 @@
 title: "팩토리 메서드(Factory Method) vs 추상 팩토리(Abstract Factory) 차이, 면접 단골 질문 한 번에 정리"
 description: "디자인 패턴 공부하다 보면 꼭 한 번은 막히는 구간이 있어요."
 header:
-  og_image: /assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/1.png
+  og_image: /assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/1.jpg
 tags:
   - 팩토리메서드
   - 추상팩토리
@@ -25,7 +25,7 @@ last_modified_at: 2026-08-02
 한 개냐 한 세트냐, 이게 가장 큰 차이예요.
 
 <figure>
-  <img src="/assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/1.png" alt="결국 하나를 만드느냐 세트를 만드느냐, 여기서 갈립니다">
+  <img src="/assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/1.jpg" alt="결국 하나를 만드느냐 세트를 만드느냐, 여기서 갈립니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>결국 하나를 만드느냐 세트를 만드느냐, 여기서 갈립니다</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ class MacFactory: GUIFactory {
 추상 팩토리는 보통 팩토리 객체를 밖에서 주입받아 씁니다. 상속이 아니라 합성으로 동작하는 거죠.
 
 <figure>
-  <img src="/assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/2.png" alt="iOS든 맥이든 팩토리만 갈아끼우면 세트가 통째로 바뀌어요" loading="lazy">
+  <img src="/assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/2.png" alt="iOS든 맥이든 팩토리만 갈아끼우면 세트가 통째로 바뀌어요" width="1200" height="945" loading="lazy" decoding="async">
   <figcaption>iOS든 맥이든 팩토리만 갈아끼우면 세트가 통째로 바뀌어요</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ class MacFactory: GUIFactory {
 패턴은 목적이 아니라 도구예요. 안 늘어날 코드에 미리 추상화를 깔면 읽기만 어려워집니다.
 
 <figure>
-  <img src="/assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/3-1783845909824.png" alt="패턴은 도구일 뿐이라, 필요해질 때 꺼내 써도 늦지 않습니다" loading="lazy">
+  <img src="/assets/images/posts/97abc5f6-5b4d-42f9-81d2-848ee5f5da72/3-1783845909824.jpg" alt="패턴은 도구일 뿐이라, 필요해질 때 꺼내 써도 늦지 않습니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>패턴은 도구일 뿐이라, 필요해질 때 꺼내 써도 늦지 않습니다</figcaption>
 </figure>
 

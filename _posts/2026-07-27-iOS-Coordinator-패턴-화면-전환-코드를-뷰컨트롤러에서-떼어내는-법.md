@@ -2,7 +2,7 @@
 title: "iOS Coordinator 패턴, 화면 전환 코드를 뷰컨트롤러에서 떼어내는 법"
 description: "iOS 앱을 만들다 보면 뷰컨트롤러가 자꾸 뚱뚱해지는 순간이 옵니다."
 header:
-  og_image: /assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/1.png
+  og_image: /assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/1.jpg
 tags:
   - iOS
   - Coordinator패턴
@@ -25,7 +25,7 @@ iOS 앱을 만들다 보면 뷰컨트롤러가 자꾸 뚱뚱해지는 순간이 
 결론부터 말씀드리면, Coordinator 패턴은 "화면 전환을 담당하는 별도 객체"를 하나 두는 방식입니다. 뷰컨트롤러는 화면만 그리고 "다음에 어디로 갈지"는 Coordinator에게 맡기는 거예요.
 
 <figure>
-  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/1.png" alt="Coordinator 패턴을 쓰면 뷰컨트롤러와 화면 전환이 이렇게 나뉩니다">
+  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/1.jpg" alt="Coordinator 패턴을 쓰면 뷰컨트롤러와 화면 전환이 이렇게 나뉩니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Coordinator 패턴을 쓰면 뷰컨트롤러와 화면 전환이 이렇게 나뉩니다</figcaption>
 </figure>
 
@@ -102,14 +102,14 @@ final class MainCoordinator: Coordinator {
 뷰컨트롤러는 버튼이 눌리면 `coordinator?.showDetail()`만 호출하면 끝입니다.
 
 <figure>
-  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/4-1783847591092.png" alt="버튼 한 번 누르면 나머지는 Coordinator가 다 알아서" loading="lazy">
+  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/4-1783847591092.png" alt="버튼 한 번 누르면 나머지는 Coordinator가 다 알아서" width="1200" height="632" loading="lazy" decoding="async">
   <figcaption>버튼 한 번 누르면 나머지는 Coordinator가 다 알아서</figcaption>
 </figure>
 
 어느 화면으로 가는지, 어떻게 밀어 넣는지까지는 신경 쓰지 않아도 되죠.
 
 <figure>
-  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/2.png" alt="이 한 줄 호출만 남기면 뷰컨트롤러가 훨씬 홀가분해져요" loading="lazy">
+  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/2.jpg" alt="이 한 줄 호출만 남기면 뷰컨트롤러가 훨씬 홀가분해져요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>이 한 줄 호출만 남기면 뷰컨트롤러가 훨씬 홀가분해져요</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ final class MainCoordinator: Coordinator {
 반대로 로그인, 온보딩, 탭 전환처럼 흐름이 여러 갈래로 뻗는 앱이라면 확실히 값을 합니다.
 
 <figure>
-  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/3.png" alt="흐름이 여러 갈래로 뻗는 앱일수록 값을 합니다" loading="lazy">
+  <img src="/assets/images/posts/302b7b3b-2f5e-4f5f-bb02-47ab8e2e9deb/3.jpg" alt="흐름이 여러 갈래로 뻗는 앱일수록 값을 합니다" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>흐름이 여러 갈래로 뻗는 앱일수록 값을 합니다</figcaption>
 </figure>
 

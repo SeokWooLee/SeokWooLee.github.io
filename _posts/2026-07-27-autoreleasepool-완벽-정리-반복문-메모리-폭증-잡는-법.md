@@ -2,7 +2,7 @@
 title: "@autoreleasepool 완벽 정리 (반복문 메모리 폭증 잡는 법)"
 description: "\"ARC 시대에 @autoreleasepool을 왜 아직도 쓰는 거예요?\""
 header:
-  og_image: /assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/1.png
+  og_image: /assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/1.jpg
 tags:
   - autoreleasepool
   - autorelease
@@ -21,7 +21,7 @@ last_modified_at: 2026-07-27
 오늘은 `@autoreleasepool`이 뭔지부터 실전에서 언제 꺼내 쓰는지까지 풀어드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/1.png" alt="산처럼 치솟던 메모리, @autoreleasepool로 톱니 모양으로 잡습니다">
+  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/1.jpg" alt="산처럼 치솟던 메모리, @autoreleasepool로 톱니 모양으로 잡습니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>산처럼 치솟던 메모리, @autoreleasepool로 톱니 모양으로 잡습니다</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ for (int i = 0; i < 5000; i++) {
 메모리 그래프가 산처럼 치솟다가, 심하면 시스템이 앱을 강제 종료해 버려요.
 
 <figure>
-  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/2.png" alt="반복문이 도는 동안 메모리 그래프가 산처럼 치솟는 순간이에요" loading="lazy">
+  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/2.jpg" alt="반복문이 도는 동안 메모리 그래프가 산처럼 치솟는 순간이에요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>반복문이 도는 동안 메모리 그래프가 산처럼 치솟는 순간이에요</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ for i in 0..<5000 {
 내부적으로 autorelease 객체를 만들어 돌려주는 API들이 여전히 많거든요.
 
 <figure>
-  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/3.png" alt="스위프트에서도 autoreleasepool 블록 하나면 그래프가 순해집니다" loading="lazy">
+  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/3.jpg" alt="스위프트에서도 autoreleasepool 블록 하나면 그래프가 순해집니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>스위프트에서도 autoreleasepool 블록 하나면 그래프가 순해집니다</figcaption>
 </figure>
 
@@ -160,7 +160,7 @@ Objective-C 프로젝트의 main.m을 열면 앱 전체가 `@autoreleasepool`로
 네, 풀은 스택처럼 쌓입니다. 안쪽 블록이 닫히면 안쪽 풀만 비워지고, 바깥 풀은 그대로 유지돼요.
 
 <figure>
-  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/4-1783848058907.png" alt="풀은 스택처럼 쌓이고 안쪽부터 비워집니다" loading="lazy">
+  <img src="/assets/images/posts/2bdb9495-dbc7-4607-8213-c51368c95086/4-1783848058907.png" alt="풀은 스택처럼 쌓이고 안쪽부터 비워집니다" width="552" height="1164" loading="lazy" decoding="async">
   <figcaption>풀은 스택처럼 쌓이고 안쪽부터 비워집니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "[모듈화 #6] Tuist로 iOS 모듈화가 편해지는 이유 (pbxproj 충돌·바이너리 캐싱)"
 description: "모듈화 시리즈를 따라 모듈을 수십 개까지 늘려 본 팀이라면, 새로운 종류의 피로를 만나게 됩니다."
 header:
-  og_image: /assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/1.png
+  og_image: /assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/1.jpg
 tags:
   - Tuist
   - iOS모듈화
@@ -23,7 +23,7 @@ Tuist는 정확히 이 지점을 노린 도구입니다. 한 줄로 정리하면
 이 글에서는 Tuist가 해결하는 문제, Project.swift 기본 사용법, 그리고 대규모 팀에서 진가를 발휘하는 바이너리 캐싱까지 정리합니다. 2026년 7월, Tuist 4 기준입니다.
 
 <figure>
-  <img src="/assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/1.png" alt="Tuist로 iOS 모듈화 관리, 핵심은 pbxproj를 커밋하지 않는 것">
+  <img src="/assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/1.jpg" alt="Tuist로 iOS 모듈화 관리, 핵심은 pbxproj를 커밋하지 않는 것" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Tuist로 iOS 모듈화 관리, 핵심은 pbxproj를 커밋하지 않는 것</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ let orderModule = Target.featureModule(name: "Order")
 의존 그래프 시각화도 내장돼 있습니다. tuist graph 명령 하나로 모듈 의존도를 그림으로 뽑아 주는데, 순환 의존이나 지난 글에서 경고한 "모두가 의존하는 비대 모듈"을 눈으로 확인하기 좋습니다.
 
 <figure>
-  <img src="/assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/2.png" alt="선언에서 프로젝트가 생성되는 흐름이에요" loading="lazy">
+  <img src="/assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/2.png" alt="선언에서 프로젝트가 생성되는 흐름이에요" width="1200" height="349" loading="lazy" decoding="async">
   <figcaption>선언에서 프로젝트가 생성되는 흐름이에요</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ pbxproj를 저장소에서 제거해 머지 충돌을 없애고, 프로젝트 �
 모듈 단위 바이너리 캐싱을 도입해 변경 없는 모듈을 미리 빌드된 산출물로 대체하고, 원격 캐시로 팀·CI가 이를 공유합니다. 개발자는 자기가 작업하는 모듈만 소스로 열게 되어 클린 빌드 비용이 작업 범위에 비례하게 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/3.png" alt="의존 그래프를 화면에 띄워 놓으면 대화가 빨라집니다" loading="lazy">
+  <img src="/assets/images/posts/2461e64e-988b-43c4-a75f-59b167bfa642/3.jpg" alt="의존 그래프를 화면에 띄워 놓으면 대화가 빨라집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>의존 그래프를 화면에 띄워 놓으면 대화가 빨라집니다</figcaption>
 </figure>
 

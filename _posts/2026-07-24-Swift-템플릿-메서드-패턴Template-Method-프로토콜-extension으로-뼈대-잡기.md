@@ -2,7 +2,7 @@
 title: "Swift 템플릿 메서드 패턴(Template Method), 프로토콜 extension으로 뼈대 잡기"
 description: "비슷한 로직을 클래스마다 복붙하다가 \"이거 뭔가 잘못됐는데\" 싶었던 적 있으신가요? iOS 앱에서 화면별 데이터 로딩 코드를 세 번째 복사할 때쯤이면 손이 멈추게 되죠."
 header:
-  og_image: /assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/1.png
+  og_image: /assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/1.jpg
 tags:
   - Swift
   - iOS개발
@@ -21,7 +21,7 @@ last_modified_at: 2026-07-24
 결론부터 말씀드리면, 전체 흐름(뼈대)은 한 곳에 고정하고 달라지는 단계만 각자 채우게 만드는 패턴입니다. Swift에서는 이걸 상속 대신 프로토콜 extension으로 훨씬 깔끔하게 잡을 수 있어요.
 
 <figure>
-  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/1.png" alt="상속으로 잡을 때랑 프로토콜 extension으로 잡을 때, 뼈대가 이렇게 다릅니다">
+  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/1.jpg" alt="상속으로 잡을 때랑 프로토콜 extension으로 잡을 때, 뼈대가 이렇게 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>상속으로 잡을 때랑 프로토콜 extension으로 잡을 때, 뼈대가 이렇게 다릅니다</figcaption>
 </figure>
 
@@ -96,12 +96,12 @@ extension DataLoadable {
 각 화면은 `endpoint`와 `parse`만 자기 방식대로 채우면 되고요.
 
 <figure>
-  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/4-1783847844973.png" alt="뼈대는 프로토콜에, 빈칸만 채택한 쪽이 채워요" loading="lazy">
+  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/4-1783847844973.png" alt="뼈대는 프로토콜에, 빈칸만 채택한 쪽이 채워요" width="568" height="1024" loading="lazy" decoding="async">
   <figcaption>뼈대는 프로토콜에, 빈칸만 채택한 쪽이 채워요</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/2-1783772144178.png" alt="뼈대는 고정하고 달라지는 단계만 갈아끼우면 됩니다" loading="lazy">
+  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/2-1783772144178.jpg" alt="뼈대는 고정하고 달라지는 단계만 갈아끼우면 됩니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>뼈대는 고정하고 달라지는 단계만 갈아끼우면 됩니다</figcaption>
 </figure>
 
@@ -130,7 +130,7 @@ struct ArticleLoader: DataLoadable {
 저는 이 방식으로 바꾸고 나서 화면 추가 코드가 절반 이하로 줄었습니다. 로딩·에러 처리 로직이 한 곳에 모이니 버그 잡기도 훨씬 수월했고요.
 
 <figure>
-  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/3.png" alt="struct 하나 더 만드는 걸로 화면이 추가되니 코드가 확 줄었어요" loading="lazy">
+  <img src="/assets/images/posts/1ea35405-8e4c-456a-8c11-0c61487bea78/3.jpg" alt="struct 하나 더 만드는 걸로 화면이 추가되니 코드가 확 줄었어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>struct 하나 더 만드는 걸로 화면이 추가되니 코드가 확 줄었어요</figcaption>
 </figure>
 

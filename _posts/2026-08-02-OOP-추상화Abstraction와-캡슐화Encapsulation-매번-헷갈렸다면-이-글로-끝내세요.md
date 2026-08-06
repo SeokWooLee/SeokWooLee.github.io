@@ -2,7 +2,7 @@
 title: "OOP 추상화(Abstraction)와 캡슐화(Encapsulation), 매번 헷갈렸다면 이 글로 끝내세요"
 description: "객체지향(OOP)을 공부하다 보면 꼭 만나는 벽이 있습니다."
 header:
-  og_image: /assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/1.png
+  og_image: /assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/1.jpg
 tags:
   - OOP
   - 객체지향
@@ -29,7 +29,7 @@ last_modified_at: 2026-08-02
 이 한 문장만 잡고 가도 절반은 끝났습니다. 나머지는 예시로 확실히 굳혀 볼게요.
 
 <figure>
-  <img src="/assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/1.png" alt="추상화와 캡슐화, 한 장으로 보면 헷갈릴 일이 없어요">
+  <img src="/assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/1.jpg" alt="추상화와 캡슐화, 한 장으로 보면 헷갈릴 일이 없어요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>추상화와 캡슐화, 한 장으로 보면 헷갈릴 일이 없어요</figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ print(acc.getBalance())
 추상화는 복잡한 과정(로직)을 숨겨서 사용을 단순하게 만듭니다. 반대로 캡슐화는 데이터(상태)를 숨겨서 안전하게 보호하죠.
 
 <figure>
-  <img src="/assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/2.png" alt="커피 프로토콜과 계좌 클래스, 관계로 그려보니 딱 정리됩니다" loading="lazy">
+  <img src="/assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/2.png" alt="커피 프로토콜과 계좌 클래스, 관계로 그려보니 딱 정리됩니다" width="734" height="720" loading="lazy" decoding="async">
   <figcaption>커피 프로토콜과 계좌 클래스, 관계로 그려보니 딱 정리됩니다</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ print(acc.getBalance())
 - 버그 없이 값을 안전하게 관리할 때 → 캡슐화
 
 <figure>
-  <img src="/assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/3.png" alt="코드 짤 때 이 문장 하나만 붙여놔도 감이 달라져요" loading="lazy">
+  <img src="/assets/images/posts/1147e4b5-35a3-4f3a-8a2a-05758f3d1ee8/3.jpg" alt="코드 짤 때 이 문장 하나만 붙여놔도 감이 달라져요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>코드 짤 때 이 문장 하나만 붙여놔도 감이 달라져요</figcaption>
 </figure>
 

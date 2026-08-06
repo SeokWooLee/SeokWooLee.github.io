@@ -19,7 +19,7 @@ last_modified_at: 2026-07-21
 Layerz는 이 간극을 노린 도구입니다. 한 줄로 요약하면 코드 없이 디자인·데이터·동작·API 연동까지 정의하고, 그 자리에서 실제로 실행해 보는 iOS 앱 디자인 도구예요. Layerz Corp.이 만들었고, iPhone·iPad·Mac용 앱으로 무료 배포 중입니다.
 
 <figure>
-  <img src="/assets/images/posts/d2e68b01-9f3d-4b70-8d14-51b022e54351/layerz-no-code-ios-app-builder-1.jpg" alt="Layerz 앱 디자이너가 Mac iPad iPhone에서 같은 프로젝트를 편집하는 공식 히어로 이미지" width="1200" height="626">
+  <img src="/assets/images/posts/d2e68b01-9f3d-4b70-8d14-51b022e54351/layerz-no-code-ios-app-builder-1.jpg" alt="Layerz 앱 디자이너가 Mac iPad iPhone에서 같은 프로젝트를 편집하는 공식 히어로 이미지" width="1200" height="626" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Mac·iPad·iPhone 어디서든 같은 프로젝트를 열어 편집합니다</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ Layerz의 디자인 에디터는 자유 형태 드로잉 툴과 접근이 다릅
 동작은 Action Flow라는 노드 캔버스로 정의합니다. "버튼 탭 → 입력값 확인 → 조건 분기 → 데이터 추가 → 다른 화면으로 이동" 같은 흐름을 코드 대신 노드 연결로 만들어요. 알림창, 입력 프롬프트, 공유 시트, 사운드, 햅틱 같은 iOS 기본 동작들도 노드로 제공됩니다.
 
 <figure>
-  <img src="/assets/images/posts/d2e68b01-9f3d-4b70-8d14-51b022e54351/layerz-no-code-ios-app-builder-2.png" alt="Layerz의 Design Data Action Flow API 통합이 즉시 실행 앱으로 이어지는 구조 다이어그램" width="972" height="1148" loading="lazy">
+  <img src="/assets/images/posts/d2e68b01-9f3d-4b70-8d14-51b022e54351/layerz-no-code-ios-app-builder-2.png" alt="Layerz의 Design Data Action Flow API 통합이 즉시 실행 앱으로 이어지는 구조 다이어그램" width="972" height="1148" loading="lazy" decoding="async">
   <figcaption>네 가지 축이 하나의 실행 가능한 앱으로 모이는 구조입니다</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Layerz의 디자인 에디터는 자유 형태 드로잉 툴과 접근이 다릅
 특히 개발자에게는 명세 도구로서의 쓸모가 있어 보입니다. 화면·데이터·플로우가 전부 구조화되어 있으니, 기획 단계의 애매함을 코드 작성 전에 제거하는 용도로요.
 
 <figure>
-  <img src="/assets/images/posts/d2e68b01-9f3d-4b70-8d14-51b022e54351/layerz-no-code-ios-app-builder-3.jpg" alt="UI 데이터 플로우 API 블록을 조립해 iOS 앱을 만드는 노코드 개념 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/d2e68b01-9f3d-4b70-8d14-51b022e54351/layerz-no-code-ios-app-builder-3.jpg" alt="UI 데이터 플로우 API 블록을 조립해 iOS 앱을 만드는 노코드 개념 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>코드 대신 블록을 조립한다는 게 Layerz의 핵심 아이디어입니다</figcaption>
 </figure>
 

@@ -21,7 +21,7 @@ map과 filter는 다들 씁니다. 문제는 그다음이에요. compactMap과 f
 중급 시리즈 5편은 고차 함수 실전 정리입니다. 다섯 함수의 정확한 구분, for 루프와의 선택 기준, 그리고 lazy 시퀀스가 해결하는 문제까지 다룹니다. 클로저 편에서 다진 기초 위에 올리는 실무편이에요.
 
 <figure>
-  <img src="/assets/images/posts/ce6e6844-64dc-4e78-a2fc-3b8247084509/swift-higher-order-functions-1.jpg" alt="MAP·FILTER·REDUCE 등 다섯 기계가 늘어선 고차 함수 파이프라인 썸네일" width="1200" height="800">
+  <img src="/assets/images/posts/ce6e6844-64dc-4e78-a2fc-3b8247084509/swift-higher-order-functions-1.jpg" alt="MAP·FILTER·REDUCE 등 다섯 기계가 늘어선 고차 함수 파이프라인 썸네일" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>다섯 기계의 구분은 클로저가 무엇을 반환하는가입니다</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Int("삼")은 nil이고, compactMap이 그걸 걸러냅니다. `map { Int($0) }`
 한 가지 안티패턴은 명확히 해둘게요. forEach 안에서 외부 배열에 append하는 코드입니다. `var result: [Int] = []; items.forEach { result.append($0 * 2) }`는 map 한 줄이 할 일을 수동으로 재구현하면서 가변 상태만 늘린 형태예요. forEach는 각 원소로 부수효과를 일으키는 자리(알림 보내기 등)에만 어울리고 무언가를 만들어내는 자리라면 map 계열이 맞습니다.
 
 <figure>
-  <img src="/assets/images/posts/ce6e6844-64dc-4e78-a2fc-3b8247084509/swift-higher-order-functions-2.jpg" alt="중간 배열이 쌓이는 체이닝과 한 알씩 통과하는 lazy 파이프를 대비한 도식" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/ce6e6844-64dc-4e78-a2fc-3b8247084509/swift-higher-order-functions-2.jpg" alt="중간 배열이 쌓이는 체이닝과 한 알씩 통과하는 lazy 파이프를 대비한 도식" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>체이닝은 단계마다 중간 배열을 만들고, lazy는 한 알씩 통과시킵니다</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ let result = products
 **집계.** 장바구니 총액은 `cart.reduce(0) { $0 + $1.price * Double($1.quantity) }`. 다만 단순 합계는 `cart.map(\.subtotal).reduce(0, +)`처럼 쪼개는 게 더 읽기 쉬울 때가 많습니다. reduce 클로저가 복잡해지면 쪼개라는 신호입니다.
 
 <figure>
-  <img src="/assets/images/posts/ce6e6844-64dc-4e78-a2fc-3b8247084509/swift-higher-order-functions-3.jpg" alt="고차 함수와 for 루프 갈림길 표지판을 읽는 개발자 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/ce6e6844-64dc-4e78-a2fc-3b8247084509/swift-higher-order-functions-3.jpg" alt="고차 함수와 for 루프 갈림길 표지판을 읽는 개발자 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>단순 변환이면 고차 함수, 분기·부수효과·조기 종료면 루프</figcaption>
 </figure>
 

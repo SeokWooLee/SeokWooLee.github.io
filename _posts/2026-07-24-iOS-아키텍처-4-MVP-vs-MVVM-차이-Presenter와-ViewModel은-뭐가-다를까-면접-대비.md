@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #4] MVP vs MVVM 차이, Presenter와 ViewModel은 뭐가 다를까 (면접 대비)"
 description: "iOS 아키텍처 면접에서 단골로 나오는 질문이 있습니다."
 header:
-  og_image: /assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/1.png
+  og_image: /assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/1.jpg
 tags:
   - iOS
   - MVP
@@ -23,7 +23,7 @@ iOS 아키텍처 면접에서 단골로 나오는 질문이 있습니다.
 오늘은 이 둘의 차이를 딱 하나의 기준으로 정리해보겠습니다. **"중간 객체가 View를 아는가, 모르는가"**입니다.
 
 <figure>
-  <img src="/assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/1.png" alt="차이는 하나, 중간 객체가 View를 아는가 모르는가">
+  <img src="/assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/1.jpg" alt="차이는 하나, 중간 객체가 View를 아는가 모르는가" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>차이는 하나, 중간 객체가 View를 아는가 모르는가</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ final class ProfileViewModel {
 이 차이 때문에 MVVM은 바인딩 수단(Combine, @Observable 등)이 사실상 필수입니다. 바인딩 없는 MVVM이 반쪽짜리인 이유는 지난 편에서 자세히 다뤘어요.
 
 <figure>
-  <img src="/assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/2.png" alt="Presenter는 밀어넣고, ViewModel은 구독당합니다" loading="lazy">
+  <img src="/assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/2.jpg" alt="Presenter는 밀어넣고, ViewModel은 구독당합니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>Presenter는 밀어넣고, ViewModel은 구독당합니다</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ vm.load()
 요즘 iOS에서 MVVM이 사실상 표준처럼 자리 잡은 건 MVP보다 우월해서라기보다, **Combine과 @Observable이 프레임워크 차원에서 제공되면서 MVVM의 유일한 진입 장벽(바인딩)이 사라졌기 때문**에 가깝습니다.
 
 <figure>
-  <img src="/assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/3.png" alt="바인딩이 공짜인 환경인지가 선택 기준이에요" loading="lazy">
+  <img src="/assets/images/posts/4b118d20-6c27-4d0a-ad4a-7ec1b68ffb16/3.jpg" alt="바인딩이 공짜인 환경인지가 선택 기준이에요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>바인딩이 공짜인 환경인지가 선택 기준이에요</figcaption>
 </figure>
 

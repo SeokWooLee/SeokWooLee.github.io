@@ -2,7 +2,7 @@
 title: "[Swift 철학 #2] print 한 줄로 시작하는 언어의 비밀, Swift Progressive Disclosure"
 description: "Swift에는 이상한 공존이 있습니다. 프로그래밍을 처음 배우는 사람이 Playgrounds에서 print(\"Hello\") 한 줄로 시작하는 언어인데, 같은 언어로 제네릭과 매크로가 뒤엉킨 표준 라이브러리가 짜여 있어요. 초등학생용 코딩 교육 앱(Swift…"
 header:
-  og_image: /assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/1.png
+  og_image: /assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -21,7 +21,7 @@ Swift에는 이상한 공존이 있습니다. 프로그래밍을 처음 배우�
 이 글은 Swift 철학 시리즈 2편입니다. 1편에서 다룬 Safe·Fast·Expressive가 "무엇을 만들 것인가"의 철학이라면, Progressive Disclosure는 "그걸 어떤 순서로 보여줄 것인가"의 철학이에요.
 
 <figure>
-  <img src="/assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/1.png" alt="print 한 줄에서 제네릭까지, 계단은 필요할 때만 열립니다">
+  <img src="/assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/1.jpg" alt="print 한 줄에서 제네릭까지, 계단은 필요할 때만 열립니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>print 한 줄에서 제네릭까지, 계단은 필요할 때만 열립니다</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ names.sorted { $0.count < $1.count }
 **에러 무시 → try? → do-catch → 타입드 throws.** 에러 처리도 관심 수준에 따라 골라 탈 수 있는 계단이 놓여 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/2.png" alt="자주 쓰는 것만 보여주고 고급 기능은 뒤로, UI의 점진적 공개 원칙입니다" loading="lazy">
+  <img src="/assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/2.jpg" alt="자주 쓰는 것만 보여주고 고급 기능은 뒤로, UI의 점진적 공개 원칙입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>자주 쓰는 것만 보여주고 고급 기능은 뒤로, UI의 점진적 공개 원칙입니다</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ C++를 배울 때는 첫 주부터 포인터, 참조, 복사 생성자 같은 �
 흥미로운 건 다른 언어들이 Swift와 같은 방향으로 이동해왔다는 점입니다. Java는 21에서 `void main()`만으로 실행되는 암시적 클래스를 도입했고(JEP 445, Java 개선 제안), C#은 톱레벨 문(top-level statements)을 추가했습니다. 둘 다 명분이 같아요. 초보자의 첫 코드에서 의식(ceremony)을 걷어내겠다는 겁니다. Swift가 2014년에 기본값으로 깔고 시작한 것을, 앞 세대 언어들이 십 년에 걸쳐 따라온 셈입니다.
 
 <figure>
-  <img src="/assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/3.png" alt="Text(&quot;Hello&quot;) 밑에는 resultBuilder와 opaque type이 잠겨 있습니다" loading="lazy">
+  <img src="/assets/images/posts/290b697a-f011-4cb7-8331-0a439b666fcd/3.jpg" alt="Text(&quot;Hello&quot;) 밑에는 resultBuilder와 opaque type이 잠겨 있습니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>Text(&quot;Hello&quot;) 밑에는 resultBuilder와 opaque type이 잠겨 있습니다</figcaption>
 </figure>
 

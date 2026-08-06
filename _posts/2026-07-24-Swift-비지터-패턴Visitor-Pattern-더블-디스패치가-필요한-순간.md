@@ -2,7 +2,7 @@
 title: "Swift 비지터 패턴(Visitor Pattern), 더블 디스패치가 필요한 순간"
 description: "iOS 개발하다 보면 도형이든 노드든, 종류가 여러 개인 객체에 연산을 계속 얹어야 하는 순간이 옵니다."
 header:
-  og_image: /assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/1.png
+  og_image: /assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/1.jpg
 tags:
   - Swift
   - 비지터패턴
@@ -25,7 +25,7 @@ iOS 개발하다 보면 도형이든 노드든, 종류가 여러 개인 객체�
 > "어떤 도형인가"와 "어떤 연산인가", 두 축이 동시에 바뀌어야 할 때 이 단일 디스패치만으론 부족합니다. 이때 두 번의 호출로 두 타입을 모두 런타임에 결정하는 게 더블 디스패치예요.
 
 <figure>
-  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/1.png" alt="Swift 비지터 패턴, 결국 이 두 번의 호출 이야기입니다">
+  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/1.jpg" alt="Swift 비지터 패턴, 결국 이 두 번의 호출 이야기입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 비지터 패턴, 결국 이 두 번의 호출 이야기입니다</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ func export(_ shape: Shape) -> String {
 연산이 다섯 개면 이런 함수가 다섯 군데 있는 셈이고요.
 
 <figure>
-  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/2.png" alt="if-else가 이만큼 쌓이면 저는 신호로 봐요" loading="lazy">
+  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/2.jpg" alt="if-else가 이만큼 쌓이면 저는 신호로 봐요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>if-else가 이만큼 쌓이면 저는 신호로 봐요</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ protocol Visitor {
 이 두 번의 호출이 겹치면서 두 타입이 모두 정확히 결정되는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/4-1783847853866.png" alt="두 번의 호출이 겹치는 지점, 더블 디스패치" loading="lazy">
+  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/4-1783847853866.png" alt="두 번의 호출이 겹치는 지점, 더블 디스패치" width="1200" height="601" loading="lazy" decoding="async">
   <figcaption>두 번의 호출이 겹치는 지점, 더블 디스패치</figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ protocol Visitor {
 반대로 타입(도형)이 계속 추가되는 구조라면 오히려 손이 더 갑니다. 모든 Visitor를 다 고쳐야 하니까요.
 
 <figure>
-  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/3.png" alt="accept 하고 visit 하고, 딱 두 번이면 끝납니다" loading="lazy">
+  <img src="/assets/images/posts/71bc7c5b-09b5-42c0-ae36-619c1c3db22e/3.jpg" alt="accept 하고 visit 하고, 딱 두 번이면 끝납니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>accept 하고 visit 하고, 딱 두 번이면 끝납니다</figcaption>
 </figure>
 

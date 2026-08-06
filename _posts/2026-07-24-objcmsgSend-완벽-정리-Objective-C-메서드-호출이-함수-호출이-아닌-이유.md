@@ -2,7 +2,7 @@
 title: "objc_msgSend 완벽 정리, Objective-C 메서드 호출이 함수 호출이 아닌 이유"
 description: "Objective-C 코드에서 대괄호로 감싼 [receiver message] 구문, 겉보기엔 그냥 메서드 호출처럼 보입니다."
 header:
-  og_image: /assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/1.png
+  og_image: /assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/1.jpg
 tags:
   - ObjectiveC
   - objc_msgSend
@@ -27,7 +27,7 @@ Objective-C 코드에서 대괄호로 감싼 `[receiver message]` 구문, 겉보
 이 차이를 알면 메서드 스위즐링, KVO(Key-Value Observing), 크래시 로그의 `unrecognized selector`까지 한 줄로 꿰어집니다. Effective Objective-C 2.0의 11~12번 항목이 다루는 내용이기도 합니다.
 
 <figure>
-  <img src="/assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/1.png" alt="objc_msgSend 하나로 모든 메시지가 모입니다">
+  <img src="/assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/1.jpg" alt="objc_msgSend 하나로 모든 메시지가 모입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>objc_msgSend 하나로 모든 메시지가 모입니다</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ objc_msgSend가 하는 일은 단순합니다.
 찾은 결과는 캐시에 저장되기 때문에 같은 메시지를 두 번째 보낼 때부터는 함수 호출에 가까운 속도가 나옵니다. "동적 디스패치라 느리다"는 걱정이 실무에서 거의 문제가 안 되는 이유입니다.
 
 <figure>
-  <img src="/assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/2.png" alt="탐색이 실패해도 세 번의 구제 기회가 남아 있습니다" loading="lazy">
+  <img src="/assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/2.png" alt="탐색이 실패해도 세 번의 구제 기회가 남아 있습니다" width="926" height="1716" loading="lazy" decoding="async">
   <figcaption>탐색이 실패해도 세 번의 구제 기회가 남아 있습니다</figcaption>
 </figure>
 
@@ -119,7 +119,7 @@ objc_msgSend가 하는 일은 단순합니다.
 Swift가 메시지 디스패치 대신 정적·vtable(테이블) 디스패치를 택하면서 이 유연함 대신 속도와 안전을 가져갔는데, 그래서 역으로 Swift에서 KVO를 쓰려면 `@objc dynamic`을 붙여야 합니다. Objective-C 런타임의 메시징 세계로 그 프로퍼티를 다시 넘겨주는 표시인 셈입니다.
 
 <figure>
-  <img src="/assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/3.png" alt="이 크래시 로그, 이제 다르게 읽힙니다" loading="lazy">
+  <img src="/assets/images/posts/7587b18c-95fb-4935-9cdf-27b41ceef58d/3.jpg" alt="이 크래시 로그, 이제 다르게 읽힙니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>이 크래시 로그, 이제 다르게 읽힙니다</figcaption>
 </figure>
 

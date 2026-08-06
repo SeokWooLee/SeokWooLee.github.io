@@ -2,7 +2,7 @@
 title: "Swift resultBuilder 완전정복, 빌더 패턴이 언어로 진화한 이유"
 description: "SwiftUI를 처음 봤을 때 이런 생각 안 드셨나요?"
 header:
-  og_image: /assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/1.png
+  og_image: /assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/1.jpg
 tags:
   - Swift
   - resultBuilder
@@ -27,7 +27,7 @@ SwiftUI를 처음 봤을 때 이런 생각 안 드셨나요?
 결론부터 말씀드리면, resultBuilder는 우리가 디자인 패턴으로 손수 만들던 **빌더 패턴을 컴파일러가 대신 짜주도록 언어 차원으로 끌어올린 기능**이에요. 객체를 단계적으로 조립하는 그 반복 코드를, 중괄호 블록 문법 하나로 대체한 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/1.png" alt="손으로 짜던 빌더 패턴이 resultBuilder로 넘어가는 그림, 이 한 장이 핵심이에요">
+  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/1.jpg" alt="손으로 짜던 빌더 패턴이 resultBuilder로 넘어가는 그림, 이 한 장이 핵심이에요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>손으로 짜던 빌더 패턴이 resultBuilder로 넘어가는 그림, 이 한 장이 핵심이에요</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ func greeting() -> String {
 컴파일러가 이 세 줄을 `buildBlock("안녕하세요", "resultBuilder", "입니다")` 호출로 바꿔치기해준 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/4-1783847558179.png" alt="블록 나열이 buildBlock 호출로 바뀌는 순간" loading="lazy">
+  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/4-1783847558179.png" alt="블록 나열이 buildBlock 호출로 바뀌는 순간" width="1200" height="136" loading="lazy" decoding="async">
   <figcaption>블록 나열이 buildBlock 호출로 바뀌는 순간</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ func greeting() -> String {
 그래서 SwiftUI의 `@ViewBuilder`는 이 메서드들을 거의 다 구현해두고 있어요. 그 덕에 뷰 블록 안에서 조건문도 반복문도 자연스럽게 쓸 수 있는 거고요.
 
 <figure>
-  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/2.png" alt="@ViewBuilder는 규칙 메서드를 거의 다 구현해둬서 이게 가능한 거예요" loading="lazy">
+  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/2.jpg" alt="@ViewBuilder는 규칙 메서드를 거의 다 구현해둬서 이게 가능한 거예요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>@ViewBuilder는 규칙 메서드를 거의 다 구현해둬서 이게 가능한 거예요</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ func greeting() -> String {
 한 가지 팁으로, iOS 개발 실무에서는 대부분 직접 `@resultBuilder`를 만들 일보다 `@ViewBuilder`를 이해하고 잘 쓰는 게 먼저예요.
 
 <figure>
-  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/3.png" alt="눈으로만 읽지 말고 오늘 이 예제 꼭 한 번 쳐보세요" loading="lazy">
+  <img src="/assets/images/posts/06b754be-10d0-4f89-84dd-7e37c4a55d03/3.jpg" alt="눈으로만 읽지 말고 오늘 이 예제 꼭 한 번 쳐보세요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>눈으로만 읽지 말고 오늘 이 예제 꼭 한 번 쳐보세요</figcaption>
 </figure>
 

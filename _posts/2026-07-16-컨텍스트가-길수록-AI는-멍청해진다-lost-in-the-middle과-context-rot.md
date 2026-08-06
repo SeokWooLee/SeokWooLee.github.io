@@ -2,7 +2,7 @@
 title: "[AI 컨텍스트 #2] 컨텍스트가 길수록 AI는 멍청해진다, lost in the middle과 context rot"
 description: "1편에서 컨텍스트 윈도우가 왜 유한한지를 봤습니다. 그런데 요즘 모델 스펙을 보면 이런 생각이 듭니다. 이미 100만 토큰짜리 모델이 나왔는데, 그냥 코드베이스든 문서든 통째로 넣으면 되는 것 아닐까. 아껴 쓰고 말고 할 게 있나."
 header:
-  og_image: /assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/1.png
+  og_image: /assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/1.jpg
 tags:
   - AI에이전트
   - 컨텍스트윈도우
@@ -19,7 +19,7 @@ last_modified_at: 2026-07-27
 이번 편에서 깰 통념이 바로 이것입니다. 컨텍스트 윈도우에 "들어간다"와 모델이 그걸 "잘 쓴다"는 완전히 다른 문제입니다. 컨텍스트가 길어질수록 모델 성능이 떨어지는 현상은 여러 연구로 확인돼 있고 에이전트를 오래 돌려본 사람이라면 누구나 체감하는 일이기도 합니다. 세션 후반으로 갈수록 답변이 어딘가 산만해지고, 이미 고친 버그를 다시 고치겠다고 나서는 그 순간들 말이죠.
 
 <figure>
-  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/1.png" alt="컨텍스트 양끝은 잘 읽히고 한가운데는 묻힙니다, 회수율이 U자를 그리는 이유">
+  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/1.jpg" alt="컨텍스트 양끝은 잘 읽히고 한가운데는 묻힙니다, 회수율이 U자를 그리는 이유" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>컨텍스트 양끝은 잘 읽히고 한가운데는 묻힙니다, 회수율이 U자를 그리는 이유</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ last_modified_at: 2026-07-27
 그래서 실무에서는 "실효 컨텍스트"라는 감각이 필요합니다. 스펙이 20만 토큰이어도 복잡한 추론 과제에서 품질이 유지되는 구간은 그보다 훨씬 짧다고 보는 게 안전합니다. 스펙 숫자는 "여기까지 넣어도 에러가 안 난다"는 뜻이지, "여기까지 넣어도 똑똑하다"는 뜻이 아닙니다.
 
 <figure>
-  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/2.png" alt="스펙은 상한일 뿐, 어텐션 예산은 토큰이 늘수록 얇게 쪼개집니다" loading="lazy">
+  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/2.jpg" alt="스펙은 상한일 뿐, 어텐션 예산은 토큰이 늘수록 얇게 쪼개집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>스펙은 상한일 뿐, 어텐션 예산은 토큰이 늘수록 얇게 쪼개집니다</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ last_modified_at: 2026-07-27
 이런 실패 양상에는 이름도 붙어 있습니다. 잘못된 정보(예: 환각이 섞인 요약)가 컨텍스트에 들어가 이후 판단을 연쇄로 오염시키는 context poisoning, 쌓인 이력이 너무 길어 모델이 새 지시보다 과거 패턴 반복에 끌리는 context distraction, 비슷하지만 다른 정보가 섞여 혼선을 부르는 context confusion, 그리고 모순된 정보가 충돌하는 context clash. 이름은 몰라도 증상은 익숙하실 겁니다. 세션 후반의 에이전트가 유독 같은 실수를 반복하고, 하지 말라던 걸 하는 이유가 대부분 이 넷 중 하나예요.
 
 <figure>
-  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/3.png" alt="세션 후반 품질 저하의 주범, 네 가지 컨텍스트 실패 양상" loading="lazy">
+  <img src="/assets/images/posts/2441c21a-97a2-413d-93be-21c88b2120cb/3.png" alt="세션 후반 품질 저하의 주범, 네 가지 컨텍스트 실패 양상" width="1200" height="431" loading="lazy" decoding="async">
   <figcaption>세션 후반 품질 저하의 주범, 네 가지 컨텍스트 실패 양상</figcaption>
 </figure>
 

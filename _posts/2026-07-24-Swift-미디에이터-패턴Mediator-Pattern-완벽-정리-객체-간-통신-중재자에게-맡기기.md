@@ -2,7 +2,7 @@
 title: "Swift 미디에이터 패턴(Mediator Pattern) 완벽 정리 (객체 간 통신 중재자에게 맡기기)"
 description: "iOS 앱을 조금 키워보신 분이라면 이런 순간을 만나셨을 거예요."
 header:
-  og_image: /assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/1.png
+  og_image: /assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/1.jpg
 tags:
   - 스위프트
   - Swift
@@ -27,7 +27,7 @@ iOS 앱을 조금 키워보신 분이라면 이런 순간을 만나셨을 거예
 이 글에서는 미디에이터 패턴이 정확히 뭔지, 언제 쓰면 좋은지, Swift로는 어떻게 짜는지까지 예제 코드와 함께 풀어드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/1.png" alt="Swift 미디에이터 패턴, 결국 관제탑 하나 세우는 이야기예요">
+  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/1.jpg" alt="Swift 미디에이터 패턴, 결국 관제탑 하나 세우는 이야기예요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 미디에이터 패턴, 결국 관제탑 하나 세우는 이야기예요</figcaption>
 </figure>
 
@@ -125,12 +125,12 @@ class ChatRoom: ChatMediator {
 이렇게 하면 유저가 아무리 늘어도 User 클래스는 손댈 필요가 없어요. 전달 규칙은 오직 ChatRoom만 알고 있으니까요.
 
 <figure>
-  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/4-1783847822714.png" alt="다들 ChatRoom만 알고, 서로는 몰라요" loading="lazy">
+  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/4-1783847822714.png" alt="다들 ChatRoom만 알고, 서로는 몰라요" width="644" height="1348" loading="lazy" decoding="async">
   <figcaption>다들 ChatRoom만 알고, 서로는 몰라요</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/2.png" alt="예제 코드 그대로 켜놓고 따라 치면 감이 확 옵니다" loading="lazy">
+  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/2.jpg" alt="예제 코드 그대로 켜놓고 따라 치면 감이 확 옵니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>예제 코드 그대로 켜놓고 따라 치면 감이 확 옵니다</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ Swift에서는 Combine이나 NotificationCenter가 옵저버 계열에 가깝고
 가능합니다. ViewModel이 사실상 뷰들 사이의 미디에이터 역할을 하는 경우가 많아요. 여러 뷰의 상태를 한 ViewModel이 조율하는 구조로 자연스럽게 녹여낼 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/3.png" alt="중재자 하나 그려놓고 관계 정리하니 머릿속이 개운해졌어요" loading="lazy">
+  <img src="/assets/images/posts/6a92f532-28bb-415e-8858-12f39043fddb/3.jpg" alt="중재자 하나 그려놓고 관계 정리하니 머릿속이 개운해졌어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>중재자 하나 그려놓고 관계 정리하니 머릿속이 개운해졌어요</figcaption>
 </figure>
 

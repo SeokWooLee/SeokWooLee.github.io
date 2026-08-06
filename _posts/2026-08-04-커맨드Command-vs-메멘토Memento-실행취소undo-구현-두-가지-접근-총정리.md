@@ -2,7 +2,7 @@
 title: "커맨드(Command) vs 메멘토(Memento), 실행취소(undo) 구현 두 가지 접근 총정리"
 description: "실행취소(undo) 기능을 직접 만들어보려다 막힌 적 있으신가요?"
 header:
-  og_image: /assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/1.png
+  og_image: /assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/1.jpg
 tags:
   - 커맨드패턴
   - 메멘토패턴
@@ -25,7 +25,7 @@ Ctrl+Z 한 번이면 끝나는 흔한 기능인데, 막상 코드로 옮기면 �
 둘 다 정답입니다. 다만 언제 뭘 쓰느냐가 갈려요. 오늘은 이 둘을 코드까지 곁들여 비교해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/1.png" alt="커맨드랑 메멘토, undo 접근 방식부터 이렇게 갈립니다">
+  <img src="/assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/1.jpg" alt="커맨드랑 메멘토, undo 접근 방식부터 이렇게 갈립니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>커맨드랑 메멘토, undo 접근 방식부터 이렇게 갈립니다</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ undo가 필요하면 저장해둔 스냅샷으로 상태를 갈아끼우면 됩�
 대신 단점도 분명해요. 상태가 크면 메모리를 꽤 먹습니다. 매번 통째로 복사해 들고 있으니까요.
 
 <figure>
-  <img src="/assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/2.png" alt="커맨드 객체를 스택에 쌓아두는 구조를 그림으로 보면 이래요" loading="lazy">
+  <img src="/assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/2.png" alt="커맨드 객체를 스택에 쌓아두는 구조를 그림으로 보면 이래요" width="344" height="1132" loading="lazy" decoding="async">
   <figcaption>커맨드 객체를 스택에 쌓아두는 구조를 그림으로 보면 이래요</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ undo가 필요하면 저장해둔 스냅샷으로 상태를 갈아끼우면 됩�
 되돌리는 행동을 명확히 짤 수 있으면 커맨드, 상태를 통째로 찍는 게 마음 편하면 메멘토입니다.
 
 <figure>
-  <img src="/assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/3.png" alt="Ctrl+Z 하나 붙잡고 며칠 씨름했던 그 책상입니다" loading="lazy">
+  <img src="/assets/images/posts/7eba0a5d-40af-43aa-85f0-d49192f7765d/3.jpg" alt="Ctrl+Z 하나 붙잡고 며칠 씨름했던 그 책상입니다" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>Ctrl+Z 하나 붙잡고 며칠 씨름했던 그 책상입니다</figcaption>
 </figure>
 

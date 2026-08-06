@@ -2,7 +2,7 @@
 title: "[모듈화 #4] iOS 모듈화 SPM으로 시작하기 (로컬 패키지·static·dynamic 총정리)"
 description: "앞선 모듈화 시리즈에서 경계·의존 방향·레이어 구조까지 원론을 정리했습니다. 이제 iOS 프로젝트에 실제로 적용할 차례입니다."
 header:
-  og_image: /assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/1.png
+  og_image: /assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/1.jpg
 tags:
   - iOS모듈화
   - SPM
@@ -23,7 +23,7 @@ iOS에서 모듈을 나누는 도구는 사실상 두 가지입니다. Xcode 프
 이 글에서는 SPM으로 로컬 모듈을 만드는 법, 프레임워크 타깃과의 차이, 그리고 static·dynamic 링킹 선택 기준까지 정리합니다.
 
 <figure>
-  <img src="/assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/1.png" alt="iOS 모듈화, 결국 pbxproj와 Package.swift 중 뭘 만질지의 문제입니다">
+  <img src="/assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/1.jpg" alt="iOS 모듈화, 결국 pbxproj와 Package.swift 중 뭘 만질지의 문제입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>iOS 모듈화, 결국 pbxproj와 Package.swift 중 뭘 만질지의 문제입니다</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ let package = Package(
 지난 글에서 말한 "컴파일러가 경계를 강제하는 상태"가 이렇게 만들어집니다.
 
 <figure>
-  <img src="/assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/2.png" alt="dependencies 배열이 그대로 의존 그래프가 됩니다" loading="lazy">
+  <img src="/assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/2.png" alt="dependencies 배열이 그대로 의존 그래프가 됩니다" width="794" height="556" loading="lazy" decoding="async">
   <figcaption>dependencies 배열이 그대로 의존 그래프가 됩니다</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ SPM 모듈화로 시작해서 잘 쓰다가, 팀이 커지면 한계를 만나�
 static은 링크 타임에 앱 바이너리로 복사되어 실행 시 로딩 비용이 없고, dynamic은 별도 파일로 존재해 실행 시 로딩됩니다. 기본은 static을 쓰되, 앱과 익스텐션·위젯이 같은 코드를 공유해 바이너리 중복을 줄여야 할 때 dynamic을 선택합니다.
 
 <figure>
-  <img src="/assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/3.png" alt="패키지 폴더가 하나씩 늘어나는 재미가 은근히 있습니다" loading="lazy">
+  <img src="/assets/images/posts/2dfa8b93-209b-47ab-8ad8-2745ec0ab314/3.jpg" alt="패키지 폴더가 하나씩 늘어나는 재미가 은근히 있습니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>패키지 폴더가 하나씩 늘어나는 재미가 은근히 있습니다</figcaption>
 </figure>
 

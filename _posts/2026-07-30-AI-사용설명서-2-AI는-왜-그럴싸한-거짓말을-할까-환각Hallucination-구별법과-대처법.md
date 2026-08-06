@@ -15,7 +15,7 @@ last_modified_at: 2026-07-30
 ---
 
 <figure>
-  <img src="/assets/images/posts/c6145b61-e8d2-4983-b19d-795cb10e3577/ai-hallucination-1.jpg" alt="AI HALLUCINATION 텍스트와 물음표로 흩어지는 가짜 문서를 든 로봇을 그린 환각 개념 히어로 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/c6145b61-e8d2-4983-b19d-795cb10e3577/ai-hallucination-1.jpg" alt="AI HALLUCINATION 텍스트와 물음표로 흩어지는 가짜 문서를 든 로봇을 그린 환각 개념 히어로 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>형식은 완벽한데 내용은 가짜, 그게 환각이 무서운 이유입니다</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ AI에게 자료 조사를 시켰더니 논문 제목과 저자까지 붙은 깔�
 환각을 줄이려는 노력은 계속되고 있습니다. 모르면 모른다고 답하도록 훈련하는 방향도 강화되는 추세입니다. 다만 "최신 모델이면 무조건 덜 틀린다"고 보긴 어렵습니다. 개발사가 공개한 평가에서 새 모델이 이전 모델보다 인물·사실 질문에서 오히려 더 자주 지어낸 사례도 있거든요. 모델 세대보다 확실하게 환각을 줄이는 건 뒤에서 다룰 근거 자료 붙여주기입니다. 어느 쪽이든 "요즘 AI는 안 틀린다"는 가정이 제일 위험합니다.
 
 <figure>
-  <img src="/assets/images/posts/c6145b61-e8d2-4983-b19d-795cb10e3577/ai-hallucination-2.png" alt="AI 환각 발생 경로 다이어그램, 학습 데이터 부족 시 형식 패턴으로 빈칸을 채워 가짜 답 생성" width="904" height="1466" loading="lazy">
+  <img src="/assets/images/posts/c6145b61-e8d2-4983-b19d-795cb10e3577/ai-hallucination-2.png" alt="AI 환각 발생 경로 다이어그램, 학습 데이터 부족 시 형식 패턴으로 빈칸을 채워 가짜 답 생성" width="904" height="1466" loading="lazy" decoding="async">
   <figcaption>학습 데이터가 흐릿하면 형식 패턴으로 빈칸을 채웁니다. 말투는 늘 자신만만하고요</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ AI에게 자료 조사를 시켰더니 논문 제목과 저자까지 붙은 깔�
 **넷째, 용도에 따라 검증 강도를 조절하세요.** 아이디어 브레인스토밍이나 초안 작성이면 환각이 있어도 타격이 작습니다. 반대로 계약·의료·법률·투자처럼 틀리면 손해가 나는 영역이라면 AI 답변은 출발점으로만 쓰고, 원문과 전문가에게 반드시 확인해야 합니다.
 
 <figure>
-  <img src="/assets/images/posts/c6145b61-e8d2-4983-b19d-795cb10e3577/ai-hallucination-3.png" alt="AI 답변 검증 플로우차트, 중요 정보 여부 판단 후 웹 검색과 원문 확인 절차" width="908" height="1756" loading="lazy">
+  <img src="/assets/images/posts/c6145b61-e8d2-4983-b19d-795cb10e3577/ai-hallucination-3.png" alt="AI 답변 검증 플로우차트, 중요 정보 여부 판단 후 웹 검색과 원문 확인 절차" width="908" height="1756" loading="lazy" decoding="async">
   <figcaption>모든 답을 검증할 순 없으니, 틀리면 아픈 정보만 골라서 확인합니다</figcaption>
 </figure>
 

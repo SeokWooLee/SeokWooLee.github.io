@@ -2,7 +2,7 @@
 title: "Swift 옵저버 패턴(Observer Pattern), NotificationCenter부터 Combine까지"
 description: "iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 바뀌었는데, 저 멀리 떨어진 B 화면도 같이 갱신돼야 하는 상황이요."
 header:
-  og_image: /assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/1.png
+  og_image: /assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/1.jpg
 tags:
   - Swift
   - 옵저버패턴
@@ -23,7 +23,7 @@ iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 �
 이 글에서는 옵저버 패턴이 뭔지부터, NotificationCenter 사용법, 그리고 요즘 많이 쓰는 Combine까지 실제 코드와 함께 정리해드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/1.png" alt="Swift 옵저버 패턴, 왼쪽에서 오른쪽으로 넘어가는 흐름이 이 글 핵심이에요">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/1.jpg" alt="Swift 옵저버 패턴, 왼쪽에서 오른쪽으로 넘어가는 흐름이 이 글 핵심이에요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 옵저버 패턴, 왼쪽에서 오른쪽으로 넘어가는 흐름이 이 글 핵심이에요</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ iOS 앱 만들다 보면 이런 순간이 꼭 옵니다. A 화면에서 뭔가 �
 핵심은 발행자와 관찰자가 서로를 직접 몰라도 된다는 점입니다.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/4-1783847822056.png" alt="발행자와 관찰자는 서로를 모른 채 알림만 주고받아요" loading="lazy">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/4-1783847822056.png" alt="발행자와 관찰자는 서로를 모른 채 알림만 주고받아요" width="1200" height="540" loading="lazy" decoding="async">
   <figcaption>발행자와 관찰자는 서로를 모른 채 알림만 주고받아요</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ map, filter 같은 연산자로 값을 가공하고 여러 이벤트를 합치�
 그리고 sink가 반환하는 구독(AnyCancellable)을 변수에 담아두면, 그 변수가 사라질 때 구독도 알아서 취소됩니다. 메모리 관리가 한결 편해지는 거죠.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/2.png" alt="저는 이렇게 코드 켜놓고 손으로 직접 짜보면서 감을 잡았어요" loading="lazy">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/2.jpg" alt="저는 이렇게 코드 켜놓고 손으로 직접 짜보면서 감을 잡았어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 이렇게 코드 켜놓고 손으로 직접 짜보면서 감을 잡았어요</figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ map, filter 같은 연산자로 값을 가공하고 여러 이벤트를 합치�
 물론 요즘은 SwiftUI와 async/await가 대세라, 신규 프로젝트라면 이 둘도 함께 고려해보시길 권합니다.
 
 <figure>
-  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/3.png" alt="알림 하나 딱 떴을 때 다른 화면까지 같이 갱신되면 그렇게 뿌듯하더라고요" loading="lazy">
+  <img src="/assets/images/posts/60338bae-53e5-45cb-907e-58c9a798ee1c/3.jpg" alt="알림 하나 딱 떴을 때 다른 화면까지 같이 갱신되면 그렇게 뿌듯하더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>알림 하나 딱 떴을 때 다른 화면까지 같이 갱신되면 그렇게 뿌듯하더라고요</figcaption>
 </figure>
 

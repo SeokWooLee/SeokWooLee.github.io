@@ -21,7 +21,7 @@ last_modified_at: 2026-07-25
 이 흐름에서 가장 주목받는 터미널이 Ghostty입니다. 최근 화제가 된 cmux, 그리고 Orca 같은 에이전트 운용 도구들이 하나같이 Ghostty를 기술 기반이나 품질 기준으로 삼고 있습니다. 이 글에서는 Ghostty가 무엇이 다른지, 왜 하필 AI 시대에 존재감이 커졌는지, 그리고 cmux·Orca 사례가 각각 무엇을 보여주는지 정리합니다.
 
 <figure>
-  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-1.jpg" alt="AI 시대의 Ghostty 터미널을 표현한 히어로 일러스트, ASCII 고스트 아래 AI 코딩 에이전트가 일하는 터미널 창들이 격자로 배열된 모습" width="1200" height="800">
+  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-1.jpg" alt="AI 시대의 Ghostty 터미널을 표현한 히어로 일러스트, ASCII 고스트 아래 AI 코딩 에이전트가 일하는 터미널 창들이 격자로 배열된 모습" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>에이전트가 늘어날수록 터미널의 자리는 커집니다</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Ghostty는 Terraform·Vagrant를 만든 HashiCorp 공동 창업자 Mitchell Hash
 Ghostty는 "빠르고, 기능 많고, 네이티브한" 세 가지를 모두 잡겠다는 목표로 설계됐습니다. GPU 가속 렌더링으로 속도를 확보하면서 macOS에서는 AppKit·SwiftUI, Linux에서는 GTK4로 각 플랫폼의 진짜 네이티브 UI를 씁니다. 탭·분할·단축키가 OS 표준 방식 그대로 동작하고, 설정 없이 설치 직후부터 쓸 만하다는 점이 초기 입소문의 핵심이었습니다.
 
 <figure>
-  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-2.jpg" alt="Ghostty 터미널 공식 소셜 카드, 다크 배경에 파란 ASCII 아트 문자로 그려진 고스트 로고" width="1200" height="675" loading="lazy">
+  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-2.jpg" alt="Ghostty 터미널 공식 소셜 카드, 다크 배경에 파란 ASCII 아트 문자로 그려진 고스트 로고" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption>터미널 문자로 그린 고스트, Ghostty의 정체성이 이 카드 한 장에 담겨 있습니다</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ Mitchell Hashimoto는 2025년 9월 「Libghostty Is Coming」이라는 글에서
 이 구상이 AI 에이전트 붐과 정확히 맞물렸습니다. 에이전트 관제 앱을 만들려는 팀들에게 터미널 에뮬레이션은 필수지만 직접 만들기엔 너무 깊은 영역이고, libghostty가 그 빈자리를 채우는 표준 부품이 됐습니다.
 
 <figure>
-  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-3.png" alt="libghostty 생태계 다이어그램, Ghostty 코어에서 Ghostty 앱과 cmux로 이어지는 구조와 Orca가 Ghostty급을 표방하는 관계" width="755" height="692" loading="lazy">
+  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-3.png" alt="libghostty 생태계 다이어그램, Ghostty 코어에서 Ghostty 앱과 cmux로 이어지는 구조와 Orca가 Ghostty급을 표방하는 관계" width="755" height="692" loading="lazy" decoding="async">
   <figcaption>libghostty를 가운데 두면 지금의 지형도가 한눈에 들어옵니다</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ cmux는 manaflow-ai가 공개한 macOS 전용 터미널 앱으로, "AI 코딩 �
 그 위에 얹은 기능은 전부 에이전트 관제용입니다. 세로 탭으로 수많은 에이전트 세션을 훑어보고 에이전트가 입력을 기다리면 해당 탭에 파란 테두리가 켜집니다. 사이드바에는 git 브랜치·PR 상태·열려 있는 포트가 표시되고 CLI와 소켓 API로 워크스페이스 생성부터 키 입력 전송까지 스크립트로 제어할 수 있습니다. 터미널 에뮬레이션이라는 바닥 공사를 libghostty에 맡긴 덕분에, 개발팀은 관제 기능에만 집중할 수 있었던 셈입니다.
 
 <figure>
-  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-4.jpg" alt="cmux 터미널 공식 스크린샷, 세로 탭에 병렬 AI 코딩 에이전트 세션들과 내장 브라우저·알림이 함께 표시된 화면" width="1200" height="695" loading="lazy">
+  <img src="/assets/images/posts/00d18e50-b940-4821-8f01-5afe12e74050/ghostty-terminal-ai-era-4.jpg" alt="cmux 터미널 공식 스크린샷, 세로 탭에 병렬 AI 코딩 에이전트 세션들과 내장 브라우저·알림이 함께 표시된 화면" width="1200" height="695" loading="lazy" decoding="async">
   <figcaption>세로 탭마다 에이전트가 하나씩, 관제탑에 가까운 화면입니다</figcaption>
 </figure>
 

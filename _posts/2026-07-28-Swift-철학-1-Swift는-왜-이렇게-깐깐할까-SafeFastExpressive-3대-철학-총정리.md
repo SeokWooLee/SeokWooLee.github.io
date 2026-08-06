@@ -2,7 +2,7 @@
 title: "[Swift 철학 #1] Swift는 왜 이렇게 깐깐할까? Safe·Fast·Expressive 3대 철학 총정리"
 description: "Swift로 코드를 쓰다 보면 한 번쯤 궁금해지는 순간이 옵니다. 옵셔널은 왜 이렇게 깐깐할까, 배열은 왜 복사될까, guard는 왜 있을까. 이런 질문들을 하나씩 파고들다 보면 결국 한 지점에서 만나게 됩니다. Swift가 처음부터 내걸었던 세 가지 목표, Safe(안전하게),…"
 header:
-  og_image: /assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/1.png
+  og_image: /assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -21,7 +21,7 @@ Swift 공식 사이트(swift.org)는 언어 소개 첫머리에서 이 셋을 �
 이 글은 Swift 철학 시리즈의 첫 편입니다. Swift가 태어난 배경, 그러니까 크리스 래트너가 왜 Objective-C를 버렸는지는 별도 글에서 다뤘으니, 여기서는 "태어난 뒤 어떤 원칙으로 자랐는가"에 집중합니다.
 
 <figure>
-  <img src="/assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/1.png" alt="Swift의 모든 설계는 Safe·Fast·Expressive 세 기둥 위에 있습니다">
+  <img src="/assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/1.jpg" alt="Swift의 모든 설계는 Safe·Fast·Expressive 세 기둥 위에 있습니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift의 모든 설계는 Safe·Fast·Expressive 세 기둥 위에 있습니다</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ if let name {
 여기서 눈여겨볼 지점이 하나 있습니다. Swift의 안전은 "크래시가 안 난다"가 아니라 "정의되지 않은 동작이 없다"에 가깝습니다. 배열 범위를 벗어나면 Swift는 오히려 일부러 크래시를 냅니다. 이상한 값으로 계속 실행되는 것보다, 문제 지점에서 확실하게 멈추는 쪽이 더 안전하다는 판단이에요.
 
 <figure>
-  <img src="/assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/2.png" alt="런타임 버그를 컴파일 게이트에서 미리 세우는 게 Swift의 안전 철학입니다" loading="lazy">
+  <img src="/assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/2.jpg" alt="런타임 버그를 컴파일 게이트에서 미리 세우는 게 Swift의 안전 철학입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>런타임 버그를 컴파일 게이트에서 미리 세우는 게 Swift의 안전 철학입니다</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ let upper = names.map { $0.uppercased() }
 주의할 점도 있습니다. 표현력은 "짧게"와 동의어가 아니에요. Swift API 디자인 가이드라인의 제1원칙은 "사용 지점에서의 명료함(clarity at the point of use)"이고, 간결함보다 명료함이 우선입니다. `remove(at: 3)`처럼 인자 레이블을 굳이 붙이는 문법이 존재하는 이유가 이겁니다. `remove(3)`이 더 짧지만, "3번째 위치를 지우는 건지, 값 3을 지우는 건지" 읽는 사람이 헷갈리니까요.
 
 <figure>
-  <img src="/assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/3.png" alt="충돌하면 안전이 이기고, 성능·표현력은 컴파일러가 회수합니다" loading="lazy">
+  <img src="/assets/images/posts/31c00204-0641-451d-ab08-920722d6d25e/3.jpg" alt="충돌하면 안전이 이기고, 성능·표현력은 컴파일러가 회수합니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>충돌하면 안전이 이기고, 성능·표현력은 컴파일러가 회수합니다</figcaption>
 </figure>
 

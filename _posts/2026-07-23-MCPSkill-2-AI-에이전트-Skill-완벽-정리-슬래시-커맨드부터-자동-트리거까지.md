@@ -2,7 +2,7 @@
 title: "[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지"
 description: "AI 코딩 도구를 쓰다 보면 같은 지시를 반복하게 됩니다. \"커밋 메시지는 이 형식으로\", \"배포 전엔 이 체크리스트대로\" 같은 것들이요."
 header:
-  og_image: /assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/1.png
+  og_image: /assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/1.jpg
 tags:
   - ClaudeCode
   - Skill
@@ -25,7 +25,7 @@ Skill은 이 반복을 해결하는 기능입니다. 한 문장으로 정리하�
 이 글에서는 Skill의 구조, 슬래시 커맨드와 자동 트리거라는 두 가지 호출 방식, 도구별 지원 현황, 그리고 상시 규칙 파일과의 역할 구분까지 정리합니다. 예시는 가장 먼저 이 기능을 도입한 Claude Code 기준으로 들되, 개념은 어느 도구에서나 동일합니다.
 
 <figure>
-  <img src="/assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/1.png" alt="반복 지시를 카드처럼 꺼내 쓰는 게 Skill입니다">
+  <img src="/assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/1.jpg" alt="반복 지시를 카드처럼 꺼내 쓰는 게 Skill입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>반복 지시를 카드처럼 꺼내 쓰는 게 Skill입니다</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ Skill이 실행되는 경로는 두 갈래입니다.
 > description은 사람용 설명이 아니라 모델용 라우팅 조건입니다. "언제 이 Skill을 써야 하는지"를 트리거 문구까지 포함해 구체적으로 적을수록 자동 호출이 정확해집니다.
 
 <figure>
-  <img src="/assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/2.png" alt="직접 호출하든 자동 트리거든 결국 같은 SKILL.md를 읽습니다" loading="lazy">
+  <img src="/assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/2.png" alt="직접 호출하든 자동 트리거든 결국 같은 SKILL.md를 읽습니다" width="506" height="1218" loading="lazy" decoding="async">
   <figcaption>직접 호출하든 자동 트리거든 결국 같은 SKILL.md를 읽습니다</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Claude Code의 CLAUDE.md, Codex의 AGENTS.md, Cursor의 rules처럼 도구마다
 "항상 참이어야 하는가?"라고 물었을 때 그렇다면 상시 규칙 파일, 특정 상황에서만 참이면 Skill입니다. 항상 적용할 규칙을 Skill로 빼면 트리거가 안 될 때 규칙이 증발합니다. 반대로 절차를 전부 상시 규칙 파일에 넣으면 컨텍스트가 낭비됩니다.
 
 <figure>
-  <img src="/assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/3.png" alt="Skill의 실체는 에디터에서 열어보는 마크다운 파일 하나예요" loading="lazy">
+  <img src="/assets/images/posts/60116d30-9205-43b5-b09e-610a09bd6239/3.jpg" alt="Skill의 실체는 에디터에서 열어보는 마크다운 파일 하나예요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>Skill의 실체는 에디터에서 열어보는 마크다운 파일 하나예요</figcaption>
 </figure>
 

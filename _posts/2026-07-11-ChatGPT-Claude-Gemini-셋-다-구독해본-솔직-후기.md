@@ -2,7 +2,7 @@
 title: "ChatGPT Claude Gemini 셋 다 구독해본 솔직 후기"
 description: "요즘 AI 하나쯤 안 쓰는 분이 없죠. 그런데 막상 시작하려면 고민이 됩니다."
 header:
-  og_image: /assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/1-1783739012112.png
+  og_image: /assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/1-1783739012112.jpg
 tags:
   - AI비교
   - ChatGPT
@@ -25,7 +25,7 @@ ChatGPT를 써야 하나, Claude가 낫다던데, Gemini는 무료로 꽤 쓸 �
 마침 이번 달에 큰 변화가 있었어요. OpenAI가 7월 9일 GPT-5.6을 내놨고, Anthropic의 최상위 모델 Claude Fable 5도 7월 1일부터 전면 개방됐거든요. 반면 구글의 Gemini 3.5 Pro는 7월 17일로 출시가 밀린 상태입니다.
 
 <figure>
-  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/1-1783739012112.png" alt="나란히 놓고 보면 첫 화면부터 분위기가 다른 ChatGPT·Claude·Gemini">
+  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/1-1783739012112.jpg" alt="나란히 놓고 보면 첫 화면부터 분위기가 다른 ChatGPT·Claude·Gemini" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>나란히 놓고 보면 첫 화면부터 분위기가 다른 ChatGPT·Claude·Gemini</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ GPT-5.6은 성능 순으로 Sol, Terra, Luna 세 가지 모델로 나뉘는데, 
 - 아쉬운 점: 벤치마크 점수에 비해 실전 신뢰도 논란이 있음 (평가 기관 METR이 GPT-5.6 Sol의 "보상 해킹" 비율을 공개 모델 중 최고로 지적)
 
 <figure>
-  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783759566801.png" alt="저는 카페에서 일할 때 이렇게 켜놓고 물어보면서 씁니다" loading="lazy">
+  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/2-1783759566801.jpg" alt="저는 카페에서 일할 때 이렇게 켜놓고 물어보면서 씁니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 카페에서 일할 때 이렇게 켜놓고 물어보면서 씁니다</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ Gemini의 최대 무기는 구글입니다. 검색, 지메일, 구글 문서, �
 - 아쉬운 점: 최신 모델 경쟁에서 밀리는 중, 특히 코딩 성능 격차가 큼
 
 <figure>
-  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/3-1783739012112.png" alt="기능표만 보면 셋 다 만능이라, 결국 요금제 구조를 뜯어보게 되더라고요" loading="lazy">
+  <img src="/assets/images/posts/9d3732e8-abb2-4371-aefe-ac8242558272/3-1783739012112.jpg" alt="기능표만 보면 셋 다 만능이라, 결국 요금제 구조를 뜯어보게 되더라고요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>기능표만 보면 셋 다 만능이라, 결국 요금제 구조를 뜯어보게 되더라고요</figcaption>
 </figure>
 

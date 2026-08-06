@@ -15,7 +15,7 @@ last_modified_at: 2026-08-01
 ---
 
 <figure>
-  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-open-source-1.jpg" alt="AUTOTHREADS OPEN SOURCE AI FOR THREADS 텍스트와 뉴스에서 초안을 만들어 예약·답글로 내보내는 로봇 일러스트" width="1200" height="800">
+  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-open-source-1.jpg" alt="AUTOTHREADS OPEN SOURCE AI FOR THREADS 텍스트와 뉴스에서 초안을 만들어 예약·답글로 내보내는 로봇 일러스트" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>뉴스 한 건이 스레드 글 한 편이 되기까지, 사람이 하던 구간을 통째로 맡깁니다</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ AutoThreads는 이 반복 구간을 통째로 들어냅니다. 다만 방식이 
 저장소 문서에는 프로젝트의 태도를 요약하는 문장이 박혀 있습니다. "Automagical, not autopilot." 자동화는 하되 조종간은 넘기지 않겠다는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-workflow-2.png" alt="AutoThreads 동작 흐름도, Discover·Draft·Image·Review·Publish 5단계와 Local LLM 옵션" width="1200" height="675" loading="lazy">
+  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-workflow-2.png" alt="AutoThreads 동작 흐름도, Discover·Draft·Image·Review·Publish 5단계와 Local LLM 옵션" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption>&quot;Automagical, not autopilot&quot; — 자동으로 굴리되 게시 버튼은 넘기지 않겠다는 뜻입니다</figcaption>
 </figure>
 
@@ -54,14 +54,14 @@ AutoThreads는 이 반복 구간을 통째로 들어냅니다. 다만 방식이 
 **검토**와 **게시**는 설명이 필요 없습니다. 고치고, 지금 올리거나, 예약합니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-news-to-draft-3.png" alt="AutoThreads 뉴스 화면, 헤드라인 목록과 출처·경과 시간·Draft 버튼" width="1200" height="675" loading="lazy">
+  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-news-to-draft-3.png" alt="AutoThreads 뉴스 화면, 헤드라인 목록과 출처·경과 시간·Draft 버튼" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption>출처와 몇 분 전 기사인지가 같이 보입니다. Draft 버튼 하나면 초안이 시작됩니다</figcaption>
 </figure>
 
 뉴스 화면은 이렇게 생겼습니다. 주제 알약을 눌러 분야를 바꿉니다. 헤드라인 오른쪽 Draft 버튼 하나면 초안 생성이 시작됩니다. 출처와 몇 분 전 기사인지가 같이 보여서 오래된 뉴스를 잘못 집는 일은 줄어듭니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-draft-editor-4.png" alt="AutoThreads 초안 편집 화면, 글자 수 카운터와 이미지 제안·저장·예약·즉시 게시 버튼" width="1200" height="675" loading="lazy">
+  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-draft-editor-4.png" alt="AutoThreads 초안 편집 화면, 글자 수 카운터와 이미지 제안·저장·예약·즉시 게시 버튼" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption>글자 수를 세어주고, 이미지를 제안하고, 저장·예약·즉시 게시를 한자리에서 고릅니다</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ AutoThreads는 이 반복 구간을 통째로 들어냅니다. 다만 방식이 
 클라우드를 쓰겠다면 Claude, ChatGPT, Gemini를 붙일 수 있고 OpenAI 호환 엔드포인트라면 뭐든 'Other'로 연결됩니다. 반대로 내 컴퓨터에서 도는 로컬 LLM(Large Language Model, 대규모 언어 모델)을 붙이면 클라우드 API 비용이 0원이 됩니다. Ollama, LM Studio, llama.cpp, Jarvis 같은 OpenAI 호환 로컬 서버라면 주소만 적어주면 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-local-llm-settings-5.png" alt="AutoThreads 설정 화면, Local LLM 선택과 base URL·모델 입력 및 연결 성공 표시" width="1200" height="675" loading="lazy">
+  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-local-llm-settings-5.png" alt="AutoThreads 설정 화면, Local LLM 선택과 base URL·모델 입력 및 연결 성공 표시" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption>주소와 모델 이름만 넣으면 됩니다. API 키 칸은 비워둬도 되고요</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ npm run dev
 문제는 그다음입니다. Threads에 글을 올리려면 Meta 개발자 계정에서 앱을 만들고 액세스 토큰을 발급받아야 합니다. 여기서 대부분 막힙니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-threads-token-setup-6.png" alt="AutoThreads Threads 토큰 설정 5단계 안내, Meta 앱 생성부터 연결 테스트까지" width="1200" height="750" loading="lazy">
+  <img src="/assets/images/posts/1bb2249f-cd85-4efe-b1b6-37f5dad8bb16/autothreads-threads-token-setup-6.png" alt="AutoThreads Threads 토큰 설정 5단계 안내, Meta 앱 생성부터 연결 테스트까지" width="1200" height="750" loading="lazy" decoding="async">
   <figcaption>이 다섯 단계를 그림으로 정리해 둔 게 이 저장소의 친절한 면입니다</figcaption>
 </figure>
 

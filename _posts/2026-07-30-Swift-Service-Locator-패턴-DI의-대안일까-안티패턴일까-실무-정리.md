@@ -2,7 +2,7 @@
 title: "Swift Service Locator 패턴, DI의 대안일까 안티패턴일까 (실무 정리)"
 description: "iOS 앱 규모가 커지면서 의존성 관리 때문에 골치 아파진 적, 한 번쯤 있으실 거예요."
 header:
-  og_image: /assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/1.png
+  og_image: /assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/1.jpg
 tags:
   - Swift
   - ServiceLocator
@@ -27,7 +27,7 @@ iOS 앱 규모가 커지면서 의존성 관리 때문에 골치 아파진 적, 
 그래서 오늘은 이 패턴이 뭔지, 왜 욕을 먹는지, 그래도 언제 쓸 만한지를 제 경험 위주로 풀어볼게요.
 
 <figure>
-  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/1.png" alt="Swift Service Locator 패턴, DI랑 나란히 놓고 보면 차이가 확 옵니다">
+  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/1.jpg" alt="Swift Service Locator 패턴, DI랑 나란히 놓고 보면 차이가 확 옵니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift Service Locator 패턴, DI랑 나란히 놓고 보면 차이가 확 옵니다</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ iOS 앱 규모가 커지면서 의존성 관리 때문에 골치 아파진 적, 
 생성자 주입(Constructor Injection)이 밖에서 의존성을 넣어주는 방식이라면, Service Locator는 안에서 직접 꺼내 쓰는 방식이라고 보시면 돼요.
 
 <figure>
-  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/4-1783847558818.png" alt="밖에서 넣어주느냐, 안에서 꺼내 쓰느냐의 차이" loading="lazy">
+  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/4-1783847558818.png" alt="밖에서 넣어주느냐, 안에서 꺼내 쓰느냐의 차이" width="1200" height="266" loading="lazy" decoding="async">
   <figcaption>밖에서 넣어주느냐, 안에서 꺼내 쓰느냐의 차이</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ final class FeedViewModel {
 | 생성자 간결함 | 인자 많아짐 | 깔끔함 |
 
 <figure>
-  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/2.png" alt="생성자만 봐선 뭘 쓰는지 안 보이는 게 늘 걸렸어요" loading="lazy">
+  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/2.jpg" alt="생성자만 봐선 뭘 쓰는지 안 보이는 게 늘 걸렸어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>생성자만 봐선 뭘 쓰는지 안 보이는 게 늘 걸렸어요</figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ SwiftUI의 `@Environment`와 `@EnvironmentObject`가 사실 Service Locator와 �
 기본은 생성자 주입으로 두시길 권합니다. Service Locator는 꼭 필요한 지점에만 국소적으로 쓰세요.
 
 <figure>
-  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/3.png" alt="결국 화이트보드에 의존성 그려놓고 정리하는 게 제일 빨랐습니다" loading="lazy">
+  <img src="/assets/images/posts/8901a7e4-5a49-4c0e-9f91-65ff16d0b5b4/3.jpg" alt="결국 화이트보드에 의존성 그려놓고 정리하는 게 제일 빨랐습니다" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>결국 화이트보드에 의존성 그려놓고 정리하는 게 제일 빨랐습니다</figcaption>
 </figure>
 

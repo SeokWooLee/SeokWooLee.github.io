@@ -2,7 +2,7 @@
 title: "GPT-Live 출시 정리, 음성 AI가 '턴'을 버리고 얻은 것"
 description: "OpenAI가 새 음성 모델 GPT-Live를 출시했습니다. 발표문의 핵심 문장을 하나만 꼽으면 이겁니다. \"듣기와 말하기를 동시에 수행하는 풀 듀플렉스 아키텍처.\" 지금까지의 음성 AI는 아무리 빨라져도 무전기였습니다. 한쪽이 말을 마쳐야 다른 쪽이 말할 수 있었죠.…"
 header:
-  og_image: /assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/1.png
+  og_image: /assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/1.jpg
 tags:
   - GPT-Live
   - OpenAI
@@ -17,7 +17,7 @@ last_modified_at: 2026-07-27
 OpenAI가 새 음성 모델 GPT-Live를 출시했습니다. 발표문의 핵심 문장을 하나만 꼽으면 이겁니다. "듣기와 말하기를 동시에 수행하는 풀 듀플렉스 아키텍처." 지금까지의 음성 AI는 아무리 빨라져도 무전기였습니다. 한쪽이 말을 마쳐야 다른 쪽이 말할 수 있었죠. GPT-Live는 이 구조 자체를 전화기로 바꿨습니다. 무엇이 달라졌고 왜 중요한지, 발표 내용을 아키텍처 관점에서 정리해 봅니다.
 
 <figure>
-  <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/1.png" alt="무전기에서 전화기로. GPT-Live는 듣기와 말하기를 동시에 수행합니다">
+  <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/1.jpg" alt="무전기에서 전화기로. GPT-Live는 듣기와 말하기를 동시에 수행합니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>무전기에서 전화기로. GPT-Live는 듣기와 말하기를 동시에 수행합니다</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ GPT-Live는 턴이라는 개념 자체를 버렸습니다. 응답을 생성하�
 <video controls preload="metadata" style="max-width:100%;border-radius:8px" src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/videos/계단식에서-턴-기반으로-그리고-풀-듀플렉스로-3.mp4" data-title="계단식에서 턴 기반으로, 그리고 풀 듀플렉스로"></video>
 
 <figure>
-  <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/2.png" alt="침묵으로 턴을 판단하던 구조 대신, 듣기·말하기 동시 처리에 백그라운드 위임까지" loading="lazy">
+  <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/2.png" alt="침묵으로 턴을 판단하던 구조 대신, 듣기·말하기 동시 처리에 백그라운드 위임까지" width="1200" height="549" loading="lazy" decoding="async">
   <figcaption>침묵으로 턴을 판단하던 구조 대신, 듣기·말하기 동시 처리에 백그라운드 위임까지</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ GPT-Live는 턴이라는 개념 자체를 버렸습니다. 응답을 생성하�
 아직 안 되는 것도 있습니다. 개발자용 API는 "곧 지원 예정"이고 현재는 출시 알림 신청만 받습니다. 동영상·화면 공유와 함께 쓰는 음성 대화도 출시 직후에는 빠져 있어서, 그 기능이 필요하면 기존 음성 모드를 써야 합니다. 언어 최적화도 주요 언어 중심이라 일부 언어에서는 억양이 어색할 수 있다고 밝혔습니다.
 
 <figure>
-  <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/3.png" alt="손이 자유롭지 않은 순간이야말로 음성 인터페이스의 자리입니다" loading="lazy">
+  <img src="/assets/images/posts/ea24c9c3-83f0-4177-b6e1-8e9a010e072d/3.jpg" alt="손이 자유롭지 않은 순간이야말로 음성 인터페이스의 자리입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>손이 자유롭지 않은 순간이야말로 음성 인터페이스의 자리입니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "전략 vs 템플릿 메서드 vs 커맨드(Strategy·Template Method·Command), 알고리즘 교체 3형제 총정리"
 description: "혹시 디자인 패턴 공부하다가 이런 순간 겪어 보신 적 있나요?"
 header:
-  og_image: /assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/1.png
+  og_image: /assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/1.jpg
 tags:
   - 디자인패턴
   - 전략패턴
@@ -31,7 +31,7 @@ last_modified_at: 2026-08-03
 이 한 줄만 잡고 가도 절반은 끝난 셈이에요. 오늘은 이 3형제를 코드와 함께 확실히 구분해 드리겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/1.png" alt="알고리즘 교체 3형제, 이 그림 하나로 감이 옵니다">
+  <img src="/assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/1.jpg" alt="알고리즘 교체 3형제, 이 그림 하나로 감이 옵니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>알고리즘 교체 3형제, 이 그림 하나로 감이 옵니다</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ last_modified_at: 2026-08-03
 카드 결제, 카카오페이, 무통장. 하는 일(결제)은 같은데 방법이 다르죠.
 
 <figure>
-  <img src="/assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/3.png" alt="전략 패턴은 이렇게 통째로 갈아 끼우는 구조예요" loading="lazy">
+  <img src="/assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/3.png" alt="전략 패턴은 이렇게 통째로 갈아 끼우는 구조예요" width="540" height="1072" loading="lazy" decoding="async">
   <figcaption>전략 패턴은 이렇게 통째로 갈아 끼우는 구조예요</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ print(strategy.pay(10000))
 상속이 아니라 구성(composition)으로 위임한다는 게 포인트입니다.
 
 <figure>
-  <img src="/assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/2.png" alt="결제 전략 코드를 직접 짜보니 위임 구조가 확 와닿더라고요" loading="lazy">
+  <img src="/assets/images/posts/cc34c81a-9809-4289-b9da-980bf4974d97/2.jpg" alt="결제 전략 코드를 직접 짜보니 위임 구조가 확 와닿더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>결제 전략 코드를 직접 짜보니 위임 구조가 확 와닿더라고요</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "Swift Testing 프레임워크, XCTest 대체하는 새 표준 (한눈 정리)"
 description: "iOS 개발하면서 테스트 코드 짜다 보면 XCTest에 슬슬 답답함을 느끼는 순간이 옵니다."
 header:
-  og_image: /assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/1.png
+  og_image: /assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/1.jpg
 tags:
   - SwiftTesting
   - XCTest
@@ -25,7 +25,7 @@ iOS 개발하면서 테스트 코드 짜다 보면 XCTest에 슬슬 답답함을
 이 글에서는 Swift Testing이 뭔지, XCTest와 뭐가 다른지, 지금 당장 써도 되는지까지 제가 직접 써본 경험으로 정리해드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/1.png" alt="XCTest에서 Swift Testing으로, 첫 화면부터 코드가 이렇게 달라집니다">
+  <img src="/assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/1.jpg" alt="XCTest에서 Swift Testing으로, 첫 화면부터 코드가 이렇게 달라집니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>XCTest에서 Swift Testing으로, 첫 화면부터 코드가 이렇게 달라집니다</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ Xcode 16 이상, Swift 6 환경이라면 설정이랄 것도 거의 없어요.
 새로 짜는 테스트만 Swift Testing으로 쓰고, 기존 건 천천히 옮겨가면 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/2-1783804226061.png" alt="새 테스트부터 하나씩 옮겨도 충분합니다" loading="lazy">
+  <img src="/assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/2-1783804226061.jpg" alt="새 테스트부터 하나씩 옮겨도 충분합니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>새 테스트부터 하나씩 옮겨도 충분합니다</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ Xcode 16 이상, Swift 6 환경이라면 설정이랄 것도 거의 없어요.
 #require는 조건이 안 맞으면 그 자리에서 테스트를 멈춰줘요.
 
 <figure>
-  <img src="/assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/3.png" alt="초록불 뜨는 거 보면 @Test 이거 은근 중독됩니다" loading="lazy">
+  <img src="/assets/images/posts/e3d318b8-6a7b-429c-bc9c-d07cde5d73cb/3.jpg" alt="초록불 뜨는 거 보면 @Test 이거 은근 중독됩니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>초록불 뜨는 거 보면 @Test 이거 은근 중독됩니다</figcaption>
 </figure>
 

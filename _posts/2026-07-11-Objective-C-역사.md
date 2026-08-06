@@ -2,7 +2,7 @@
 title: "Objective-C 역사 총정리, 잡스가 사랑한 언어 이야기 (NS 접두어 유래까지)"
 description: "iOS 개발 공부를 시작하면 꼭 한 번 마주치는 언어가 있어요. 대괄호가 잔뜩 들어간 낯선 문법, NSString 같은 알 수 없는 접두어."
 header:
-  og_image: /assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/1-1783736402000.png
+  og_image: /assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/1-1783736402000.jpg
 categories:
   - iOS
 tags:
@@ -34,7 +34,7 @@ iOS 개발 공부를 시작하면 꼭 한 번 마주치는 언어가 있어요. 
 4. Swift 시대에도 살아남은 이유
 
 <figure>
-  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/1-1783736402000.png" alt="1983년부터 아이폰까지, Objective-C 역사가 한 줄로 이어집니다">
+  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/1-1783736402000.jpg" alt="1983년부터 아이폰까지, Objective-C 역사가 한 줄로 이어집니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>1983년부터 아이폰까지, Objective-C 역사가 한 줄로 이어집니다</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ C++과 거의 같은 시기에, 같은 재료(C + 객체지향)로 완전히 다
 ## NS 접두어는 무슨 뜻일까요?
 
 <figure>
-  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/2.png" alt="NS 접두어의 정체는 이 NeXT 시절에 있었어요" loading="lazy">
+  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/2.jpg" alt="NS 접두어의 정체는 이 NeXT 시절에 있었어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>NS 접두어의 정체는 이 NeXT 시절에 있었어요</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ NeXTSTEP은 Mac OS X의 뼈대가 됐고, Objective-C는 애플 공식 언어가
 언어 인기 지표인 TIOBE 인덱스 기준으로 2012년과 2014년 두 차례 '올해의 언어'로 뽑혔고, 한때 C와 Java 다음인 3위까지 올랐습니다.
 
 <figure>
-  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/3.png" alt="앱스토어 초창기엔 다들 이 언어로 앱을 만들었죠" loading="lazy">
+  <img src="/assets/images/posts/59856350-4154-473a-abe2-acc81b32612e/3.jpg" alt="앱스토어 초창기엔 다들 이 언어로 앱을 만들었죠" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>앱스토어 초창기엔 다들 이 언어로 앱을 만들었죠</figcaption>
 </figure>
 

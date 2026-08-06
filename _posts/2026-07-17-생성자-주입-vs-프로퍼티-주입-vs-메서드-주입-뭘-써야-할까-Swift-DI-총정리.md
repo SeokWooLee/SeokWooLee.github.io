@@ -2,7 +2,7 @@
 title: "생성자 주입 vs 프로퍼티 주입 vs 메서드 주입, 뭘 써야 할까 (Swift DI 총정리)"
 description: "Swift로 iOS 앱을 만들다 보면 꼭 마주치는 고민이 있어요."
 header:
-  og_image: /assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/1.png
+  og_image: /assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/1.jpg
 tags:
   - SwiftDI
   - 의존성주입
@@ -25,7 +25,7 @@ Swift로 iOS 앱을 만들다 보면 꼭 마주치는 고민이 있어요.
 왜 그런지, 그리고 나머지 두 방식은 언제 쓰는지를 실제 경험 위주로 풀어볼게요.
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/1.png" alt="생성자·프로퍼티·메서드 주입, 첫 화면부터 차이가 보이죠">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/1.jpg" alt="생성자·프로퍼티·메서드 주입, 첫 화면부터 차이가 보이죠" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>생성자·프로퍼티·메서드 주입, 첫 화면부터 차이가 보이죠</figcaption>
 </figure>
 
@@ -86,12 +86,12 @@ A가 B를, B가 A를 서로 참조하면 프로퍼티 주입은 앱이 실행될
 생성자 주입은 객체를 만드는 시점에 바로 문제가 드러나서(설계가 꼬였다면 아예 컴파일이 안 돼서) 문제를 훨씬 빨리 잡을 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/4-1783847681137.png" alt="순환 참조, 터지는 타이밍부터가 다릅니다" loading="lazy">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/4-1783847681137.png" alt="순환 참조, 터지는 타이밍부터가 다릅니다" width="916" height="972" loading="lazy" decoding="async">
   <figcaption>순환 참조, 터지는 타이밍부터가 다릅니다</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/2.png" alt="필드 주입만 쓰던 시절엔 테스트 짤 때마다 애먹었어요" loading="lazy">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/2.jpg" alt="필드 주입만 쓰던 시절엔 테스트 짤 때마다 애먹었어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>필드 주입만 쓰던 시절엔 테스트 짤 때마다 애먹었어요</figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ A가 B를, B가 A를 서로 참조하면 프로퍼티 주입은 앱이 실행될
 아니요. 화면 몇 개 규모라면 `init`으로 직접 넘기는 순수 생성자 주입만으로 충분합니다.
 
 <figure>
-  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/3.png" alt="고민될 땐 이 순서대로 골라보시면 편합니다" loading="lazy">
+  <img src="/assets/images/posts/18fb1585-1cdb-4d38-8d79-30c40d4931f3/3.jpg" alt="고민될 땐 이 순서대로 골라보시면 편합니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>고민될 땐 이 순서대로 골라보시면 편합니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #1] iOS MVC 패턴, Massive View Controller가 생기는 진짜 이유"
 description: "iOS 개발을 하다 보면 한 번쯤 듣게 되는 농담이 있습니다."
 header:
-  og_image: /assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/1.png
+  og_image: /assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/1.jpg
 tags:
   - iOS
   - MVC
@@ -25,7 +25,7 @@ iOS 개발을 하다 보면 한 번쯤 듣게 되는 농담이 있습니다.
 결론부터 말씀드리면, 문제는 MVC라는 개념이 아니라 **UIViewController라는 클래스가 View와 Controller의 경계에 걸쳐 있다는 구조** 자체에 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/1.png" alt="Model도 View도 아닌 코드는 결국 전부 뷰컨트롤러로 모입니다">
+  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/1.jpg" alt="Model도 View도 아닌 코드는 결국 전부 뷰컨트롤러로 모입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Model도 View도 아닌 코드는 결국 전부 뷰컨트롤러로 모입니다</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Apple MVC의 Controller는 iOS에서 UIViewController로 구현됩니다. 그런
 여기까지는 그래도 뷰 관련 일입니다. 문제는 "그럼 네트워크 요청은 어디에 쓰지?", "화면 전환은?", "데이터 포매팅은?"이라는 질문에 마땅한 답이 없다는 거예요. Model도 View도 아니니, 결국 전부 뷰컨트롤러로 들어갑니다.
 
 <figure>
-  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/2.png" alt="이름부터 View+Controller, 혼자서 다 하는 게 기본값이에요" loading="lazy">
+  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/2.jpg" alt="이름부터 View+Controller, 혼자서 다 하는 게 기본값이에요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>이름부터 View+Controller, 혼자서 다 하는 게 기본값이에요</figcaption>
 </figure>
 
@@ -113,7 +113,7 @@ final class ProfileViewController: UIViewController {
 그리고 "화면에 보여줄 상태를 만드는 로직"까지 분리하고 싶어지는 순간이 옵니다. 그 답이 바로 다음 편에서 다룰 **MVVM**입니다. ViewModel이라는 객체가 왜 필요한지, 그리고 바인딩이 없으면 왜 반쪽짜리인지 이어서 정리해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/3.png" alt="떼어낼 수 있는 책임부터 의식적으로 분리하는 게 시작입니다" loading="lazy">
+  <img src="/assets/images/posts/a3101292-21b1-4a89-b770-3e844f1a23c6/3.jpg" alt="떼어낼 수 있는 책임부터 의식적으로 분리하는 게 시작입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>떼어낼 수 있는 책임부터 의식적으로 분리하는 게 시작입니다</figcaption>
 </figure>
 

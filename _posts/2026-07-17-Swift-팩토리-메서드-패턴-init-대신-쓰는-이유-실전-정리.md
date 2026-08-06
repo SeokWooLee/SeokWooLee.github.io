@@ -2,7 +2,7 @@
 title: "Swift 팩토리 메서드 패턴(Factory Method Pattern), init 대신 쓰는 이유"
 description: "Swift로 앱을 만들다 보면 객체 생성하는 코드를 하루에도 수십 번은 쓰게 됩니다."
 header:
-  og_image: /assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.png
+  og_image: /assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.jpg
 tags:
   - Swift
   - 팩토리메서드패턴
@@ -23,7 +23,7 @@ Swift로 앱을 만들다 보면 객체 생성하는 코드를 하루에도 수�
 이 글에서는 Swift 팩토리 메서드 패턴이 뭔지, 그리고 왜 init 대신 팩토리를 쓰는지를 실제 코드와 함께 풀어볼게요.
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.png" alt="Swift 팩토리 메서드 패턴, init이랑 뭐가 다른지부터 짚고 갈게요">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/1.jpg" alt="Swift 팩토리 메서드 패턴, init이랑 뭐가 다른지부터 짚고 갈게요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 팩토리 메서드 패턴, init이랑 뭐가 다른지부터 짚고 갈게요</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ init은 무조건 새 객체를 반환하지만, 팩토리는 캐시된 값이�
 **넷째, 실패 처리를 더 명확하게 표현할 수 있어요.**
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/2.png" alt="static func 한 줄 붙이는 것만으로 코드가 확 읽기 편해집니다" loading="lazy">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/2.jpg" alt="static func 한 줄 붙이는 것만으로 코드가 확 읽기 편해집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>static func 한 줄 붙이는 것만으로 코드가 확 읽기 편해집니다</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ final class IconCache {
 같은 아이콘을 여러 번 부를 때 메모리를 아낄 수 있어요.
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/4-1783847712458.png" alt="있으면 꺼내주고, 없으면 만들어서 채워둬요" loading="lazy">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/4-1783847712458.png" alt="있으면 꺼내주고, 없으면 만들어서 채워둬요" width="934" height="1272" loading="lazy" decoding="async">
   <figcaption>있으면 꺼내주고, 없으면 만들어서 채워둬요</figcaption>
 </figure>
 
@@ -151,7 +151,7 @@ Swift 표준 라이브러리도 이렇게 나눠 써요.
 | 초기화가 한 줄로 끝남 | init |
 
 <figure>
-  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/3.png" alt="저는 헷갈릴 때마다 이 표를 떠올리면서 골라요" loading="lazy">
+  <img src="/assets/images/posts/99f6f318-d7b7-4d4b-80f1-8442636176f7/3.jpg" alt="저는 헷갈릴 때마다 이 표를 떠올리면서 골라요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 헷갈릴 때마다 이 표를 떠올리면서 골라요</figcaption>
 </figure>
 

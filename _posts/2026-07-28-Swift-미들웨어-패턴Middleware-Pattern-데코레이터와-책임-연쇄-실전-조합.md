@@ -2,7 +2,7 @@
 title: "Swift 미들웨어 패턴(Middleware Pattern), 데코레이터와 책임 연쇄 실전 조합"
 description: "네트워크 레이어를 만들다 보면 꼭 이런 순간이 옵니다."
 header:
-  og_image: /assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/1.png
+  og_image: /assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/1.jpg
 tags:
   - Swift
   - 디자인패턴
@@ -27,7 +27,7 @@ last_modified_at: 2026-07-28
 오늘은 이 조합을 왜 쓰는지, 코드로 어떻게 엮는지 실전 예제로 풀어보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/1.png" alt="Swift 미들웨어에서 데코레이터와 책임 연쇄, 역할이 이렇게 다릅니다">
+  <img src="/assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/1.jpg" alt="Swift 미들웨어에서 데코레이터와 책임 연쇄, 역할이 이렇게 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 미들웨어에서 데코레이터와 책임 연쇄, 역할이 이렇게 다릅니다</figcaption>
 </figure>
 
@@ -119,12 +119,12 @@ func buildChain(_ middlewares: [Middleware],
 배열을 `[인증, 로깅, 재시도]` 순으로 넣으면 요청은 그 순서대로 통과하고 응답은 역순으로 빠져나옵니다. 양파 껍질을 떠올리시면 딱 맞아요.
 
 <figure>
-  <img src="/assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/4-1783847517249.png" alt="요청은 안으로, 응답은 거꾸로 밖으로 빠져나가는 모양" loading="lazy">
+  <img src="/assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/4-1783847517249.png" alt="요청은 안으로, 응답은 거꾸로 밖으로 빠져나가는 모양" width="1200" height="594" loading="lazy" decoding="async">
   <figcaption>요청은 안으로, 응답은 거꾸로 밖으로 빠져나가는 모양</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/2.png" alt="코드 붙이기 전에 종이에 껍질 구조부터 그려봤어요" loading="lazy">
+  <img src="/assets/images/posts/7e172bb9-e535-45cc-a152-772a16eff333/2.jpg" alt="코드 붙이기 전에 종이에 껍질 구조부터 그려봤어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>코드 붙이기 전에 종이에 껍질 구조부터 그려봤어요</figcaption>
 </figure>
 

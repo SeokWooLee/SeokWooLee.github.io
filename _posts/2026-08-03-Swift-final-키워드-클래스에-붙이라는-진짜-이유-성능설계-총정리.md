@@ -2,7 +2,7 @@
 title: "Swift final 키워드, 클래스에 붙이라는 진짜 이유 (성능·설계 총정리)"
 description: "코드 리뷰에서 \"이 클래스에 final 좀 붙여주세요\" 같은 말, 한 번쯤 들어보셨을 거예요."
 header:
-  og_image: /assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/1.png
+  og_image: /assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/1.jpg
 tags:
   - Swift
   - final키워드
@@ -23,7 +23,7 @@ last_modified_at: 2026-08-03
 오늘은 왜 Swift 클래스에 final을 붙이라고 하는지, 그 진짜 이유를 정리해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/1.png" alt="final 붙인 클래스와 열어둔 클래스, 첫 화면부터 구조가 다릅니다">
+  <img src="/assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/1.jpg" alt="final 붙인 클래스와 열어둔 클래스, 첫 화면부터 구조가 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>final 붙인 클래스와 열어둔 클래스, 첫 화면부터 구조가 다릅니다</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ logger.log("결제 완료")   // 출력: [LOG] 결제 완료
 호출 한 번의 비용이 크진 않지만 반복문 안에서 수천 번 불리는 메서드라면 이 차이가 쌓입니다.
 
 <figure>
-  <img src="/assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/2.png" alt="호출 하나가 이 갈림길에서 정적이냐 동적이냐로 갈려요" loading="lazy">
+  <img src="/assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/2.png" alt="호출 하나가 이 갈림길에서 정적이냐 동적이냐로 갈려요" width="1152" height="1046" loading="lazy" decoding="async">
   <figcaption>호출 하나가 이 갈림길에서 정적이냐 동적이냐로 갈려요</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ final은 이 조언을 코드로 실천하는 도구예요.
 의도가 명확해지면, 나중에 코드를 읽는 동료도 헤맬 일이 줄어들어요.
 
 <figure>
-  <img src="/assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/3-1783857073150.png" alt="열어둘 게 아니면 final, 의도는 컴파일러가 지켜줍니다" loading="lazy">
+  <img src="/assets/images/posts/abd8df02-519b-4522-83f6-c5cf54e6a816/3-1783857073150.jpg" alt="열어둘 게 아니면 final, 의도는 컴파일러가 지켜줍니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>열어둘 게 아니면 final, 의도는 컴파일러가 지켜줍니다</figcaption>
 </figure>
 

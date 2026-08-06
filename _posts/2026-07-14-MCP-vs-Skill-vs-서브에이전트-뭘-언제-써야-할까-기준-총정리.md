@@ -2,7 +2,7 @@
 title: "[MCP·Skill #3] MCP vs Skill vs 서브에이전트, 뭘 언제 써야 할까 (기준 총정리)"
 description: "AI 코딩 도구를 확장하는 방법이 요즘 부쩍 늘었습니다. MCP로 도구를 붙이고, Skill로 절차를 등록하고, 서브에이전트로 작업을 위임하고요."
 header:
-  og_image: /assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/1.png
+  og_image: /assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/1.jpg
 tags:
   - MCP
   - Skill
@@ -23,7 +23,7 @@ AI 코딩 도구를 확장하는 방법이 요즘 부쩍 늘었습니다. MCP로
 이 글에서는 세 가지가 각각 무엇을 확장하는지, 어떤 기준으로 고르는지, 조합하면 어떤 그림이 되는지 정리합니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/1.png" alt="손·매뉴얼·동료, 셋은 확장하는 층이 다릅니다">
+  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/1.jpg" alt="손·매뉴얼·동료, 셋은 확장하는 층이 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>손·매뉴얼·동료, 셋은 확장하는 층이 다릅니다</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ Skill은 새 능력을 주는 게 아니라 이미 가능한 일을 잘하게 �
 > 반대로 말하면 이렇게 됩니다. 접근이 없으면 MCP, 요령이 없으면 Skill, 컨텍스트가 없으면(모자라면) 서브에이전트.
 
 <figure>
-  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/2.png" alt="세 질문만 순서대로 던지면 선택이 끝납니다" loading="lazy">
+  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/2.png" alt="세 질문만 순서대로 던지면 선택이 끝납니다" width="1116" height="1736" loading="lazy" decoding="async">
   <figcaption>세 질문만 순서대로 던지면 선택이 끝납니다</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Skill은 새 능력을 주는 게 아니라 이미 가능한 일을 잘하게 �
 역할이 겹치는 게 아니라 층이 다르다는 게 보이실 거예요. 누가 / 어떻게 / 무엇으로, 세 질문에 하나씩 대응합니다.
 
 <figure>
-  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/3.png" alt="조합 설계는 화이트보드에서 세 층을 나누는 것부터 시작해요" loading="lazy">
+  <img src="/assets/images/posts/1bb00db5-c156-4575-854c-7218ac263b2c/3.jpg" alt="조합 설계는 화이트보드에서 세 층을 나누는 것부터 시작해요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>조합 설계는 화이트보드에서 세 층을 나누는 것부터 시작해요</figcaption>
 </figure>
 

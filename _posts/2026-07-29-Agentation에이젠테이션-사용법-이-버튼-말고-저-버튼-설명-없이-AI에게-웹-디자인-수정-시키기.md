@@ -15,7 +15,7 @@ last_modified_at: 2026-07-30
 ---
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-visual-feedback-1.jpg" alt="VISUAL FEEDBACK FOR AI AGENTS 텍스트와 웹사이트 화면의 핀 마커를 클릭해 구조화된 데이터 카드를 코딩 로봇에게 전달하는 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-visual-feedback-1.jpg" alt="VISUAL FEEDBACK FOR AI AGENTS 텍스트와 웹사이트 화면의 핀 마커를 클릭해 구조화된 데이터 카드를 코딩 로봇에게 전달하는 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>화면에서 가리키기만 하면, 나머지는 AI가 알아서 찾아갑니다</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ AI에게 웹사이트를 만들어 달라고 하는 건 이제 어렵지 않습�
 Agentation은 내가 만들고 있는 웹사이트 위에 떠 있는 작은 툴바입니다. 마음에 안 드는 곳을 클릭하고 "여백이 너무 좁아요" 같은 메모를 남기면, 그걸 AI 코딩 도구가 그대로 실행할 수 있는 형식으로 정리해 줍니다.
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-annotation-to-agent-2.gif" alt="Agentation 주석 3개가 에이전트 터미널의 Page Feedback 목록으로 변환되는 공식 데모 화면" width="1200" height="592" loading="lazy">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-annotation-to-agent-2.gif" alt="Agentation 주석 3개가 에이전트 터미널의 Page Feedback 목록으로 변환되는 공식 데모 화면" width="1200" height="592" loading="lazy" decoding="async">
   <figcaption>찍는 건 화면에서, 받는 건 터미널에서. 이 흐름 하나가 전부입니다.</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ Agentation은 내가 만들고 있는 웹사이트 위에 떠 있는 작은 툴�
 - 위치와 크기, 주변 텍스트, 지금 적용돼 있는 색상·글꼴·여백 값
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-react-component-detection-6.gif" alt="Agentation이 웹 요소 위에 App-Header-Button 리액트 컴포넌트 계층을 툴팁으로 표시하는 공식 데모 화면" width="1096" height="784" loading="lazy">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-react-component-detection-6.gif" alt="Agentation이 웹 요소 위에 App-Header-Button 리액트 컴포넌트 계층을 툴팁으로 표시하는 공식 데모 화면" width="1096" height="784" loading="lazy" decoding="async">
   <figcaption>마우스만 올려도 이 요소가 어떤 컴포넌트인지 바로 뜹니다.</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ Agentation은 내가 만들고 있는 웹사이트 위에 떠 있는 작은 툴�
 Agentation이 넘겨주는 건 그림이 아니라 검색 가능한 문자열입니다. 선택자와 클래스 이름이 있으면 AI는 코드베이스를 뒤져 해당 위치를 정확히 짚어냅니다. 화살표 그린 이미지와 결정적으로 갈리는 지점입니다.
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-vs-screenshot-3.png" alt="스크린샷 화살표 방식과 Agentation 주석 방식 비교 다이어그램, 요소 추측 후 잘못된 파일 수정 대 CSS 선택자와 소스 파일 줄 번호로 정확한 줄 수정" width="1200" height="588" loading="lazy">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-vs-screenshot-3.png" alt="스크린샷 화살표 방식과 Agentation 주석 방식 비교 다이어그램, 요소 추측 후 잘못된 파일 수정 대 CSS 선택자와 소스 파일 줄 번호로 정확한 줄 수정" width="1200" height="588" loading="lazy" decoding="async">
   <figcaption>같은 지적이라도 뭘 같이 넘기느냐에 따라 결과가 갈립니다</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ Agentation이 넘겨주는 건 그림이 아니라 검색 가능한 문자열입
 - **애니메이션 정지** — `P` 키를 누르면 CSS·자바스크립트·영상 애니메이션이 멈춥니다. 스르륵 지나가서 못 잡던 순간을 세워놓고 지적하면 됩니다. 다만 서드파티 애니메이션 라이브러리 중에는 완전히 멈추지 않는 것도 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-text-annotation-7.gif" alt="Agentation 텍스트 선택 주석 데모, 오타 단어를 선택해 Fix typo 메모를 입력하고 마커가 찍히는 화면" width="1096" height="708" loading="lazy">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-text-annotation-7.gif" alt="Agentation 텍스트 선택 주석 데모, 오타 단어를 선택해 Fix typo 메모를 입력하고 마커가 찍히는 화면" width="1096" height="708" loading="lazy" decoding="async">
   <figcaption>오타 하나 고칠 때는 이렇게 문장을 통째로 집어 줍니다.</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ Agentation이 넘겨주는 건 그림이 아니라 검색 가능한 문자열입
 이렇게 만든 변경은 주석 하나하나에 `feedback`·`placement`·`rearrange` 중 한 종류가 붙어 넘어갑니다. AI가 받는 건 "가운데로 옮겨주세요" 같은 문장이 아니라 좌표와 크기입니다. 다만 레이아웃 모드는 Agentation 3.0부터 들어간 기능이라 버전을 확인해야 하고 다른 기능과 마찬가지로 데스크톱에서만 동작합니다. 자세한 소개는 [공식 블로그 글](https://www.agentation.com/blog/layout-mode)에 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-layout-mode-4.png" alt="Agentation 레이아웃 모드 화면, 하단 툴바와 크기 조절 핸들로 선택된 Text 블록" width="1200" height="630" loading="lazy">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-layout-mode-4.png" alt="Agentation 레이아웃 모드 화면, 하단 툴바와 크기 조절 핸들로 선택된 Text 블록" width="1200" height="630" loading="lazy" decoding="async">
   <figcaption>L 키를 누르면 말로 설명하던 배치를 직접 끌어다 놓게 됩니다.</figcaption>
 </figure>
 
@@ -161,7 +161,7 @@ function App() {
 연결해 두면 메모가 일방통행이 아니게 되는 것도 큽니다. AI가 "이거 24px로 할까요, 16px로 할까요?"라고 그 메모에 되물으면 같은 자리에서 답합니다. 대기 중·확인함·해결됨·보류 같은 상태도 남습니다. 던져놓고 끝이 아니라 대화가 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-agent-reply-5.png" alt="Agentation 주석 4개가 선으로 이어진 채 에이전트가 응답하는 대화 카드 화면" width="1200" height="630" loading="lazy">
+  <img src="/assets/images/posts/423d38a8-4d81-4677-bb1a-14c4060c902a/agentation-agent-reply-5.png" alt="Agentation 주석 4개가 선으로 이어진 채 에이전트가 응답하는 대화 카드 화면" width="1200" height="630" loading="lazy" decoding="async">
   <figcaption>메모를 남기면 에이전트가 그 자리에서 대답합니다. 일방통행이 아닙니다.</figcaption>
 </figure>
 

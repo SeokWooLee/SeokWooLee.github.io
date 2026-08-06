@@ -2,7 +2,7 @@
 title: "OOP 다형성(Polymorphism) 완벽 정리, 오버라이딩부터 프로토콜까지 한 번에"
 description: "OOP 다형성, 오버라이딩부터 프로토콜까지 한 번에 이해하려다 머리가 복잡해진 적 있으시죠?"
 header:
-  og_image: /assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/1.png
+  og_image: /assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/1.jpg
 tags:
   - OOP
   - 다형성
@@ -23,7 +23,7 @@ OOP 다형성, 오버라이딩부터 프로토콜까지 한 번에 이해하려�
 이 글 하나로 세 개념이 어떻게 얽히는지 잡히도록, 차근차근 풀어드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/1.png" alt="같은 소리내() 하나로 세 결과가 나오는 게 다형성이에요">
+  <img src="/assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/1.jpg" alt="같은 소리내() 하나로 세 결과가 나오는 게 다형성이에요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>같은 소리내() 하나로 세 결과가 나오는 게 다형성이에요</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ a.sound()
 이게 바로 런타임에 실제 객체를 보고 결정하는 다형성입니다.
 
 <figure>
-  <img src="/assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/2.png" alt="부모 하나에 자식이 각자 다르게 재정의하는 구조입니다" loading="lazy">
+  <img src="/assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/2.png" alt="부모 하나에 자식이 각자 다르게 재정의하는 구조입니다" width="528" height="636" loading="lazy" decoding="async">
   <figcaption>부모 하나에 자식이 각자 다르게 재정의하는 구조입니다</figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ things.forEach { $0.sound() }
 Swift 같은 언어가 상속보다 프로토콜을 앞세우는 이유이기도 해요.
 
 <figure>
-  <img src="/assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/3.png" alt="직접 쳐보면서 protocol이랑 override 감을 잡았어요" loading="lazy">
+  <img src="/assets/images/posts/b7eed0e0-d083-42b4-88a2-4a5e767ecb2c/3.jpg" alt="직접 쳐보면서 protocol이랑 override 감을 잡았어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>직접 쳐보면서 protocol이랑 override 감을 잡았어요</figcaption>
 </figure>
 

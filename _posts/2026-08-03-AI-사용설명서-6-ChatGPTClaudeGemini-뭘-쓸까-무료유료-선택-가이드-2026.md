@@ -15,7 +15,7 @@ last_modified_at: 2026-08-03
 ---
 
 <figure>
-  <img src="/assets/images/posts/28e0bd06-66f0-4b82-9b94-7478250e0d7e/which-ai-to-choose-1.jpg" alt="WHICH AI TO CHOOSE 2026 GUIDE 텍스트와 세 갈래 문 앞에 선 사람을 그린 AI 선택 히어로 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/28e0bd06-66f0-4b82-9b94-7478250e0d7e/which-ai-to-choose-1.jpg" alt="WHICH AI TO CHOOSE 2026 GUIDE 텍스트와 세 갈래 문 앞에 선 사람을 그린 AI 선택 히어로 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>만능 1위는 없습니다. 용도가 정답을 정해줍니다</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ last_modified_at: 2026-08-03
 **Gemini(구글)는 구글 생태계의 확장팩입니다.** Gmail·구글 문서·캘린더와 연결해 "내 메일함에서 이번 주 일정 관련 메일 찾아줘" 같은 작업이 되는 게 고유 강점입니다. 4편에서 소개한 NotebookLM(최근 Gemini Notebook으로 이름이 바뀌었습니다)도 구글 소속이고요. 가격도 셋 중 가장 공격적입니다.
 
 <figure>
-  <img src="/assets/images/posts/28e0bd06-66f0-4b82-9b94-7478250e0d7e/which-ai-to-choose-2.png" alt="ChatGPT Claude Gemini 용도별 선택 플로우차트, 이미지 문서 구글 연동 분기와 무료 시작 전략" width="1120" height="1080" loading="lazy">
+  <img src="/assets/images/posts/28e0bd06-66f0-4b82-9b94-7478250e0d7e/which-ai-to-choose-2.png" alt="ChatGPT Claude Gemini 용도별 선택 플로우차트, 이미지 문서 구글 연동 분기와 무료 시작 전략" width="1120" height="1080" loading="lazy" decoding="async">
   <figcaption>뭘 주로 하고 싶은지에서 출발하면 고르기가 쉬워집니다</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ last_modified_at: 2026-08-03
 실전에서 가장 흔한 정답은 조합입니다. **주력 하나를 결제하고, 나머지는 무료로 보완하는 것.** 예를 들어 ChatGPT Plus를 결제해 이미지·검색·범용 작업을 맡기고, 긴 문서 작업만 Claude 무료로, 자료 정리는 NotebookLM 무료로 돌리는 식입니다. 월 $20 안에서 세 생태계의 강점을 다 씁니다.
 
 <figure>
-  <img src="/assets/images/posts/28e0bd06-66f0-4b82-9b94-7478250e0d7e/which-ai-to-choose-3.jpg" alt="START FREE THEN UPGRADE 텍스트와 무료에서 구독으로 올라가는 3단계 계단 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/28e0bd06-66f0-4b82-9b94-7478250e0d7e/which-ai-to-choose-3.jpg" alt="START FREE THEN UPGRADE 텍스트와 무료에서 구독으로 올라가는 3단계 계단 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>무료로 시작해 막히는 지점을 확인하고, 그때 결제해도 늦지 않습니다</figcaption>
 </figure>
 

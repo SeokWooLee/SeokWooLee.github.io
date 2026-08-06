@@ -2,7 +2,7 @@
 title: "Objective-C 골뱅이(@) 문법, 왜 전부 @로 시작할까? (완벽 정리)"
 description: "Objective-C 코드를 처음 열어보면 제일 먼저 눈에 걸리는 게 있어요."
 header:
-  og_image: /assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.png
+  og_image: /assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.jpg
 categories:
   - iOS
 tags:
@@ -29,7 +29,7 @@ Objective-C 코드를 처음 열어보면 제일 먼저 눈에 걸리는 게 있
 오늘은 왜 이 골뱅이가 @interface에도, @property에도, @"문자열"에도 똑같이 붙는지, 그 원리를 편하게 풀어드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.png" alt="Objective-C 골뱅이(@) 문법, 알고 보면 규칙은 하나예요">
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/1-1783736148635.jpg" alt="Objective-C 골뱅이(@) 문법, 알고 보면 규칙은 하나예요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Objective-C 골뱅이(@) 문법, 알고 보면 규칙은 하나예요</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ C에서 쓰는 글자를 한번 떠올려 볼게요.
 쉽게 비유하면, @는 Objective-C 전용 문법들을 모아두는 별도의 서랍 손잡이 같은 거예요.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/2.png" alt="C에서 온 것과 Objective-C가 얹은 것, @가 그 경계선입니다" loading="lazy">
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/2.jpg" alt="C에서 온 것과 Objective-C가 얹은 것, @가 그 경계선입니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>C에서 온 것과 Objective-C가 얹은 것, @가 그 경계선입니다</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ NSString *greeting = @"안녕하세요"; // 따옴표 앞 @ → NSString 객체
 이렇게 @ 유무만 봐도 "아, 이건 Objective-C 확장이구나" 하고 눈으로 바로 구분이 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/3.png" alt="@만 눈에 들어와도 코드 읽기가 한결 수월해집니다" loading="lazy">
+  <img src="/assets/images/posts/cf7051a5-d2b2-4767-b509-eaf6b196539c/3.jpg" alt="@만 눈에 들어와도 코드 읽기가 한결 수월해집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>@만 눈에 들어와도 코드 읽기가 한결 수월해집니다</figcaption>
 </figure>
 

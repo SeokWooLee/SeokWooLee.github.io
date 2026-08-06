@@ -2,7 +2,7 @@
 title: "Swift 오브젝트 풀 패턴(Object Pool Pattern) 완전정리 (플라이웨이트와 차이·재사용법)"
 description: "게임 이펙트를 잔뜩 뿌리는 화면을 만들다 보면 프레임이 뚝뚝 끊기는 순간이 옵니다."
 header:
-  og_image: /assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/1.png
+  og_image: /assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/1.jpg
 tags:
   - Swift
   - 오브젝트풀
@@ -23,7 +23,7 @@ last_modified_at: 2026-07-29
 결론부터 말씀드릴게요. 오브젝트 풀은 "객체를 매번 새로 만들지 않고 미리 만들어둔 걸 빌려 쓰고 반납하는" 재사용 기법이고 자주 헷갈리는 플라이웨이트와는 목적 자체가 다릅니다.
 
 <figure>
-  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/1.png" alt="Swift 오브젝트 풀과 플라이웨이트, 한눈에 비교해봤어요">
+  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/1.jpg" alt="Swift 오브젝트 풀과 플라이웨이트, 한눈에 비교해봤어요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 오브젝트 풀과 플라이웨이트, 한눈에 비교해봤어요</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ last_modified_at: 2026-07-29
 한 줄로 정리하면 오브젝트 풀은 "차례로 돌려쓰기", 플라이웨이트는 "다 같이 나눠쓰기"입니다.
 
 <figure>
-  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/2.png" alt="빌려 쓰고 반납하는 구조라 코드가 생각보다 단순합니다" loading="lazy">
+  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/2.jpg" alt="빌려 쓰고 반납하는 구조라 코드가 생각보다 단순합니다" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>빌려 쓰고 반납하는 구조라 코드가 생각보다 단순합니다</figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ final class ObjectPool<T> {
 `release()`로 반납하면 다음 요청이 그 객체를 재사용해요.
 
 <figure>
-  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/4-1783847575845.png" alt="빌리고 쓰고 돌려주고, 이 순환이 전부예요" loading="lazy">
+  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/4-1783847575845.png" alt="빌리고 쓰고 돌려주고, 이 순환이 전부예요" width="330" height="766" loading="lazy" decoding="async">
   <figcaption>빌리고 쓰고 돌려주고, 이 순환이 전부예요</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Swift는 값 타입(struct)이 많고 ARC가 꽤 효율적이라 무조건 풀�
 먼저 인스트루먼트로 측정하고 병목이 확인됐을 때 도입하는 순서를 권합니다.
 
 <figure>
-  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/3.png" alt="측정해보니 메모리 그래프부터 확실히 잔잔해지더라고요" loading="lazy">
+  <img src="/assets/images/posts/5741e48b-8a9c-4976-b0ac-a2fe1ca180f3/3.jpg" alt="측정해보니 메모리 그래프부터 확실히 잔잔해지더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>측정해보니 메모리 그래프부터 확실히 잔잔해지더라고요</figcaption>
 </figure>
 

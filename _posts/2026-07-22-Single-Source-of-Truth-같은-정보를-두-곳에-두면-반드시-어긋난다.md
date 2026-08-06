@@ -19,7 +19,7 @@ last_modified_at: 2026-07-22
 이런 사고를 구조적으로 막는 원칙이 Single Source of Truth, 줄여서 SSOT입니다. 이름은 거창하지만 내용은 한 문장입니다. **모든 정보 조각에는 권위 있는 원본이 정확히 하나만 있어야 한다.**
 
 <figure>
-  <img src="/assets/images/posts/db553d8e-5e89-42a6-a5c9-394d057aaeb2/single-source-of-truth-1.jpg" alt="Single Source of Truth 원칙을 나타내는 하나의 데이터베이스 원본과 파생 화면들 히어로 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/db553d8e-5e89-42a6-a5c9-394d057aaeb2/single-source-of-truth-1.jpg" alt="Single Source of Truth 원칙을 나타내는 하나의 데이터베이스 원본과 파생 화면들 히어로 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>원본은 하나, 나머지는 전부 파생이어야 합니다</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ last_modified_at: 2026-07-22
 형태는 달라도 구조는 같습니다. 원본이 둘이고, 동기화가 사람 손에 달려 있다는 것.
 
 <figure>
-  <img src="/assets/images/posts/db553d8e-5e89-42a6-a5c9-394d057aaeb2/single-source-of-truth-2.png" alt="SSOT 없이 수동 동기화로 값이 어긋나는 구조와 공용 원본에서 파생하는 구조 비교 다이어그램" width="1200" height="737" loading="lazy">
+  <img src="/assets/images/posts/db553d8e-5e89-42a6-a5c9-394d057aaeb2/single-source-of-truth-2.png" alt="SSOT 없이 수동 동기화로 값이 어긋나는 구조와 공용 원본에서 파생하는 구조 비교 다이어그램" width="1200" height="737" loading="lazy" decoding="async">
   <figcaption>사람의 기억에 맡긴 동기화와 원본에서 파생시키는 구조의 차이입니다</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ SSOT는 코드만의 이야기가 아닙니다. 마이크로서비스 설계에�
 특히 문서는 코드보다 어긋나기 쉽습니다. 컴파일러도 테스트도 없으니까요. 그래서 조직 차원의 SSOT는 도구보다 합의가 먼저입니다. "온보딩 절차의 원본은 위키의 이 페이지 하나이고, 다른 곳에는 링크만 둔다" 같은 규칙이요. 복사 대신 링크를 두는 것, 이게 문서 세계의 파생입니다.
 
 <figure>
-  <img src="/assets/images/posts/db553d8e-5e89-42a6-a5c9-394d057aaeb2/single-source-of-truth-3.jpg" alt="스키마 원본에서 타입 문서 디자인 토큰을 자동 생성하는 코드 생성 파이프라인 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/db553d8e-5e89-42a6-a5c9-394d057aaeb2/single-source-of-truth-3.jpg" alt="스키마 원본에서 타입 문서 디자인 토큰을 자동 생성하는 코드 생성 파이프라인 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>사람이 두 번 쓰는 지점을 기계가 한 번 생성하는 지점으로 바꿉니다</figcaption>
 </figure>
 

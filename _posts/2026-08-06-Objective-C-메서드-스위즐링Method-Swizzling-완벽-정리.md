@@ -23,7 +23,7 @@ Firebase Analytics를 붙이면 화면 진입 이벤트가 자동으로 찍힙�
 objc_msgSend 글에서 다뤘듯 Objective-C 메서드 호출은 "셀렉터로 IMP(함수 포인터)를 찾아 점프"하는 구조입니다. 스위즐링은 바로 이 **셀렉터→IMP 연결표를 런타임에 수정**하는 일입니다.
 
 <figure>
-  <img src="/assets/images/posts/b0aea0de-3fe7-4b89-a54b-01a1dd53eaa7/objc-method-swizzling-1.jpg" alt="두 소켓의 케이블을 맞바꾸는 로봇 팔로 표현한 메서드 스위즐링 개념 썸네일" width="1200" height="800">
+  <img src="/assets/images/posts/b0aea0de-3fe7-4b89-a54b-01a1dd53eaa7/objc-method-swizzling-1.jpg" alt="두 소켓의 케이블을 맞바꾸는 로봇 팔로 표현한 메서드 스위즐링 개념 썸네일" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>연결을 통째로 맞바꾸는 순간입니다</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ objc_msgSend 글에서 다뤘듯 Objective-C 메서드 호출은 "셀렉터로 I
 교체 후에는 시스템이 `viewDidAppear:`를 호출하는 순간 내 구현이 실행됩니다. 원본이 사라진 게 아니라 `swz_viewDidAppear:`라는 이름 뒤로 이사 갔을 뿐입니다.
 
 <figure>
-  <img src="/assets/images/posts/b0aea0de-3fe7-4b89-a54b-01a1dd53eaa7/objc-method-swizzling-2.png" alt="메서드 스위즐링 전후 셀렉터와 IMP 연결 변화를 보여주는 다이어그램" width="1200" height="292" loading="lazy">
+  <img src="/assets/images/posts/b0aea0de-3fe7-4b89-a54b-01a1dd53eaa7/objc-method-swizzling-2.png" alt="메서드 스위즐링 전후 셀렉터와 IMP 연결 변화를 보여주는 다이어그램" width="1200" height="292" loading="lazy" decoding="async">
   <figcaption>원본은 사라지지 않고 다른 셀렉터 뒤로 이사합니다</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ class Tracker: NSObject {
 `@objc dynamic`이 붙어야 objc_msgSend 경로로 호출이 흐르고 그래야 연결표를 바꿔칠 수 있습니다. UIKit 클래스들은 Objective-C 기반이라 여전히 스위즐링이 통하지만 SwiftUI 세계로 갈수록 이 기법의 자리는 좁아지고 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/b0aea0de-3fe7-4b89-a54b-01a1dd53eaa7/objc-method-swizzling-3.jpg" alt="코드 카드 탑에서 카드 하나를 교체하는 메서드 스위즐링 위험성 일러스트" width="1024" height="1024" loading="lazy">
+  <img src="/assets/images/posts/b0aea0de-3fe7-4b89-a54b-01a1dd53eaa7/objc-method-swizzling-3.jpg" alt="코드 카드 탑에서 카드 하나를 교체하는 메서드 스위즐링 위험성 일러스트" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>카드 하나 잘못 빼면 전체가 흔들립니다</figcaption>
 </figure>
 

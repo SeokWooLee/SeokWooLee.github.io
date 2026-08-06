@@ -2,7 +2,7 @@
 title: "Swift 프로토타입 패턴(Prototype Pattern), NSCopying vs 값 타입 복사 차이"
 description: "Swift로 객체를 복사하다가 \"이게 진짜 복사된 게 맞나?\" 하고 멈칫한 적 있으신가요."
 header:
-  og_image: /assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.png
+  og_image: /assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.jpg
 tags:
   - Swift
   - 프로토타입패턴
@@ -25,7 +25,7 @@ Swift로 객체를 복사하다가 "이게 진짜 복사된 게 맞나?" 하고 
 이 글에서는 프로토타입 패턴이 뭔지, 그리고 `NSCopying`과 값 타입 복사가 어떻게 다른지 코드로 하나씩 정리해 드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.png" alt="값 타입 복사와 NSCopying, 이 그림 한 장이면 차이가 정리돼요">
+  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/1.jpg" alt="값 타입 복사와 NSCopying, 이 그림 한 장이면 차이가 정리돼요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>값 타입 복사와 NSCopying, 이 그림 한 장이면 차이가 정리돼요</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ let clone = origin.copy() as! Character
 이럴 때 프로토타입 패턴을 `NSCopying`으로 구현하면 깔끔하게 맞아떨어져요.
 
 <figure>
-  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/2.png" alt="저는 struct부터 떠올리는 편이에요, 대입만 해도 복사되니까요" loading="lazy">
+  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/2.jpg" alt="저는 struct부터 떠올리는 편이에요, 대입만 해도 복사되니까요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 struct부터 떠올리는 편이에요, 대입만 해도 복사되니까요</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ let clone = origin.copy() as! Character
 아니에요. 내부 객체를 공유해도 되는 상황이라면 얕은 복사가 성능상 더 유리할 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/3.png" alt="원본 도장 하나 잘 파두면 그다음은 찍기만 하면 됩니다" loading="lazy">
+  <img src="/assets/images/posts/1e23c2e3-19f7-4f99-824a-221093351866/3.jpg" alt="원본 도장 하나 잘 파두면 그다음은 찍기만 하면 됩니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>원본 도장 하나 잘 파두면 그다음은 찍기만 하면 됩니다</figcaption>
 </figure>
 

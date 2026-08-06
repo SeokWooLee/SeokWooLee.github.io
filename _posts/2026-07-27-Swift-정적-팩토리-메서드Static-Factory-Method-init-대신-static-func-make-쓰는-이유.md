@@ -2,7 +2,7 @@
 title: "Swift 정적 팩토리 메서드(Static Factory Method), init 대신 static func make 쓰는 이유"
 description: "iOS 개발을 하다 보면 남의 코드에서 init(...) 대신 static func make(...) 같은 걸 만나고 갸웃했던 적 있으실 거예요."
 header:
-  og_image: /assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/1.png
+  og_image: /assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/1.jpg
 tags:
   - Swift
   - 정적팩토리메서드
@@ -23,7 +23,7 @@ iOS 개발을 하다 보면 남의 코드에서 `init(...)` 대신 `static func 
 오늘은 init 대신 static func make를 쓰는 이유를 실무 관점에서 하나씩 풀어볼게요.
 
 <figure>
-  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/1.png" alt="Swift 정적 팩토리 메서드, init이랑 나란히 놓고 보면 차이가 보여요">
+  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/1.jpg" alt="Swift 정적 팩토리 메서드, init이랑 나란히 놓고 보면 차이가 보여요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 정적 팩토리 메서드, init이랑 나란히 놓고 보면 차이가 보여요</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ enum ShapeFactory {
 `make(sides:)`의 반환 타입은 `Shape` 하나지만, 실제로는 상황에 맞는 구현체가 나와요.
 
 <figure>
-  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/4-1783847599785.png" alt="겉보기엔 Shape 하나, 속은 상황 따라 다른 타입" loading="lazy">
+  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/4-1783847599785.png" alt="겉보기엔 Shape 하나, 속은 상황 따라 다른 타입" width="546" height="1000" loading="lazy" decoding="async">
   <figcaption>겉보기엔 Shape 하나, 속은 상황 따라 다른 타입</figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ enum ShapeFactory {
 `init?`이나 `throws`로도 되지만, 팩토리 메서드는 반환값 자체를 옵셔널로 두거나 `Result`로 감싸기 편해요. 생성 로직이 복잡할 때 흐름이 깔끔해집니다.
 
 <figure>
-  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/2.png" alt="make 한 줄 넣었을 뿐인데 호출부가 확 읽히더라고요" loading="lazy">
+  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/2.jpg" alt="make 한 줄 넣었을 뿐인데 호출부가 확 읽히더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>make 한 줄 넣었을 뿐인데 호출부가 확 읽히더라고요</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ enum ShapeFactory {
 4. 객체를 재사용하거나 캐싱하고 싶을 때 → `make`
 
 <figure>
-  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/3.png" alt="저는 이 기준표 하나로 둘 중 뭘 쓸지 정합니다" loading="lazy">
+  <img src="/assets/images/posts/2f046b04-15c9-4d73-b0dd-0d5c474e974f/3.jpg" alt="저는 이 기준표 하나로 둘 중 뭘 쓸지 정합니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 이 기준표 하나로 둘 중 뭘 쓸지 정합니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #3] SwiftUI에 ViewModel이 필요 없다? MV 패턴 논쟁 총정리"
 description: "iOS 커뮤니티에서 몇 년째 이어지는 뜨거운 논쟁이 있습니다."
 header:
-  og_image: /assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/1.png
+  og_image: /assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/1.jpg
 tags:
   - SwiftUI
   - MV패턴
@@ -23,7 +23,7 @@ iOS 커뮤니티에서 몇 년째 이어지는 뜨거운 논쟁이 있습니다.
 오늘은 시리즈 마지막 편으로, 이 논쟁의 양쪽 논거를 공정하게 놓고 **실제로 어떤 기준으로 판단하면 되는지**까지 정리해보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/1.png" alt="SwiftUI 커뮤니티에서 몇 년째 이어지는 MV vs MVVM 논쟁">
+  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/1.jpg" alt="SwiftUI 커뮤니티에서 몇 년째 이어지는 MV vs MVVM 논쟁" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>SwiftUI 커뮤니티에서 몇 년째 이어지는 MV vs MVVM 논쟁</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Apple의 공식 샘플 코드(Fruta, Food Truck 등)도 대체로 이 구조입�
 이 방식의 장점은 명확합니다. 화면마다 클래스를 하나씩 만드는 보일러플레이트가 사라지고, `@State`·`@Binding` 같은 프레임워크 도구를 우회 없이 그대로 쓸 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/2.png" alt="SwiftUI의 View는 애초에 상태의 함수입니다" loading="lazy">
+  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/2.jpg" alt="SwiftUI의 View는 애초에 상태의 함수입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>SwiftUI의 View는 애초에 상태의 함수입니다</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Apple의 공식 샘플 코드(Fruta, Food Truck 등)도 대체로 이 구조입�
 결국 "SwiftUI에 ViewModel이 필요 없다"는 말의 실체는 이렇게 요약할 수 있습니다. **화면마다 기계적으로 ViewModel을 만들 필요는 없다. 하지만 View 밖으로 빼야 할 로직이 사라지는 것은 아니다.**
 
 <figure>
-  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/3.png" alt="이름이 아니라 의존성 방향이 진짜 판단 기준이에요" loading="lazy">
+  <img src="/assets/images/posts/7bedf164-d196-4a13-815a-c43b2968f9f4/3.jpg" alt="이름이 아니라 의존성 방향이 진짜 판단 기준이에요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>이름이 아니라 의존성 방향이 진짜 판단 기준이에요</figcaption>
 </figure>
 

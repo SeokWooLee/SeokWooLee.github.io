@@ -15,7 +15,7 @@ last_modified_at: 2026-08-05
 ---
 
 <figure>
-  <img src="/assets/images/posts/cc615a3e-0f23-4345-893d-dd4a207a885f/ai-agent-era-1.jpg" alt="AI AGENTS ARE COMING 텍스트와 지시 카드 하나로 검색 표 작성 보고까지 수행하는 로봇 히어로 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/cc615a3e-0f23-4345-893d-dd4a207a885f/ai-agent-era-1.jpg" alt="AI AGENTS ARE COMING 텍스트와 지시 카드 하나로 검색 표 작성 보고까지 수행하는 로봇 히어로 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>질문에 답하는 AI 다음은, 일을 통째로 맡는 AI입니다</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ AI 에이전트(AI Agent)는 목표를 주면 스스로 계획을 세우고 도�
 **코딩 에이전트.** 현재 가장 성숙한 분야입니다. 개발자가 아니어도 "이런 앱 만들어줘"라고 하면 에이전트가 코드를 짜고 실행하고 고치는, 이른바 바이브 코딩(Vibe Coding)이 가능해졌습니다. 이 블로그의 바이브 코더 시리즈가 바로 그 이야기를 다룹니다.
 
 <figure>
-  <img src="/assets/images/posts/cc615a3e-0f23-4345-893d-dd4a207a885f/ai-agent-era-2.png" alt="챗봇과 AI 에이전트 비교 다이어그램, 질문 답변 반복 대 목표 계획 다단계 수행 구조" width="1200" height="498" loading="lazy">
+  <img src="/assets/images/posts/cc615a3e-0f23-4345-893d-dd4a207a885f/ai-agent-era-2.png" alt="챗봇과 AI 에이전트 비교 다이어그램, 질문 답변 반복 대 목표 계획 다단계 수행 구조" width="1200" height="498" loading="lazy" decoding="async">
   <figcaption>챗봇은 답을 주고, 에이전트는 일을 끝냅니다</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ AI 에이전트(AI Agent)는 목표를 주면 스스로 계획을 세우고 도�
 | 8. 에이전트 | 다음 단계는 질문이 아니라 위임. 지시서와 검수가 핵심 능력 |
 
 <figure>
-  <img src="/assets/images/posts/cc615a3e-0f23-4345-893d-dd4a207a885f/ai-agent-era-3.jpg" alt="FROM ASKING TO DELEGATING 텍스트와 질문하던 사람이 로봇 팀에게 일을 맡기고 검수하는 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/cc615a3e-0f23-4345-893d-dd4a207a885f/ai-agent-era-3.jpg" alt="FROM ASKING TO DELEGATING 텍스트와 질문하던 사람이 로봇 팀에게 일을 맡기고 검수하는 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>질문력의 시대에서 위임력의 시대로 넘어가는 중입니다</figcaption>
 </figure>
 

@@ -21,7 +21,7 @@ last_modified_at: 2026-08-04
 특히 큐를 배열로 흉내 낼 때 밟는 성능 지뢰(`removeFirst()`)는 코딩 테스트에서 시간 초과의 단골 원인이라, 따로 자세히 다룹니다.
 
 <figure>
-  <img src="/assets/images/posts/b3b25947-bca7-4159-a81d-72e71cecace5/stack-vs-queue-lifo-fifo-1.jpg" alt="스택 LIFO 접시 더미와 큐 FIFO 줄서기를 대비한 Stack vs Queue 자료구조 썸네일" width="1200" height="800">
+  <img src="/assets/images/posts/b3b25947-bca7-4159-a81d-72e71cecace5/stack-vs-queue-lifo-fifo-1.jpg" alt="스택 LIFO 접시 더미와 큐 FIFO 줄서기를 대비한 Stack vs Queue 자료구조 썸네일" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>접시는 위에서, 줄은 앞에서 — 이 차이가 전부입니다</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ struct Stack<Element> {
 `subscript`를 막아서 "중간 접근 금지"라는 스택의 규칙을 타입으로 강제하는 효과가 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/b3b25947-bca7-4159-a81d-72e71cecace5/stack-vs-queue-lifo-fifo-2.png" alt="스택 push pop과 큐 enqueue dequeue 동작 구조를 나란히 그린 LIFO FIFO 다이어그램" width="1200" height="476" loading="lazy">
+  <img src="/assets/images/posts/b3b25947-bca7-4159-a81d-72e71cecace5/stack-vs-queue-lifo-fifo-2.png" alt="스택 push pop과 큐 enqueue dequeue 동작 구조를 나란히 그린 LIFO FIFO 다이어그램" width="1200" height="476" loading="lazy" decoding="async">
   <figcaption>넣고 빼는 방향만 기억하면 헷갈릴 일이 없습니다</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ Array와 API가 거의 같아서 교체 비용도 낮습니다. 실무에서 큐
 괄호 짝 검사는 스택의 대표 활용이라 한 줄만 짚고 갑니다. 여는 괄호를 만나면 push, 닫는 괄호를 만나면 pop해서 짝이 맞는지 확인 — 끝났을 때 스택이 비어 있으면 유효한 수식입니다. 컴파일러가 코드의 중괄호를 검사하는 원리도 같습니다.
 
 <figure>
-  <img src="/assets/images/posts/b3b25947-bca7-4159-a81d-72e71cecace5/stack-vs-queue-lifo-fifo-3.jpg" alt="Swift 배열 removeFirst O(n) 성능 함정을 컨베이어 벨트로 표현한 큐 일러스트" width="1200" height="1200" loading="lazy">
+  <img src="/assets/images/posts/b3b25947-bca7-4159-a81d-72e71cecace5/stack-vs-queue-lifo-fifo-3.jpg" alt="Swift 배열 removeFirst O(n) 성능 함정을 컨베이어 벨트로 표현한 큐 일러스트" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>하나 뺄 때마다 뒤에 있는 전부가 한 칸씩 움직입니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "[Swift 철학 #4] SE-0296이 뭐길래? Swift 문법이 태어나는 절차, Swift Evolution 총정리"
 description: "Swift 관련 글이나 릴리스 노트를 읽다 보면 SE-0296, SE-0345 같은 코드가 자꾸 등장합니다. async/await를 소개하는 글엔 SE-0296이, if let name 축약 문법 얘기엔 SE-0345가 붙어 있죠. 이 번호의 정체가 뭘까요."
 header:
-  og_image: /assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/1.png
+  og_image: /assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -21,7 +21,7 @@ Swift 관련 글이나 릴리스 노트를 읽다 보면 SE-0296, SE-0345 같은
 Swift 철학 시리즈 4편입니다. 앞의 세 편이 Swift가 지키는 가치(안전·성능·표현력, 점진적 공개, 값 타입)를 다뤘다면, 이번 편은 그 가치를 지키는 제도를 다룹니다. 철학은 선언만으로 유지되지 않고, 절차가 있어야 유지되거든요.
 
 <figure>
-  <img src="/assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/1.png" alt="문법 하나가 SE 번호를 달고 언어에 들어오기까지의 여정">
+  <img src="/assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/1.jpg" alt="문법 하나가 SE 번호를 달고 언어에 들어오기까지의 여정" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>문법 하나가 SE 번호를 달고 언어에 들어오기까지의 여정</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Swift 철학 시리즈 4편입니다. 앞의 세 편이 Swift가 지키는 가�
 **5단계, 판정.** 리뷰가 끝나면 Language Steering Group(언어 운영 그룹)이 결론을 냅니다. 결과는 승인(Accepted), 수정 후 재심(Returned for revision), 기각(Rejected) 중 하나고, 판정문에는 반드시 이유가 붙습니다. 승인되면 SE 번호가 확정되고, 구현이 특정 Swift 버전에 실려 출시됩니다.
 
 <figure>
-  <img src="/assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/2.png" alt="피치→제안서→구현→리뷰→판정, 기각 이유까지 전부 기록에 남습니다" loading="lazy">
+  <img src="/assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/2.jpg" alt="피치→제안서→구현→리뷰→판정, 기각 이유까지 전부 기록에 남습니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>피치→제안서→구현→리뷰→판정, 기각 이유까지 전부 기록에 남습니다</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ Swift 프로젝트의 최상위에는 Core Team이 있고, 언어 변경의 실�
 애플의 영향력이 큰 건 사실입니다. 컴파일러 개발 인력 대부분이 애플 소속이고, 애플 플랫폼의 필요(SwiftUI를 위한 resultBuilder 같은)가 제안의 동력이 된 경우도 많아요. 하지만 그 애플조차 절차 밖에서 문법을 바꿀 수는 없다는 것, 그리고 모든 논의가 검색 가능한 공개 기록으로 남는다는 것이 이 제도의 핵심 가치입니다. 참고로 서버 사이드 Swift, 임베디드 Swift처럼 애플 플랫폼 밖 생태계가 커지면서 거버넌스도 워킹그룹 체제로 점점 분화되고 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/3.png" alt="리뷰는 투표가 아니라 논증의 수집, 모든 논의는 공개 기록입니다" loading="lazy">
+  <img src="/assets/images/posts/d92caedf-939a-44c8-bad7-261591745177/3.jpg" alt="리뷰는 투표가 아니라 논증의 수집, 모든 논의는 공개 기록입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>리뷰는 투표가 아니라 논증의 수집, 모든 논의는 공개 기록입니다</figcaption>
 </figure>
 

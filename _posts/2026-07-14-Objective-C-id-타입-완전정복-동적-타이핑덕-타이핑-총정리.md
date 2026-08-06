@@ -2,7 +2,7 @@
 title: "Objective-C id 타입 완전정복 (동적 타이핑·덕 타이핑 총정리)"
 description: "Objective-C를 처음 공부하다 보면 id라는 타입 앞에서 한 번쯤 멈칫하게 됩니다."
 header:
-  og_image: /assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/1.png
+  og_image: /assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/1.jpg
 tags:
   - Objective-C
   - id타입
@@ -23,7 +23,7 @@ Objective-C를 처음 공부하다 보면 `id`라는 타입 앞에서 한 번쯤
 이 글에서는 `id` 타입이 정확히 무엇인지, 동적 타이핑과 덕 타이핑이 실제 코드에서 어떻게 굴러가는지, 그리고 이걸 언제 쓰고 언제 조심해야 하는지까지 하나씩 정리해 풀어보려고 합니다.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/1.png" alt="id 타입 하나면 동적 타이핑도 덕 타이핑도 다 여기서 출발해요">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/1.jpg" alt="id 타입 하나면 동적 타이핑도 덕 타이핑도 다 여기서 출발해요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>id 타입 하나면 동적 타이핑도 덕 타이핑도 다 여기서 출발해요</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ typedef struct objc_object {
 즉 `id`는 `isa`라는 포인터 하나를 가진 구조체의 포인터입니다.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/4-1783847906422.png" alt="id의 정체, 결국 isa 하나 든 포인터였다" loading="lazy">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/4-1783847906422.png" alt="id의 정체, 결국 isa 하나 든 포인터였다" width="290" height="904" loading="lazy" decoding="async">
   <figcaption>id의 정체, 결국 isa 하나 든 포인터였다</figcaption>
 </figure>
 
@@ -119,7 +119,7 @@ if ([obj respondsToSelector:@selector(quack)]) {
 바로 이 유연함이 델리게이트 패턴이나 타깃-액션 같은 코코아의 핵심 설계를 가능하게 만든 밑바탕입니다.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/2.png" alt="메서드에 응답만 하면 오리로 쳐준다는 발상이 재미있죠" loading="lazy">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/2.jpg" alt="메서드에 응답만 하면 오리로 쳐준다는 발상이 재미있죠" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>메서드에 응답만 하면 오리로 쳐준다는 발상이 재미있죠</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ if ([obj respondsToSelector:@selector(quack)]) {
 그래도 프레임워크 밑바닥, 런타임을 다루는 코드에서는 여전히 `id`가 심장처럼 뛰고 있어요.
 
 <figure>
-  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/3.png" alt="이 빨간 로그, id 잘못 쓰면 제일 자주 만나는 얼굴입니다" loading="lazy">
+  <img src="/assets/images/posts/985ef22b-6988-47cb-adf2-a9d803086c51/3.jpg" alt="이 빨간 로그, id 잘못 쓰면 제일 자주 만나는 얼굴입니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>이 빨간 로그, id 잘못 쓰면 제일 자주 만나는 얼굴입니다</figcaption>
 </figure>
 

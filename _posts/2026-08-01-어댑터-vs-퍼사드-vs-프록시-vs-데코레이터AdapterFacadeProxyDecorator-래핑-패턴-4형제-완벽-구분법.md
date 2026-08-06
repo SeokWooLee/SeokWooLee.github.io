@@ -2,7 +2,7 @@
 title: "어댑터 vs 퍼사드 vs 프록시 vs 데코레이터(Adapter·Facade·Proxy·Decorator), 래핑 패턴 4형제 완벽 구분법"
 description: "디자인 패턴 공부하다 보면 꼭 벽에 부딪히는 지점이 있어요."
 header:
-  og_image: /assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/1.png
+  og_image: /assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/1.jpg
 tags:
   - 디자인패턴
   - 어댑터패턴
@@ -33,7 +33,7 @@ last_modified_at: 2026-08-01
 이 한 줄만 손에 쥐고 있으면 나머지는 따라옵니다. 오늘 이 글에서 네 형제를 확실히 갈라놓고 가실 수 있게 정리해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/1.png" alt="어댑터·퍼사드·프록시·데코레이터, 넷을 한 화면에 놓고 보면 이렇게 갈려요">
+  <img src="/assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/1.jpg" alt="어댑터·퍼사드·프록시·데코레이터, 넷을 한 화면에 놓고 보면 이렇게 갈려요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>어댑터·퍼사드·프록시·데코레이터, 넷을 한 화면에 놓고 보면 이렇게 갈려요</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ last_modified_at: 2026-08-01
 반대로 어댑터는 인터페이스를 일부러 바꾸고, 퍼사드는 아예 새 창구를 만들어요.
 
 <figure>
-  <img src="/assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/2.png" alt="감싸는 목적 하나만 물으면 길이 이렇게 갈라집니다" loading="lazy">
+  <img src="/assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/2.png" alt="감싸는 목적 하나만 물으면 길이 이렇게 갈라집니다" width="1200" height="291" loading="lazy" decoding="async">
   <figcaption>감싸는 목적 하나만 물으면 길이 이렇게 갈라집니다</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ ShotDecorator(base: Americano()).cost()
 홈시어터를 예로 들면, 프로젝터 켜고 스피커 켜고 조명 낮추고 재생하는 과정을 watchMovie() 하나로 묶어주는 거예요. 복잡한 내부를 몰라도 버튼 하나면 되게요.
 
 <figure>
-  <img src="/assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/3.png" alt="저는 헷갈릴 때마다 이 메모를 모니터에 붙여뒀어요" loading="lazy">
+  <img src="/assets/images/posts/fec2d34c-c0ac-4023-876e-a8dae2cc8e35/3.jpg" alt="저는 헷갈릴 때마다 이 메모를 모니터에 붙여뒀어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 헷갈릴 때마다 이 메모를 모니터에 붙여뒀어요</figcaption>
 </figure>
 

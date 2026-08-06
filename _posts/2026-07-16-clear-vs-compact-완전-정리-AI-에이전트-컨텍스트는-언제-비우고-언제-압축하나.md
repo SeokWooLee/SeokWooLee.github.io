@@ -2,7 +2,7 @@
 title: "[AI 컨텍스트 #3] /clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나"
 description: "앞선 두 편에서 진단을 마쳤습니다. 컨텍스트 윈도우는 유한하고(1편), 채운다고 다 쓰이는 것도 아니며 길어질수록 오히려 성능이 떨어집니다(2편). 그럼 처방은 하나로 모입니다. 컨텍스트를 관리해야 합니다. 그리고 Claude Code를 비롯한 코딩 에이전트들이 이를 위해…"
 header:
-  og_image: /assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/1.png
+  og_image: /assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/1.jpg
 tags:
   - ClaudeCode
   - AI에이전트
@@ -19,7 +19,7 @@ last_modified_at: 2026-07-27
 두 명령 모두 "컨텍스트를 줄인다"는 점은 같습니다. 그래서 아무거나 쓰거나, 잔량 경고가 뜰 때까지 둘 다 안 쓰는 경우가 많은데요. 동작 원리가 완전히 달라서 상황에 맞지 않게 쓰면 작업 맥락을 통째로 날리거나, 반대로 지저분한 컨텍스트를 계속 끌고 다니게 됩니다. 이번 편에서는 두 명령이 내부에서 정확히 뭘 하는지부터 보고, 언제 뭘 쓸지 기준을 세웁니다.
 
 <figure>
-  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/1.png" alt="하나는 지우고 하나는 눌러 담습니다, 같은 정리라도 원리가 다릅니다">
+  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/1.jpg" alt="하나는 지우고 하나는 눌러 담습니다, 같은 정리라도 원리가 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>하나는 지우고 하나는 눌러 담습니다, 같은 정리라도 원리가 다릅니다</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ last_modified_at: 2026-07-27
 다행히 통제 수단이 아예 없지는 않습니다. Claude Code의 /compact는 뒤에 지시를 붙일 수 있어요. "/compact 이번 마이그레이션에서 확정한 스키마 변경과 남은 파일 목록 위주로 남겨줘"처럼 쓰면 요약의 초점을 지정할 수 있습니다. 무엇이 중요한지는 사용자가 제일 잘 아니, 압축을 맡기더라도 방향은 잡아주는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/2.png" alt="clear·compact 사이에는 상태를 파일로 내리고 새로 시작하는 제3의 길이 있습니다" loading="lazy">
+  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/2.png" alt="clear·compact 사이에는 상태를 파일로 내리고 새로 시작하는 제3의 길이 있습니다" width="1200" height="439" loading="lazy" decoding="async">
   <figcaption>clear·compact 사이에는 상태를 파일로 내리고 새로 시작하는 제3의 길이 있습니다</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ auto-compact의 발동 시점은 토큰 잔량이 정합니다. 작업 흐름과
 그래서 숙련자일수록 잔량 표시를 게이지처럼 관리합니다. 논리적 매듭(커밋, 테스트 통과, 결정 확정)마다 상태를 파일로 정리해 두고 잔량이 20~30% 남았을 때 매듭을 지으며 스스로 /clear나 /compact 타이밍을 정하는 거죠. 압축은 피할 수 없더라도, 언제 어떻게 압축될지는 통제하는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/3.png" alt="압축 타이밍은 잔량이 아니라 작업 매듭에 맞춰 직접 정합니다" loading="lazy">
+  <img src="/assets/images/posts/dbbbbbf4-c659-46d5-8a59-05ef8e331a0d/3.jpg" alt="압축 타이밍은 잔량이 아니라 작업 매듭에 맞춰 직접 정합니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>압축 타이밍은 잔량이 아니라 작업 매듭에 맞춰 직접 정합니다</figcaption>
 </figure>
 

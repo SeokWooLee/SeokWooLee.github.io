@@ -2,7 +2,7 @@
 title: "테스트 더블 총정리, Mock Stub Spy Fake 차이 (예제·표)"
 description: "테스트 코드를 짜다 보면 꼭 만나는 벽이 있습니다."
 header:
-  og_image: /assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/1.png
+  og_image: /assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/1.jpg
 tags:
   - 테스트더블
   - TestDouble
@@ -23,7 +23,7 @@ last_modified_at: 2026-07-24
 이 글에서는 테스트 더블 다섯 형제(Dummy, Stub, Spy, Mock, Fake)의 차이를 예제와 함께 깔끔하게 정리해 드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/1.png" alt="테스트 더블 다섯 형제, 이 그림 하나로 Mock Stub 차이가 정리됩니다">
+  <img src="/assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/1.jpg" alt="테스트 더블 다섯 형제, 이 그림 하나로 Mock Stub 차이가 정리됩니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>테스트 더블 다섯 형제, 이 그림 하나로 Mock Stub 차이가 정리됩니다</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ Stub은 반환값(결과)을 확인하고 Mock은 호출 횟수를 확인한다�
 이 관점 차이가 테스트 더블 이해의 핵심이에요.
 
 <figure>
-  <img src="/assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/swift-testing-mock-stub-code-1.jpg" alt="Mock과 Stub 클래스를 #expect로 검증하는 Swift Testing 단위 테스트 코드 화면" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/swift-testing-mock-stub-code-1.jpg" alt="Mock과 Stub 클래스를 #expect로 검증하는 Swift Testing 단위 테스트 코드 화면" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>결국 반환값을 보느냐 호출을 세느냐, 코드로 보면 확 갈리더라고요</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ Swift에서는 실제 구현에 위임하면서 호출 인자와 횟수를 프�
 4. 진짜처럼 굴러가는 가벼운 구현이 필요해요 → **Fake**
 
 <figure>
-  <img src="/assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/3.png" alt="고민될 땐 이 흐름도대로 값이냐 호출이냐만 따져보세요" loading="lazy">
+  <img src="/assets/images/posts/6e567d2e-5b97-44ea-b7e9-101840863ff5/3.jpg" alt="고민될 땐 이 흐름도대로 값이냐 호출이냐만 따져보세요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>고민될 땐 이 흐름도대로 값이냐 호출이냐만 따져보세요</figcaption>
 </figure>
 

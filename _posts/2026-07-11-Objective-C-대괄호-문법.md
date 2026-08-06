@@ -2,7 +2,7 @@
 title: "Objective-C 대괄호 문법, 왜 이렇게 생겼을까? (메시지 전송의 비밀)"
 description: "iOS 공부를 시작하고 처음 Objective-C 코드를 보면 당황하기 쉬워요."
 header:
-  og_image: /assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.png
+  og_image: /assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.jpg
 categories:
   - iOS
 tags:
@@ -27,7 +27,7 @@ iOS 공부를 시작하고 처음 Objective-C 코드를 보면 당황하기 쉬�
 오늘은 이 대괄호가 왜 이렇게 생겼는지, 그 뿌리부터 편하게 풀어볼게요. 😊
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.png" alt="Objective-C 대괄호 문법, 이 생김새엔 다 이유가 있습니다">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/1-1783736148634.jpg" alt="Objective-C 대괄호 문법, 이 생김새엔 다 이유가 있습니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Objective-C 대괄호 문법, 이 생김새엔 다 이유가 있습니다</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ Smalltalk의 핵심 철학은 "모든 것은 객체이고, 객체끼리는 메�
 덕분에 기존 C 코드와 섞여도 충돌 없이 구분이 됐죠.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/2.png" alt="메시지를 '보낸다'는 감각이 익으면 대괄호가 편해져요" loading="lazy">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/2.jpg" alt="메시지를 '보낸다'는 감각이 익으면 대괄호가 편해져요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>메시지를 '보낸다'는 감각이 익으면 대괄호가 편해져요</figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ objc_msgSend(dog, @selector(bark));
 첫 번째 자리에 메시지를 받을 객체, 두 번째 자리에 실행할 메서드의 이름표(셀렉터)가 들어가요.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="겉모습은 달라도 결국 한곳으로 모여요" loading="lazy">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/4-1783847992119.png" alt="겉모습은 달라도 결국 한곳으로 모여요" width="1200" height="329" loading="lazy" decoding="async">
   <figcaption>겉모습은 달라도 결국 한곳으로 모여요</figcaption>
 </figure>
 
@@ -169,7 +169,7 @@ objc_msgSend(dog, @selector(bark));
 대괄호라는 겉모습 뒤에 이런 유연한 구조가 숨어 있던 거죠.
 
 <figure>
-  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.png" alt="며칠 쓰다 보면 손에 붙는 문법이에요" loading="lazy">
+  <img src="/assets/images/posts/814948f6-67d4-44f6-8d1d-b751c4a65b42/3.jpg" alt="며칠 쓰다 보면 손에 붙는 문법이에요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>며칠 쓰다 보면 손에 붙는 문법이에요</figcaption>
 </figure>
 

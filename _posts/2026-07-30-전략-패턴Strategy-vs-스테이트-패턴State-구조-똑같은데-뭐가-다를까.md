@@ -2,7 +2,7 @@
 title: "전략 패턴(Strategy) vs 스테이트 패턴(State), 구조 똑같은데 뭐가 다를까"
 description: "디자인 패턴을 공부하다 보면 꼭 한 번은 벽에 부딪히는 지점이 있어요."
 header:
-  og_image: /assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/1.png
+  og_image: /assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/1.jpg
 tags:
   - 전략패턴
   - 스테이트패턴
@@ -27,7 +27,7 @@ UML(Unified Modeling Language, 통합 모델링 언어) 다이어그램을 나�
 이 한 줄만 붙잡고 아래 내용을 읽으시면 다시는 헷갈리지 않으실 거예요.
 
 <figure>
-  <img src="/assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/1.png" alt="전략 패턴 vs 스테이트 패턴, 딱 이 그림 하나로 끝납니다">
+  <img src="/assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/1.jpg" alt="전략 패턴 vs 스테이트 패턴, 딱 이 그림 하나로 끝납니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>전략 패턴 vs 스테이트 패턴, 딱 이 그림 하나로 끝납니다</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ checkout.pay(5000)
 즉, 다음 상태로 넘어가는 규칙이 각 상태 안에 들어 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/2.png" alt="상태가 스스로 다음으로 넘어가는 흐름, 이게 스테이트의 정체예요" loading="lazy">
+  <img src="/assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/2.png" alt="상태가 스스로 다음으로 넘어가는 흐름, 이게 스테이트의 정체예요" width="308" height="696" loading="lazy" decoding="async">
   <figcaption>상태가 스스로 다음으로 넘어가는 흐름, 이게 스테이트의 정체예요</figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ light.change()
 이 "서로 아느냐 모르느냐"가 코드에서 두 패턴을 구분하는 가장 확실한 단서예요.
 
 <figure>
-  <img src="/assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/3.png" alt="두 코드 나란히 놓고 보면 '누가 바꾸나'가 눈에 들어와요" loading="lazy">
+  <img src="/assets/images/posts/9e51832d-c42e-412d-b5ff-bb9e9e4895ff/3.jpg" alt="두 코드 나란히 놓고 보면 '누가 바꾸나'가 눈에 들어와요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>두 코드 나란히 놓고 보면 '누가 바꾸나'가 눈에 들어와요</figcaption>
 </figure>
 

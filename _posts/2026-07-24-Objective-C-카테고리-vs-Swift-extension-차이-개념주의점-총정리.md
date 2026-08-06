@@ -2,7 +2,7 @@
 title: "Objective-C 카테고리 vs Swift extension 차이 (개념·주의점 총정리)"
 description: "iOS 개발을 하다 보면 한 번쯤 헷갈리는 지점이 있습니다."
 header:
-  og_image: /assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/1.png
+  og_image: /assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/1.jpg
 tags:
   - Objective-C
   - Swift
@@ -27,7 +27,7 @@ iOS 개발을 하다 보면 한 번쯤 헷갈리는 지점이 있습니다.
 오늘은 이 둘을 실무 관점에서 하나씩 비교해드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/1.png" alt="Objective-C 카테고리 vs Swift extension, 이 그림 하나로 감이 잡힙니다">
+  <img src="/assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/1.jpg" alt="Objective-C 카테고리 vs Swift extension, 이 그림 하나로 감이 잡힙니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Objective-C 카테고리 vs Swift extension, 이 그림 하나로 감이 잡힙니다</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ extension String {
 | 동작 시점 | 런타임 | 컴파일 타임 |
 
 <figure>
-  <img src="/assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/3.png" alt="표로 정리해두니 차이가 훨씬 선명하게 보이더라고요" loading="lazy">
+  <img src="/assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/3.jpg" alt="표로 정리해두니 차이가 훨씬 선명하게 보이더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>표로 정리해두니 차이가 훨씬 선명하게 보이더라고요</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ extension String {
 3. 공통 기능을 여러 타입에 뿌려야 하면 프로토콜 extension이 정답에 가깝습니다.
 
 <figure>
-  <img src="/assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/2.png" alt="순수 Swift 프로젝트라면 저는 고민 없이 extension을 씁니다" loading="lazy">
+  <img src="/assets/images/posts/5a5abfc5-7192-4dd7-949c-6bd32a81072b/2.jpg" alt="순수 Swift 프로젝트라면 저는 고민 없이 extension을 씁니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>순수 Swift 프로젝트라면 저는 고민 없이 extension을 씁니다</figcaption>
 </figure>
 

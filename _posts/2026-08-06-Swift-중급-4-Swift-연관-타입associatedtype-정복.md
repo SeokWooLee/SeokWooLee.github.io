@@ -21,7 +21,7 @@ Swift 프로토콜을 쓰다 보면 언젠가 반드시 만나는 벽이 있습�
 중급 시리즈 4편입니다. 연관 타입이 뭔지, 왜 그 에러가 났었는지, 그리고 primary associated types까지 이어지는 언어의 진화를 정리합니다. 제네릭 편과 some·any 편을 읽고 오시면 재료가 다 준비된 셈입니다.
 
 <figure>
-  <img src="/assets/images/posts/843650cf-8f58-411e-9ef4-14639a9f6490/swift-associatedtype-1.jpg" alt="ASSOCIATED TYPES 텍스트와 ITEM 빈칸이 뚫린 프로토콜 청사진 썸네일" width="1200" height="800">
+  <img src="/assets/images/posts/843650cf-8f58-411e-9ef4-14639a9f6490/swift-associatedtype-1.jpg" alt="ASSOCIATED TYPES 텍스트와 ITEM 빈칸이 뚫린 프로토콜 청사진 썸네일" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>연관 타입은 프로토콜에 뚫린 빈칸, 채택자가 채웁니다</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ some·any 편에서 프로토콜 타입 변수는 실존 타입, 즉 상자라�
 타입을 확정할 수 없는 표현식은 정적 타입 언어에서 허용될 수 없으니, 예전 Swift는 아예 입구에서 막았습니다. "이 프로토콜은 제약으로만 쓰라"는 게 그 에러의 실제 의미였어요. 제네릭 `<C: Container>`로 쓰면 호출 시점에 C가 확정되고 C.Item도 함께 확정되니 아무 문제가 없거든요. 에러 메시지가 불친절했을 뿐, "상자 대신 제네릭을 쓰라"는 정확한 처방이었던 셈입니다.
 
 <figure>
-  <img src="/assets/images/posts/843650cf-8f58-411e-9ef4-14639a9f6490/swift-associatedtype-2.jpg" alt="타입을 알 수 없는 상자를 검사하지 못하는 로봇과 제네릭 제약 도장 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/843650cf-8f58-411e-9ef4-14639a9f6490/swift-associatedtype-2.jpg" alt="타입을 알 수 없는 상자를 검사하지 못하는 로봇과 제네릭 제약 도장 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>상자에서 꺼낸 Item의 타입을 알 수 없어 입구를 막았던 겁니다</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ func process(_ c: some Container<Int>)  // 제네릭에서도 간결하게
 하나 더, Self 요구사항 이야기. `==` 같은 연산은 "같은 타입끼리"만 의미가 있어서 Self로 선언되는데, 이 때문에 `any Equatable` 상자 두 개는 직접 비교가 안 됩니다. 상자 안 타입이 서로 다를 수 있으니까요. 이런 자리는 상자를 포기하고 제네릭으로 푸는 게 정석입니다.
 
 <figure>
-  <img src="/assets/images/posts/843650cf-8f58-411e-9ef4-14639a9f6490/swift-associatedtype-3.jpg" alt="SE-0309와 SE-0346 단계로 빗장이 차례로 풀리는 관문 타임라인 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/843650cf-8f58-411e-9ef4-14639a9f6490/swift-associatedtype-3.jpg" alt="SE-0309와 SE-0346 단계로 빗장이 차례로 풀리는 관문 타임라인 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>SE-0309와 SE-0346이 빗장을 차례로 풀었습니다</figcaption>
 </figure>
 

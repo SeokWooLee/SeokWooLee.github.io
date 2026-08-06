@@ -23,7 +23,7 @@ last_modified_at: 2026-07-20
 이 글에서 시그니처의 정확한 정의부터, 언어별 차이, 그리고 실무에서 시그니처가 왜 중요한지까지 순서대로 정리하겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-1.jpg" alt="METHOD SIGNATURE 텍스트와 함수 신분증 일러스트 — 메서드 이름 calculateTotal과 파라미터 칩, 지문 워터마크가 그려진 대표 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-1.jpg" alt="METHOD SIGNATURE 텍스트와 함수 신분증 일러스트 — 메서드 이름 calculateTotal과 파라미터 칩, 지문 워터마크가 그려진 대표 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>메서드 시그니처는 함수의 신분증입니다 — 이름과 파라미터가 핵심 식별 정보예요</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ Java에서는 반환값을 무시하고 메서드를 호출하는 게 언제나 
 한 가지 알아 두면 좋은 디테일이 있습니다. **JVM 바이트코드 레벨에서는 반환 타입도 메서드를 구별하는 정보에 포함됩니다.** 클래스 파일 안에서 메서드는 `parse(Ljava/lang/String;)I` 같은 디스크립터로 식별되는데, 마지막의 `I`가 반환 타입(int)이에요. 즉 "반환 타입은 시그니처가 아니다"는 Java라는 **언어의 규칙**이지, JVM이라는 **실행 환경의 규칙**은 아닙니다. 제네릭의 브리지 메서드 같은 마법이 가능한 것도 이 틈 덕분입니다.
 
 <figure>
-  <img src="/assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-2.png" alt="메서드 시그니처 구성 요소 다이어그램 — 이름·파라미터 타입·개수·순서는 Java·Swift 공통 포함, 인자 레이블과 반환 타입은 Swift만 포함" width="1200" height="294" loading="lazy">
+  <img src="/assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-2.png" alt="메서드 시그니처 구성 요소 다이어그램 — 이름·파라미터 타입·개수·순서는 Java·Swift 공통 포함, 인자 레이블과 반환 타입은 Swift만 포함" width="1200" height="294" loading="lazy" decoding="async">
   <figcaption>같은 질문도 Java와 Swift의 답이 갈립니다 — 주황색 두 칸이 언어별 차이예요</figcaption>
 </figure>
 
@@ -152,7 +152,7 @@ Swift에서 델리게이트 메서드를 구현했는데 호출이 안 되는 �
 그래서 성숙한 라이브러리들은 시그니처를 바꾸는 대신 **새 시그니처의 메서드를 추가하고 기존 것을 deprecated로 유지**하는 전략을 씁니다. 기존 시그니처라는 계약을 일방적으로 파기하지 않는 거예요.
 
 <figure>
-  <img src="/assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-3.jpg" alt="공개 API 계약서를 수정하자 코드 다리가 부서지는 breaking change 일러스트 — 메서드 시그니처 변경의 호환성 파괴" width="1024" height="1024" loading="lazy">
+  <img src="/assets/images/posts/2b7e2ae1-fbdb-4c28-88de-ca62f0f12b7a/method-signature-components-3.jpg" alt="공개 API 계약서를 수정하자 코드 다리가 부서지는 breaking change 일러스트 — 메서드 시그니처 변경의 호환성 파괴" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>공개 시그니처에 펜을 대는 순간, 그 메서드를 부르던 다리가 무너집니다</figcaption>
 </figure>
 

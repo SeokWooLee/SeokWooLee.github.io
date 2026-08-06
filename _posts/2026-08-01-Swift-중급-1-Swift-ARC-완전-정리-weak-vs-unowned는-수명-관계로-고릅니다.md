@@ -2,7 +2,7 @@
 title: "[Swift 중급 #1] Swift ARC 완전 정리, weak vs unowned는 수명 관계로 고릅니다"
 description: "클로저 편에서 [weak self]로 순환 참조를 끊는 법을 다뤘을 때, 한 가지 질문을 미뤄뒀습니다. weak 말고 unowned도 있던데, 뭐가 다르고 언제 쓰는 걸까요. 이 질문에 답하려면 그 아래 층, ARC가 실제로 어떻게 돌아가는지부터 봐야 합니다."
 header:
-  og_image: /assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/1.png
+  og_image: /assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ last_modified_at: 2026-08-01
 Swift 중급 시리즈 1편입니다. ARC의 동작 원리, strong·weak·unowned 세 참조의 정확한 차이, 그리고 "weak vs unowned"를 고르는 실무 기준까지 정리합니다. Objective-C 시절 MRC(Manual Reference Counting, 수동 참조 계수)에서 ARC로 넘어온 역사는 별도 글에서 다뤘으니, 여기서는 Swift 관점의 현재에 집중할게요.
 
 <figure>
-  <img src="/assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/1.png" alt="ARC는 런타임 청소부가 아니라 컴파일러의 장부 정리입니다">
+  <img src="/assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/1.jpg" alt="ARC는 런타임 청소부가 아니라 컴파일러의 장부 정리입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>ARC는 런타임 청소부가 아니라 컴파일러의 장부 정리입니다</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ ARC 세계에서 참조는 "이 객체를 살려두는 데 내가 책임이 있�
 정리하면 이렇게 됩니다. strong은 "네가 살아 있게 하겠다", weak는 "네가 없어질 수 있음을 안다", unowned는 "네가 나보다 오래 산다고 확신한다".
 
 <figure>
-  <img src="/assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/2.png" alt="strong은 소유, weak는 nil을 아는 관찰, unowned는 확신의 직시" loading="lazy">
+  <img src="/assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/2.jpg" alt="strong은 소유, weak는 nil을 아는 관찰, unowned는 확신의 직시" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>strong은 소유, weak는 nil을 아는 관찰, unowned는 확신의 직시</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ ARC 세계에서 참조는 "이 객체를 살려두는 데 내가 책임이 있�
 참고로 순환의 단골 용의자는 정해져 있습니다. 프로퍼티로 저장되는 클로저(클로저 편), 델리게이트를 strong으로 선언한 실수, NotificationCenter나 타이머류의 등록 해제 누락(NSTimer 편). 새 코드를 리뷰할 때 이 세 자리만 봐도 순환의 대부분을 커버합니다.
 
 <figure>
-  <img src="/assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/3.png" alt="감이 아니라 계측으로, deinit 로그·메모리 그래프·Leaks" loading="lazy">
+  <img src="/assets/images/posts/dea74de0-7d82-4c90-b8e1-e7be2bdaf005/3.jpg" alt="감이 아니라 계측으로, deinit 로그·메모리 그래프·Leaks" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>감이 아니라 계측으로, deinit 로그·메모리 그래프·Leaks</figcaption>
 </figure>
 

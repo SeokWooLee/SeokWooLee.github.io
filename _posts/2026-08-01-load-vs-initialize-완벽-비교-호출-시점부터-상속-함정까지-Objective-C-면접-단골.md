@@ -19,7 +19,7 @@ last_modified_at: 2026-08-01
 `+load`와 `+initialize`는 둘 다 "클래스가 준비될 때 한 번 불리는 메서드"처럼 보이지만 호출 시점부터 호출 방식, 상속 규칙까지 전부 다릅니다. Objective-C 면접 단골 주제이기도 하고, 잘못 이해하면 "왜 이 코드가 두 번 실행되지?" 하고 헤매기 쉬운 지점이라 한 번쯤 정리해 둘 만합니다.
 
 <figure>
-  <img src="/assets/images/posts/ce02c349-0560-4095-af6b-fd3574f7cbdd/objc-load-vs-initialize-1.jpg" alt="+load와 +initialize 호출 시점을 알람시계와 초인종으로 대비한 썸네일" width="1200" height="800">
+  <img src="/assets/images/posts/ce02c349-0560-4095-af6b-fd3574f7cbdd/objc-load-vs-initialize-1.jpg" alt="+load와 +initialize 호출 시점을 알람시계와 초인종으로 대비한 썸네일" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>하나는 무조건 새벽에, 하나는 초인종이 울릴 때만</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ last_modified_at: 2026-08-01
 대신 대가가 있습니다. `+load`는 **앱 시작 시간에 그대로 청구됩니다.** 모든 클래스의 `+load`가 main 이전에 순차 실행되므로, 여기서 무거운 일을 하면 첫 화면이 늦게 뜹니다. 애플이 수년째 "가급적 +load를 피하라"고 안내하는 이유입니다. 실제로 `+load` 안에서는 self가 속한 이미지 밖의 다른 클래스가 아직 로드되지 않았을 수 있어 할 수 있는 일도 제한적입니다.
 
 <figure>
-  <img src="/assets/images/posts/ce02c349-0560-4095-af6b-fd3574f7cbdd/objc-load-vs-initialize-2.png" alt="앱 실행 타임라인에서 +load와 +initialize 호출 시점을 보여주는 다이어그램" width="552" height="1980" loading="lazy">
+  <img src="/assets/images/posts/ce02c349-0560-4095-af6b-fd3574f7cbdd/objc-load-vs-initialize-2.png" alt="앱 실행 타임라인에서 +load와 +initialize 호출 시점을 보여주는 다이어그램" width="552" height="1980" loading="lazy" decoding="async">
   <figcaption>갈림길은 msgSend를 거치느냐 하나입니다</figcaption>
 </figure>
 
@@ -111,7 +111,7 @@ initialize: Dog
 Swift에는 이 고민 자체가 없습니다. Swift는 `+load`에 해당하는 것을 아예 제공하지 않습니다. 전역 실행 코드를 main 전에 끼워 넣는 공식 통로 자체가 없습니다. 대신 타입 프로퍼티(`static let`)가 언어 차원에서 lazy + 스레드 안전을 보장하므로 `+initialize`의 역할을 대체합니다. 앱 시작 성능 관점에서 Swift가 구조적으로 유리한 지점 중 하나입니다.
 
 <figure>
-  <img src="/assets/images/posts/ce02c349-0560-4095-af6b-fd3574f7cbdd/objc-load-vs-initialize-3.jpg" alt="before main의 +load와 lazy한 +initialize를 경주 트랙으로 표현한 일러스트" width="1200" height="1200" loading="lazy">
+  <img src="/assets/images/posts/ce02c349-0560-4095-af6b-fd3574f7cbdd/objc-load-vs-initialize-3.jpg" alt="before main의 +load와 lazy한 +initialize를 경주 트랙으로 표현한 일러스트" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>출발 전부터 뛰는 쪽과 첫 호출까지 자는 쪽</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "Claude vs ChatGPT 전방위 비교, 코딩·이미지·디자인 승자가 다 다릅니다 (2026년 7월)"
 description: "\"Claude랑 ChatGPT 중에 뭘 구독할까\"라는 질문은 이제 모델 성능 비교로는 답이 안 나옵니다. 2026년 7월 기준 양쪽 최상위 모델(Claude Fable 5, GPT-5.6 Sol)의 종합 지능 점수는 60 대 59, 사실상 동점이거든요. 갈리는 지점은 모델이…"
 header:
-  og_image: /assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/1.png
+  og_image: /assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/1.jpg
 tags:
   - Claude
   - ChatGPT
@@ -26,7 +26,7 @@ last_modified_at: 2026-07-27
 4. 결론은 단순합니다. 개발자라면 Claude, 개발자가 아니라면 ChatGPT입니다
 
 <figure>
-  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/1.png" alt="모델 점수는 동점, 갈리는 건 생태계입니다">
+  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/1.jpg" alt="모델 점수는 동점, 갈리는 건 생태계입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>모델 점수는 동점, 갈리는 건 생태계입니다</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ last_modified_at: 2026-07-27
 썸네일, 마케팅 비주얼, 발표 자료 삽화처럼 그림 산출물이 필요한 작업이 하나라도 있다면 이 영역만으로 ChatGPT 구독의 이유가 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/2.png" alt="OpenAI는 그림으로, Anthropic은 코드로 답합니다" loading="lazy">
+  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/2.jpg" alt="OpenAI는 그림으로, Anthropic은 코드로 답합니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>OpenAI는 그림으로, Anthropic은 코드로 답합니다</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ ChatGPT는 글 자체의 품질보다 주변 기능으로 승부합니다. 검�
 물론 가장 흔한 현실적인 답은 둘 다 쓰는 겁니다. 주력 하나를 구독하고 나머지는 무료 티어나 최저 요금제로 보완하는 조합이면, 월 $28로 양쪽 생태계의 강점을 다 가져갈 수 있습니다.
 
 <figure>
-  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/3.png" alt="결국 내 산출물이 코드에 가까운지가 선택 기준이에요" loading="lazy">
+  <img src="/assets/images/posts/bc66a8a3-065a-426f-a690-b498390a4387/3.jpg" alt="결국 내 산출물이 코드에 가까운지가 선택 기준이에요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>결국 내 산출물이 코드에 가까운지가 선택 기준이에요</figcaption>
 </figure>
 

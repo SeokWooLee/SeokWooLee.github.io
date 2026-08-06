@@ -2,7 +2,7 @@
 title: "[Swift 기초 #2] Swift 클로저(Closure) 완전 정리, 캡처·[weak self]·@escaping이 한 몸인 이유"
 description: "Swift 코드에서 클로저는 공기 같은 존재입니다. 정렬 조건, 네트워크 완료 핸들러, 버튼 액션, SwiftUI의 body까지, 중괄호 블록을 넘기는 코드가 하루에도 수십 번 등장하죠. 그런데 정작 \"클로저가 값을 캡처한다는 게 정확히 무슨 뜻인가\", \"[weak self]는…"
 header:
-  og_image: /assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/1.png
+  og_image: /assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ Swift 코드에서 클로저는 공기 같은 존재입니다. 정렬 조건, �
 이 세 질문은 사실 한 몸입니다. 클로저가 주변 값을 붙잡는 방식(캡처)을 이해하면, 참조 타입인 이유도, 순환 참조가 생기는 이유도, escaping 표시가 필요한 이유도 연쇄적으로 풀려요. Swift 기초 시리즈 2편, 이번 글에서 그 연결 고리를 순서대로 짚습니다.
 
 <figure>
-  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/1.png" alt="클로저의 본질은 코드 블록이 아니라 바깥 변수를 붙잡는 캡처입니다">
+  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/1.jpg" alt="클로저의 본질은 코드 블록이 아니라 바깥 변수를 붙잡는 캡처입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>클로저의 본질은 코드 블록이 아니라 바깥 변수를 붙잡는 캡처입니다</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ times(10)      // 20 — 만든 시점의 2로 고정
 그리고 이 캡처 저장소 때문에 클로저는 참조 타입입니다. 캡처된 변수들은 클로저와 수명을 같이해야 하니 힙에 저장되고, 클로저 값을 복사하면 그 저장소를 공유하는 참조가 하나 늘어나는 구조예요. struct 중심의 Swift에서 클로저가 클래스처럼 행동하는 이유입니다. 값 타입과 참조 타입의 구분이 낯설다면 값 타입 우선주의 편을 먼저 읽고 오시면 좋습니다.
 
 <figure>
-  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/2.png" alt="기본 캡처는 살아 있는 연결, 캡처 리스트는 생성 시점의 스냅숏" loading="lazy">
+  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/2.jpg" alt="기본 캡처는 살아 있는 연결, 캡처 리스트는 생성 시점의 스냅숏" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>기본 캡처는 살아 있는 연결, 캡처 리스트는 생성 시점의 스냅숏</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ func fetchUser(completion: @escaping (User) -> Void) {
 참고로 completion 핸들러 스타일의 escaping 클로저는 async/await가 도입되면서 새 코드에서는 줄어드는 추세지만 기존 API를 읽고 브리징하려면 여전히 정확히 이해해야 하는 개념입니다.
 
 <figure>
-  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/3.png" alt="서로를 붙잡은 고리를 weak가 끊습니다" loading="lazy">
+  <img src="/assets/images/posts/acbedb03-d119-4e28-b248-ff183d5af89c/3.jpg" alt="서로를 붙잡은 고리를 weak가 끊습니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>서로를 붙잡은 고리를 weak가 끊습니다</figcaption>
 </figure>
 

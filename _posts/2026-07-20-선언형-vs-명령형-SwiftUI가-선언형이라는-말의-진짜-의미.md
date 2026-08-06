@@ -2,7 +2,7 @@
 title: "선언형(Declarative) vs 명령형(Imperative), SwiftUI가 선언형이라는 말의 진짜 의미"
 description: "SwiftUI 소개 문서 첫 줄에는 어김없이 \"선언형(declarative) 프레임워크\"라는 말이 나옵니다. React도, Jetpack Compose도 자신을 선언형이라 부르죠."
 header:
-  og_image: /assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/1.png
+  og_image: /assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/1.jpg
 tags:
   - 선언형
   - 명령형
@@ -23,7 +23,7 @@ SwiftUI 소개 문서 첫 줄에는 어김없이 "선언형(declarative) 프레�
 이 글에서는 이 기준을 일상 예제로 잡고, UIKit과 SwiftUI 코드로 확인한 다음, 선언형이 공짜가 아니라는 것까지 다룹니다.
 
 <figure>
-  <img src="/assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/1.png" alt="길 안내를 직접 하면 명령형, 목적지만 말하면 선언형">
+  <img src="/assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/1.jpg" alt="길 안내를 직접 하면 명령형, 목적지만 말하면 선언형" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>길 안내를 직접 하면 명령형, 목적지만 말하면 선언형</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ struct BadgeView: View {
 count가 바뀌면 화면을 어떻게 고칠지는 내가 쓰지 않습니다. SwiftUI가 이전 선언과 새 선언을 비교해 필요한 부분만 갱신해요. UI를 "상태의 함수"로 만든 겁니다. 갱신 절차의 소유권을 프레임워크에 넘겼으니 빼먹을 갱신 코드 자체가 없습니다.
 
 <figure>
-  <img src="/assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/2.png" alt="명령형은 갱신 절차를 내가 쓰고, 선언형은 프레임워크가 차이를 계산합니다" loading="lazy">
+  <img src="/assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/2.png" alt="명령형은 갱신 절차를 내가 쓰고, 선언형은 프레임워크가 차이를 계산합니다" width="534" height="1776" loading="lazy" decoding="async">
   <figcaption>명령형은 갱신 절차를 내가 쓰고, 선언형은 프레임워크가 차이를 계산합니다</figcaption>
 </figure>
 
@@ -123,7 +123,7 @@ count가 바뀌면 화면을 어떻게 고칠지는 내가 쓰지 않습니다. 
 그래서 정확한 관점은 "선언형이 우월하다"가 아니라, **추상화 수준의 선택**입니다. 절차의 소유권을 넘기면 코드는 의도 중심으로 단순해지고 대신 세밀한 제어와 내부 이해가 과제로 남습니다.
 
 <figure>
-  <img src="/assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/3.png" alt="절차의 소유권을 넘기는 대신 세밀한 제어를 내주는 트레이드오프" loading="lazy">
+  <img src="/assets/images/posts/8e0f30e5-8050-45c9-8136-4399ee8b55a9/3.jpg" alt="절차의 소유권을 넘기는 대신 세밀한 제어를 내주는 트레이드오프" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>절차의 소유권을 넘기는 대신 세밀한 제어를 내주는 트레이드오프</figcaption>
 </figure>
 

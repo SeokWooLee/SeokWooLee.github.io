@@ -2,7 +2,7 @@
 title: "macOS 터미널 앱 6종 비교, iTerm2·Ghostty·Warp 뭘 써야 할까"
 description: "맥을 쓰는 개발자라면 하루에 가장 오래 띄워놓는 앱이 아마 터미널일 거예요. 그런데 의외로 기본 터미널만 몇 년째 쓰는 분들이 많더라고요."
 header:
-  og_image: /assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/1.png
+  og_image: /assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/1.jpg
 tags:
   - 맥터미널
   - iTerm2
@@ -25,7 +25,7 @@ last_modified_at: 2026-07-27
 이 글에서는 macOS에서 쓸 수 있는 대표 터미널 6가지의 성격 차이와, "나는 뭘 골라야 하나"를 실제 써본 기준으로 정리해드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/1.png" alt="macOS 대표 터미널 6종, 지향점부터 다릅니다">
+  <img src="/assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/1.jpg" alt="macOS 대표 터미널 6종, 지향점부터 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>macOS 대표 터미널 6종, 지향점부터 다릅니다</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ ls 치고 git status 확인하는 정도로는 Terminal.app도 전혀 답답하�
 반대로 Warp는 기능이 많은 만큼 메모리를 꽤 먹는 편이에요. 저사양 맥이라면 이 부분은 감안하셔야 합니다.
 
 <figure>
-  <img src="/assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/2.png" alt="GPU 가속 유무에 따라 대량 출력 체감이 크게 갈립니다" loading="lazy">
+  <img src="/assets/images/posts/0061ee63-be63-4d68-9110-d28fa0f5e067/2.jpg" alt="GPU 가속 유무에 따라 대량 출력 체감이 크게 갈립니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>GPU 가속 유무에 따라 대량 출력 체감이 크게 갈립니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "Swift 메멘토 패턴(Memento Pattern) 완벽 정리 (실행취소 구현 예제)"
 description: "iOS 앱에서 '실행 취소' 버튼을 만들다가 벽에 부딪힌 적 있으신가요?"
 header:
-  og_image: /assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/1.png
+  og_image: /assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/1.jpg
 tags:
   - Swift
   - 메멘토패턴
@@ -27,7 +27,7 @@ iOS 앱에서 '실행 취소' 버튼을 만들다가 벽에 부딪힌 적 있으
 한 줄로 말하면 '스냅샷 찍어두기'예요. 실행 취소(Undo), 게임 세이브, 폼 임시저장 같은 기능의 밑바탕이 되죠.
 
 <figure>
-  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/1.png" alt="Swift 메멘토 패턴, 저장과 복원 딱 두 동작이 핵심이에요">
+  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/1.jpg" alt="Swift 메멘토 패턴, 저장과 복원 딱 두 동작이 핵심이에요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 메멘토 패턴, 저장과 복원 딱 두 동작이 핵심이에요</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ final class TextEditor {
 포인트는 `EditorMemento`의 프로퍼티를 `let`으로 둔 거예요. 저장한 시점의 상태가 나중에 훼손되지 않도록요.
 
 <figure>
-  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/2.png" alt="save와 restore만 나눠놔도 코드가 이만큼 깔끔해집니다" loading="lazy">
+  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/2.jpg" alt="save와 restore만 나눠놔도 코드가 이만큼 깔끔해집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>save와 restore만 나눠놔도 코드가 이만큼 깔끔해집니다</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ final class UndoManager {
 실제 흐름은 이렇게 흘러갑니다.
 
 <figure>
-  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/4-1783847825469.png" alt="저장하고 되돌리는 흐름을 그림으로 보면 이래요" loading="lazy">
+  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/4-1783847825469.png" alt="저장하고 되돌리는 흐름을 그림으로 보면 이래요" width="1200" height="656" loading="lazy" decoding="async">
   <figcaption>저장하고 되돌리는 흐름을 그림으로 보면 이래요</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ final class UndoManager {
 특히 여러 종류의 편집(글자 추가, 삭제, 서식 변경)이 섞여도 저장하는 방식은 하나로 통일돼서 유지보수가 편했어요.
 
 <figure>
-  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/3.png" alt="되돌리기 버튼 하나가 이 패턴 위에서 돌아가고 있어요" loading="lazy">
+  <img src="/assets/images/posts/e4e5fbf7-c08e-4647-9a6e-d432f2aabb4d/3.jpg" alt="되돌리기 버튼 하나가 이 패턴 위에서 돌아가고 있어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>되돌리기 버튼 하나가 이 패턴 위에서 돌아가고 있어요</figcaption>
 </figure>
 

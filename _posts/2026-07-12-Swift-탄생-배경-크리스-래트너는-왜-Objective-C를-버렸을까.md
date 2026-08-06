@@ -2,7 +2,7 @@
 title: "Swift 탄생 배경, 크리스 래트너는 왜 Objective-C를 버렸을까"
 description: "iOS 개발을 시작하면 누구나 한 번쯤 궁금해합니다. \"애플은 잘 쓰던 Objective-C 놔두고 왜 굳이 Swift를 새로 만들었을까?\" 하고요."
 header:
-  og_image: /assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/1.png
+  og_image: /assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -23,7 +23,7 @@ iOS 개발을 시작하면 누구나 한 번쯤 궁금해합니다. "애플은 �
 오늘은 이 Swift가 어떻게 세상에 나왔는지, 그 배경을 편하게 풀어보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/1.png" alt="30년 묵은 Objective-C를 Swift가 밀어낸 이유, 한 장으로 정리해봤어요">
+  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/1.jpg" alt="30년 묵은 Objective-C를 Swift가 밀어낸 이유, 한 장으로 정리해봤어요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>30년 묵은 Objective-C를 Swift가 밀어낸 이유, 한 장으로 정리해봤어요</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ Swift는 발표 이후 빠르게 자리를 잡았습니다.
 그럼에도 Swift는 지금까지 애플 생태계의 중심 언어로 굳건히 자리 잡고 있습니다. 오픈소스가 되면서 리눅스, 서버 사이드로도 영역을 넓혔고요.
 
 <figure>
-  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/2-1783765666000.png" alt="래트너가 떠난 뒤에도 Swift는 계속 자라고 있어요" loading="lazy">
+  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/2-1783765666000.jpg" alt="래트너가 떠난 뒤에도 Swift는 계속 자라고 있어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>래트너가 떠난 뒤에도 Swift는 계속 자라고 있어요</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Swift는 발표 이후 빠르게 자리를 잡았습니다.
 "왜?"라는 질문 하나에서 출발한 언어라, 배경을 알고 나면 Swift 문법 하나하나가 다르게 보이더라고요.
 
 <figure>
-  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/3.png" alt="배경을 알고 다시 보면 코드 한 줄이 다르게 읽힙니다" loading="lazy">
+  <img src="/assets/images/posts/93d03ca3-c66b-4d86-89f5-acc96fa3aff0/3.jpg" alt="배경을 알고 다시 보면 코드 한 줄이 다르게 읽힙니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>배경을 알고 다시 보면 코드 한 줄이 다르게 읽힙니다</figcaption>
 </figure>
 

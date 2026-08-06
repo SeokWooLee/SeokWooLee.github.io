@@ -2,7 +2,7 @@
 title: "Swift 프록시 패턴(Proxy Pattern), lazy 뒤에 숨은 대리인 객체"
 description: "iOS 개발을 하다 보면 lazy var 한 줄을 참 자주 쓰게 됩니다."
 header:
-  og_image: /assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/1.png
+  og_image: /assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/1.jpg
 tags:
   - Swift
   - 프록시패턴
@@ -27,7 +27,7 @@ iOS 개발을 하다 보면 `lazy var` 한 줄을 참 자주 쓰게 됩니다.
 오늘은 Swift 프록시 패턴이 무엇인지, 또 그 개념이 `lazy` 키워드 뒤에 어떻게 숨어 있는지 제가 직접 코드를 만져보며 이해한 순서대로 풀어드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/1.png" alt="Swift 프록시 패턴과 lazy, 결국 같은 이야기라는 걸 그림 하나로 정리해봤어요">
+  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/1.jpg" alt="Swift 프록시 패턴과 lazy, 결국 같은 이야기라는 걸 그림 하나로 정리해봤어요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 프록시 패턴과 lazy, 결국 같은 이야기라는 걸 그림 하나로 정리해봤어요</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ final class ImageProxy: Image {
 그런데 Swift에는 이 패턴이 문법에 녹아 있습니다. 바로 `lazy`예요.
 
 <figure>
-  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/4-1783848054266.png" alt="대리인이 진짜 객체를 대신 붙잡고 있는 순간" loading="lazy">
+  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/4-1783848054266.png" alt="대리인이 진짜 객체를 대신 붙잡고 있는 순간" width="1040" height="1168" loading="lazy" decoding="async">
   <figcaption>대리인이 진짜 객체를 대신 붙잡고 있는 순간</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ g.cover.display()   // 여기서 비로소 생성
 반면 권한 확인, 로깅, 원격 호출 감싸기처럼 중간에 끼어들 일이 있다면 프록시 객체를 직접 세워야 합니다.
 
 <figure>
-  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/2.png" alt="무거운 초기화를 미룰 때 저는 늘 이 한 줄부터 떠올립니다" loading="lazy">
+  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/2.jpg" alt="무거운 초기화를 미룰 때 저는 늘 이 한 줄부터 떠올립니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>무거운 초기화를 미룰 때 저는 늘 이 한 줄부터 떠올립니다</figcaption>
 </figure>
 
@@ -162,7 +162,7 @@ g.cover.display()   // 여기서 비로소 생성
 초기화 시점이 나중이라, 값이 정해지기 전의 인스턴스가 잠깐 존재하기 때문이에요. `let`은 그걸 허용하지 않아서 `lazy let`은 문법상 불가능합니다.
 
 <figure>
-  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/3.png" alt="직접 대리인 클래스를 세워보면 lazy가 뭘 대신해줬는지 확 와닿아요" loading="lazy">
+  <img src="/assets/images/posts/af69e889-ff48-46ae-9eed-468cddbd75aa/3.jpg" alt="직접 대리인 클래스를 세워보면 lazy가 뭘 대신해줬는지 확 와닿아요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>직접 대리인 클래스를 세워보면 lazy가 뭘 대신해줬는지 확 와닿아요</figcaption>
 </figure>
 

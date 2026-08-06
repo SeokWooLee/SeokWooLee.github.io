@@ -15,7 +15,7 @@ last_modified_at: 2026-08-01
 ---
 
 <figure>
-  <img src="/assets/images/posts/a29d928e-92af-453f-bb59-0870181556e7/feed-ai-your-docs-1.jpg" alt="FEED AI YOUR DOCS 텍스트와 문서가 AI로 흘러들어 출처 달린 답변이 나오는 히어로 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/a29d928e-92af-453f-bb59-0870181556e7/feed-ai-your-docs-1.jpg" alt="FEED AI YOUR DOCS 텍스트와 문서가 AI로 흘러들어 출처 달린 답변이 나오는 히어로 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>AI의 기억에 맡기지 말고 재료를 직접 주세요. 답의 등급이 달라집니다</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ ChatGPT·Claude·Gemini 모두 대화창에 파일을 끌어다 놓을 수 있�
 대신 주의할 게 있습니다. **검색을 붙였다고 끝이 아닙니다.** AI가 검색 결과를 잘못 요약하거나, 신뢰도 낮은 페이지를 물어오는 경우가 있거든요. 다행히 웹 검색 모드에서는 출처 링크가 달려 나오니, 중요한 정보면 링크를 눌러 원문을 확인하세요. 원문으로 되짚을 길이 열려 있다는 점 자체가 검색 모드의 가장 큰 가치입니다.
 
 <figure>
-  <img src="/assets/images/posts/a29d928e-92af-453f-bb59-0870181556e7/feed-ai-your-docs-2.png" alt="AI 자료 제공 방법 선택 플로우차트, 웹 검색 파일 첨부 NotebookLM 상황별 분기" width="1060" height="936" loading="lazy">
+  <img src="/assets/images/posts/a29d928e-92af-453f-bb59-0870181556e7/feed-ai-your-docs-2.png" alt="AI 자료 제공 방법 선택 플로우차트, 웹 검색 파일 첨부 NotebookLM 상황별 분기" width="1060" height="936" loading="lazy" decoding="async">
   <figcaption>최신 정보는 웹 검색, 문서 한 건은 첨부, 자료 더미는 NotebookLM입니다</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ ChatGPT·Claude·Gemini 모두 대화창에 파일을 끌어다 놓을 수 있�
 **셋째, 민감한 자료는 넣기 전에 생각해야 합니다.** 회사 기밀, 고객 개인정보가 든 파일을 외부 AI 서비스에 올리는 건 별개의 문제입니다. 7편에서 정면으로 다룹니다.
 
 <figure>
-  <img src="/assets/images/posts/a29d928e-92af-453f-bb59-0870181556e7/feed-ai-your-docs-3.jpg" alt="GARBAGE IN GARBAGE OUT 텍스트와 검증된 자료와 불량 자료가 다른 품질의 답을 만드는 일러스트" width="1200" height="800" loading="lazy">
+  <img src="/assets/images/posts/a29d928e-92af-453f-bb59-0870181556e7/feed-ai-your-docs-3.jpg" alt="GARBAGE IN GARBAGE OUT 텍스트와 검증된 자료와 불량 자료가 다른 품질의 답을 만드는 일러스트" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>자료가 틀리면 답도 같이 틀립니다. 자료 신뢰도는 사람 몫입니다</figcaption>
 </figure>
 

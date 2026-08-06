@@ -2,7 +2,7 @@
 title: "Swift 커맨드 패턴(Command Pattern)으로 실행 취소(undo) 기능 만들기"
 description: "앱을 만들다 보면 \"실행 취소 버튼 하나만 넣어달라\"는 요청이 생각보다 자주 들어옵니다."
 header:
-  og_image: /assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/1.png
+  og_image: /assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/1.jpg
 tags:
   - Swift
   - 커맨드패턴
@@ -23,7 +23,7 @@ last_modified_at: 2026-07-22
 이 글에서는 커맨드 패턴이 왜 실행 취소 기능의 뼈대가 되는지, 실제로 쓰는 최소 코드 골격까지 짚어 드릴게요. 복잡한 이론보다 "당장 프로젝트에 붙일 수 있는 형태"에 초점을 맞췄습니다.
 
 <figure>
-  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/1.png" alt="Swift 커맨드 패턴, execute와 undo를 한 짝으로 묶는 게 핵심이에요">
+  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/1.jpg" alt="Swift 커맨드 패턴, execute와 undo를 한 짝으로 묶는 게 핵심이에요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 커맨드 패턴, execute와 undo를 한 짝으로 묶는 게 핵심이에요</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ final class AddTextCommand: Command {
 execute는 글자를 붙이고, undo는 붙인 만큼 다시 떼어냅니다. 실행과 취소가 한 객체 안에 붙어 있다는 게 이 패턴의 전부예요.
 
 <figure>
-  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/2.png" alt="protocol Command 딱 두 줄에서 시작하면 됩니다" loading="lazy">
+  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/2.jpg" alt="protocol Command 딱 두 줄에서 시작하면 됩니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>protocol Command 딱 두 줄에서 시작하면 됩니다</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ buttonTapped에서 manager.run(command)를 부르고, 실행 취소 버튼에서
 되돌리기 순서나 스택 관리는 CommandManager가 알아서 처리하니, 화면 코드는 깔끔하게 유지됩니다.
 
 <figure>
-  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/4-1783847803003.png" alt="커맨드 세 조각이 이렇게 엮여 있습니다" loading="lazy">
+  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/4-1783847803003.png" alt="커맨드 세 조각이 이렇게 엮여 있습니다" width="550" height="1640" loading="lazy" decoding="async">
   <figcaption>커맨드 세 조각이 이렇게 엮여 있습니다</figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ buttonTapped에서 manager.run(command)를 부르고, 실행 취소 버튼에서
 모든 버튼을 커맨드로 만들면 파일만 잔뜩 늘어나기 쉬우니, 되돌릴 필요가 있는 동작에만 적용하는 게 좋습니다.
 
 <figure>
-  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/3.png" alt="제일 위 카드부터 하나씩 꺼내 되돌리는 구조예요" loading="lazy">
+  <img src="/assets/images/posts/787c2654-92c6-4fec-a0b2-49a3558c53b7/3.jpg" alt="제일 위 카드부터 하나씩 꺼내 되돌리는 구조예요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>제일 위 카드부터 하나씩 꺼내 되돌리는 구조예요</figcaption>
 </figure>
 

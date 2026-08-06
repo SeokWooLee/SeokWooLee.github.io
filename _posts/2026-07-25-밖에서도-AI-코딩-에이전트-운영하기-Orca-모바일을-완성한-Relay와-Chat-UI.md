@@ -19,7 +19,7 @@ AI 코딩 에이전트에게 작업을 맡기는 방식의 좋은 점은 사람�
 [Orca](https://www.onorca.dev/)는 이 문제를 모바일 컴패니언 앱으로 풀어 온 ADE(Agent Development Environment, 에이전트 개발 환경)입니다. 다만 지금까지의 모바일 앱에는 두 가지 벽이 있었습니다. 데스크톱과 **같은 네트워크에 있어야 연결**되고, 폰 화면에서 **터미널을 그대로 미러링**해서 봐야 했다는 점입니다. 2026년 7월 기준 이 두 가지가 모두 허물어지고 있습니다. 다른 네트워크에서도 연결되는 **Relay**와, 터미널 대신 네이티브 채팅으로 에이전트와 대화하는 **Chat UI**가 도입되면서입니다.
 
 <figure>
-  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-1.jpg" alt="Orca Mobile Relay와 Chat UI를 표현한 일러스트, 스마트폰 채팅 화면과 데스크톱 터미널이 암호화 회선으로 연결된 모습" width="1200" height="800">
+  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-1.jpg" alt="Orca Mobile Relay와 Chat UI를 표현한 일러스트, 스마트폰 채팅 화면과 데스크톱 터미널이 암호화 회선으로 연결된 모습" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>폰과 데스크톱이 이어지면 에이전트가 멈춰 있는 시간이 줄어듭니다</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ AI 코딩 에이전트에게 작업을 맡기는 방식의 좋은 점은 사람�
 Orca 모바일 앱(iOS·Android)은 데스크톱 Orca와 페어링해서 쓰는 리모컨형 앱입니다. 실행 중인 worktree와 에이전트 상태를 목록으로 보고, 에이전트가 작업을 마치거나 입력을 기다리면 푸시 알림을 받고, 터미널 내용을 확인한 뒤 후속 프롬프트를 보낼 수 있습니다. 파일 트리 탐색, diff 확인과 커밋, 사진 첨부, 음성 입력까지 지원하니 "확인하고 지시하는" 용도로는 이미 쓸 만했습니다.
 
 <figure>
-  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-2.jpg" alt="Orca 모바일 컴패니언 앱 홈 화면, 연결된 데스크톱 호스트와 에이전트 실행 통계를 보여주는 공식 App Store 스크린샷" width="600" height="1298" loading="lazy">
+  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-2.jpg" alt="Orca 모바일 컴패니언 앱 홈 화면, 연결된 데스크톱 호스트와 에이전트 실행 통계를 보여주는 공식 App Store 스크린샷" width="600" height="1298" loading="lazy" decoding="async">
   <figcaption>홈 화면에서 데스크톱 연결 상태와 에이전트 현황부터 보입니다</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Relay는 이 연결 문제를 푸는 기능입니다. 폰과 데스크톱이 서
 구조를 그려 보면 이렇습니다.
 
 <figure>
-  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-3.png" alt="Orca Relay 연결 구조 다이어그램, 같은 네트워크는 LAN 직접 페어링·다른 네트워크는 E2EE Relay 서버 경유 연결" width="1200" height="209" loading="lazy">
+  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-3.png" alt="Orca Relay 연결 구조 다이어그램, 같은 네트워크는 LAN 직접 페어링·다른 네트워크는 E2EE Relay 서버 경유 연결" width="1200" height="209" loading="lazy" decoding="async">
   <figcaption>같은 네트워크면 직접 붙고, 아니면 Relay를 거칩니다</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Relay는 이 연결 문제를 푸는 기능입니다. 폰과 데스크톱이 서
 연결이 됐다면 다음 문제는 화면입니다. 기존 모바일 앱은 데스크톱 터미널 화면을 폰에 그대로 미러링했습니다. 어떤 화면이었는지 보면 이해가 빠릅니다.
 
 <figure>
-  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-4.jpg" alt="Orca 모바일 앱의 터미널 미러링 화면, 폰에서 코딩 에이전트 터미널 출력을 그대로 보여주는 공식 App Store 스크린샷" width="600" height="1298" loading="lazy">
+  <img src="/assets/images/posts/f4461b55-25f0-4c43-b654-07e0500216de/orca-mobile-relay-chat-ui-4.jpg" alt="Orca 모바일 앱의 터미널 미러링 화면, 폰에서 코딩 에이전트 터미널 출력을 그대로 보여주는 공식 App Store 스크린샷" width="600" height="1298" loading="lazy" decoding="async">
   <figcaption>터미널 그대로 보기, 되긴 하지만 폰에서는 버겁습니다</figcaption>
 </figure>
 

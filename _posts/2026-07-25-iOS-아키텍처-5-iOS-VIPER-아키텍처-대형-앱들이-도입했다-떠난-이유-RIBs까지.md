@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #5] iOS VIPER 아키텍처, 대형 앱들이 도입했다 떠난 이유 (RIBs까지)"
 description: "iOS 아키텍처 이야기에서 VIPER만큼 평가가 극단적으로 갈리는 패턴도 드뭅니다."
 header:
-  og_image: /assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/1.png
+  og_image: /assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/1.jpg
 tags:
   - iOS
   - VIPER
@@ -21,7 +21,7 @@ iOS 아키텍처 이야기에서 VIPER만큼 평가가 극단적으로 갈리는
 오늘은 VIPER가 무엇을 해결하려던 패턴인지, 왜 그 대가가 컸는지를 정리해보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/1.png" alt="화면 하나를 다섯 조각으로, VIPER의 극단적 분리">
+  <img src="/assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/1.jpg" alt="화면 하나를 다섯 조각으로, VIPER의 극단적 분리" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>화면 하나를 다섯 조각으로, VIPER의 극단적 분리</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ MVC(Model-View-Controller)에서 뷰컨트롤러 하나가 하던 일을 넷으�
 셋째, **기능 단위 모듈화**와 궁합이 좋습니다. 화면 하나가 자기완결적인 다섯 조각이라, 기능별로 모듈을 떼어내기 수월합니다. Uber가 VIPER에서 영감을 받아 만든 RIBs가 이 방향을 극단까지 밀어붙인 사례입니다. 화면(View)이 아니라 비즈니스 로직 단위로 앱을 트리 구조로 쪼개죠.
 
 <figure>
-  <img src="/assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/2.png" alt="버튼 하나짜리 화면에도 똑같이 다섯 조각이 강제됩니다" loading="lazy">
+  <img src="/assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/2.jpg" alt="버튼 하나짜리 화면에도 똑같이 다섯 조각이 강제됩니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>버튼 하나짜리 화면에도 똑같이 다섯 조각이 강제됩니다</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ MVC(Model-View-Controller)에서 뷰컨트롤러 하나가 하던 일을 넷으�
 VIPER의 다섯 조각을 통째로 쓰는 팀은 줄었지만, **그 다섯 조각이 각각 해결하려던 문제와 해법은 살아남았습니다**. 지금은 그중 필요한 조각만 골라 쓰는 시대에 가까워요.
 
 <figure>
-  <img src="/assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/3.png" alt="통째로는 떠났지만 쓸 만한 조각들은 표준 관행으로 남았어요" loading="lazy">
+  <img src="/assets/images/posts/ef088d05-20c3-46e5-95b6-d23a695099e9/3.jpg" alt="통째로는 떠났지만 쓸 만한 조각들은 표준 관행으로 남았어요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>통째로는 떠났지만 쓸 만한 조각들은 표준 관행으로 남았어요</figcaption>
 </figure>
 

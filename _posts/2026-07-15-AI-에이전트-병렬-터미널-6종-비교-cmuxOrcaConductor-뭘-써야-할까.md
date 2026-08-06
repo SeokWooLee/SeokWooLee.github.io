@@ -2,7 +2,7 @@
 title: "AI 에이전트 병렬 터미널 6종 비교, cmux·Orca·Conductor 뭘 써야 할까"
 description: "지난번에 macOS 터미널 6종을 비교하면서 \"AI 에이전트 시대를 위한 터미널은 따로 소개하겠다\"고 예고드렸는데요. 오늘이 그 후속편입니다."
 header:
-  og_image: /assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/1.png
+  og_image: /assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/1.jpg
 tags:
   - AI에이전트
   - cmux
@@ -25,7 +25,7 @@ last_modified_at: 2026-07-27
 이 글에서는 2026년 7월 기준으로 병렬 에이전트 시대의 터미널·오케스트레이터 6가지를 비교하고, 제가 Orca에 정착한 이유를 정리해드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/1.png" alt="AI 에이전트 여러 개를 병렬로 지휘하는 개발 워크플로우">
+  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/1.jpg" alt="AI 에이전트 여러 개를 병렬로 지휘하는 개발 워크플로우" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>AI 에이전트 여러 개를 병렬로 지휘하는 개발 워크플로우</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ Claude Code·Codex·Cursor 에이전트를 각각 격리된 worktree에서 돌�
 이제 스스로를 터미널이 아니라 ADE라고 부르고, 소스도 공개(MIT·AGPL 듀얼 라이선스)했어요. 2026년 4월부터는 Claude Code·Codex·Gemini CLI·OpenCode를 일반 셸 프로세스가 아닌 1급 시민으로 통합해서 에이전트마다 상태 배지가 붙은 세로 탭을 줍니다. Oz라는 클라우드 오케스트레이터로 원격 에이전트도 돌릴 수 있고요.
 
 <figure>
-  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/2.png" alt="병렬 에이전트 도구 6종 한눈에 보기" loading="lazy">
+  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/2.jpg" alt="병렬 에이전트 도구 6종 한눈에 보기" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>병렬 에이전트 도구 6종 한눈에 보기</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ diff 라인에 마크다운 코멘트를 달아 모아서 에이전트에게 되
 물론 만능은 아닙니다. cmux처럼 네이티브 앱 특유의 가벼움을 원하시면 Electron 계열인 Orca가 무겁게 느껴질 수 있고 기능이 많은 만큼 처음 익힐 게 좀 있어요.
 
 <figure>
-  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/3.png" alt="데스크톱 worktree와 모바일 앱이 이어지는 Orca 워크플로우" loading="lazy">
+  <img src="/assets/images/posts/04324d6d-3911-4cb4-9fd9-b427587c8da7/3.jpg" alt="데스크톱 worktree와 모바일 앱이 이어지는 Orca 워크플로우" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>데스크톱 worktree와 모바일 앱이 이어지는 Orca 워크플로우</figcaption>
 </figure>
 

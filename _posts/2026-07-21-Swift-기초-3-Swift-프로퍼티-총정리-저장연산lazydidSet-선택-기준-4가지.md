@@ -2,7 +2,7 @@
 title: "[Swift 기초 #3] Swift 프로퍼티 총정리, 저장·연산·lazy·didSet 선택 기준 4가지"
 description: "이 글은 Swift 기초 시리즈 3편입니다. 프로퍼티 다섯 종류를 문법 나열이 아니라 선택 기준 중심으로 정리합니다. 핵심 질문은 하나예요. 이 값은 저장되는가, 계산되는가, 그리고 언제 만들어지는가."
 header:
-  og_image: /assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/1.png
+  og_image: /assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ last_modified_at: 2026-07-21
 이 글은 Swift 기초 시리즈 3편입니다. 프로퍼티 다섯 종류를 문법 나열이 아니라 선택 기준 중심으로 정리합니다. 핵심 질문은 하나예요. 이 값은 저장되는가, 계산되는가, 그리고 언제 만들어지는가.
 
 <figure>
-  <img src="/assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/1.png" alt="프로퍼티 다섯 서랍, 어떤 걸 열어야 할까요">
+  <img src="/assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/1.jpg" alt="프로퍼티 다섯 서랍, 어떤 걸 열어야 할까요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>프로퍼티 다섯 서랍, 어떤 걸 열어야 할까요</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ class ImageProcessor {
 연산 프로퍼티와 어떻게 다른지도 분명합니다. lazy는 한 번 계산해서 저장하고 이후엔 그 값을 돌려줍니다. 연산은 매번 다시 계산합니다. "비싸지만 변하지 않는 값"은 lazy, "쌀지만 항상 최신이어야 하는 값"은 연산입니다.
 
 <figure>
-  <img src="/assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/2.png" alt="저장은 선반 위의 상자, 연산은 주문받아 만드는 공장" loading="lazy">
+  <img src="/assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/2.jpg" alt="저장은 선반 위의 상자, 연산은 주문받아 만드는 공장" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>저장은 선반 위의 상자, 연산은 주문받아 만드는 공장</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ struct APIConfig {
 알아두면 좋은 사실 하나. static let은 스레드 안전한 지연 초기화가 보장됩니다. 첫 접근 때 단 한 번 초기화되고 동시 접근에도 안전해요. lazy var에는 없는 보장이 static에는 있는 겁니다. 싱글톤의 `static let shared`가 별도 잠금 장치 없이 성립하는 근거이기도 합니다. 다만 static var 가변 상태는 사실상 전역 변수라서 테스트 격리를 해치고 데이터 레이스 후보가 됩니다. 싱글톤이 왜 안티패턴 소리를 듣는지는 별도 글에서 다뤘으니 여기서는 "static var는 마지막 수단"이라는 기준만 남겨둘게요.
 
 <figure>
-  <img src="/assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/3.png" alt="네 가지 질문만 던지면 선택이 끝납니다" loading="lazy">
+  <img src="/assets/images/posts/7621582a-1bb6-4f5a-8fca-12fae48417af/3.jpg" alt="네 가지 질문만 던지면 선택이 끝납니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>네 가지 질문만 던지면 선택이 끝납니다</figcaption>
 </figure>
 

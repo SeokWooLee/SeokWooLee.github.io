@@ -15,7 +15,7 @@ last_modified_at: 2026-07-29
 ---
 
 <figure>
-  <img src="/assets/images/posts/2749fa60-515f-449b-8e14-21906ac32b10/ai-not-search-engine-1.jpg" alt="AI IS NOT A SEARCH ENGINE 텍스트와 함께 검색엔진 사서와 문장을 생성하는 AI 이야기꾼을 대비한 히어로 이미지" width="1200" height="800">
+  <img src="/assets/images/posts/2749fa60-515f-449b-8e14-21906ac32b10/ai-not-search-engine-1.jpg" alt="AI IS NOT A SEARCH ENGINE 텍스트와 함께 검색엔진 사서와 문장을 생성하는 AI 이야기꾼을 대비한 히어로 이미지" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>AI는 사서가 아니라 이야기꾼입니다. 답은 찾는 게 아니라 만들어집니다</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ ChatGPT의 뿌리는 LLM(Large Language Model, 대규모 언어 모델)이라는
 그러니까 AI가 답변하는 과정은 이렇습니다. 여러분의 질문을 받고, 거기에 이어질 가장 그럴듯한 단어를 하나 고르고, 그 단어까지 포함해서 또 다음 단어를 고르고. 이걸 초당 수십 번씩 반복해서 문장을 완성합니다.
 
 <figure>
-  <img src="/assets/images/posts/2749fa60-515f-449b-8e14-21906ac32b10/ai-not-search-engine-2.png" alt="LLM 다음 단어 예측 반복 과정 다이어그램, 후보 확률에서 선택해 문장을 완성하는 루프" width="690" height="956" loading="lazy">
+  <img src="/assets/images/posts/2749fa60-515f-449b-8e14-21906ac32b10/ai-not-search-engine-2.png" alt="LLM 다음 단어 예측 반복 과정 다이어그램, 후보 확률에서 선택해 문장을 완성하는 루프" width="690" height="956" loading="lazy" decoding="async">
   <figcaption>다음 단어 하나 고르는 일을 초당 수십 번 반복하는 게 답변의 전부입니다</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ AI는 다음 단어를 고를 때 1등 후보만 고르지 않습니다. 확률�
 이 성질은 쓰기에 따라 장점이 됩니다. 답변이 마음에 안 들면 다시 생성을 눌러 다른 버전을 받아볼 수 있고, 아이디어 회의처럼 다양한 안이 필요할 때 특히 유용합니다.
 
 <figure>
-  <img src="/assets/images/posts/2749fa60-515f-449b-8e14-21906ac32b10/ai-not-search-engine-3.png" alt="검색엔진과 생성형 AI 처리 흐름 비교 다이어그램, 문서 검색 대 다음 단어 예측 생성" width="1200" height="690" loading="lazy">
+  <img src="/assets/images/posts/2749fa60-515f-449b-8e14-21906ac32b10/ai-not-search-engine-3.png" alt="검색엔진과 생성형 AI 처리 흐름 비교 다이어그램, 문서 검색 대 다음 단어 예측 생성" width="1200" height="690" loading="lazy" decoding="async">
   <figcaption>찾아주는 검색엔진과 만들어내는 생성형 AI, 출발부터 다릅니다</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "Swift 인터프리터 패턴(Interpreter Pattern), 미니 언어 해석기 직접 만들기"
 description: "디자인 패턴 책을 펼치면 늘 마지막쯤에 등장하는 게 인터프리터 패턴이에요. \"이게 대체 언제 쓰이나\" 싶어서 대충 넘기기 쉬운 패턴이죠."
 header:
-  og_image: /assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/1.png
+  og_image: /assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/1.jpg
 tags:
   - Swift
   - 인터프리터패턴
@@ -27,7 +27,7 @@ last_modified_at: 2026-07-25
 말은 어렵지만 코드로 보면 생각보다 단순해요. 함께 만들어봅시다.
 
 <figure>
-  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/1.png" alt="수식 하나가 숫자 7이 되기까지, 인터프리터 패턴이 하는 일이에요">
+  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/1.jpg" alt="수식 하나가 숫자 7이 되기까지, 인터프리터 패턴이 하는 일이에요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>수식 하나가 숫자 7이 되기까지, 인터프리터 패턴이 하는 일이에요</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ func interpret(_ expr: Expr) -> Double {
 `.add(.number(1), .multiply(.number(2), .number(3)))`처럼 손으로 트리를 만들어 `interpret`에 넣으면 결과 7이 나옵니다.
 
 <figure>
-  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/4-1783847801677.png" alt="곱셈이 먼저 묶여야 순서가 맞아요" loading="lazy">
+  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/4-1783847801677.png" alt="곱셈이 먼저 묶여야 순서가 맞아요" width="842" height="556" loading="lazy" decoding="async">
   <figcaption>곱셈이 먼저 묶여야 순서가 맞아요</figcaption>
 </figure>
 
@@ -113,7 +113,7 @@ func interpret(_ expr: Expr) -> Double {
 그래서 저는 학습 단계에서는 파서를 잠시 건너뛰고 트리를 손으로 만들어 해석기부터 완성하는 걸 추천해요. 그래야 패턴의 본질이 눈에 들어옵니다.
 
 <figure>
-  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/2.png" alt="코드는 화면에, 트리는 노트에. 이렇게 그려보면 확 와닿더라고요" loading="lazy">
+  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/2.jpg" alt="코드는 화면에, 트리는 노트에. 이렇게 그려보면 확 와닿더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>코드는 화면에, 트리는 노트에. 이렇게 그려보면 확 와닿더라고요</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ func interpret(_ expr: Expr) -> Double {
 저는 이 패턴을 익히고 나서 SwiftUI의 뷰 구조가 완전히 다르게 보였어요. 뷰 하나하나가 결국 해석되는 트리의 노드였던 거죠.
 
 <figure>
-  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/3.png" alt="이 패턴을 알고 나니 SwiftUI 뷰가 다르게 보였어요" loading="lazy">
+  <img src="/assets/images/posts/0a1bed82-22f7-4dfc-ac5d-6ca5f79e3a35/3.jpg" alt="이 패턴을 알고 나니 SwiftUI 뷰가 다르게 보였어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>이 패턴을 알고 나니 SwiftUI 뷰가 다르게 보였어요</figcaption>
 </figure>
 

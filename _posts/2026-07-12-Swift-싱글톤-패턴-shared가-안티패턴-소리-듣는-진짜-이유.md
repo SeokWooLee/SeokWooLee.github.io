@@ -2,7 +2,7 @@
 title: "Swift 싱글톤 패턴(Singleton Pattern), shared가 안티패턴 소리 듣는 진짜 이유"
 description: "Swift 개발을 하다 보면 static let shared 한 줄로 만드는 싱글톤을 정말 자주 만나게 됩니다."
 header:
-  og_image: /assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png
+  og_image: /assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.jpg
 tags:
   - Swift
   - 싱글톤패턴
@@ -29,7 +29,7 @@ Swift 개발을 하다 보면 `static let shared` 한 줄로 만드는 싱글톤
 결론부터 말씀드리면, 싱글톤 자체가 나쁜 게 아니라 "전역에서 아무 데서나 상태를 바꿀 수 있게 열어두는 방식"이 문제입니다. 그래서 shared를 무분별하게 남용하면 테스트가 막히고 의존성이 숨고 동시성 문제까지 생기는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.png" alt="Swift 싱글톤 패턴, shared 하나로 편해지지만 그만큼 함정도 큽니다">
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/1.jpg" alt="Swift 싱글톤 패턴, shared 하나로 편해지지만 그만큼 함정도 큽니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 싱글톤 패턴, shared 하나로 편해지지만 그만큼 함정도 큽니다</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ final class NetworkManager {
 인스턴스 생성은 안전해도 그 안의 상태 변경까지 안전한 건 아니에요. 이 둘을 헷갈리면 크래시를 만나게 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/2.png" alt="shared 도배하던 시절 제 코드, 지금 보면 아찔합니다" loading="lazy">
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/2.jpg" alt="shared 도배하던 시절 제 코드, 지금 보면 아찔합니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>shared 도배하던 시절 제 코드, 지금 보면 아찔합니다</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ final class NetworkManager {
 핵심은 "shared를 코드 안에서 직접 부르지 말고, 밖에서 주입받자"는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/3-1783847709763.png" alt="shared는 기본값으로, 테스트엔 가짜를 주입하는 구조" loading="lazy">
+  <img src="/assets/images/posts/b71a69ec-a38f-40af-8715-df457527f22f/3-1783847709763.png" alt="shared는 기본값으로, 테스트엔 가짜를 주입하는 구조" width="1070" height="1204" loading="lazy" decoding="async">
   <figcaption>shared는 기본값으로, 테스트엔 가짜를 주입하는 구조</figcaption>
 </figure>
 

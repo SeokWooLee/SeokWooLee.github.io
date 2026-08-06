@@ -2,7 +2,7 @@
 title: "얕은 복사(Shallow Copy) vs 깊은 복사(Deep Copy), 복사했는데 원본이 같이 바뀌는 이유 (Swift COW)"
 description: "배열을 복사해서 새 변수에 담았습니다. 복사본만 고쳤는데 원본까지 바뀌어 있네요. 프로그래밍하다 한 번은 꼭 만나는 미스터리입니다."
 header:
-  og_image: /assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/1.png
+  og_image: /assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/1.jpg
 tags:
   - 얕은복사
   - 깊은복사
@@ -21,7 +21,7 @@ last_modified_at: 2026-07-22
 얕은 복사와 깊은 복사를 가르는 기준을 짚고, Swift에서는 이 문제가 어떻게 달라지는지 정리합니다. 값 타입과 Copy-on-Write 덕분에 사정이 달라지지만, 그래도 함정은 남습니다.
 
 <figure>
-  <img src="/assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/1.png" alt="복사했다고 믿었는데 안쪽은 같은 걸 가리키고 있었습니다">
+  <img src="/assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/1.jpg" alt="복사했다고 믿었는데 안쪽은 같은 걸 가리키고 있었습니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>복사했다고 믿었는데 안쪽은 같은 걸 가리키고 있었습니다</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ print(a.name)      // "이코딩" — 원본도 바뀜
 **깊은 복사**는 상자 안의 상자, 그 안의 상자까지 전부 새로 만드는 겁니다. 두 구조는 완전히 독립이라 어느 쪽을 고쳐도 서로 영향이 없습니다.
 
 <figure>
-  <img src="/assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/2.png" alt="얕은 복사는 껍데기만, 깊은 복사는 안까지 전부 새로 만듭니다" loading="lazy">
+  <img src="/assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/2.png" alt="얕은 복사는 껍데기만, 깊은 복사는 안까지 전부 새로 만듭니다" width="1200" height="260" loading="lazy" decoding="async">
   <figcaption>얕은 복사는 껍데기만, 깊은 복사는 안까지 전부 새로 만듭니다</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ print(mail1.attachment.filename) // "b.png" — 원본도 바뀜!
 실무 관점의 결론은 Swift가 값 타입을 권장하는 이유와 만납니다. 모델을 구조체와 값 타입 프로퍼티로만 구성하면 이 문제 자체가 사라져요.
 
 <figure>
-  <img src="/assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/3.png" alt="모델을 값 타입으로만 구성하면 이 문제 자체가 사라져요" loading="lazy">
+  <img src="/assets/images/posts/097d8b83-f8be-424d-b79f-cda757daea87/3.jpg" alt="모델을 값 타입으로만 구성하면 이 문제 자체가 사라져요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>모델을 값 타입으로만 구성하면 이 문제 자체가 사라져요</figcaption>
 </figure>
 

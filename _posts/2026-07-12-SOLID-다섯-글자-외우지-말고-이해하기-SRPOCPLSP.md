@@ -2,7 +2,7 @@
 title: "[SOLID #1] SOLID 다섯 글자, 외우지 말고 이해하기 (SRP·OCP·LSP)"
 description: "면접에서 \"SOLID 원칙 설명해보세요\"라는 질문, 다들 한 번쯤 받아보셨을 거예요."
 header:
-  og_image: /assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png
+  og_image: /assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.jpg
 tags:
   - SOLID원칙
   - SRP
@@ -21,7 +21,7 @@ last_modified_at: 2026-07-27
 그래서 이번에는 SOLID를 교과서 정의가 아니라 실무 장면으로 풀어보려고 해요. 분량이 있어서 두 편으로 나눕니다. 오늘은 앞의 세 글자, SRP·OCP·LSP입니다.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.png" alt="다섯 글자 중 오늘은 앞의 셋부터 갑니다">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/1.jpg" alt="다섯 글자 중 오늘은 앞의 셋부터 갑니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>다섯 글자 중 오늘은 앞의 셋부터 갑니다</figcaption>
 </figure>
 
@@ -92,12 +92,12 @@ func pay(method: String, amount: Int) {
 기존 코드는 안 건드리고(수정에 닫힘), 새 클래스를 추가하는 것만으로 기능이 늘어납니다(확장에 열림). 자주 바뀌는 지점에만 이 구조를 깔아두는 게 요령이에요. 모든 코드에 깔면 지난 편에서 말한 YAGNI 위반이 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/4-1783848080106.png" alt="토스페이 추가는 클래스 하나 얹는 걸로 끝" loading="lazy">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/4-1783848080106.png" alt="토스페이 추가는 클래스 하나 얹는 걸로 끝" width="1200" height="891" loading="lazy" decoding="async">
   <figcaption>토스페이 추가는 클래스 하나 얹는 걸로 끝</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.png" alt="수정 대신 추가로 대응하는 게 OCP예요" loading="lazy">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/2.jpg" alt="수정 대신 추가로 대응하는 게 OCP예요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>수정 대신 추가로 대응하는 게 OCP예요</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Square를 넣는 순간 "너비 5, 높이 4면 넓이 20"이라는 당연한 기
 실무 신호는 이겁니다. 자식 클래스에서 부모 메서드를 오버라이드해서 예외를 던지거나 빈 구현으로 두고 있다면, 그 상속은 LSP 위반일 가능성이 높습니다.
 
 <figure>
-  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/3.png" alt="정사각형은 직사각형 자리에 못 들어가더라고요" loading="lazy">
+  <img src="/assets/images/posts/7b95a0fb-b586-4f62-b56e-4a8b31a29dfd/3.jpg" alt="정사각형은 직사각형 자리에 못 들어가더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>정사각형은 직사각형 자리에 못 들어가더라고요</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "[Swift 중급 #3] Swift some vs any 완전 정리, some View의 정체와 existential의 비용"
 description: "Swift 5.6 이후 코드를 보면 프로토콜 이름 앞에 some 아니면 any가 붙어 있습니다. some View, any Error, some Collection. 예전엔 프로토콜 이름을 그냥 타입 자리에 썼는데, 이제 컴파일러가 any를 붙이라고 경고하거나 에러를 냅니다.…"
 header:
-  og_image: /assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/1.png
+  og_image: /assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ Swift 5.6 이후 코드를 보면 프로토콜 이름 앞에 some 아니면 any�
 결론부터 말하면, 원래 두 가지로 다르게 동작하던 것이 한 가지 표기로 뭉뚱그려져 있었고, Swift가 그 구분을 표면으로 끌어올린 겁니다. 제네릭 편에서 예고했던 정적 다형성과 동적 다형성의 구분이 바로 이것이에요. 중급 시리즈 3편, some과 any를 정리합니다.
 
 <figure>
-  <img src="/assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/1.png" alt="some은 하나를 감추는 가면, any는 무엇이든 담는 상자">
+  <img src="/assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/1.jpg" alt="some은 하나를 감추는 가면, any는 무엇이든 담는 상자" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>some은 하나를 감추는 가면, any는 무엇이든 담는 상자</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ SwiftUI의 `var body: some View`가 이 문법의 대표 사용처입니다. bod
 파라미터 자리의 some도 알아두면 좋습니다. `func draw(shape: some Shape)`는 `func draw<S: Shape>(shape: S)`의 축약 표기입니다(SE-0341). 타입 파라미터 이름이 본문에서 필요 없을 때 제네릭을 가볍게 쓰는 문법이에요.
 
 <figure>
-  <img src="/assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/2.png" alt="상자에는 힙 할당과 witness table이라는 요금표가 붙습니다" loading="lazy">
+  <img src="/assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/2.jpg" alt="상자에는 힙 할당과 witness table이라는 요금표가 붙습니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>상자에는 힙 할당과 witness table이라는 요금표가 붙습니다</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ any가 정당한 자리는 대략 세 곳입니다. 첫째, 이질적인 컬렉�
 "Protocol 'X' can only be used as a generic constraint" — 예전 Swift에서 associatedtype이나 Self를 가진 프로토콜을 타입 자리에 쓰면 나오던 그 유명한 에러입니다. 상자에 담자니 연관 타입이 뭔지 몰라 상자 규격을 못 정하겠다는 뜻이었어요. 지금은 언어가 발전해서(SE-0309, primary associated types 등) 상당 부분 허용되지만, 이 이야기는 연관 타입 자체를 다뤄야 제대로 풀 수 있습니다. 바로 다음 편 주제입니다.
 
 <figure>
-  <img src="/assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/3.png" alt="기본은 some, any는 진짜 섞여야 할 때만" loading="lazy">
+  <img src="/assets/images/posts/a880d464-6c55-4a06-bf69-b6f45434a102/3.jpg" alt="기본은 some, any는 진짜 섞여야 할 때만" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>기본은 some, any는 진짜 섞여야 할 때만</figcaption>
 </figure>
 

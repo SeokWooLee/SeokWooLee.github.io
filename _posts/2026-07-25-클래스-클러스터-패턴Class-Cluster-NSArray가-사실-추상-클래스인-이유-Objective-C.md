@@ -2,7 +2,7 @@
 title: "클래스 클러스터 패턴(Class Cluster), NSArray가 사실 추상 클래스인 이유 (Objective-C)"
 description: "Objective-C에서 이 코드를 실행하면 결과가 꽤 의외입니다."
 header:
-  og_image: /assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/1.png
+  og_image: /assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/1.jpg
 tags:
   - 클래스클러스터
   - NSArray
@@ -33,7 +33,7 @@ NSLog(@"%@", [array class]);
 Effective Objective-C 2.0의 9번 항목이 다루는 내용인데, Foundation을 쓰는 한 피해 갈 수 없는 구조입니다.
 
 <figure>
-  <img src="/assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/1.png" alt="NSArray라는 가면 뒤에 진짜 구현체들이 숨어 있습니다">
+  <img src="/assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/1.jpg" alt="NSArray라는 가면 뒤에 진짜 구현체들이 숨어 있습니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>NSArray라는 가면 뒤에 진짜 구현체들이 숨어 있습니다</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Effective Objective-C 2.0의 9번 항목이 다루는 내용인데, Foundation�
 실제로 `[NSArray alloc]`이 반환하는 건 __NSPlaceholderArray라는 임시 객체이고, 이어지는 init 계열 호출에서 진짜 구현체로 바뀝니다. alloc과 init을 관습처럼 붙여 쓰지만, 클래스 클러스터에서는 이 두 단계가 실제로 다른 객체를 오가는 과정입니다.
 
 <figure>
-  <img src="/assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/2.png" alt="팩토리가 요소 개수를 보고 구현체를 골라줍니다" loading="lazy">
+  <img src="/assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/2.png" alt="팩토리가 요소 개수를 보고 구현체를 골라줍니다" width="1200" height="996" loading="lazy" decoding="async">
   <figcaption>팩토리가 요소 개수를 보고 구현체를 골라줍니다</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ Swift의 Array는 구조체라 이 패턴과 무관해 보이지만, 접점이 �
 둘째, 발상 자체가 Swift로 이어졌습니다. "공개 타입은 인터페이스만 노출하고, 실제 구현은 숨겨진 타입이 담당한다"는 아이디어는 Swift의 AnySequence 같은 타입 소거 래퍼, 그리고 `some` 키워드(불투명 타입)로 이어집니다. 반환 타입은 하나인데 실제 타입은 컴파일러와 구현부만 아는 구조, 클래스 클러스터의 정신과 같은 계보입니다.
 
 <figure>
-  <img src="/assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/3.png" alt="디버거에 찍히는 __NS 클래스들이 바로 그 주인공입니다" loading="lazy">
+  <img src="/assets/images/posts/f48d06ba-d2af-41d1-901e-ff7b3161325d/3.jpg" alt="디버거에 찍히는 __NS 클래스들이 바로 그 주인공입니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>디버거에 찍히는 __NS 클래스들이 바로 그 주인공입니다</figcaption>
 </figure>
 

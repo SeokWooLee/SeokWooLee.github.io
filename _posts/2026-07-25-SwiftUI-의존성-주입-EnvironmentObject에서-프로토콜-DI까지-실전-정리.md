@@ -2,7 +2,7 @@
 title: "SwiftUI 의존성 주입, EnvironmentObject에서 프로토콜 DI까지 (실전 정리)"
 description: "SwiftUI로 앱을 키우다 보면 의존성 주입이라는 말만 들어도 괜히 어깨가 움츠러들기 쉬워요."
 header:
-  og_image: /assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/1.png
+  og_image: /assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/1.jpg
 tags:
   - SwiftUI
   - 의존성주입
@@ -23,7 +23,7 @@ EnvironmentObject 하나면 다 될 것 같지만, 앱이 조금만 커지면 �
 > EnvironmentObject는 화면끼리 값을 나눠 쓰는 도구입니다. 진짜 갈아끼우기 쉬운 구조를 원한다면 서비스를 프로토콜로 추상화해서 주입하는 방식이 답이었습니다.
 
 <figure>
-  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/1.png" alt="SwiftUI 의존성 주입, 이 그림 한 장이면 두 방식 차이가 정리됩니다">
+  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/1.jpg" alt="SwiftUI 의존성 주입, 이 그림 한 장이면 두 방식 차이가 정리됩니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>SwiftUI 의존성 주입, 이 그림 한 장이면 두 방식 차이가 정리됩니다</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ ContentView().environmentObject(UserStore())
 로그인 상태나 테마처럼 앱 전역에서 공유하는 값에는 이만한 게 없어요.
 
 <figure>
-  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/2-1783804356060.png" alt="주입 하나 깜빡하면 컴파일은 조용하고 런타임에 죽습니다" loading="lazy">
+  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/2-1783804356060.jpg" alt="주입 하나 깜빡하면 컴파일은 조용하고 런타임에 죽습니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>주입 하나 깜빡하면 컴파일은 조용하고 런타임에 죽습니다</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ struct MockWeather: WeatherService {
 ViewModel은 RealWeather를 모릅니다. 오직 WeatherService라는 약속만 알죠.
 
 <figure>
-  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/4-1783847644575.png" alt="ViewModel 눈엔 프로토콜만 보여요" loading="lazy">
+  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/4-1783847644575.png" alt="ViewModel 눈엔 프로토콜만 보여요" width="622" height="868" loading="lazy" decoding="async">
   <figcaption>ViewModel 눈엔 프로토콜만 보여요</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ ViewModel은 RealWeather를 모릅니다. 오직 WeatherService라는 약속만 
 저는 이 구조로 바꾸고 나서 테스트 코드 짜는 게 훨씬 편해졌습니다.
 
 <figure>
-  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/3.png" alt="실전에선 RealWeather 자리에 MockWeather만 갈아끼우면 끝이에요" loading="lazy">
+  <img src="/assets/images/posts/f233fa1d-e3e7-4fa4-924c-e579389d1edb/3.jpg" alt="실전에선 RealWeather 자리에 MockWeather만 갈아끼우면 끝이에요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>실전에선 RealWeather 자리에 MockWeather만 갈아끼우면 끝이에요</figcaption>
 </figure>
 

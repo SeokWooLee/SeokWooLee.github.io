@@ -2,7 +2,7 @@
 title: "OOP 캡슐화(Encapsulation), Swift 접근 제어자로 배우는 정보 은닉 (private·internal 총정리)"
 description: "OOP 공부하다 보면 캡슐화라는 말은 백번쯤 듣는데, 막상 \"그래서 코드로 어떻게 하는 건데?\" 물으면 말문이 막히는 순간이 있어요. 개념은 알겠는데 손이 안 나가는 거죠."
 header:
-  og_image: /assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/1.png
+  og_image: /assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/1.jpg
 tags:
   - OOP
   - 캡슐화
@@ -21,7 +21,7 @@ OOP 공부하다 보면 캡슐화라는 말은 백번쯤 듣는데, 막상 "그�
 오늘은 private, internal 같은 접근 제어자 5단계를 실제 코드로 하나씩 보면서, 정보 은닉이 왜 코드를 지켜주는지 같이 정리해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/1.png" alt="private부터 open까지, Swift 접근 제어자 5단계를 한 장에 정리했어요">
+  <img src="/assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/1.jpg" alt="private부터 open까지, Swift 접근 제어자 5단계를 한 장에 정리했어요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>private부터 open까지, Swift 접근 제어자 5단계를 한 장에 정리했어요</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Swift는 접근 범위를 5단계로 나눕니다. 좁은 순서대로 정리해
 `public`과 `open`의 차이도 헷갈리기 쉬운데, `open`만 다른 모듈에서 **상속과 오버라이드**가 됩니다. `public`은 쓸 수는 있어도 상속은 막혀요.
 
 <figure>
-  <img src="/assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/2.png" alt="private 하나 붙였을 뿐인데 코드가 훨씬 든든해집니다" loading="lazy">
+  <img src="/assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/2.jpg" alt="private 하나 붙였을 뿐인데 코드가 훨씬 든든해집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>private 하나 붙였을 뿐인데 코드가 훨씬 든든해집니다</figcaption>
 </figure>
 
@@ -160,7 +160,7 @@ print(board.score)   // 읽기는 자유
 저는 이 문법을 즐겨 씁니다. 굳이 계산 프로퍼티를 안 만들어도 되니까요.
 
 <figure>
-  <img src="/assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/3.png" alt="밖에서는 입출금 통로로만 접근, 잔액은 안쪽에 꽁꽁 감춰둡니다" loading="lazy">
+  <img src="/assets/images/posts/e7ceee75-4206-43b3-82b8-3480f093c330/3.png" alt="밖에서는 입출금 통로로만 접근, 잔액은 안쪽에 꽁꽁 감춰둡니다" width="518" height="816" loading="lazy" decoding="async">
   <figcaption>밖에서는 입출금 통로로만 접근, 잔액은 안쪽에 꽁꽁 감춰둡니다</figcaption>
 </figure>
 

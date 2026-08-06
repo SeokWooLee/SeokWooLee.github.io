@@ -25,7 +25,7 @@ async/await로 코드를 짜는 건 이제 손에 익었는데, 막상 테스트
 오늘은 제가 실무에서 정리한 async/await 테스트 방법을 처음부터 끝까지 풀어보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/519a8c08-5d97-4118-a4aa-648368253233/swift-async-await-testing-1.jpg" alt="XCTestExpectation과 async await 테스트 코드를 좌우로 대비한 썸네일" width="1200" height="800">
+  <img src="/assets/images/posts/519a8c08-5d97-4118-a4aa-648368253233/swift-async-await-testing-1.jpg" alt="XCTestExpectation과 async await 테스트 코드를 좌우로 대비한 썸네일" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift async await 테스트, 왼쪽과 오른쪽 코드 길이부터 확 다릅니다</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ func test_사용자_불러오기() async throws {
 저는 이 방식으로 바꾸고 나서 테스트 코드 줄 수가 절반 가까이 줄었어요.
 
 <figure>
-  <img src="/assets/images/posts/519a8c08-5d97-4118-a4aa-648368253233/swift-async-await-testing-2.jpg" alt="await 키워드가 강조된 Swift async 테스트 함수와 초록 체크 표시" width="1024" height="1024" loading="lazy">
+  <img src="/assets/images/posts/519a8c08-5d97-4118-a4aa-648368253233/swift-async-await-testing-2.jpg" alt="await 키워드가 강조된 Swift async 테스트 함수와 초록 체크 표시" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>async 함수는 테스트도 async로 짜면 그걸로 끝입니다</figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ func fetchLegacy() async throws -> Data {
 다만 노티피케이션이 특정 시간 안에 오는지, 타이머가 제때 동작하는지처럼 **명시적 타임아웃**이 중요한 상황에서는 expectation을 병행하는 게 여전히 유효해요.
 
 <figure>
-  <img src="/assets/images/posts/519a8c08-5d97-4118-a4aa-648368253233/swift-async-await-testing-3.jpg" alt="Xcode 테스트 네비게이터에 Test Passed 초록 체크가 표시된 화면" width="1024" height="1024" loading="lazy">
+  <img src="/assets/images/posts/519a8c08-5d97-4118-a4aa-648368253233/swift-async-await-testing-3.jpg" alt="Xcode 테스트 네비게이터에 Test Passed 초록 체크가 표시된 화면" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>초록불 뜨는 순간이 제일 뿌듯하더라고요</figcaption>
 </figure>
 

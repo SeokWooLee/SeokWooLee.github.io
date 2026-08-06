@@ -2,7 +2,7 @@
 title: "XCTest 기본기, Given-When-Then으로 첫 테스트 작성하기 (초보 가이드)"
 description: "iOS 개발을 하다 보면 \"테스트 코드 좀 짜야 하는데…\" 하면서 자꾸 미루게 되죠. 막상 XCTest를 열어보면 뭐부터 손대야 할지 감이 안 오거든요."
 header:
-  og_image: /assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/1.png
+  og_image: /assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/1.jpg
 tags:
   - XCTest
   - iOS테스트
@@ -21,7 +21,7 @@ iOS 개발을 하다 보면 "테스트 코드 좀 짜야 하는데…" 하면서
 오늘은 XCTest 기본기와 함께 이 패턴으로 진짜 첫 테스트를 써보는 과정을 같이 해볼게요.
 
 <figure>
-  <img src="/assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/1.png" alt="XCTest 첫 테스트는 Given-When-Then 세 박자면 충분해요">
+  <img src="/assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/1.jpg" alt="XCTest 첫 테스트는 Given-When-Then 세 박자면 충분해요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>XCTest 첫 테스트는 Given-When-Then 세 박자면 충분해요</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Given-When-Then은 바로 그 순서를 정해주는 패턴입니다. 세 덩어
 이렇게 나눠 쓰면 나중에 테스트가 실패했을 때 어느 단계가 문제인지 바로 보여요. 준비가 잘못됐는지, 실행 결과가 틀렸는지 한눈에 잡힙니다.
 
 <figure>
-  <img src="/assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/2.png" alt="초록불 하나 켜졌을 뿐인데 이상하게 뿌듯하더라고요" loading="lazy">
+  <img src="/assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/2.jpg" alt="초록불 하나 켜졌을 뿐인데 이상하게 뿌듯하더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>초록불 하나 켜졌을 뿐인데 이상하게 뿌듯하더라고요</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ XCTAssertEqual 하나만 알아도 시작은 되지만, 상황별로 골라 쓰�
 실패했을 때 메시지를 남기고 싶으면 마지막 인자에 문자열을 넣으면 돼요. 예를 들어 XCTAssertEqual(result, 5, "덧셈 결과가 틀렸습니다") 이런 식이죠.
 
 <figure>
-  <img src="/assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/3.png" alt="자주 쓰는 XCTAssert만 골라 두면 코드가 훨씬 깔끔해집니다" loading="lazy">
+  <img src="/assets/images/posts/4af8286d-4af3-486a-9e22-35244db897e1/3.jpg" alt="자주 쓰는 XCTAssert만 골라 두면 코드가 훨씬 깔끔해집니다" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>자주 쓰는 XCTAssert만 골라 두면 코드가 훨씬 깔끔해집니다</figcaption>
 </figure>
 

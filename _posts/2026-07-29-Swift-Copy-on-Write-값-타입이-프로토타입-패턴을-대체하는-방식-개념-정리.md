@@ -2,7 +2,7 @@
 title: "Swift Copy-on-Write, 값 타입이 프로토타입 패턴을 대체하는 방식 (개념 정리)"
 description: "Objective-C나 Java를 먼저 배우고 Swift로 넘어오면 꼭 한 번 걸리는 지점이 있어요."
 header:
-  og_image: /assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/1.png
+  og_image: /assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/1.jpg
 tags:
   - Swift
   - iOS개발
@@ -29,7 +29,7 @@ Objective-C나 Java를 먼저 배우고 Swift로 넘어오면 꼭 한 번 걸리
 이 글에서는 프로토타입 패턴이 원래 뭘 해결하려던 건지, Swift의 값 타입과 Copy-on-Write가 그걸 어떻게 자연스럽게 흡수하는지 예제와 함께 정리해 드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/1.png" alt="값 타입과 Copy-on-Write가 프로토타입 패턴 자리를 대신합니다">
+  <img src="/assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/1.jpg" alt="값 타입과 Copy-on-Write가 프로토타입 패턴 자리를 대신합니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>값 타입과 Copy-on-Write가 프로토타입 패턴 자리를 대신합니다</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ CoW의 원리는 이래요.
 그러다 둘 중 하나가 값을 수정하려는 순간, 그때 비로소 진짜 복사가 일어나요.
 
 <figure>
-  <img src="/assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/3-1783847582610.png" alt="건드리기 전까진 공유, 건드리는 순간 갈라져요" loading="lazy">
+  <img src="/assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/3-1783847582610.png" alt="건드리기 전까진 공유, 건드리는 순간 갈라져요" width="1200" height="179" loading="lazy" decoding="async">
   <figcaption>건드리기 전까진 공유, 건드리는 순간 갈라져요</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ CoW의 원리는 이래요.
 읽기만 하고 안 고치면 복사는 아예 안 일어나거든요.
 
 <figure>
-  <img src="/assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/2.png" alt="저는 이 개념 이해하고 나서 복제 고민이 확 줄었어요" loading="lazy">
+  <img src="/assets/images/posts/e8cdd3bb-143c-4310-b2c8-49e2e6e3af37/2.jpg" alt="저는 이 개념 이해하고 나서 복제 고민이 확 줄었어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 이 개념 이해하고 나서 복제 고민이 확 줄었어요</figcaption>
 </figure>
 

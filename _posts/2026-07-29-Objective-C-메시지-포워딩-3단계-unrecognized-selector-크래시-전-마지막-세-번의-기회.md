@@ -21,7 +21,7 @@ iOS 크래시 로그에서 가장 자주 만나는 문장 중 하나가 `unrecog
 지난 objc_msgSend 글에서 "메서드 탐색이 실패하면 포워딩 3단계가 돌아간다"까지 정리했는데, 이번 글은 그 세 단계를 하나씩 코드로 뜯어봅니다. 특히 2단계가 왜 **Fast Forwarding**이라는 별명으로 불리는지, 그리고 3단계에서 메서드 시그니처가 왜 필요한지가 핵심입니다.
 
 <figure>
-  <img src="/assets/images/posts/67f3c7b4-b296-4421-acf9-175360fc12a8/objc-message-forwarding-1.jpg" alt="Objective-C 메시지 포워딩 개념 썸네일, 닫힌 문에 튕긴 메시지를 받아내는 3개의 안전망" width="1200" height="800">
+  <img src="/assets/images/posts/67f3c7b4-b296-4421-acf9-175360fc12a8/objc-message-forwarding-1.jpg" alt="Objective-C 메시지 포워딩 개념 썸네일, 닫힌 문에 튕긴 메시지를 받아내는 3개의 안전망" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>크래시가 나기 전, 세 개의 그물이 순서대로 기다리고 있습니다</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ nil이 아닌 객체를 리턴하면 메시지가 통째로 그 객체에게 다
 - **API 안전망**: 신버전 OS에만 있는 메서드를 구버전에서 대체 객체로 돌리는 방어 코드
 
 <figure>
-  <img src="/assets/images/posts/67f3c7b4-b296-4421-acf9-175360fc12a8/objc-message-forwarding-2.png" alt="objc_msgSend 탐색 실패 후 메시지 포워딩 3단계 분기 흐름도, resolveInstanceMethod부터 forwardInvocation까지" width="1200" height="1280" loading="lazy">
+  <img src="/assets/images/posts/67f3c7b4-b296-4421-acf9-175360fc12a8/objc-message-forwarding-2.png" alt="objc_msgSend 탐색 실패 후 메시지 포워딩 3단계 분기 흐름도, resolveInstanceMethod부터 forwardInvocation까지" width="1200" height="1280" loading="lazy" decoding="async">
   <figcaption>세 단계 중 하나만 성공해도 크래시는 없습니다</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ NSInvocation을 손에 쥐면 할 수 있는 일이 많아집니다. 인자를 �
 NSProxy가 NSObject를 상속하지 않는 별도의 루트 클래스인 이유도 여기에 닿아 있습니다. 상속받은 메서드가 많을수록 포워딩까지 내려오지 않고 자기가 처리해버리는 메시지가 많아지니, 아예 뼈대만 남긴 클래스를 따로 만든 겁니다. 이 이야기는 NSProxy 글에서 따로 다루겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/67f3c7b4-b296-4421-acf9-175360fc12a8/objc-message-forwarding-3.jpg" alt="로봇이 다른 로봇에게 메시지 봉투를 건네는 Fast Forwarding 대체 수신자 일러스트" width="1024" height="1024" loading="lazy">
+  <img src="/assets/images/posts/67f3c7b4-b296-4421-acf9-175360fc12a8/objc-message-forwarding-3.jpg" alt="로봇이 다른 로봇에게 메시지 봉투를 건네는 Fast Forwarding 대체 수신자 일러스트" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>2단계는 수신자만 바꿔서 넘깁니다, 그래서 빠릅니다</figcaption>
 </figure>
 

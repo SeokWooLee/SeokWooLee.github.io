@@ -2,7 +2,7 @@
 title: "Objective-C 메모리 관리 역사: MRC에서 ARC까지 총정리"
 description: "iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요."
 header:
-  og_image: /assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/1.png
+  og_image: /assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/1.jpg
 tags:
   - ObjectiveC
   - iOS개발
@@ -23,7 +23,7 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 오늘은 Objective-C 메모리 관리의 역사, 그러니까 MRC에서 ARC까지 어떻게 흘러왔는지 정리해 드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/1.png" alt="MRC에서 ARC까지, Objective-C 메모리 관리 흐름을 한눈에">
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/1.jpg" alt="MRC에서 ARC까지, Objective-C 메모리 관리 흐름을 한눈에" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>MRC에서 ARC까지, Objective-C 메모리 관리 흐름을 한눈에</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 이 단순한 규칙이 Objective-C 메모리 관리의 뿌리입니다.
 
 <figure>
-  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/3-1783847918895.png" alt="숫자 하나로 생사가 갈리는 참조 카운트 흐름" loading="lazy">
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/3-1783847918895.png" alt="숫자 하나로 생사가 갈리는 참조 카운트 흐름" width="506" height="644" loading="lazy" decoding="async">
   <figcaption>숫자 하나로 생사가 갈리는 참조 카운트 흐름</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ iOS 개발을 하다 보면 한 번쯤 궁금해지는 게 있어요.
 ARC 이전, 그러니까 MRC(Manual Retain Count) 시대에는 이 숫자를 사람이 손으로 관리했어요.
 
 <figure>
-  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/2.png" alt="retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠" loading="lazy">
+  <img src="/assets/images/posts/caa8bc4a-df68-42c5-948e-211873162c9a/2.jpg" alt="retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>retain release가 잔뜩 적힌 옛날 코드, 처음 보면 당황스럽죠</figcaption>
 </figure>
 

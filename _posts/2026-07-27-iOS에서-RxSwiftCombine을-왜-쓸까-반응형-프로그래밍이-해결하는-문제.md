@@ -2,7 +2,7 @@
 title: "iOS에서 RxSwift·Combine을 왜 쓸까? 반응형 프로그래밍이 해결하는 문제"
 description: "iOS 개발 공부를 하다 보면 어느 시점에 반드시 RxSwift나 Combine이라는 벽을 만나게 됩니다. 채용 공고에는 빠지지 않고 등장하는데, 막상 코드를 열어보면 map, flatMap, sink가 줄줄이 이어지는 낯선 문법에 당황하기 쉽습니다. \"그냥 클로저랑…"
 header:
-  og_image: /assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/1.png
+  og_image: /assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/1.jpg
 tags:
   - iOS
   - RxSwift
@@ -19,7 +19,7 @@ iOS 개발 공부를 하다 보면 어느 시점에 반드시 RxSwift나 Combine
 오늘은 문법 이전에 **왜 이런 도구가 필요해졌는지**부터 정리해보겠습니다. 이유를 알고 나면 문법은 따라옵니다.
 
 <figure>
-  <img src="/assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/1.png" alt="제각각인 다섯 가지 이벤트 전달 방식이 하나의 스트림으로 합쳐집니다">
+  <img src="/assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/1.jpg" alt="제각각인 다섯 가지 이벤트 전달 방식이 하나의 스트림으로 합쳐집니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>제각각인 다섯 가지 이벤트 전달 방식이 하나의 스트림으로 합쳐집니다</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ searchTextSubject
 핵심은 이겁니다. **시간이 개입하는 이벤트 제어 로직을 직접 구현하지 않고 검증된 부품을 조립해서 해결한다.** 반응형 프로그래밍의 가치가 가장 선명하게 드러나는 지점입니다.
 
 <figure>
-  <img src="/assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/2.png" alt="시간 제어 로직은 직접 구현하지 않고 검증된 연산자를 조립합니다" loading="lazy">
+  <img src="/assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/2.jpg" alt="시간 제어 로직은 직접 구현하지 않고 검증된 연산자를 조립합니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>시간 제어 로직은 직접 구현하지 않고 검증된 연산자를 조립합니다</figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ viewModel.$isLoading
 새 프로젝트라면 Combine이 무난한 기본값이고 RxSwift는 기존 코드베이스가 그걸로 쓰여 있는 팀에 합류할 때 배우게 되는 경우가 많습니다.
 
 <figure>
-  <img src="/assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/3.png" alt="RxSwift와 Combine은 같은 일을 하는 두 공구함, 선택 기준은 팀 상황입니다" loading="lazy">
+  <img src="/assets/images/posts/74ee8235-bb8c-45f0-b76d-7ea13ff47f71/3.jpg" alt="RxSwift와 Combine은 같은 일을 하는 두 공구함, 선택 기준은 팀 상황입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>RxSwift와 Combine은 같은 일을 하는 두 공구함, 선택 기준은 팀 상황입니다</figcaption>
 </figure>
 

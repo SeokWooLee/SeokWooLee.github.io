@@ -2,7 +2,7 @@
 title: "[Swift 기초 #6] Swift 문자열은 왜 text[0]이 안 될까? 그래핌 클러스터(Grapheme Cluster) 총정리"
 description: "다른 언어를 쓰다 Swift로 넘어온 개발자가 가장 어리둥절해하는 지점 중 하나가 문자열입니다. text[0]이 안 되고, text[2..<5]도 안 되고, 인덱스라는 별도 타입을 만들어서 text.index(text.startIndex, offsetBy: 2)라고 써야 해요.…"
 header:
-  og_image: /assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/1.png
+  og_image: /assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ last_modified_at: 2026-07-24
 Swift 팀이 API를 못 만들어서 이렇게 된 게 아닙니다. 오히려 반대예요. "문자열의 n번째 글자"라는 개념 자체가 사실은 간단하지 않다는 걸 정직하게 드러낸 결과입니다. 다른 언어들은 이 복잡성을 숨기고 가끔 틀린 답을 주는 쪽을 택했습니다. Swift는 불편하더라도 항상 맞는 답을 주는 쪽을 택했어요. Swift 기초 시리즈 6편이자 마지막 편, 문자열이 어려운 진짜 이유를 파봅니다.
 
 <figure>
-  <img src="/assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/1.png" alt="한 글자처럼 보이는 이모지의 속은 코드 포인트 여러 개입니다">
+  <img src="/assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/1.jpg" alt="한 글자처럼 보이는 이모지의 속은 코드 포인트 여러 개입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>한 글자처럼 보이는 이모지의 속은 코드 포인트 여러 개입니다</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Swift의 `"👨‍👩‍👧‍👦".count`는 1입니다. Swift의 Character �
 그런데 이 정확함에는 비용이 있습니다. 그래핌 클러스터는 가변 길이라, n번째 글자를 찾으려면 앞에서부터 경계를 하나씩 판정하며 세어야 합니다. 그래서 Swift 문자열에는 정수 인덱스가 없는 겁니다. `text[7]`이 O(1)에 되는 것처럼 보이는 API를 제공하면, 실제로는 O(n)인 비용이 숨겨지니까요. `text[i]`를 루프 안에서 쓰는 순간 O(n²)이 되는데, 그걸 언어가 조장하지 않겠다는 결정입니다. String.Index라는 불투명한 타입은 "이 위치는 세어서 찾은 결과"라는 사실을 타입으로 드러낸 장치예요. 철학 1편에서 본 원칙, 비용을 숨기지 않는다가 문자열에서도 반복되는 겁니다.
 
 <figure>
-  <img src="/assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/2.png" alt="같은 문자열을 자로 재도 언어마다 답이 다릅니다" loading="lazy">
+  <img src="/assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/2.jpg" alt="같은 문자열을 자로 재도 언어마다 답이 다릅니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>같은 문자열을 자로 재도 언어마다 답이 다릅니다</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Swift의 `"👨‍👩‍👧‍👦".count`는 1입니다. Swift의 Character �
 한 가지 함정도 짚어둡니다. 서로 다른 문자열의 인덱스는 호환되지 않습니다. a에서 얻은 String.Index를 b에 쓰면 크래시하거나 엉뚱한 결과가 나와요. 인덱스는 "그 문자열의 그 시점" 전용입니다. 문자열을 수정했다면 이전 인덱스도 무효라고 생각하는 게 안전합니다.
 
 <figure>
-  <img src="/assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/3.png" alt="정수 인덱스 없이도 문자열 작업 대부분이 해결됩니다" loading="lazy">
+  <img src="/assets/images/posts/18529e8e-628f-4b41-8e48-680d2ff6f480/3.jpg" alt="정수 인덱스 없이도 문자열 작업 대부분이 해결됩니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>정수 인덱스 없이도 문자열 작업 대부분이 해결됩니다</figcaption>
 </figure>
 

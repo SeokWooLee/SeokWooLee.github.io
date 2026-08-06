@@ -21,7 +21,7 @@ last_modified_at: 2026-07-27
 > IDE가 사람이 코드를 작성하기 위한 환경이었다면, ADE는 사람과 여러 에이전트가 함께 일하기 위한 환경에 가깝습니다.
 
 <figure>
-  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-1.jpg" alt="Orca 데스크톱 앱에서 여러 코딩 에이전트와 모바일 앱을 함께 보여주는 공식 이미지" width="1998" height="1250">
+  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-1.jpg" alt="Orca 데스크톱 앱에서 여러 코딩 에이전트와 모바일 앱을 함께 보여주는 공식 이미지" width="1200" height="750" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Orca 하나에서 에이전트 작업을 모아봅니다</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ Orca는 [Git worktree](https://www.onorca.dev/docs/model/worktrees)를 작업 �
 예를 들어 같은 요구사항을 여러 에이전트에게 맡겨 접근 방식을 비교하거나, 프런트엔드·백엔드·테스트 작업을 나누어 동시에 진행할 수 있습니다. 작업이 끝나면 diff를 검토하고 마음에 드는 결과를 커밋하거나 PR로 보냅니다. 공식 문서가 강조하는 “no stashing, no branch juggling”은 바로 이 구조에서 나옵니다.
 
 <figure>
-  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-2.gif" alt="Orca에서 여러 Git worktree와 코딩 에이전트를 병렬로 실행하는 공식 GIF" width="960" height="540" loading="lazy">
+  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-2.gif" alt="Orca에서 여러 Git worktree와 코딩 에이전트를 병렬로 실행하는 공식 GIF" width="960" height="540" loading="lazy" decoding="async">
   <figcaption>작업마다 공간을 나누니 브랜치 전환이 줄어듭니다</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Orca는 [Git worktree](https://www.onorca.dev/docs/model/worktrees)를 작업 �
 웹 UI를 수정할 때는 “버튼 간격을 조금 줄여 주세요” 같은 설명만으로 원하는 요소를 정확히 전달하기 어렵습니다. Orca는 worktree마다 실제 Chromium 브라우저를 제공하고, [Design Mode](https://www.onorca.dev/docs/browser/design-mode)에서 화면의 요소를 클릭하면 해당 요소의 HTML·CSS와 잘라낸 스크린샷을 에이전트에게 전달합니다.
 
 <figure>
-  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-3.gif" alt="Orca Design Mode에서 브라우저 UI 요소를 선택해 에이전트에 전달하는 공식 GIF" width="960" height="540" loading="lazy">
+  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-3.gif" alt="Orca Design Mode에서 브라우저 UI 요소를 선택해 에이전트에 전달하는 공식 GIF" width="960" height="540" loading="lazy" decoding="async">
   <figcaption>화면을 클릭해 수정할 요소를 바로 전달합니다</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ Orca 안에서 GitHub PR과 이슈를 열고, 해당 작업에서 바로 worktre
 자리를 비운 뒤에도 작업 상태를 확인해야 한다면 [Orca Mobile Companion](https://www.onorca.dev/docs/mobile)을 사용할 수 있습니다. 2026년 7월 기준 iOS와 Android에서 에이전트 상태와 최근 터미널 내용을 보고, 입력을 기다리는 에이전트에게 짧은 답변을 보내거나 알림을 받을 수 있습니다. 모바일 앱은 데스크톱을 대체하는 완전한 에디터라기보다, 실행 중인 작업을 확인하고 막힌 흐름을 풀어 주는 리모컨에 가깝습니다.
 
 <figure>
-  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-4.gif" alt="Orca 모바일 컴패니언으로 실행 중인 에이전트 상태를 확인하는 공식 GIF" width="960" height="540" loading="lazy">
+  <img src="/assets/images/posts/2fadfd4c-3dcf-433a-b6d1-cef57ce4762c/orca-agent-development-environment-4.gif" alt="Orca 모바일 컴패니언으로 실행 중인 에이전트 상태를 확인하는 공식 GIF" width="960" height="540" loading="lazy" decoding="async">
   <figcaption>자리에서 떨어져 있어도 작업 상태를 확인합니다</figcaption>
 </figure>
 

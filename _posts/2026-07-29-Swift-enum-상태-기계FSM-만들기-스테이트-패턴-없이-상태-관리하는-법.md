@@ -2,7 +2,7 @@
 title: "Swift enum 상태 기계(FSM) 만들기, 스테이트 패턴 없이 상태 관리하는 법"
 description: "iOS 앱 만들다 보면 꼭 마주치는 순간이 있어요. 화면 하나에 로딩 중, 성공, 실패, 빈 데이터 상태가 뒤섞이는 순간이요."
 header:
-  og_image: /assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/1.png
+  og_image: /assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/1.jpg
 tags:
   - Swift
   - iOS개발
@@ -25,7 +25,7 @@ iOS 앱 만들다 보면 꼭 마주치는 순간이 있어요. 화면 하나에 
 오늘은 Bool 지옥에서 빠져나오는 방법을, 코드와 함께 풀어볼게요.
 
 <figure>
-  <img src="/assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/1.png" alt="Bool 여러 개로 관리하다 지치면 Swift enum FSM 하나가 답입니다">
+  <img src="/assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/1.jpg" alt="Bool 여러 개로 관리하다 지치면 Swift enum FSM 하나가 답입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Bool 여러 개로 관리하다 지치면 Swift enum FSM 하나가 답입니다</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ case .failed(let error): ErrorView(error)
 이게 진짜 큰 장점이에요. 상태 누락을 사람이 아니라 컴파일러가 잡아주니까요.
 
 <figure>
-  <img src="/assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/2.png" alt="성공엔 데이터, 실패엔 에러까지 한 번에 담기는 게 핵심이에요" loading="lazy">
+  <img src="/assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/2.jpg" alt="성공엔 데이터, 실패엔 에러까지 한 번에 담기는 게 핵심이에요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>성공엔 데이터, 실패엔 에러까지 한 번에 담기는 게 핵심이에요</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ mutating func fetch() {
 덕분에 나중에 코드를 다시 봐도 "이 상태는 어디서 어디로 갈 수 있지?"가 한눈에 들어와요.
 
 <figure>
-  <img src="/assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/4-1783847575354.png" alt="정해진 길로만 흐르는 상태들, 이렇게 생겼어요" loading="lazy">
+  <img src="/assets/images/posts/032e19e2-54a8-4ad8-9b72-e807217e9344/4-1783847575354.png" alt="정해진 길로만 흐르는 상태들, 이렇게 생겼어요" width="376" height="776" loading="lazy" decoding="async">
   <figcaption>정해진 길로만 흐르는 상태들, 이렇게 생겼어요</figcaption>
 </figure>
 

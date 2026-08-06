@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #2] iOS MVVM 패턴, 바인딩 없으면 반쪽인 이유 (Combine·Observation 예제)"
 description: "지난 편에서 Massive View Controller가 생기는 이유를 다뤘습니다. 뷰컨트롤러가 View와 Controller를 겸하는 바람에, 갈 곳 없는 코드가 전부 그리로 몰린다는 이야기였죠."
 header:
-  og_image: /assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/1.png
+  og_image: /assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/1.jpg
 tags:
   - iOS
   - MVVM
@@ -21,7 +21,7 @@ last_modified_at: 2026-07-27
 오늘은 ViewModel의 진짜 역할이 뭔지, 그리고 왜 바인딩 없는 MVVM이 반쪽짜리인지 정리해보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/1.png" alt="MVVM의 완성은 ViewModel이 아니라 바인딩입니다">
+  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/1.jpg" alt="MVVM의 완성은 ViewModel이 아니라 바인딩입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>MVVM의 완성은 ViewModel이 아니라 바인딩입니다</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ ViewModel의 상태가 바뀔 때마다 뷰컨트롤러가 `refresh()`를 잊지
 MVVM이 마이크로소프트의 WPF에서 태어날 때부터 **데이터 바인딩을 전제로 설계된** 이유가 여기 있어요. "ViewModel이 바뀌면 View가 따라 바뀐다"가 자동으로 보장돼야 비로소 완성이에요.
 
 <figure>
-  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/2.png" alt="구독 한 번 걸어두면 화면이 상태를 알아서 따라옵니다" loading="lazy">
+  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/2.jpg" alt="구독 한 번 걸어두면 화면이 상태를 알아서 따라옵니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>구독 한 번 걸어두면 화면이 상태를 알아서 따라옵니다</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ MVVM을 도입하고 몇 달 지나면 새로운 문제를 만나게 됩니다. 
 ViewModel은 어디까지나 **프레젠테이션 로직**(화면 상태 가공)의 자리입니다. 데이터를 가져오는 일은 Repository나 Service로, 비즈니스 규칙은 Model 계층으로 내려보내야 해요. MVVM은 View와 나머지를 나누는 패턴이지, 나머지 전부를 ViewModel에 담으라는 패턴이 아닙니다.
 
 <figure>
-  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/3.png" alt="전부 밀어 넣으면 괴물의 위치만 옮긴 셈이 됩니다" loading="lazy">
+  <img src="/assets/images/posts/f493544a-c1fe-4846-88cc-edd9a3879c4c/3.jpg" alt="전부 밀어 넣으면 괴물의 위치만 옮긴 셈이 됩니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>전부 밀어 넣으면 괴물의 위치만 옮긴 셈이 됩니다</figcaption>
 </figure>
 

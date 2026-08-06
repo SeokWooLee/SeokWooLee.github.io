@@ -2,7 +2,7 @@
 title: "[SOLID #2] SOLID 원칙 실무편 (하) ISP·DIP, 의존성 주입이 존재하는 이유"
 description: "지난 편에서 SOLID의 앞 세 글자, SRP·OCP·LSP를 다뤘는데요. 오늘은 나머지 두 글자를 마저 정리합니다."
 header:
-  og_image: /assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/1.png
+  og_image: /assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/1.jpg
 tags:
   - SOLID원칙
   - ISP
@@ -21,7 +21,7 @@ ISP(인터페이스 분리 원칙)와 DIP(의존성 역전 원칙)예요.
 특히 DIP는 Swinject든 Factory든 Swift에서 DI 라이브러리를 쓰다 보면 반드시 마주치는 '의존성 주입(DI)'의 이론적 뿌리입니다. 이번 편을 읽고 나면 그 라이브러리들이 왜 그렇게 생겼는지 보이실 거예요.
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/1.png" alt="이번엔 뒤의 두 글자, ISP와 DIP 차례입니다">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/1.jpg" alt="이번엔 뒤의 두 글자, ISP와 DIP 차례입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>이번엔 뒤의 두 글자, ISP와 DIP 차례입니다</figcaption>
 </figure>
 
@@ -122,12 +122,12 @@ class FakeSender: NotificationSender { ... }  // 테스트용
 원래는 "주문 서비스 → SendGrid"로 향하던 의존성이, 이제 "주문 서비스 → 프로토콜 ← SendGrid"가 됐어요. 세부사항이 도메인을 향해 고개를 숙이는 모양새라 '역전'이라고 부릅니다.
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/4-1783847948960.png" alt="화살표 방향이 뒤집히는 지점이 DIP의 전부예요" loading="lazy">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/4-1783847948960.png" alt="화살표 방향이 뒤집히는 지점이 DIP의 전부예요" width="1200" height="566" loading="lazy" decoding="async">
   <figcaption>화살표 방향이 뒤집히는 지점이 DIP의 전부예요</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/2.png" alt="화살표 방향이 바뀌는 게 '역전'의 정체예요" loading="lazy">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/2.jpg" alt="화살표 방향이 바뀌는 게 '역전'의 정체예요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>화살표 방향이 바뀌는 게 '역전'의 정체예요</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ class FakeSender: NotificationSender { ... }  // 테스트용
 DIP는 원칙(방향)이고, DI는 그걸 실현하는 기법(도구)입니다. 이 구분만 잡아도 면접 답변이 한 급 올라가요.
 
 <figure>
-  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/3.png" alt="구현체는 꽂았다 뺐다, 조립은 프레임워크 몫입니다" loading="lazy">
+  <img src="/assets/images/posts/6d8f2c8e-6a69-4df6-a991-c232fcf9500a/3.jpg" alt="구현체는 꽂았다 뺐다, 조립은 프레임워크 몫입니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>구현체는 꽂았다 뺐다, 조립은 프레임워크 몫입니다</figcaption>
 </figure>
 

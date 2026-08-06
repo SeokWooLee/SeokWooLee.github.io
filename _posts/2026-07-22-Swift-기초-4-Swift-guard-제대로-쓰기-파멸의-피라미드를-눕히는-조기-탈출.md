@@ -2,7 +2,7 @@
 title: "[Swift 기초 #4] Swift guard 제대로 쓰기, 파멸의 피라미드를 눕히는 조기 탈출"
 description: "코드 리뷰에서 자주 오가는 지적 중 하나가 \"이거 guard로 바꾸죠\"입니다. if로도 똑같이 동작하는 코드인데 왜 굳이 바꾸자는 걸까요. 취향 문제 같지만, 사실 guard는 Swift가 언어 차원에서 특정 코드 스타일을 밀어주기 위해 만든 문법입니다. 조기 탈출(early…"
 header:
-  og_image: /assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/1.png
+  og_image: /assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -19,7 +19,7 @@ last_modified_at: 2026-07-22
 Swift 기초 시리즈 4편입니다. 옵셔널 편에서 guard let을 언래핑 도구로 잠깐 소개했는데, 이번에는 guard 자체를 파봅니다. if와 뭐가 다른지, 컴파일러가 뭘 보장해주는지, 그리고 언제 guard가 아니라 if가 맞는지까지.
 
 <figure>
-  <img src="/assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/1.png" alt="피라미드를 눕혀 평평한 행복 경로로 만드는 게 guard입니다">
+  <img src="/assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/1.jpg" alt="피라미드를 눕혀 평평한 행복 경로로 만드는 게 guard입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>피라미드를 눕혀 평평한 행복 경로로 만드는 게 guard입니다</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ func signUp(email: String?, password: String?, agreed: Bool) {
 이 스타일의 이점을 흔히 행복 경로의 왼쪽 정렬이라고 부릅니다. 정상 흐름은 항상 들여쓰기 0단에 있고 예외 상황만 블록 안으로 들어간다는 규칙이죠. 함수가 길어져도 "왼쪽 끝만 따라 읽으면 정상 시나리오가 보인다"는 일관성이 생깁니다.
 
 <figure>
-  <img src="/assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/2.png" alt="검문소를 통과하면 본론은 들여쓰기 없는 평지에 놓입니다" loading="lazy">
+  <img src="/assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/2.jpg" alt="검문소를 통과하면 본론은 들여쓰기 없는 평지에 놓입니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>검문소를 통과하면 본론은 들여쓰기 없는 평지에 놓입니다</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ if user.isPremium {
 한 가지 안티패턴도 짚어둡니다. guard else 블록에 로직을 채우는 경우인데, else 안에서 복구 시도, 상태 변경, 긴 처리를 하기 시작하면 guard의 "실패는 짧게 끝낸다"는 약속이 깨집니다. else 블록이 세 줄을 넘어가면 설계를 다시 보라는 신호로 삼는 게 좋아요. 실패 처리가 그만큼 복잡하다면 그건 전제 조건이 아니라 별도의 분기이거나, 에러를 던져 호출자에게 넘길 일입니다.
 
 <figure>
-  <img src="/assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/3.png" alt="전제 조건이면 guard, 둘 다 정상 경로면 if" loading="lazy">
+  <img src="/assets/images/posts/eb18b3e1-ed72-4816-890a-2865806e1441/3.jpg" alt="전제 조건이면 guard, 둘 다 정상 경로면 if" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>전제 조건이면 guard, 둘 다 정상 경로면 if</figcaption>
 </figure>
 

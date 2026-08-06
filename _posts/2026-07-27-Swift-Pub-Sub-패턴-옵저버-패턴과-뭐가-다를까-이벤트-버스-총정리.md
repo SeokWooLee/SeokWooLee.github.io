@@ -2,7 +2,7 @@
 title: "Swift Pub-Sub 패턴, 옵저버 패턴과 뭐가 다를까 (이벤트 버스 총정리)"
 description: "iOS 앱을 만들다 보면 한 번쯤 막히는 지점이 있어요."
 header:
-  og_image: /assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/1.png
+  og_image: /assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/1.jpg
 tags:
   - Swift
   - PubSub패턴
@@ -25,7 +25,7 @@ iOS 앱을 만들다 보면 한 번쯤 막히는 지점이 있어요.
 > 결론부터 말하면, 옵저버 패턴은 "주체가 구독자를 직접 알고 있는" 구조이고, Pub-Sub 패턴은 그 사이에 중개자(이벤트 버스)를 두어 서로를 모르게 만든 구조예요.
 
 <figure>
-  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/1.png" alt="Swift Pub-Sub 패턴과 옵저버 패턴, 중개자 하나로 갈립니다">
+  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/1.jpg" alt="Swift Pub-Sub 패턴과 옵저버 패턴, 중개자 하나로 갈립니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift Pub-Sub 패턴과 옵저버 패턴, 중개자 하나로 갈립니다</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ Pub-Sub 패턴(발행-구독 패턴)은 여기서 한 걸음 더 나갑니다.
 둘이 서로를 전혀 모른다는 게 핵심이에요. 이걸 느슨한 결합(decoupling)이라고 부릅니다.
 
 <figure>
-  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/4-1783847592705.png" alt="직접 연결 vs 버스를 낀 연결, 그림으로 보면 이래요" loading="lazy">
+  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/4-1783847592705.png" alt="직접 연결 vs 버스를 낀 연결, 그림으로 보면 이래요" width="844" height="1422" loading="lazy" decoding="async">
   <figcaption>직접 연결 vs 버스를 낀 연결, 그림으로 보면 이래요</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ final class EventBus {
 로그인 화면은 홈 화면의 존재조차 몰라도 되는 거죠.
 
 <figure>
-  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/2.png" alt="EventBus 한 줄이면 발행 끝, 이렇게 단순해요" loading="lazy">
+  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/2.jpg" alt="EventBus 한 줄이면 발행 끝, 이렇게 단순해요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>EventBus 한 줄이면 발행 끝, 이렇게 단순해요</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ final class EventBus {
 그래서 저는 화면 안쪽 로직은 옵저버(Combine), 화면과 모듈을 넘나드는 굵직한 사건만 이벤트 버스로 처리하는 식으로 나눠 씁니다.
 
 <figure>
-  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/3.png" alt="굵직한 사건만 버스로 몰아주면 흐름이 깔끔해집니다" loading="lazy">
+  <img src="/assets/images/posts/9ab7d5df-ebe8-4dc0-8981-d630c273aeb0/3.jpg" alt="굵직한 사건만 버스로 몰아주면 흐름이 깔끔해집니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>굵직한 사건만 버스로 몰아주면 흐름이 깔끔해집니다</figcaption>
 </figure>
 

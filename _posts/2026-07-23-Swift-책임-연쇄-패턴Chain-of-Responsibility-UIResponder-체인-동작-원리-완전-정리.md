@@ -2,7 +2,7 @@
 title: "Swift 책임 연쇄 패턴(Chain of Responsibility), UIResponder 체인 동작 원리 완전 정리"
 description: "Swift로 iOS 앱을 만들다 보면 버튼을 눌렀는데 왜 이 뷰컨트롤러가 이벤트를 받는 걸까 궁금했던 순간이 다들 있으실 거예요."
 header:
-  og_image: /assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/1.png
+  og_image: /assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/1.jpg
 tags:
   - Swift
   - 책임연쇄패턴
@@ -23,7 +23,7 @@ Swift로 iOS 앱을 만들다 보면 버튼을 눌렀는데 왜 이 뷰컨트롤
 이 글에서는 책임 연쇄 패턴이 뭔지, UIResponder 체인이 실제로 어떻게 동작하는지, 그리고 이걸 알면 실무에서 뭐가 좋은지까지 제가 직접 코드를 뜯어보며 이해한 내용을 정리해드릴게요.
 
 <figure>
-  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/1.png" alt="책임 연쇄 패턴이 UIResponder 체인으로 이렇게 위로 흘러갑니다">
+  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/1.jpg" alt="책임 연쇄 패턴이 UIResponder 체인으로 이렇게 위로 흘러갑니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>책임 연쇄 패턴이 UIResponder 체인으로 이렇게 위로 흘러갑니다</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ var next: UIResponder? { get }
 그 뷰가 이벤트를 처리하지 않으면 next를 따라 위로 올라갑니다. 순서는 대략 이렇습니다.
 
 <figure>
-  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/4-1783847789167.png" alt="next를 타고 위로, 위로 넘어가는 책임의 사슬" loading="lazy">
+  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/4-1783847789167.png" alt="next를 타고 위로, 위로 넘어가는 책임의 사슬" width="510" height="1676" loading="lazy" decoding="async">
   <figcaption>next를 타고 위로, 위로 넘어가는 책임의 사슬</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ var next: UIResponder? { get }
 정리하면 이렇습니다. UIResponder 체인을 이해하면 이벤트가 안 먹을 때 어디서 끊겼는지 논리적으로 추적할 수 있고 델리게이트 남발 없이 이벤트를 위로 흘려보내는 설계도 가능해집니다.
 
 <figure>
-  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/2.png" alt="실제로 next 프로퍼티를 코드에서 뜯어보던 날" loading="lazy">
+  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/2.jpg" alt="실제로 next 프로퍼티를 코드에서 뜯어보던 날" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>실제로 next 프로퍼티를 코드에서 뜯어보던 날</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Q. next는 항상 슈퍼뷰를 가리키나요?
 A. 아닙니다. 일반 뷰는 슈퍼뷰를 가리키지만, 뷰컨트롤러의 루트 뷰는 next가 뷰컨트롤러가 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/3.png" alt="이 탭 하나가 어느 responder까지 올라가는지 따라가 봤어요" loading="lazy">
+  <img src="/assets/images/posts/f7301cd2-fb4d-4c74-92d4-201cfcfec04b/3.jpg" alt="이 탭 하나가 어느 responder까지 올라가는지 따라가 봤어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>이 탭 하나가 어느 responder까지 올라가는지 따라가 봤어요</figcaption>
 </figure>
 

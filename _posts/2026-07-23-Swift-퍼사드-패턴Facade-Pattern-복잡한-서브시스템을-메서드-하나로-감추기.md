@@ -2,7 +2,7 @@
 title: "Swift 퍼사드 패턴(Facade Pattern), 복잡한 서브시스템을 메서드 하나로 감추기"
 description: "얼마 전에 회원가입 로직을 다시 들여다보다가 한숨이 나왔습니다."
 header:
-  og_image: /assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/1.png
+  og_image: /assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/1.jpg
 tags:
   - Swift
   - 퍼사드패턴
@@ -27,7 +27,7 @@ last_modified_at: 2026-07-23
 오늘은 Swift 코드로 이 패턴을 어떻게 적용하는지, 또 언제 쓰면 좋고 언제는 오히려 독이 되는지까지 제 경험을 섞어 풀어보려고 합니다.
 
 <figure>
-  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/1.png" alt="Swift 퍼사드 패턴, 문 하나 뒤에 복잡함을 다 숨겨둔 그림입니다">
+  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/1.jpg" alt="Swift 퍼사드 패턴, 문 하나 뒤에 복잡함을 다 숨겨둔 그림입니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 퍼사드 패턴, 문 하나 뒤에 복잡함을 다 숨겨둔 그림입니다</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ struct SignUpFacade {
 호출하는 쪽은 유효성 검사를 먼저 하고 토큰을 저장한다는 순서를 전혀 몰라도 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/4-1783847771586.png" alt="퍼사드 하나가 세 서브시스템을 대신 조율하는 그림" loading="lazy">
+  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/4-1783847771586.png" alt="퍼사드 하나가 세 서브시스템을 대신 조율하는 그림" width="1200" height="541" loading="lazy" decoding="async">
   <figcaption>퍼사드 하나가 세 서브시스템을 대신 조율하는 그림</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ struct SignUpFacade {
 목적이 다르다고 기억하면 편합니다.
 
 <figure>
-  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/2.png" alt="이 예제 코드, 저는 실제 프로젝트에서 이렇게 정리했어요" loading="lazy">
+  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/2.jpg" alt="이 예제 코드, 저는 실제 프로젝트에서 이렇게 정리했어요" width="1200" height="1200" loading="lazy" decoding="async">
   <figcaption>이 예제 코드, 저는 실제 프로젝트에서 이렇게 정리했어요</figcaption>
 </figure>
 
@@ -162,7 +162,7 @@ struct SignUpFacade {
 오늘 회원가입 예제부터 가볍게 흉내 내보시길 응원합니다.
 
 <figure>
-  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/3.png" alt="깔끔한 문 하나만 열어주면 되는 거, 딱 이 느낌입니다" loading="lazy">
+  <img src="/assets/images/posts/340a5196-1574-405a-a31e-39b21d025303/3.jpg" alt="깔끔한 문 하나만 열어주면 되는 거, 딱 이 느낌입니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>깔끔한 문 하나만 열어주면 되는 거, 딱 이 느낌입니다</figcaption>
 </figure>
 

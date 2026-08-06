@@ -2,7 +2,7 @@
 title: "[Swift 철학 #3] Swift는 왜 전부 struct일까? 값 타입 우선주의 총정리"
 description: "Swift 표준 라이브러리를 열어보면 눈에 띄는 사실이 하나 있습니다. Int, Double, Bool 같은 기본 타입은 물론이고 String, Array, Dictionary, Set까지 전부 struct입니다. 다른 언어에서 당연히 클래스였던 것들이 Swift에서는 죄다 값…"
 header:
-  og_image: /assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/1.png
+  og_image: /assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/1.jpg
 tags:
   - Swift
   - 스위프트
@@ -21,7 +21,7 @@ Swift 표준 라이브러리를 열어보면 눈에 띄는 사실이 하나 있�
 Swift 철학 시리즈 3편입니다. 클래스와 구조체의 문법 차이 자체는 별도 글에서 다뤘으니, 여기서는 "왜 그 차이를 만들었는가"라는 설계 의도에 집중할게요.
 
 <figure>
-  <img src="/assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/1.png" alt="Swift의 기본 선택지는 struct, 클래스는 근거가 있을 때 씁니다">
+  <img src="/assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/1.jpg" alt="Swift의 기본 선택지는 struct, 클래스는 근거가 있을 때 씁니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift의 기본 선택지는 struct, 클래스는 근거가 있을 때 씁니다</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ b.append(4)
 그리고 이 성질은 시간이 지나며 가치가 더 커졌습니다. 멀티스레드 환경에서 데이터 레이스는 "여러 스레드가 같은 메모리를 공유"할 때 생기는데, 값 타입은 애초에 공유가 안 되니 레이스의 전제가 사라집니다. Swift Concurrency가 스레드 경계를 넘을 수 있는 타입(Sendable)의 대표로 값 타입을 꼽는 건 자연스러운 귀결이에요. 2014년의 설계 결정이 2021년의 동시성 모델에서 회수된 셈입니다.
 
 <figure>
-  <img src="/assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/2.png" alt="참조는 풍선 하나를 같이 잡는 것, 값은 각자 자기 풍선을 갖는 것" loading="lazy">
+  <img src="/assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/2.jpg" alt="참조는 풍선 하나를 같이 잡는 것, 값은 각자 자기 풍선을 갖는 것" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>참조는 풍선 하나를 같이 잡는 것, 값은 각자 자기 풍선을 갖는 것</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ struct Player: Codable, Equatable, Comparable {
 그래서 값 타입 우선주의와 프로토콜 지향은 한 세트입니다. WWDC 2015에서 두 세션이 나란히 발표된 게 우연이 아니에요. "클래스 상속 대신 struct와 프로토콜"이 Swift가 제시한 기본 조합이고, 표준 라이브러리 전체가 이 방식으로 지어졌습니다. POP 자체는 별도 글에서 자세히 다뤘습니다.
 
 <figure>
-  <img src="/assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/3.png" alt="Copy-on-Write, 읽을 땐 공유하고 쓰는 순간에만 복사합니다" loading="lazy">
+  <img src="/assets/images/posts/c6e5417c-1bad-4913-bdff-974f972e1a73/3.jpg" alt="Copy-on-Write, 읽을 땐 공유하고 쓰는 순간에만 복사합니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>Copy-on-Write, 읽을 땐 공유하고 쓰는 순간에만 복사합니다</figcaption>
 </figure>
 

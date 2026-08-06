@@ -2,7 +2,7 @@
 title: "[iOS 아키텍처 #7] TCA(The Composable Architecture) 입문, 단방향 데이터 흐름 총정리"
 description: "SwiftUI 시대의 아키텍처 논의에서 빠지지 않는 이름이 하나 있습니다. Point-Free가 만든 TCA(The Composable Architecture)입니다."
 header:
-  og_image: /assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/1.png
+  og_image: /assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/1.jpg
 tags:
   - iOS
   - TCA
@@ -21,7 +21,7 @@ SwiftUI 시대의 아키텍처 논의에서 빠지지 않는 이름이 하나 �
 오늘은 TCA의 단방향 데이터 흐름이 어떻게 동작하는지, 그리고 무엇을 얻고 무엇을 지불하는지 정리해보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/1.png" alt="상태가 바뀌는 샛길이 없는 단방향 순환">
+  <img src="/assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/1.jpg" alt="상태가 바뀌는 샛길이 없는 단방향 순환" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>상태가 바뀌는 샛길이 없는 단방향 순환</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ await store.receive(.postsLoaded(mockPosts)) {
 Action 하나하나에 대해 State가 정확히 어떻게 변해야 하는지를 **전부 명시하도록 강제**합니다. 예상 못 한 상태 변화가 하나라도 있으면 테스트가 실패해요. 이 수준의 완전성 검증은 MVVM 테스트로는 흉내 내기 어렵습니다.
 
 <figure>
-  <img src="/assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/2.png" alt="TestStore는 상태 변화 하나하나를 전부 명시하게 강제합니다" loading="lazy">
+  <img src="/assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/2.jpg" alt="TestStore는 상태 변화 하나하나를 전부 명시하게 강제합니다" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>TestStore는 상태 변화 하나하나를 전부 명시하게 강제합니다</figcaption>
 </figure>
 
@@ -130,7 +130,7 @@ TCA가 값을 하는 조건은 비교적 뚜렷합니다.
 반대로 화면 대부분이 "받아서 보여주기"인 앱이라면, 3편에서 다룬 MV(Model-View)/MVVM에 UseCase 정도로 충분한 경우가 많습니다. TCA는 틀린 선택지가 아니라 **비싼 선택지**이고, 그 비용을 상태 복잡도가 정당화해줄 때 빛납니다.
 
 <figure>
-  <img src="/assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/3.png" alt="TCA는 틀린 선택지가 아니라 비싼 선택지예요" loading="lazy">
+  <img src="/assets/images/posts/caac9fa2-c44c-4646-87b0-01421048db10/3.jpg" alt="TCA는 틀린 선택지가 아니라 비싼 선택지예요" width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>TCA는 틀린 선택지가 아니라 비싼 선택지예요</figcaption>
 </figure>
 

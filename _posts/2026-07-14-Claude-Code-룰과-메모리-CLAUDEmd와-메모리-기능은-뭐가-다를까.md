@@ -2,7 +2,7 @@
 title: "Claude Code 룰과 메모리, CLAUDE.md와 메모리 기능은 뭐가 다를까"
 description: "Claude Code를 프로젝트에 붙여 쓰다 보면 두 가지 요구가 생깁니다. \"이 규칙은 매번 지켜라\"와 \"지난번에 알아낸 걸 기억해라\"."
 header:
-  og_image: /assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/1.png
+  og_image: /assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/1.jpg
 tags:
   - ClaudeCode
   - CLAUDEmd
@@ -21,7 +21,7 @@ Claude Code를 프로젝트에 붙여 쓰다 보면 두 가지 요구가 생깁�
 이 글에서는 CLAUDE.md의 계층 구조, 메모리 기능의 동작 방식, 그리고 어떤 내용을 어디에 둬야 하는지 기준까지 정리합니다.
 
 <figure>
-  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/1.png" alt="위에서 내려보내는 룰과 아래에서 쌓이는 메모리, 방향이 다릅니다">
+  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/1.jpg" alt="위에서 내려보내는 룰과 아래에서 쌓이는 메모리, 방향이 다릅니다" width="1024" height="1024" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>위에서 내려보내는 룰과 아래에서 쌓이는 메모리, 방향이 다릅니다</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ CLAUDE.md가 사람이 작성하는 하향식 규칙이라면, 메모리는 반�
 동작 구조는 단순합니다. 메모리 하나가 파일 하나이고 인덱스 파일(MEMORY.md)에 한 줄 요약이 쌓입니다. 세션 시작 시 인덱스만 컨텍스트에 올라가고 개별 메모리의 본문은 관련 작업을 할 때 읽는 식이에요.
 
 <figure>
-  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/2.png" alt="룰은 매 세션 통째로, 메모리는 인덱스만 올라가고 본문은 필요할 때 읽습니다" loading="lazy">
+  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/2.png" alt="룰은 매 세션 통째로, 메모리는 인덱스만 올라가고 본문은 필요할 때 읽습니다" width="710" height="1068" loading="lazy" decoding="async">
   <figcaption>룰은 매 세션 통째로, 메모리는 인덱스만 올라가고 본문은 필요할 때 읽습니다</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ CLAUDE.md가 사람이 작성하는 하향식 규칙이라면, 메모리는 반�
 셋째, 코드나 문서로 이미 알 수 있는가. 저장소만 읽어도 알 수 있는 내용은 어느 쪽에도 넣지 않는 게 원칙입니다. 컨텍스트만 낭비하고, 코드가 바뀌면 거짓 정보가 됩니다.
 
 <figure>
-  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/3.png" alt="에디터의 룰 파일과 손으로 쓰는 노트, 딱 그 관계예요" loading="lazy">
+  <img src="/assets/images/posts/e995a696-1130-4ad3-a96c-b5484bea5794/3.jpg" alt="에디터의 룰 파일과 손으로 쓰는 노트, 딱 그 관계예요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>에디터의 룰 파일과 손으로 쓰는 노트, 딱 그 관계예요</figcaption>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "Claude Code·Cursor·Copilot 코딩 AI 어떻게 고르나요? 용도별 가이드"
 description: "요즘 개발자 커뮤니티에서 가장 많이 나오는 질문이 바로 이거예요. \"Claude Code, Cursor, Copilot 중에 대체 뭘 써야 하나요?\""
 header:
-  og_image: /assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/1.png
+  og_image: /assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/1.jpg
 tags:
   - ClaudeCode
   - Cursor
@@ -25,7 +25,7 @@ last_modified_at: 2026-07-27
 이 글에서는 세 도구의 가격, 성격 차이, "나는 뭘 골라야 하나"까지 실제 써본 기준으로 짚어드릴게요. (가격은 모두 2026년 7월 기준입니다.)
 
 <figure>
-  <img src="/assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/1.png" alt="Claude Code vs Cursor vs Copilot, 가격부터 이렇게 다릅니다">
+  <img src="/assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/1.jpg" alt="Claude Code vs Cursor vs Copilot, 가격부터 이렇게 다릅니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Claude Code vs Cursor vs Copilot, 가격부터 이렇게 다릅니다</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ Copilot은 자율성보다 속도예요.
 몇 달 셋 다 써보고 정착한 제 조합은, 지금은 Claude Code를 메인으로 쓰고 OpenAI의 Codex를 병행하는 에이전트 체제입니다. 개발이 본업이다 보니 자동완성보다는 작업을 통째로 맡기는 쪽이 시간이 훨씬 절약되더라고요.
 
 <figure>
-  <img src="/assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/2.png" alt="저는 에디터랑 터미널을 이렇게 나눠서 씁니다" loading="lazy">
+  <img src="/assets/images/posts/0e764f02-f979-4894-91d1-3e32002ec099/2.jpg" alt="저는 에디터랑 터미널을 이렇게 나눠서 씁니다" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>저는 에디터랑 터미널을 이렇게 나눠서 씁니다</figcaption>
 </figure>
 

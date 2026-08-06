@@ -2,7 +2,7 @@
 title: "DI 컨테이너 언제 도입할까? Swinject·Factory 도입 시점 총정리"
 description: "iOS 개발을 하다 보면 어느 순간 이런 질문이 옵니다."
 header:
-  og_image: /assets/images/posts/971149c8-2775-432c-a2bb-2bb93d8579b4/1.png
+  og_image: /assets/images/posts/971149c8-2775-432c-a2bb-2bb93d8579b4/1.jpg
 tags:
   - DI컨테이너
   - Swinject
@@ -31,7 +31,7 @@ iOS 개발을 하다 보면 어느 순간 이런 질문이 옵니다.
 언제 도입할지, 왜 Factory인지를 제가 겪은 순서대로 풀어보겠습니다.
 
 <figure>
-  <img src="/assets/images/posts/971149c8-2775-432c-a2bb-2bb93d8579b4/1.png" alt="DI 컨테이너 도입 전에 Swinject·Factory부터 비교해봤어요">
+  <img src="/assets/images/posts/971149c8-2775-432c-a2bb-2bb93d8579b4/1.jpg" alt="DI 컨테이너 도입 전에 Swinject·Factory부터 비교해봤어요" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>DI 컨테이너 도입 전에 Swinject·Factory부터 비교해봤어요</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ Factory는 바로 이런 전통적인 컨테이너들의 단점을 보완하려�
 한때는 "복잡한 스코프 관리가 필요하면 Swinject"라는 조언도 있었지만, 지금은 아닙니다. Factory도 싱글턴·캐시·공유 스코프를 전부 지원하거든요. Swinject가 하던 일을 Factory가 더 안전하게 해냅니다.
 
 <figure>
-  <img src="/assets/images/posts/971149c8-2775-432c-a2bb-2bb93d8579b4/2.png" alt="직접 붙여보니 Factory는 파일 하나로도 시작되더라고요" loading="lazy">
+  <img src="/assets/images/posts/971149c8-2775-432c-a2bb-2bb93d8579b4/2.jpg" alt="직접 붙여보니 Factory는 파일 하나로도 시작되더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>직접 붙여보니 Factory는 파일 하나로도 시작되더라고요</figcaption>
 </figure>
 

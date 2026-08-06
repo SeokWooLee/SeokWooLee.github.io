@@ -2,7 +2,7 @@
 title: "Swift 이터레이터 패턴(Iterator Pattern), Sequence와 IteratorProtocol 정체 파헤치기"
 description: "Swift로 앱을 만들다 보면 for item in array 같은 반복문을 하루에도 수십 번 씁니다. 워낙 자연스럽게 쓰다 보니, 커스텀 타입을 for-in으로 돌리려다 컴파일 에러를 만나고 나서야 궁금해지곤 하죠. \"이 반복문, 대체 안에서 무슨 일이 벌어지는 거지?\""
 header:
-  og_image: /assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/1.png
+  og_image: /assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/1.jpg
 tags:
   - Swift
   - iOS개발
@@ -21,7 +21,7 @@ Swift로 앱을 만들다 보면 `for item in array` 같은 반복문을 하루�
 이 글에서는 두 프로토콜의 역할이 어떻게 나뉘는지, for-in이 내부에서 어떻게 풀리는지, 직접 커스텀 시퀀스를 만드는 방법까지 정리해 보겠습니다. 이터레이터 패턴이 어렵게 느껴졌던 분이라면 끝까지 읽어보세요.
 
 <figure>
-  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/1.png" alt="Swift 이터레이터 패턴, 딱 이 그림 하나로 역할이 갈립니다">
+  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/1.jpg" alt="Swift 이터레이터 패턴, 딱 이 그림 하나로 역할이 갈립니다" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
   <figcaption>Swift 이터레이터 패턴, 딱 이 그림 하나로 역할이 갈립니다</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ while let number = iterator.next() {
 > for-in은 마법이 아닙니다. 결국 makeIterator()와 next() 두 개의 조합일 뿐이에요.
 
 <figure>
-  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/4-1783847806116.png" alt="결국 이 두 호출이 전부였네요" loading="lazy">
+  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/4-1783847806116.png" alt="결국 이 두 호출이 전부였네요" width="1200" height="742" loading="lazy" decoding="async">
   <figcaption>결국 이 두 호출이 전부였네요</figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ for n in Fibonacci().prefix(8) {
 ```
 
 <figure>
-  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/2.png" alt="직접 Fibonacci 타입 짜서 for-in에 넣어봤어요" loading="lazy">
+  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/2.jpg" alt="직접 Fibonacci 타입 짜서 for-in에 넣어봤어요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>직접 Fibonacci 타입 짜서 for-in에 넣어봤어요</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ Q. Collection이랑은 뭐가 다른가요?
 A. Collection은 Sequence를 상속한 상위 개념입니다. 인덱스로 여러 번 접근하고, count를 세고, 순서를 보장하는 등 더 많은 걸 요구합니다. 단순히 값을 한 방향으로 훑기만 하면 Sequence로 충분합니다.
 
 <figure>
-  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/3.png" alt="Sequence, Iterator, Collection 관계를 그려두니 한눈에 정리되더라고요" loading="lazy">
+  <img src="/assets/images/posts/c0379f37-683f-44c9-8731-ac1841d866e1/3.jpg" alt="Sequence, Iterator, Collection 관계를 그려두니 한눈에 정리되더라고요" width="1024" height="1024" loading="lazy" decoding="async">
   <figcaption>Sequence, Iterator, Collection 관계를 그려두니 한눈에 정리되더라고요</figcaption>
 </figure>
 
