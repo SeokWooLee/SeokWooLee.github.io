@@ -1,0 +1,56 @@
+# GitHub Pages 클래식 빌드는 리포지토리를 통째로 클론한 뒤 빌드하는데,
+# 이 리포는 .git 히스토리가 947MB로 부풀어 10분 타임아웃을 넘기고 있다.
+# Actions는 얕은 클론(actions/checkout 기본값)을 쓰고 타임아웃도 넉넉하다.
+name: Deploy Jekyll site to Pages
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 배포는 동시에 하나만. 진행 중인 배포는 취소하지 않는다.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # baseurl은 _config.yml 값(빈 값 = 루트 도메인)을 그대로 쓴다.
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
