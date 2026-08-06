@@ -119,7 +119,7 @@ func allEqual<C: Collection>(_ items: C) -> Bool where C.Element: Equatable {
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[Swift 철학 #4] SE-0296이 뭐길래? Swift 문법이 태어나는 절차, Swift Evolution 총정리](/Swift-%EC%B2%A0%ED%95%99-4-SE-0296%EC%9D%B4-%EB%AD%90%EA%B8%B8%EB%9E%98-Swift-%EB%AC%B8%EB%B2%95%EC%9D%B4-%ED%83%9C%EC%96%B4%EB%82%98%EB%8A%94-%EC%A0%88%EC%B0%A8-Swift-Evolution-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[Swift 철학 #3] Swift는 왜 전부 struct일까? 값 타입 우선주의 총정리](/Swift-%EC%B2%A0%ED%95%99-3-Swift%EB%8A%94-%EC%99%9C-%EC%A0%84%EB%B6%80-struct%EC%9D%BC%EA%B9%8C-%EA%B0%92-%ED%83%80%EC%9E%85-%EC%9A%B0%EC%84%A0%EC%A3%BC%EC%9D%98-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[Swift 중급 #3] Swift some vs any 완전 정리, some View의 정체와 existential의 비용](/Swift-%EC%A4%91%EA%B8%89-3-Swift-some-vs-any-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-some-View%EC%9D%98-%EC%A0%95%EC%B2%B4%EC%99%80-existential%EC%9D%98-%EB%B9%84%EC%9A%A9/)
+- [[Swift 중급 #4] Swift 연관 타입(associatedtype) 정복](/Swift-%EC%A4%91%EA%B8%89-4-Swift-%EC%97%B0%EA%B4%80-%ED%83%80%EC%9E%85associatedtype-%EC%A0%95%EB%B3%B5/)
 <!-- /RELATED-POSTS -->
