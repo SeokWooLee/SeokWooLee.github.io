@@ -22,7 +22,8 @@ sitemap: false
       {%- for category in post.categories %}
       <category>{{ category | xml_escape }}</category>
       {%- endfor %}
-      <description>{{ post.excerpt | strip_html | strip_newlines | truncate: 300 | xml_escape }}</description>
+      {%- comment %} post.excerpt는 접근할 때마다 글을 다시 렌더링해 빌드 시간이 폭발한다. 렌더링 없이 읽히는 front matter의 description을 쓴다. {%- endcomment %}
+      <description>{{ post.description | default: post.title | xml_escape }}</description>
     </item>
     {%- endfor %}
   </channel>
