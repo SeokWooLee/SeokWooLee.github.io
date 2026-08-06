@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://seokwoolee.github.io/sitemap.xml
+Sitemap: https://seokwoolee.github.io/rss.xml
