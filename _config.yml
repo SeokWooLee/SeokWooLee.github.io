@@ -96,8 +96,10 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
-og_image_alt             : # Alt text for Open Graph/Twitter default site image
+og_image                 : "/assets/images/og-default.jpg" # Open Graph/Twitter default site image
+og_image_alt             : "Swift와 iOS, 소프트웨어 엔지니어링을 다루는 iOS 개발 블로그"
+og_image_width           : 1200
+og_image_height          : 630
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -117,10 +119,17 @@ analytics:
 # Site Author
 author:
   name             : "SeokWoo Lee"
+  alternate_name   : "이석우"
+  home             : "/about/"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "현직 iOS 개발자로 활동하고 있습니다."
+  job_title        : "iOS 개발자"
+  knows_about:
+    - "Swift"
+    - "iOS 개발"
+    - "소프트웨어 엔지니어링"
   location         : "Korea"
-  email            : "mailto:skwu658@gmail.com"
+  email            : "skwu658@gmail.com"
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "GitHub"
@@ -200,6 +209,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 timezone: Asia/Seoul
+date_format: "%Y년 %-m월 %-d일"
 
 
 # Pagination with jekyll-paginate
@@ -271,6 +281,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       share: false
       related: true
       classes: wide

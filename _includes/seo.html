@@ -21,15 +21,33 @@
 
 {%- assign author = page.author | default: page.authors[0] | default: site.author -%}
 {%- assign author = site.data.authors[author] | default: author -%}
+{%- assign author_profile_url = author.home | default: site.author.home | default: '/' | absolute_url -%}
 
 {%- if author.twitter -%}
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
-{%- assign site_og_image = site.og_image | absolute_url | escape -%}
-{%- assign og_image_alt = page.header.og_image_alt | default: site.og_image_alt | escape -%}
+{%- assign page_large_image_path = page.header.og_image | default: page.header.overlay_image | default: page.header.image -%}
+{%- if page_large_image_path -%}
+  {%- assign page_large_image = page_large_image_path | absolute_url | escape -%}
+  {%- assign og_image_alt = page.header.og_image_alt | default: page.header.image_description | default: page.title | escape -%}
+{%- endif -%}
+{%- assign page_teaser_image_path = page.header.teaser -%}
+{%- assign using_site_og_image = false -%}
+{%- unless page_teaser_image_path -%}
+  {%- assign page_teaser_image_path = site.og_image -%}
+  {%- assign using_site_og_image = true -%}
+{%- endunless -%}
+{%- if page_teaser_image_path -%}
+  {%- assign page_teaser_image = page_teaser_image_path | absolute_url | escape -%}
+  {%- unless og_image_alt -%}
+    {%- if using_site_og_image -%}
+      {%- assign og_image_alt = site.og_image_alt | default: page.title | escape -%}
+    {%- else -%}
+      {%- assign og_image_alt = page.header.og_image_alt | default: page.header.image_description | default: page.title | escape -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endif -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
@@ -43,7 +61,7 @@
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author | escape_once | strip }}">
   {% if og_type == "article" %}
-  <meta property="article:author" content="{{ author.name | default: author | escape_once | strip }}">
+  <meta property="article:author" content="{{ author_profile_url }}">
   {% endif %}
 {% endif %}
 
@@ -67,32 +85,47 @@
   {% if og_image_alt %}
     <meta property="og:image:alt" content="{{ og_image_alt }}">
   {% endif %}
+  {% if using_site_og_image and site.og_image_width and site.og_image_height %}
+    <meta property="og:image:width" content="{{ site.og_image_width }}">
+    <meta property="og:image:height" content="{{ site.og_image_height }}">
+  {% endif %}
 {% endif %}
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
-  <meta name="twitter:title" content="{{ page_title }}">
-  <meta name="twitter:description" content="{{ seo_description }}">
-  <meta name="twitter:url" content="{{ canonical_url }}">
+{% endif %}
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ seo_description }}">
+<meta name="twitter:url" content="{{ canonical_url }}">
 
-  {% if page_large_image %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ page_large_image }}">
-    {% if og_image_alt %}
-      <meta name="twitter:image:alt" content="{{ og_image_alt }}">
-    {% endif %}
-  {% else %}
-    <meta name="twitter:card" content="summary">
-    {% if page_teaser_image %}
-      <meta name="twitter:image" content="{{ page_teaser_image }}">
-      {% if og_image_alt %}
-        <meta name="twitter:image:alt" content="{{ og_image_alt }}">
-      {% endif %}
-    {% endif %}
+{% if page_large_image %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ page_large_image }}">
+  {% if og_image_alt %}
+    <meta name="twitter:image:alt" content="{{ og_image_alt }}">
   {% endif %}
+{% elsif page_teaser_image %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ page_teaser_image }}">
+  {% if og_image_alt %}
+    <meta name="twitter:image:alt" content="{{ og_image_alt }}">
+  {% endif %}
+{% else %}
+  <meta name="twitter:card" content="summary">
+{% endif %}
 
-  {% if author_twitter %}
-    <meta name="twitter:creator" content="@{{ author_twitter }}">
+{% if author_twitter %}
+  <meta name="twitter:creator" content="@{{ author_twitter }}">
+{% endif %}
+
+{% if og_type == "article" %}
+  {% if page.categories and page.categories.size > 0 %}
+    <meta property="article:section" content="{{ page.categories | first | escape_once }}">
+  {% endif %}
+  {% if page.tags and page.tags.size > 0 %}
+    {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag | escape_once }}">
+    {% endfor %}
   {% endif %}
 {% endif %}
 

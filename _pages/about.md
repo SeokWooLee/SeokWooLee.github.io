@@ -4,6 +4,7 @@ layout: single
 permalink: /about/
 author_profile: true
 sitemap: true
+schema_type: ProfilePage
 description: "10년차 현직 iOS 개발자 SeokWoo Lee의 기술 블로그입니다. Swift·iOS 개발 경험과 소프트웨어 엔지니어링 원칙을 다룹니다."
 last_modified_at: 2026-07-20
 ---
