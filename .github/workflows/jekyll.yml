@@ -35,11 +35,15 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      # baseurl은 _config.yml 값(빈 값 = 루트 도메인)을 그대로 쓴다.
+      # github-pages gem이 Actions 환경변수를 보고 baseurl을 /pages/<owner>로
+      # 자동 주입한다. 이 사이트는 사용자 페이지(seokwoolee.github.io)라
+      # baseurl이 비어 있어야 하므로 명시적으로 덮어쓴다.
+      # url도 함께 고정해 canonical·sitemap·feed가 오염되지 않게 한다.
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl "" --config _config.yml
         env:
           JEKYLL_ENV: production
+          PAGES_REPO_NWO: SeokWooLee/SeokWooLee.github.io
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -55,6 +59,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # 사이트 산출물이 350MB라 배포에 10분 이상 걸린다.
-          # deploy-pages 기본 타임아웃(600000ms)으로는 부족해 30분으로 늘린다.
-          timeout: 1800000
+          # deploy-pages의 timeout 상한은 600000ms(10분)다. 그보다 큰 값을
+          # 주면 경고와 함께 상한으로 강제되므로, 배포를 10분 안에 끝내려면
+          # 산출물 크기를 줄이는 수밖에 없다.
+          timeout: 600000
