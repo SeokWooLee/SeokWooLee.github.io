@@ -95,7 +95,7 @@ any가 정당한 자리는 대략 세 곳입니다. 첫째, 이질적인 컬렉�
 <!-- RELATED-POSTS -->
 ## 함께 보면 좋은 글
 
-- [[Swift 중급 #1] Swift ARC 완전 정리, weak vs unowned는 수명 관계로 고릅니다](/Swift-%EC%A4%91%EA%B8%89-1-Swift-ARC-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-weak-vs-unowned%EB%8A%94-%EC%88%98%EB%AA%85-%EA%B4%80%EA%B3%84%EB%A1%9C-%EA%B3%A0%EB%A6%85%EB%8B%88%EB%8B%A4/)
 - [[Swift 철학 #4] SE-0296이 뭐길래? Swift 문법이 태어나는 절차, Swift Evolution 총정리](/Swift-%EC%B2%A0%ED%95%99-4-SE-0296%EC%9D%B4-%EB%AD%90%EA%B8%B8%EB%9E%98-Swift-%EB%AC%B8%EB%B2%95%EC%9D%B4-%ED%83%9C%EC%96%B4%EB%82%98%EB%8A%94-%EC%A0%88%EC%B0%A8-Swift-Evolution-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
 - [[Swift 중급 #4] Swift 연관 타입(associatedtype) 정복](/Swift-%EC%A4%91%EA%B8%89-4-Swift-%EC%97%B0%EA%B4%80-%ED%83%80%EC%9E%85associatedtype-%EC%A0%95%EB%B3%B5/)
+- [[Swift 중급 #5] Swift 고차 함수 실전 정리, lazy 시퀀스까지](/Swift-%EC%A4%91%EA%B8%89-5-Swift-%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC-lazy-%EC%8B%9C%ED%80%80%EC%8A%A4%EA%B9%8C%EC%A7%80/)
 <!-- /RELATED-POSTS -->
