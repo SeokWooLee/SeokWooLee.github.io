@@ -614,6 +614,8 @@ ko: &DEFAULT_KO
   tags_label                 : "태그:"
   categories_label           : "카테고리:"
   date_label                 : "업데이트:"
+  published_label            : "최초 발행:"
+  modified_label             : "최종 수정:"
   comments_label             : "댓글 남기기"
   comments_title             : "댓글"
   more_label                 : "더 보기"
