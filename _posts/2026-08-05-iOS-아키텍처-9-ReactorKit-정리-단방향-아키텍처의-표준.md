@@ -134,7 +134,8 @@ ReactorKit의 실용성은 도입 방식에서 나옵니다. 기존 MVC(Model-Vi
 - [ReactorKit/ReactorKit](https://github.com/ReactorKit/ReactorKit)
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
 - [iOS에서 RxSwift·Combine을 왜 쓸까? 반응형 프로그래밍이 해결하는 문제](/iOS%EC%97%90%EC%84%9C-RxSwiftCombine%EC%9D%84-%EC%99%9C-%EC%93%B8%EA%B9%8C-%EB%B0%98%EC%9D%91%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4-%ED%95%B4%EA%B2%B0%ED%95%98%EB%8A%94-%EB%AC%B8%EC%A0%9C/)
+- [\[iOS 아키텍처 #10\] Uber RIBs, 비즈니스 로직으로 앱을 쪼갠다](/iOS-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-10-Uber-RIBs-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%A1%9C%EC%A7%81%EC%9C%BC%EB%A1%9C-%EC%95%B1%EC%9D%84-%EC%AA%BC%EA%B0%A0%EB%8B%A4/)
 <!-- /RELATED-POSTS -->
