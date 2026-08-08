@@ -93,9 +93,7 @@ any가 정당한 자리는 대략 세 곳입니다. 첫째, 이질적인 컬렉�
 다음 편은 예고대로 연관 타입(associatedtype)입니다. "generic constraint" 에러의 뿌리, 프로토콜이 타입 빈칸을 품는다는 것의 의미, 그리고 primary associated types까지 정리합니다.
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
-- [[Swift 철학 #4] SE-0296이 뭐길래? Swift 문법이 태어나는 절차, Swift Evolution 총정리](/Swift-%EC%B2%A0%ED%95%99-4-SE-0296%EC%9D%B4-%EB%AD%90%EA%B8%B8%EB%9E%98-Swift-%EB%AC%B8%EB%B2%95%EC%9D%B4-%ED%83%9C%EC%96%B4%EB%82%98%EB%8A%94-%EC%A0%88%EC%B0%A8-Swift-Evolution-%EC%B4%9D%EC%A0%95%EB%A6%AC/)
-- [[Swift 중급 #4] Swift 연관 타입(associatedtype) 정복](/Swift-%EC%A4%91%EA%B8%89-4-Swift-%EC%97%B0%EA%B4%80-%ED%83%80%EC%9E%85associatedtype-%EC%A0%95%EB%B3%B5/)
-- [[Swift 중급 #5] Swift 고차 함수 실전 정리, lazy 시퀀스까지](/Swift-%EC%A4%91%EA%B8%89-5-Swift-%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC-lazy-%EC%8B%9C%ED%80%80%EC%8A%A4%EA%B9%8C%EC%A7%80/)
+- [\[Swift 중급 #6\] Swift Codable 심화, 4대 지뢰 처방전](/Swift-%EC%A4%91%EA%B8%89-6-Swift-Codable-%EC%8B%AC%ED%99%94-4%EB%8C%80-%EC%A7%80%EB%A2%B0-%EC%B2%98%EB%B0%A9%EC%A0%84/)
 <!-- /RELATED-POSTS -->

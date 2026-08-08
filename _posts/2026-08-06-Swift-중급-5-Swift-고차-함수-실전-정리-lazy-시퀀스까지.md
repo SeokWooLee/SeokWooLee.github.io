@@ -109,9 +109,7 @@ let result = products
 다음 편은 JSON과 씨름하는 모든 iOS 개발자의 주제, Codable 심화입니다. CodingKeys부터 중첩 구조, 날짜 전략, 그리고 "필드 하나 때문에 전체 디코딩이 실패하는" 문제의 처방까지 다룹니다.
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
-- [[Swift 중급 #4] Swift 연관 타입(associatedtype) 정복](/Swift-%EC%A4%91%EA%B8%89-4-Swift-%EC%97%B0%EA%B4%80-%ED%83%80%EC%9E%85associatedtype-%EC%A0%95%EB%B3%B5/)
-- [[Swift 중급 #3] Swift some vs any 완전 정리, some View의 정체와 existential의 비용](/Swift-%EC%A4%91%EA%B8%89-3-Swift-some-vs-any-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-some-View%EC%9D%98-%EC%A0%95%EC%B2%B4%EC%99%80-existential%EC%9D%98-%EB%B9%84%EC%9A%A9/)
-- [[Swift 중급 #2] Swift 제네릭(Generics) 입문부터 활용까지, <T>가 중복과 위험을 동시에 없애는 법](/Swift-%EC%A4%91%EA%B8%89-2-Swift-%EC%A0%9C%EB%84%A4%EB%A6%ADGenerics-%EC%9E%85%EB%AC%B8%EB%B6%80%ED%84%B0-%ED%99%9C%EC%9A%A9%EA%B9%8C%EC%A7%80-T%EA%B0%80-%EC%A4%91%EB%B3%B5%EA%B3%BC-%EC%9C%84%ED%97%98%EC%9D%84-%EB%8F%99%EC%8B%9C%EC%97%90-%EC%97%86%EC%95%A0%EB%8A%94-%EB%B2%95/)
+- [\[Swift 중급 #6\] Swift Codable 심화, 4대 지뢰 처방전](/Swift-%EC%A4%91%EA%B8%89-6-Swift-Codable-%EC%8B%AC%ED%99%94-4%EB%8C%80-%EC%A7%80%EB%A2%B0-%EC%B2%98%EB%B0%A9%EC%A0%84/)
 <!-- /RELATED-POSTS -->

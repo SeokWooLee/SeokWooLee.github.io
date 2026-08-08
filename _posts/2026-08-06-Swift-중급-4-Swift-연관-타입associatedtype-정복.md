@@ -115,9 +115,7 @@ func process(_ c: some Container<Int>)  // 제네릭에서도 간결하게
 - [SE-0346: Lightweight same-type requirements for primary associated types](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0346-light-weight-same-type-syntax.md)
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
-- [[Swift 중급 #2] Swift 제네릭(Generics) 입문부터 활용까지, <T>가 중복과 위험을 동시에 없애는 법](/Swift-%EC%A4%91%EA%B8%89-2-Swift-%EC%A0%9C%EB%84%A4%EB%A6%ADGenerics-%EC%9E%85%EB%AC%B8%EB%B6%80%ED%84%B0-%ED%99%9C%EC%9A%A9%EA%B9%8C%EC%A7%80-T%EA%B0%80-%EC%A4%91%EB%B3%B5%EA%B3%BC-%EC%9C%84%ED%97%98%EC%9D%84-%EB%8F%99%EC%8B%9C%EC%97%90-%EC%97%86%EC%95%A0%EB%8A%94-%EB%B2%95/)
-- [[Swift 중급 #1] Swift ARC 완전 정리, weak vs unowned는 수명 관계로 고릅니다](/Swift-%EC%A4%91%EA%B8%89-1-Swift-ARC-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-weak-vs-unowned%EB%8A%94-%EC%88%98%EB%AA%85-%EA%B4%80%EA%B3%84%EB%A1%9C-%EA%B3%A0%EB%A6%85%EB%8B%88%EB%8B%A4/)
-- [[Swift 중급 #5] Swift 고차 함수 실전 정리, lazy 시퀀스까지](/Swift-%EC%A4%91%EA%B8%89-5-Swift-%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC-lazy-%EC%8B%9C%ED%80%80%EC%8A%A4%EA%B9%8C%EC%A7%80/)
+- [\[Swift 중급 #6\] Swift Codable 심화, 4대 지뢰 처방전](/Swift-%EC%A4%91%EA%B8%89-6-Swift-Codable-%EC%8B%AC%ED%99%94-4%EB%8C%80-%EC%A7%80%EB%A2%B0-%EC%B2%98%EB%B0%A9%EC%A0%84/)
 <!-- /RELATED-POSTS -->
