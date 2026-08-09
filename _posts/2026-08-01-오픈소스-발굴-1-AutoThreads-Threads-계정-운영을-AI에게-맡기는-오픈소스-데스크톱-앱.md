@@ -163,9 +163,3 @@ Electron 앱에서 이건 취향이 아니라 보안 요구사항에 가깝습�
 - 아직 0.2.x이고 설치 파일이 공증되지 않았습니다. 실계정에 붙이기 전 초안 전용으로 확인하는 편이 안전합니다.
 
 저장소는 <https://github.com/eisenjimmy/autoTHREADS>입니다. 다음 편에서도 이렇게 묻혀 있는 저장소를 하나 골라 열어보겠습니다.
-
-<!-- RELATED-POSTS -->
-## 이어서 읽기
-
-- [\[오픈소스 발굴 #2\] oh-my-design, 코딩 에이전트에게 브랜드를 입히다](/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EB%B0%9C%EA%B5%B4-2-oh-my-design-%EC%BD%94%EB%94%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EA%B2%8C-%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%A5%BC-%EC%9E%85%ED%9E%88%EB%8B%A4/)
-<!-- /RELATED-POSTS -->
