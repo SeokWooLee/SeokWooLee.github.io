@@ -117,5 +117,5 @@ func process(_ c: some Container<Int>)  // 제네릭에서도 간결하게
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-- [\[Swift 중급 #6\] Swift Codable 심화, 4대 지뢰 처방전](/Swift-%EC%A4%91%EA%B8%89-6-Swift-Codable-%EC%8B%AC%ED%99%94-4%EB%8C%80-%EC%A7%80%EB%A2%B0-%EC%B2%98%EB%B0%A9%EC%A0%84/)
+- [\[Swift 중급 #7\] 프로퍼티 래퍼 원리, @State가 마법이 아닌 이유](/Swift-%EC%A4%91%EA%B8%89-7-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%9E%98%ED%8D%BC-%EC%9B%90%EB%A6%AC-State%EA%B0%80-%EB%A7%88%EB%B2%95%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
 <!-- /RELATED-POSTS -->

@@ -121,9 +121,5 @@ try?와 compactMap, 앞선 편들에서 정리한 도구 두 개의 조합인 �
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-### Swift 중급 시리즈
-
-- 이전 편: [\[Swift 중급 #5\] Swift 고차 함수 실전 정리, lazy 시퀀스까지](/Swift-%EC%A4%91%EA%B8%89-5-Swift-%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC-lazy-%EC%8B%9C%ED%80%80%EC%8A%A4%EA%B9%8C%EC%A7%80/)
-- 이전 편: [\[Swift 중급 #4\] Swift 연관 타입(associatedtype) 정복](/Swift-%EC%A4%91%EA%B8%89-4-Swift-%EC%97%B0%EA%B4%80-%ED%83%80%EC%9E%85associatedtype-%EC%A0%95%EB%B3%B5/)
-- 이전 편: [\[Swift 중급 #3\] Swift some vs any 완전 정리, some View의 정체와 existential의 비용](/Swift-%EC%A4%91%EA%B8%89-3-Swift-some-vs-any-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-some-View%EC%9D%98-%EC%A0%95%EC%B2%B4%EC%99%80-existential%EC%9D%98-%EB%B9%84%EC%9A%A9/)
+- [\[Swift 중급 #7\] 프로퍼티 래퍼 원리, @State가 마법이 아닌 이유](/Swift-%EC%A4%91%EA%B8%89-7-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%9E%98%ED%8D%BC-%EC%9B%90%EB%A6%AC-State%EA%B0%80-%EB%A7%88%EB%B2%95%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
 <!-- /RELATED-POSTS -->
