@@ -137,3 +137,9 @@ export로 Tailwind 설정을 뽑아낼 수 있다는 점도 실무에서는 중�
 - [google-labs-code/design.md](https://github.com/google-labs-code/design.md) — Google Labs · 공식 문서 · 확인 2026-08-08 · 근거: Apache-2.0 라이선스, 알파 상태, @google/design.md CLI의 lint·diff·export·spec 명령과 기능
 - [DESIGN.md Specification](https://github.com/google-labs-code/design.md/blob/main/docs/spec.md) — Google Labs · 표준·명세 원문 · 확인 2026-08-08 · 근거: 프런트매터 필드 구성(name 필수, primary 색 필수), 본문 8개 섹션, 토큰 참조 문법, omitted 필드, WCAG 명암비 검사 방식
 <!-- /SOURCE-PROVENANCE -->
+
+<!-- RELATED-POSTS -->
+## 이어서 읽기
+
+- [\[오픈소스 발굴 #2\] oh-my-design, 코딩 에이전트에게 브랜드를 입히다](/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EB%B0%9C%EA%B5%B4-2-oh-my-design-%EC%BD%94%EB%94%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EA%B2%8C-%EB%B8%8C%EB%9E%9C%EB%93%9C%EB%A5%BC-%EC%9E%85%ED%9E%88%EB%8B%A4/)
+<!-- /RELATED-POSTS -->
