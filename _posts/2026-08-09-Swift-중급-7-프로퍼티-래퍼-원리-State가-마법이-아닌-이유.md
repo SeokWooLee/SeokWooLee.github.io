@@ -147,9 +147,5 @@ enum Settings {
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-### Swift 중급 시리즈
-
-- 이전 편: [\[Swift 중급 #6\] Swift Codable 심화, 4대 지뢰 처방전](/Swift-%EC%A4%91%EA%B8%89-6-Swift-Codable-%EC%8B%AC%ED%99%94-4%EB%8C%80-%EC%A7%80%EB%A2%B0-%EC%B2%98%EB%B0%A9%EC%A0%84/)
-- 이전 편: [\[Swift 중급 #5\] Swift 고차 함수 실전 정리, lazy 시퀀스까지](/Swift-%EC%A4%91%EA%B8%89-5-Swift-%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC-lazy-%EC%8B%9C%ED%80%80%EC%8A%A4%EA%B9%8C%EC%A7%80/)
-- 이전 편: [\[Swift 중급 #4\] Swift 연관 타입(associatedtype) 정복](/Swift-%EC%A4%91%EA%B8%89-4-Swift-%EC%97%B0%EA%B4%80-%ED%83%80%EC%9E%85associatedtype-%EC%A0%95%EB%B3%B5/)
+- [\[Swift 중급 #8\] Swift KeyPath 정리, map(\\.name)의 원리](/Swift-%EC%A4%91%EA%B8%89-8-Swift-KeyPath-%EC%A0%95%EB%A6%AC-mapname%EC%9D%98-%EC%9B%90%EB%A6%AC/)
 <!-- /RELATED-POSTS -->
