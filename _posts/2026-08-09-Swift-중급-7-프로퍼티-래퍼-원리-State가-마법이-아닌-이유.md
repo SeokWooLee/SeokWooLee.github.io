@@ -147,5 +147,5 @@ enum Settings {
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-- [\[Swift 중급 #8\] Swift KeyPath 정리, map(\\.name)의 원리](/Swift-%EC%A4%91%EA%B8%89-8-Swift-KeyPath-%EC%A0%95%EB%A6%AC-mapname%EC%9D%98-%EC%9B%90%EB%A6%AC/)
+- [프로토콜 지향 프로그래밍(POP), OOP 한계를 넘는 법](/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DPOP-OOP-%ED%95%9C%EA%B3%84%EB%A5%BC-%EB%84%98%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->

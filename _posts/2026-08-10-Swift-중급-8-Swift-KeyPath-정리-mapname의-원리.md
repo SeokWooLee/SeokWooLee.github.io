@@ -118,9 +118,5 @@ map 축약은 KeyPath의 입문이고, 진가는 "어떤 프로퍼티를 다룰�
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-### Swift 중급 시리즈
-
-- 이전 편: [\[Swift 중급 #7\] 프로퍼티 래퍼 원리, @State가 마법이 아닌 이유](/Swift-%EC%A4%91%EA%B8%89-7-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%9E%98%ED%8D%BC-%EC%9B%90%EB%A6%AC-State%EA%B0%80-%EB%A7%88%EB%B2%95%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
-- 이전 편: [\[Swift 중급 #6\] Swift Codable 심화, 4대 지뢰 처방전](/Swift-%EC%A4%91%EA%B8%89-6-Swift-Codable-%EC%8B%AC%ED%99%94-4%EB%8C%80-%EC%A7%80%EB%A2%B0-%EC%B2%98%EB%B0%A9%EC%A0%84/)
-- 이전 편: [\[Swift 중급 #5\] Swift 고차 함수 실전 정리, lazy 시퀀스까지](/Swift-%EC%A4%91%EA%B8%89-5-Swift-%EA%B3%A0%EC%B0%A8-%ED%95%A8%EC%88%98-%EC%8B%A4%EC%A0%84-%EC%A0%95%EB%A6%AC-lazy-%EC%8B%9C%ED%80%80%EC%8A%A4%EA%B9%8C%EC%A7%80/)
+- [프로토콜 지향 프로그래밍(POP), OOP 한계를 넘는 법](/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DPOP-OOP-%ED%95%9C%EA%B3%84%EB%A5%BC-%EB%84%98%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->
