@@ -148,4 +148,5 @@ enum Settings {
 ## 이어서 읽기
 
 - [프로토콜 지향 프로그래밍(POP), OOP 한계를 넘는 법](/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DPOP-OOP-%ED%95%9C%EA%B3%84%EB%A5%BC-%EB%84%98%EB%8A%94-%EB%B2%95/)
+- [Swift DI 라이브러리 Factory 정리, Swinject와 뭐가 다를까](/Swift-DI-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-Factory-%EC%A0%95%EB%A6%AC-Swinject%EC%99%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
 <!-- /RELATED-POSTS -->
