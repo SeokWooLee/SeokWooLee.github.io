@@ -45,6 +45,11 @@ jobs:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: SeokWooLee/SeokWooLee.github.io
 
+      # Google Search Console의 XML/RSS 처리 문제를 분리 진단하기 위해
+      # 같은 URL 목록을 공식 지원되는 텍스트 사이트맵으로도 배포한다.
+      - name: Generate text sitemap
+        run: bundle exec ruby scripts/generate_sitemap_txt.rb _site/sitemap.xml _site/sitemap.txt
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
