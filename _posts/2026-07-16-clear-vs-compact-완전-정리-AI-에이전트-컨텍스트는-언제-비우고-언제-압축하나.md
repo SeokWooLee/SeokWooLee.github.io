@@ -77,9 +77,8 @@ auto-compact의 발동 시점은 토큰 잔량이 정합니다. 작업 흐름과
 여기까지가 대화 이력 관리입니다. 그런데 /clear를 해도 사라지지 않고 매 턴 실려 가는 컨텍스트가 있습니다. 시스템 프롬프트, CLAUDE.md, 도구 정의 같은 상시 로드 영역인데요. 다음 편에서는 이 고정 비용을 설계하는 법을 다룹니다. CLAUDE.md에 뭘 넣고 뭘 빼야 하는지가 핵심입니다.
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
-- [[AI 컨텍스트 #5] 서브에이전트는 왜 쓰나, AI 에이전트 컨텍스트 격리의 원리와 위임 기준](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-5-%EC%84%9C%EB%B8%8C%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%93%B0%EB%82%98-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EA%B2%A9%EB%A6%AC%EC%9D%98-%EC%9B%90%EB%A6%AC%EC%99%80-%EC%9C%84%EC%9E%84-%EA%B8%B0%EC%A4%80/)
 - [AI 에이전트 메모리 설계, 컨텍스트 밖에 두는 기술 (계획 파일·메모리·RAG)](/AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EA%B3%84-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EB%B0%96%EC%97%90-%EB%91%90%EB%8A%94-%EA%B8%B0%EC%88%A0-%EA%B3%84%ED%9A%8D-%ED%8C%8C%EC%9D%BC%EB%A9%94%EB%AA%A8%EB%A6%ACRAG/)
-- [[MCP·Skill #2] AI 에이전트 Skill 완벽 정리, 슬래시 커맨드부터 자동 트리거까지](/MCPSkill-2-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-Skill-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%8A%AC%EB%9E%98%EC%8B%9C-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%B6%80%ED%84%B0-%EC%9E%90%EB%8F%99-%ED%8A%B8%EB%A6%AC%EA%B1%B0%EA%B9%8C%EC%A7%80/)
+- [\[에이전트 설계 #1\] 하네스 엔지니어링이란? 프롬프트 다음에 오는 것](/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84-1-%ED%95%98%EB%84%A4%EC%8A%A4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%9D%B4%EB%9E%80-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%8B%A4%EC%9D%8C%EC%97%90-%EC%98%A4%EB%8A%94-%EA%B2%83/)
 <!-- /RELATED-POSTS -->
