@@ -77,9 +77,8 @@ last_modified_at: 2026-07-27
 진단이 끝났으니 다음 편부터는 처방입니다. 가장 기본 도구인 /clear와 /compact부터 시작합니다. 이 둘은 "컨텍스트를 비운다"는 점은 같지만 동작 원리가 완전히 다르고, 잘못 쓰면 오히려 작업 맥락을 날려버립니다. 언제 비우고 언제 압축해야 하는지 기준을 세워봅니다.
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
-- [[AI 컨텍스트 #7] 프롬프트 캐시(Prompt Caching) 완전 정리, AI 에이전트 API 비용이 10분의 1이 되는 원리](/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%BA%90%EC%8B%9C-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-API-%EB%B9%84%EC%9A%A9%EC%9D%B4-10%EB%B6%84%EC%9D%98-1%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%9B%90%EB%A6%AC/)
 - [/clear vs /compact 완전 정리, AI 에이전트 컨텍스트는 언제 비우고 언제 압축하나](/clear-vs-compact-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%B9%84%EC%9A%B0%EA%B3%A0-%EC%96%B8%EC%A0%9C-%EC%95%95%EC%B6%95%ED%95%98%EB%82%98/)
-- [[AI 컨텍스트 #1] AI 컨텍스트 윈도우(Context Window)의 정체, 에이전트는 왜 지시를 까먹을까 (토큰·어텐션·KV 캐시)](/AI-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%EC%A0%95%EC%B2%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%A7%80%EC%8B%9C%EB%A5%BC-%EA%B9%8C%EB%A8%B9%EC%9D%84%EA%B9%8C-%ED%86%A0%ED%81%B0%EC%96%B4%ED%85%90%EC%85%98KV-%EC%BA%90%EC%8B%9C/)
+- [\[에이전트 설계 #2\] 컨텍스트 엔지니어링, 컨텍스트 윈도우를 예산처럼 쓰는 법](/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84-2-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9C%88%EB%8F%84%EC%9A%B0%EB%A5%BC-%EC%98%88%EC%82%B0%EC%B2%98%EB%9F%BC-%EC%93%B0%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->
