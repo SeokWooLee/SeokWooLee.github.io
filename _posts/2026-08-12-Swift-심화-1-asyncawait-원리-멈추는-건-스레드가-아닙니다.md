@@ -164,5 +164,5 @@ async/await가 자동으로 병렬화해주는 게 아닙니다. 순차와 동�
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-- [\[Swift 심화 #2\] Swift actor 완전 정리, 데이터 레이스 막는 법](/Swift-%EC%8B%AC%ED%99%94-2-Swift-actor-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A0%88%EC%9D%B4%EC%8A%A4-%EB%A7%89%EB%8A%94-%EB%B2%95/)
+- [델리게이트(Delegate) vs 클로저(Closure), 콜백 선택 기준 3가지](/%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8Delegate-vs-%ED%81%B4%EB%A1%9C%EC%A0%80Closure-%EC%BD%9C%EB%B0%B1-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-3%EA%B0%80%EC%A7%80/)
 <!-- /RELATED-POSTS -->

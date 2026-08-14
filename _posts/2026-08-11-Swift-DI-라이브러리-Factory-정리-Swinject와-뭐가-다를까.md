@@ -214,6 +214,5 @@ DIP가 "구체가 아니라 추상에 의존하라"는 방향을 알려준다면
 ## 이어서 읽기
 
 - [프로토콜 지향 프로그래밍(POP), OOP 한계를 넘는 법](/%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DPOP-OOP-%ED%95%9C%EA%B3%84%EB%A5%BC-%EB%84%98%EB%8A%94-%EB%B2%95/)
-- [\[Swift 중급 #8\] Swift KeyPath 정리, map(\\\\.name)의 원리](/Swift-%EC%A4%91%EA%B8%89-8-Swift-KeyPath-%EC%A0%95%EB%A6%AC-mapname%EC%9D%98-%EC%9B%90%EB%A6%AC/)
-- [\[Swift 중급 #7\] 프로퍼티 래퍼 원리, @State가 마법이 아닌 이유](/Swift-%EC%A4%91%EA%B8%89-7-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%9E%98%ED%8D%BC-%EC%9B%90%EB%A6%AC-State%EA%B0%80-%EB%A7%88%EB%B2%95%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
+- [델리게이트(Delegate) vs 클로저(Closure), 콜백 선택 기준 3가지](/%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8Delegate-vs-%ED%81%B4%EB%A1%9C%EC%A0%80Closure-%EC%BD%9C%EB%B0%B1-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-3%EA%B0%80%EC%A7%80/)
 <!-- /RELATED-POSTS -->

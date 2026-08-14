@@ -165,12 +165,5 @@ actor가 어울리는 자리는 명확합니다. 여러 비동기 맥락이 공�
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-### Swift 심화 시리즈
-
-- 이전 편: [\[Swift 심화 #1\] async/await 원리, 멈추는 건 스레드가 아닙니다](/Swift-%EC%8B%AC%ED%99%94-1-asyncawait-%EC%9B%90%EB%A6%AC-%EB%A9%88%EC%B6%94%EB%8A%94-%EA%B1%B4-%EC%8A%A4%EB%A0%88%EB%93%9C%EA%B0%80-%EC%95%84%EB%8B%99%EB%8B%88%EB%8B%A4/)
-
-### 관련 주제
-
-- [\[Swift 중급 #8\] Swift KeyPath 정리, map(\\\\.name)의 원리](/Swift-%EC%A4%91%EA%B8%89-8-Swift-KeyPath-%EC%A0%95%EB%A6%AC-mapname%EC%9D%98-%EC%9B%90%EB%A6%AC/)
-- [\[Swift 중급 #7\] 프로퍼티 래퍼 원리, @State가 마법이 아닌 이유](/Swift-%EC%A4%91%EA%B8%89-7-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%9E%98%ED%8D%BC-%EC%9B%90%EB%A6%AC-State%EA%B0%80-%EB%A7%88%EB%B2%95%EC%9D%B4-%EC%95%84%EB%8B%8C-%EC%9D%B4%EC%9C%A0/)
+- [델리게이트(Delegate) vs 클로저(Closure), 콜백 선택 기준 3가지](/%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8Delegate-vs-%ED%81%B4%EB%A1%9C%EC%A0%80Closure-%EC%BD%9C%EB%B0%B1-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-3%EA%B0%80%EC%A7%80/)
 <!-- /RELATED-POSTS -->
