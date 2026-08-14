@@ -198,7 +198,8 @@ function App() {
 말로 설명하다 지치는 구간이 매번 반복된다면 그 구간을 손가락으로 가리키는 쪽으로 바꿔볼 만합니다. 공식 홈페이지는 <https://www.agentation.com/>입니다. 다음 편에서도 무료로 쓸 수 있는 서비스를 하나 골라 열어보겠습니다.
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
 - [바이브 코딩(Vibe Coding) 제대로 하는 법, 코드 어디까지 읽어야 할까](/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9-%EC%BD%94%EB%93%9C-%EC%95%88-%EC%9D%BD%EA%B3%A0-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%A9%B4-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%9D%BC%EA%B3%BC-%ED%95%B4%EA%B2%B0%EC%B1%85-3%EA%B0%80%EC%A7%80/)
+- [바이브 코딩(Vibe Coding) 사고, 룰 파일로 애초에 막는 법](/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9Vibe-Coding-%EC%82%AC%EA%B3%A0-%EB%A3%B0-%ED%8C%8C%EC%9D%BC%EB%A1%9C-%EC%95%A0%EC%B4%88%EC%97%90-%EB%A7%89%EB%8A%94-%EB%B2%95/)
 <!-- /RELATED-POSTS -->
