@@ -151,7 +151,8 @@ class Tracker: NSObject {
 다음 글에서는 스위즐링과 헷갈리기 쉬운 또 하나의 런타임 마법, KVO(Key-Value Observing)의 isa-swizzling을 뜯어봅니다. 메서드가 아니라 **클래스 자체를 바꿔치기**하는 이야기입니다.
 
 <!-- RELATED-POSTS -->
-## 함께 보면 좋은 글
+## 이어서 읽기
 
 - [+load vs +initialize 완벽 비교, 호출 시점부터 상속 함정까지 (Objective-C 면접 단골)](/load-vs-initialize-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90-%ED%98%B8%EC%B6%9C-%EC%8B%9C%EC%A0%90%EB%B6%80%ED%84%B0-%EC%83%81%EC%86%8D-%ED%95%A8%EC%A0%95%EA%B9%8C%EC%A7%80-Objective-C-%EB%A9%B4%EC%A0%91-%EB%8B%A8%EA%B3%A8/)
+- [Objective-C Associated Objects, 카테고리에 프로퍼티 넣기](/Objective-C-Associated-Objects-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%97%90-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0-%EB%84%A3%EA%B8%B0/)
 <!-- /RELATED-POSTS -->
