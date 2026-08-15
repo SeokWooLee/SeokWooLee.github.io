@@ -165,4 +165,5 @@ async/await가 자동으로 병렬화해주는 게 아닙니다. 순차와 동�
 ## 이어서 읽기
 
 - [델리게이트(Delegate) vs 클로저(Closure), 콜백 선택 기준 3가지](/%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8Delegate-vs-%ED%81%B4%EB%A1%9C%EC%A0%80Closure-%EC%BD%9C%EB%B0%B1-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-3%EA%B0%80%EC%A7%80/)
+- [\[Swift 심화 #3\] Sendable과 Swift 6 동시성 에러 마이그레이션](/Swift-%EC%8B%AC%ED%99%94-3-Sendable%EA%B3%BC-Swift-6-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%97%90%EB%9F%AC-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98/)
 <!-- /RELATED-POSTS -->

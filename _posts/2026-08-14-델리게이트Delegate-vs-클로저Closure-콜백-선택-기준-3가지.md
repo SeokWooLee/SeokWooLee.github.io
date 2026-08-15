@@ -181,6 +181,5 @@ UIAction 기반 버튼 핸들러, `UICollectionViewDiffableDataSource`의 클로
 ## 이어서 읽기
 
 - [Swift DI 라이브러리 Factory 정리, Swinject와 뭐가 다를까](/Swift-DI-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-Factory-%EC%A0%95%EB%A6%AC-Swinject%EC%99%80-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C/)
-- [\[Swift 심화 #2\] Swift actor 완전 정리, 데이터 레이스 막는 법](/Swift-%EC%8B%AC%ED%99%94-2-Swift-actor-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A0%88%EC%9D%B4%EC%8A%A4-%EB%A7%89%EB%8A%94-%EB%B2%95/)
-- [\[Swift 심화 #1\] async/await 원리, 멈추는 건 스레드가 아닙니다](/Swift-%EC%8B%AC%ED%99%94-1-asyncawait-%EC%9B%90%EB%A6%AC-%EB%A9%88%EC%B6%94%EB%8A%94-%EA%B1%B4-%EC%8A%A4%EB%A0%88%EB%93%9C%EA%B0%80-%EC%95%84%EB%8B%99%EB%8B%88%EB%8B%A4/)
+- [\[Swift 심화 #3\] Sendable과 Swift 6 동시성 에러 마이그레이션](/Swift-%EC%8B%AC%ED%99%94-3-Sendable%EA%B3%BC-Swift-6-%EB%8F%99%EC%8B%9C%EC%84%B1-%EC%97%90%EB%9F%AC-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98/)
 <!-- /RELATED-POSTS -->
