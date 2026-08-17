@@ -1,0 +1,30 @@
+---
+import type { Post } from '../lib/posts';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Pagination from './Pagination.astro';
+import PostCard from './PostCard.astro';
+
+interface Props {
+  posts: Post[];
+  currentPage: number;
+  pageCount: number;
+}
+
+const { posts, currentPage, pageCount } = Astro.props;
+---
+
+<BaseLayout
+  title={`${currentPage}페이지 | 개발바닥`}
+  description={`개발바닥의 글 목록 ${currentPage}페이지입니다. Swift, iOS, 소프트웨어 설계와 AI 도구에 관한 글을 모았습니다.`}
+  canonicalPath={`/page${currentPage}/`}
+>
+  <section class="archive-head shell">
+    <p class="eyebrow">ARCHIVE · {String(currentPage).padStart(2, '0')}</p>
+    <h1>차곡차곡 쌓인 글</h1>
+    <p>기초 개념부터 실무의 선택 기준까지, 발자국을 따라 천천히 둘러보세요.</p>
+  </section>
+  <section class="archive-list shell" aria-label={`${currentPage}페이지 글 목록`}>
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+  <div class="shell"><Pagination currentPage={currentPage} pageCount={pageCount} /></div>
+</BaseLayout>

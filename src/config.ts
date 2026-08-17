@@ -12,7 +12,7 @@ export const SITE = {
     email: 'skwu658@gmail.com',
     github: 'https://github.com/SeokWooLee',
   },
-  defaultImage: '/assets/images/og-default.jpg',
+  defaultImage: '/og.png',
   adsenseId: 'ca-pub-2371133949449816',
   analyticsId: 'G-8C1SQDEKX5',
 } as const;

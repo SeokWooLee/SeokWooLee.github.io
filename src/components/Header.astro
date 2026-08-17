@@ -1,0 +1,46 @@
+---
+import { SITE } from '../config';
+import PawMark from './PawMark.astro';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const links = [
+  { href: '/categories/', label: '주제' },
+  { href: '/tags/', label: '태그' },
+  { href: '/about/', label: '소개' },
+];
+
+const isActive = (href: string) => currentPath.startsWith(href);
+---
+
+<header class="site-header">
+  <div class="site-header__inner shell">
+    <a class="brand" href="/" aria-label={`${SITE.name} 홈`}>
+      <span class="brand__mark"><PawMark /></span>
+      <span class="brand__copy">
+        <strong>{SITE.name}</strong>
+        <small>GROUND-UP DEV NOTES</small>
+      </span>
+    </a>
+
+    <nav class="site-nav site-nav--desktop" aria-label="주요 메뉴">
+      {links.map((link) => (
+        <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
+      ))}
+      <a class="site-nav__search" href="/search/">검색 <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <details class="mobile-menu">
+      <summary>메뉴</summary>
+      <nav aria-label="모바일 메뉴">
+        {links.map((link) => (
+          <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
+        ))}
+        <a href="/search/">검색</a>
+      </nav>
+    </details>
+  </div>
+</header>

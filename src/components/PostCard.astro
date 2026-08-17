@@ -1,0 +1,52 @@
+---
+import type { Post } from '../lib/posts';
+import {
+  formatDate,
+  getCategory,
+  getPostImage,
+  getPostPath,
+  getPublishedDate,
+  getReadingMinutes,
+} from '../lib/posts';
+
+interface Props {
+  post: Post;
+  featured?: boolean;
+  compact?: boolean;
+  eager?: boolean;
+}
+
+const { post, featured = false, compact = false, eager = false } = Astro.props;
+const category = getCategory(post);
+---
+
+<article class:list={['post-card', { 'post-card--featured': featured, 'post-card--compact': compact }]}>
+  {!compact && (
+    <a class="post-card__image" href={getPostPath(post)} tabindex="-1" aria-hidden="true">
+      <img
+        src={getPostImage(post)}
+        alt=""
+        width="1200"
+        height="800"
+        loading={eager ? 'eager' : 'lazy'}
+        fetchpriority={eager ? 'high' : 'auto'}
+        decoding="async"
+      />
+      <span class="post-card__number" aria-hidden="true">{category.eyebrow}</span>
+    </a>
+  )}
+  <div class="post-card__body">
+    <div class="post-card__meta">
+      <a href={`/categories/${category.slug}/`}>{category.label}</a>
+      <span aria-hidden="true">·</span>
+      <time datetime={getPublishedDate(post).toISOString()}>{formatDate(getPublishedDate(post))}</time>
+      <span aria-hidden="true">·</span>
+      <span>{getReadingMinutes(post)}분</span>
+    </div>
+    <h2><a href={getPostPath(post)}>{post.data.title}</a></h2>
+    {!compact && <p>{post.data.description}</p>}
+    <a class="post-card__read" href={getPostPath(post)} aria-label={`${post.data.title} 읽기`}>
+      읽어보기 <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</article>

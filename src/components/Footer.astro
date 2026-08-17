@@ -1,0 +1,24 @@
+---
+import { SITE } from '../config';
+import PawMark from './PawMark.astro';
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner shell">
+    <div class="site-footer__brand">
+      <PawMark />
+      <div>
+        <strong>{SITE.name}</strong>
+        <p>{SITE.tagline}</p>
+      </div>
+    </div>
+    <div class="site-footer__links">
+      <a href="/categories/">주제별 글</a>
+      <a href="/tags/">전체 태그</a>
+      <a href="/about/">소개</a>
+      <a href="/privacy-policy/">개인정보처리방침</a>
+      <a href="/rss.xml">RSS</a>
+    </div>
+    <p class="site-footer__copyright">© {new Date().getFullYear()} {SITE.author.name}</p>
+  </div>
+</footer>

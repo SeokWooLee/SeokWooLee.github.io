@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const page = (await getCollection('pages')).find((entry) => entry.data.permalink === '/about/');
+if (!page) throw new Error('About page content is missing.');
+const { Content } = await render(page);
+---
+
+<BaseLayout title={`${page.data.title} | 개발바닥`} description={page.data.description} canonicalPath={page.data.permalink}>
+  <article class="prose-page shell">
+    <header class="prose-page__header">
+      <p class="eyebrow">ABOUT THE AUTHOR</p>
+      <h1>{page.data.title}</h1>
+    </header>
+    <div class="prose-page__body article__body"><Content /></div>
+  </article>
+</BaseLayout>

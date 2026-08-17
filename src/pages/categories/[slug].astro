@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../components/PostCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  CATEGORIES,
+  getPostsByCategory,
+  sortPosts,
+  type Category,
+  type Post,
+} from '../../lib/posts';
+
+interface Props {
+  category: Category;
+  posts: Post[];
+}
+
+export async function getStaticPaths() {
+  const posts = sortPosts(await getCollection('posts'));
+
+  return CATEGORIES.map((category) => ({
+    params: { slug: category.slug },
+    props: { category, posts: getPostsByCategory(posts, category) },
+  }));
+}
+
+const { category, posts } = Astro.props;
+---
+
+<BaseLayout
+  title={`${category.label} | 개발바닥`}
+  description={category.description}
+  canonicalPath={`/categories/${category.slug}/`}
+>
+  <header class="taxonomy-head shell">
+    <p class="eyebrow">{category.eyebrow} · {posts.length} ARTICLES</p>
+    <h1>{category.label}</h1>
+    <p>{category.description}</p>
+  </header>
+  <section class="archive-list shell" aria-label={`${category.label} 글 목록`}>
+    {posts.map((post) => <PostCard post={post} />)}
+  </section>
+  <div class="shell" style="padding-bottom: 100px">
+    <a class="button button--light" href="/categories/">← 모든 주제</a>
+  </div>
+</BaseLayout>

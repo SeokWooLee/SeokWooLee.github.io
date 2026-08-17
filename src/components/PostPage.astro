@@ -1,0 +1,120 @@
+---
+import type { MarkdownHeading } from 'astro';
+import type { Post } from '../lib/posts';
+import { SITE } from '../config';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  formatDate,
+  getCategory,
+  getPostImage,
+  getPostPath,
+  getPublishedDate,
+  getReadingMinutes,
+} from '../lib/posts';
+import PawMark from './PawMark.astro';
+
+interface Props {
+  post: Post;
+  Content: any;
+  headings: MarkdownHeading[];
+  newerPost?: Post;
+  olderPost?: Post;
+}
+
+const { post, Content, headings, newerPost, olderPost } = Astro.props;
+const publishedAt = getPublishedDate(post);
+const category = getCategory(post);
+const tableOfContents = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
+---
+
+<BaseLayout
+  title={`${post.data.title} | ${SITE.name}`}
+  description={post.data.description}
+  image={getPostImage(post)}
+  canonicalPath={getPostPath(post)}
+  type="article"
+>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <article class="post-page">
+    <header class="post-hero shell">
+      <a class="post-hero__category" href={`/categories/${category.slug}/`}>{category.label}</a>
+      <h1>{post.data.title}</h1>
+      <p class="post-hero__lead">{post.data.description}</p>
+      <div class="post-hero__meta">
+        <span class="post-hero__avatar"><PawMark /></span>
+        <span><strong>{SITE.author.alternateName}</strong><small>{SITE.author.role}</small></span>
+        <span class="post-hero__separator" aria-hidden="true"></span>
+        <time datetime={publishedAt.toISOString()}>{formatDate(publishedAt)}</time>
+        <span aria-hidden="true">·</span>
+        <span>{getReadingMinutes(post)}분 읽기</span>
+      </div>
+    </header>
+
+    <figure class="post-cover shell">
+      <img
+        src={getPostImage(post)}
+        alt={`${post.data.title} 대표 이미지`}
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </figure>
+
+    <div class="post-layout shell">
+      <aside class="post-toc" aria-label="목차">
+        <p>ON THIS PAGE</p>
+        {tableOfContents.length > 0 ? (
+          <ol>
+            {tableOfContents.map((heading) => (
+              <li class:list={[`depth-${heading.depth}`]}><a href={`#${heading.slug}`}>{heading.text}</a></li>
+            ))}
+          </ol>
+        ) : (
+          <span>차근차근 읽어보세요.</span>
+        )}
+      </aside>
+
+      <div class="article__body">
+        <Content />
+
+        {post.data.tags.length > 0 && (
+          <footer class="post-tags">
+            <p>함께 묶인 키워드</p>
+            <div>{post.data.tags.map((tag) => <a href={`/tags/#${encodeURIComponent(tag)}`}>#{tag}</a>)}</div>
+          </footer>
+        )}
+      </div>
+    </div>
+
+    <nav class="post-neighbors shell" aria-label="이전 및 다음 글">
+      {olderPost ? (
+        <a href={getPostPath(olderPost)}>
+          <span>← 먼저 쌓인 글</span>
+          <strong>{olderPost.data.title}</strong>
+        </a>
+      ) : <span></span>}
+      {newerPost ? (
+        <a class="post-neighbors__newer" href={getPostPath(newerPost)}>
+          <span>새로 쌓인 글 →</span>
+          <strong>{newerPost.data.title}</strong>
+        </a>
+      ) : <span></span>}
+    </nav>
+  </article>
+
+  <script is:inline>
+    const progressBar = document.querySelector('.reading-progress span');
+    const article = document.querySelector('.post-page');
+    const updateProgress = () => {
+      if (!progressBar || !article) return;
+      const start = article.offsetTop;
+      const distance = article.offsetHeight - window.innerHeight;
+      const progress = Math.min(1, Math.max(0, (window.scrollY - start) / distance));
+      progressBar.style.transform = `scaleX(${progress})`;
+    };
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+  </script>
+</BaseLayout>

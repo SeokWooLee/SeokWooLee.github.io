@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTagCounts } from '../lib/posts';
+
+const tags = getTagCounts(await getCollection('posts'));
+---
+
+<BaseLayout
+  title="태그 | 개발바닥"
+  description="개발바닥의 모든 글을 Swift, iOS, AI 에이전트, 디자인 패턴 등 세부 키워드로 찾아보세요."
+  canonicalPath="/tags/"
+>
+  <header class="taxonomy-head shell">
+    <p class="eyebrow">KEYWORD MAP · {tags.length} TAGS</p>
+    <h1>키워드 지도</h1>
+    <p>더 구체적인 개념을 찾고 있다면 태그를 검색해 보세요.</p>
+  </header>
+  <section class="tag-tools shell" aria-label="태그 검색">
+    <div class="filter-field">
+      <label for="tag-filter">FILTER</label>
+      <input id="tag-filter" type="search" placeholder="Swift, DI, 에이전트…" autocomplete="off" />
+    </div>
+    <p class="filter-status" aria-live="polite"><span id="tag-count">{tags.length}</span>개의 태그</p>
+  </section>
+  <div class="tag-cloud shell" id="tag-cloud">
+    {tags.map((tag) => (
+      <a
+        class="tag-chip"
+        id={tag.name}
+        href={`/search/?q=${encodeURIComponent(tag.name)}`}
+        data-tag={tag.name.toLocaleLowerCase('ko')}
+      >
+        <strong>#{tag.name}</strong><span>{tag.count}</span>
+      </a>
+    ))}
+  </div>
+
+  <script is:inline>
+    const input = document.querySelector('#tag-filter');
+    const chips = [...document.querySelectorAll('[data-tag]')];
+    const count = document.querySelector('#tag-count');
+    const normalize = (value) => value.trim().toLocaleLowerCase('ko');
+
+    input?.addEventListener('input', () => {
+      const query = normalize(input.value);
+      let visible = 0;
+      chips.forEach((chip) => {
+        const matches = !query || chip.dataset.tag.includes(query);
+        chip.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      if (count) count.textContent = String(visible);
+    });
+  </script>
+</BaseLayout>

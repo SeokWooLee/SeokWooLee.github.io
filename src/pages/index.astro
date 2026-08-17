@@ -1,29 +1,80 @@
 ---
 import { getCollection } from 'astro:content';
+import PawMark from '../components/PawMark.astro';
+import Pagination from '../components/Pagination.astro';
+import PostCard from '../components/PostCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { formatDate, getPostPath, getPublishedDate, sortPosts } from '../lib/posts';
+import { CATEGORIES, getPostsByCategory, PAGE_SIZE, sortPosts } from '../lib/posts';
 
 const posts = sortPosts(await getCollection('posts'));
+const latestPosts = posts.slice(0, PAGE_SIZE);
+const pageCount = Math.ceil(posts.length / PAGE_SIZE);
 ---
 
 <BaseLayout>
-  <section class="page-section shell">
-    <p class="post-meta">개발을 바닥부터, 단단하게</p>
-    <h1>복잡한 개발 개념을<br />내 것으로 만드는 글</h1>
-    <p>Swift와 iOS, 소프트웨어 설계, AI 도구를 실무의 언어로 풀어냅니다.</p>
+  <section class="home-hero shell">
+    <div class="home-hero__copy">
+      <p class="eyebrow">SWIFT · iOS · SOFTWARE ENGINEERING</p>
+      <h1>개발을<br /><em>바닥부터</em><br />단단하게.</h1>
+      <p class="home-hero__description">
+        복잡한 개발 개념도 뿌리부터 이해하면 오래 남습니다.<br />10년차 iOS 개발자가 실무의 언어로 풀어냅니다.
+      </p>
+      <div class="home-hero__actions">
+        <a class="button button--primary" href="#latest">최신 글 읽기 <span aria-hidden="true">↓</span></a>
+        <a class="button button--light" href="/about/">블로그 소개</a>
+      </div>
+    </div>
+    <div class="ground-scene" aria-label="개 발바닥이 단단한 지층 위에 찍힌 개발바닥 일러스트">
+      <span class="ground-scene__sun"></span>
+      <span class="ground-scene__paw"><PawMark /></span>
+      <p class="ground-scene__label"><small>START FROM</small>GROUND<br />LEVEL 0</p>
+      <span class="ground-scene__layer ground-scene__layer--one"></span>
+      <span class="ground-scene__layer ground-scene__layer--two"></span>
+    </div>
   </section>
-  <section class="page-section shell" aria-labelledby="latest-heading">
-    <h2 id="latest-heading">전체 글 {posts.length}개</h2>
-    <ol class="post-list">
-      {posts.map((post) => (
-        <li>
-          <a href={getPostPath(post)}>
-            <span class="post-meta">{formatDate(getPublishedDate(post))}</span>
-            <h2>{post.data.title}</h2>
-            <p>{post.data.description}</p>
+
+  <section class="home-stats" aria-label="블로그 현황">
+    <div><strong>{posts.length}</strong><span>차곡차곡 쌓인 글</span></div>
+    <div><strong>{CATEGORIES.length}</strong><span>핵심 개발 주제</span></div>
+    <div><strong>10+</strong><span>년의 iOS 경험</span></div>
+  </section>
+
+  <section id="latest" class="section-block shell" aria-labelledby="latest-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">LATEST FOOTPRINTS</p>
+        <h2 id="latest-heading">새로 남긴 발자국</h2>
+      </div>
+      <p>오늘의 문제를 해결하면서 내일도 꺼내 쓸 수 있는 개념과 판단 기준을 기록합니다.</p>
+    </div>
+    <div class="latest-grid">
+      {latestPosts[0] && <PostCard post={latestPosts[0]} featured eager />}
+      <div class="latest-grid__side">
+        {latestPosts.slice(1).map((post) => <PostCard post={post} compact />)}
+      </div>
+    </div>
+    <Pagination currentPage={1} pageCount={pageCount} />
+  </section>
+
+  <section class="category-section">
+    <div class="section-block shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DIG BY TOPIC</p>
+          <h2>어디부터 파볼까요?</h2>
+        </div>
+        <p>관심 있는 주제부터 시작해도 괜찮습니다. 모든 길은 결국 탄탄한 기초로 이어집니다.</p>
+      </div>
+      <div class="category-grid">
+        {CATEGORIES.map((category, index) => (
+          <a class="category-card" href={`/categories/${category.slug}/`}>
+            <span class="category-card__index">0{index + 1} / {category.eyebrow}</span>
+            <h3>{category.label}</h3>
+            <p>{category.description}</p>
+            <span class="category-card__count">{getPostsByCategory(posts, category).length} ARTICLES →</span>
           </a>
-        </li>
-      ))}
-    </ol>
+        ))}
+      </div>
+    </div>
   </section>
 </BaseLayout>

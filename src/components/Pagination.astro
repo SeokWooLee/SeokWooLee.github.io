@@ -1,0 +1,43 @@
+---
+interface Props {
+  currentPage: number;
+  pageCount: number;
+}
+
+const { currentPage, pageCount } = Astro.props;
+const pathFor = (page: number) => (page === 1 ? '/' : `/page${page}/`);
+const visiblePages = Array.from({ length: pageCount }, (_, index) => index + 1).filter(
+  (page) => page === 1 || page === pageCount || Math.abs(page - currentPage) <= 1,
+);
+---
+
+<nav class="pagination" aria-label="글 목록 페이지">
+  <a
+    class:list={['pagination__direction', { 'is-disabled': currentPage === 1 }]}
+    href={currentPage > 1 ? pathFor(currentPage - 1) : undefined}
+    aria-disabled={currentPage === 1 ? 'true' : undefined}
+  >
+    <span aria-hidden="true">←</span> 이전
+  </a>
+  <ol>
+    {visiblePages.map((page, index) => {
+      const previous = visiblePages[index - 1];
+      const needsGap = previous && page - previous > 1;
+      return (
+        <>
+          {needsGap && <li class="pagination__gap" aria-hidden="true">…</li>}
+          <li>
+            <a href={pathFor(page)} aria-current={page === currentPage ? 'page' : undefined}>{page}</a>
+          </li>
+        </>
+      );
+    })}
+  </ol>
+  <a
+    class:list={['pagination__direction', { 'is-disabled': currentPage === pageCount }]}
+    href={currentPage < pageCount ? pathFor(currentPage + 1) : undefined}
+    aria-disabled={currentPage === pageCount ? 'true' : undefined}
+  >
+    다음 <span aria-hidden="true">→</span>
+  </a>
+</nav>

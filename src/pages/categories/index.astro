@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../components/PostCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CATEGORIES, getPostsByCategory, sortPosts } from '../../lib/posts';
+
+const posts = sortPosts(await getCollection('posts'));
+---
+
+<BaseLayout
+  title="주제별 글 | 개발바닥"
+  description="Swift와 iOS, AI 도구, 소프트웨어 설계, 컴퓨터 과학 주제별로 개발바닥의 글을 찾아보세요."
+  canonicalPath="/categories/"
+>
+  <header class="taxonomy-head shell">
+    <p class="eyebrow">DIG BY TOPIC</p>
+    <h1>주제별로 파보기</h1>
+    <p>관심 있는 땅부터 골라보세요. 각 주제의 최신 글부터 이어서 읽을 수 있습니다.</p>
+  </header>
+  <div class="taxonomy-grid shell">
+    {CATEGORIES.map((category) => {
+      const categoryPosts = getPostsByCategory(posts, category);
+      return (
+        <section class="taxonomy-panel" aria-labelledby={`category-${category.slug}`}>
+          <div class="taxonomy-panel__head">
+            <h2 id={`category-${category.slug}`}>{category.label}</h2>
+            <span>{categoryPosts.length} ARTICLES</span>
+          </div>
+          <p class="taxonomy-panel__description">{category.description}</p>
+          {categoryPosts.slice(0, 3).map((post) => <PostCard post={post} compact />)}
+          <a class="taxonomy-panel__more" href={`/categories/${category.slug}/`}>
+            {category.label} 글 모두 보기 →
+          </a>
+        </section>
+      );
+    })}
+  </div>
+</BaseLayout>

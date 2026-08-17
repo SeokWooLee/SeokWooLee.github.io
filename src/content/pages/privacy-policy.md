@@ -1,13 +1,10 @@
 ---
 title: "개인정보처리방침"
-layout: single
 permalink: /privacy-policy/
-author_profile: false
-sitemap: true
 description: "iOS 개발 블로그의 개인정보처리방침입니다. 쿠키 사용, Google 애널리틱스 및 Google 애드센스 관련 안내를 담고 있습니다."
 ---
 
-본 블로그(https://seokwoolee.github.io, 이하 "블로그")는 방문자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다. 본 방침은 블로그에서 수집되는 정보와 그 이용 방식을 안내합니다.
+본 블로그(개발바닥, 이하 "블로그")는 방문자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다. 본 방침은 블로그에서 수집되는 정보와 그 이용 방식을 안내합니다.
 
 ## 1. 수집하는 정보
 

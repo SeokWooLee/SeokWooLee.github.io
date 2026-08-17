@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../components/PostCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCategory, sortPosts } from '../lib/posts';
+
+const posts = sortPosts(await getCollection('posts'));
+---
+
+<BaseLayout
+  title="검색 | 개발바닥"
+  description="개발바닥의 Swift, iOS, 소프트웨어 설계, AI 도구 글을 제목과 키워드로 검색하세요."
+  canonicalPath="/search/"
+>
+  <header class="taxonomy-head shell">
+    <p class="eyebrow">SEARCH THE GROUND</p>
+    <h1>무엇을 찾고 있나요?</h1>
+    <p>제목과 설명, 카테고리, 태그를 한 번에 검색합니다.</p>
+  </header>
+  <section class="search-tools shell" aria-label="글 검색">
+    <div class="filter-field">
+      <label for="post-search">SEARCH</label>
+      <input id="post-search" type="search" placeholder="궁금한 개발 개념을 입력하세요" autocomplete="off" autofocus />
+    </div>
+    <p class="filter-status" id="search-status" aria-live="polite">최근 글 {Math.min(15, posts.length)}개를 보여드려요.</p>
+  </section>
+  <section class="search-results archive-list shell" id="search-results" aria-label="검색 결과">
+    {posts.map((post, index) => (
+      <div
+        class="search-result"
+        hidden={index >= 15}
+        data-search={`${post.data.title} ${post.data.description} ${getCategory(post).label} ${post.data.tags.join(' ')}`.toLocaleLowerCase('ko')}
+      >
+        <PostCard post={post} compact />
+      </div>
+    ))}
+  </section>
+
+  <script is:inline>
+    const input = document.querySelector('#post-search');
+    const results = [...document.querySelectorAll('[data-search]')];
+    const status = document.querySelector('#search-status');
+    const params = new URLSearchParams(window.location.search);
+    const normalize = (value) => value.trim().toLocaleLowerCase('ko');
+
+    const filter = () => {
+      if (!input) return;
+      const query = normalize(input.value);
+      let visible = 0;
+      results.forEach((result, index) => {
+        const matches = query ? result.dataset.search.includes(query) : index < 15;
+        result.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      if (status) {
+        status.textContent = query ? `${visible}개의 글을 찾았어요.` : `최근 글 ${visible}개를 보여드려요.`;
+      }
+    };
+
+    if (input) {
+      input.value = params.get('q') ?? '';
+      input.addEventListener('input', filter);
+      filter();
+    }
+  </script>
+</BaseLayout>
