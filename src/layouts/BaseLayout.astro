@@ -1,0 +1,64 @@
+---
+import { SITE } from '../config';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalPath?: string;
+  type?: 'website' | 'article';
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  image = SITE.defaultImage,
+  canonicalPath = Astro.url.pathname,
+  type = 'website',
+} = Astro.props;
+const canonical = new URL(canonicalPath, Astro.site ?? Astro.url.origin);
+const socialImage = new URL(image, Astro.site ?? Astro.url.origin);
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner shell">
+        <a class="brand" href="/">{SITE.name}</a>
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="/categories/">카테고리</a>
+          <a href="/tags/">태그</a>
+          <a href="/about/">소개</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell">© {new Date().getFullYear()} {SITE.author.name}. {SITE.tagline}</div>
+    </footer>
+  </body>
+</html>

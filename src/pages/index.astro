@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, getPostPath, getPublishedDate, sortPosts } from '../lib/posts';
+
+const posts = sortPosts(await getCollection('posts'));
+---
+
+<BaseLayout>
+  <section class="page-section shell">
+    <p class="post-meta">개발을 바닥부터, 단단하게</p>
+    <h1>복잡한 개발 개념을<br />내 것으로 만드는 글</h1>
+    <p>Swift와 iOS, 소프트웨어 설계, AI 도구를 실무의 언어로 풀어냅니다.</p>
+  </section>
+  <section class="page-section shell" aria-labelledby="latest-heading">
+    <h2 id="latest-heading">전체 글 {posts.length}개</h2>
+    <ol class="post-list">
+      {posts.map((post) => (
+        <li>
+          <a href={getPostPath(post)}>
+            <span class="post-meta">{formatDate(getPublishedDate(post))}</span>
+            <h2>{post.data.title}</h2>
+            <p>{post.data.description}</p>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+</BaseLayout>

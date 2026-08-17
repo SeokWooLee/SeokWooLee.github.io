@@ -1,0 +1,121 @@
+:root {
+  color-scheme: light;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172019;
+  background: #f6f4ed;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.shell {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid #d9ddd3;
+  background: rgba(246, 244, 237, 0.94);
+}
+
+.site-header__inner {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+}
+
+.page-section {
+  padding-block: 64px;
+}
+
+.post-list {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.post-list a {
+  display: block;
+  padding: 20px;
+  border: 1px solid #d9ddd3;
+  border-radius: 16px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.post-list h2 {
+  margin: 6px 0;
+}
+
+.post-meta {
+  color: #667064;
+  font-size: 0.9rem;
+}
+
+.article {
+  width: min(760px, calc(100% - 40px));
+  margin-inline: auto;
+  padding-block: 64px;
+}
+
+.article__body {
+  font-size: 1.06rem;
+  line-height: 1.82;
+}
+
+.article__body pre {
+  overflow-x: auto;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.article__body figure {
+  margin: 36px 0;
+}
+
+.site-footer {
+  padding-block: 32px;
+  border-top: 1px solid #d9ddd3;
+  color: #667064;
+}

@@ -1,0 +1,51 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  formatDate,
+  getPostPath,
+  getPostSlug,
+  getPublishedDate,
+  getReadingMinutes,
+} from '../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+
+  return posts.map((post) => ({
+    params: { slug: getPostSlug(post) },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const publishedAt = getPublishedDate(post);
+const pageTitle = `${post.data.title} | 개발바닥`;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={post.data.description}
+  image={post.data.header.og_image}
+  canonicalPath={getPostPath(post)}
+  type="article"
+>
+  <article class="article">
+    <header>
+      <p class="post-meta">
+        <time datetime={publishedAt.toISOString()}>{formatDate(publishedAt)}</time>
+        · {getReadingMinutes(post)}분
+      </p>
+      <h1>{post.data.title}</h1>
+      <p>{post.data.description}</p>
+    </header>
+    <div class="article__body">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
