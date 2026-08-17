@@ -126,5 +126,5 @@ Skill은 결국 프롬프트의 함수화입니다. 반복되는 지시를 복�
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-- [\[에이전트 설계 #1\] 하네스 엔지니어링이란? 프롬프트 다음에 오는 것](/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84-1-%ED%95%98%EB%84%A4%EC%8A%A4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%9D%B4%EB%9E%80-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EB%8B%A4%EC%9D%8C%EC%97%90-%EC%98%A4%EB%8A%94-%EA%B2%83/)
+- [\[Claude Code #1\] /init, CLAUDE.md 자동 생성으로 시작하기](/Claude-Code-1-init-CLAUDEmd-%EC%9E%90%EB%8F%99-%EC%83%9D%EC%84%B1%EC%9C%BC%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/)
 <!-- /RELATED-POSTS -->

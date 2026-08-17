@@ -290,7 +290,6 @@ A. 내용은 하나로 쓰고 파일만 복제하는 게 보통입니다.
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-- [\[바이브 코더 #8\] 사용자 받기 전 보안 체크리스트 6가지](/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%8D%94-8-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%B0%9B%EA%B8%B0-%EC%A0%84-%EB%B3%B4%EC%95%88-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8-6%EA%B0%80%EC%A7%80/)
 - [바이브 코딩(Vibe Coding) 제대로 하는 법, 코드 어디까지 읽어야 할까](/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9-%EC%BD%94%EB%93%9C-%EC%95%88-%EC%9D%BD%EA%B3%A0-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%A9%B4-%EC%83%9D%EA%B8%B0%EB%8A%94-%EC%9D%BC%EA%B3%BC-%ED%95%B4%EA%B2%B0%EC%B1%85-3%EA%B0%80%EC%A7%80/)
-- [\[무료 서비스 소개 #1\] Agentation(에이젠테이션) 사용법, "이 버튼 말고 저 버튼" 설명 없이 AI에게 웹 디자인 수정 시키기](/Agentation%EC%97%90%EC%9D%B4%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%98-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%9D%B4-%EB%B2%84%ED%8A%BC-%EB%A7%90%EA%B3%A0-%EC%A0%80-%EB%B2%84%ED%8A%BC-%EC%84%A4%EB%AA%85-%EC%97%86%EC%9D%B4-AI%EC%97%90%EA%B2%8C-%EC%9B%B9-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%88%98%EC%A0%95-%EC%8B%9C%ED%82%A4%EA%B8%B0/)
+- [\[Claude Code #1\] /init, CLAUDE.md 자동 생성으로 시작하기](/Claude-Code-1-init-CLAUDEmd-%EC%9E%90%EB%8F%99-%EC%83%9D%EC%84%B1%EC%9C%BC%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/)
 <!-- /RELATED-POSTS -->
