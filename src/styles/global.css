@@ -118,16 +118,12 @@ input {
   text-decoration: none;
 }
 
-.brand__mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
+.brand__logo {
+  width: 44px;
+  height: 44px;
   border: 2px solid var(--ink);
-  border-radius: 50%;
-  color: var(--ink);
-  background: var(--lime);
-  font-size: 15px;
+  border-radius: 11px;
+  box-shadow: 2px 2px 0 var(--lime);
 }
 
 .brand__copy {
@@ -294,14 +290,17 @@ main {
   background: var(--yellow);
 }
 
-.ground-scene__paw {
+.ground-scene__logo {
   position: absolute;
   z-index: 2;
-  top: 96px;
-  left: 55px;
-  color: var(--lime);
-  font-size: 64px;
-  transform: rotate(-12deg);
+  top: 70px;
+  left: 48px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 34px;
+  box-shadow: 8px 8px 0 var(--coral);
+  transform: rotate(-8deg);
 }
 
 .ground-scene__label {
@@ -899,14 +898,10 @@ main {
 }
 
 .post-hero__avatar {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border-radius: 50%;
-  color: var(--ink);
-  background: var(--lime);
-  font-size: 12px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--ink);
+  border-radius: 9px;
 }
 
 .post-hero__separator {
@@ -1238,8 +1233,13 @@ main {
   display: flex;
   align-items: center;
   gap: 18px;
-  color: var(--lime);
-  font-size: 25px;
+}
+
+.site-footer__logo {
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 13px;
 }
 
 .site-footer__brand strong {
@@ -1415,10 +1415,13 @@ main {
     box-shadow: 7px 7px 0 var(--coral);
   }
 
-  .ground-scene__paw {
-    top: 70px;
-    left: 38px;
-    font-size: 48px;
+  .ground-scene__logo {
+    top: 54px;
+    left: 34px;
+    width: 112px;
+    height: 112px;
+    border-radius: 26px;
+    box-shadow: 6px 6px 0 var(--coral);
   }
 
   .ground-scene__sun {

@@ -1,6 +1,6 @@
 ---
 import { SITE } from '../config';
-import PawMark from './PawMark.astro';
+import BrandLogo from './BrandLogo.astro';
 
 interface Props {
   currentPath: string;
@@ -19,7 +19,7 @@ const isActive = (href: string) => currentPath.startsWith(href);
 <header class="site-header">
   <div class="site-header__inner shell">
     <a class="brand" href="/" aria-label={`${SITE.name} 홈`}>
-      <span class="brand__mark"><PawMark /></span>
+      <BrandLogo class="brand__logo" />
       <span class="brand__copy">
         <strong>{SITE.name}</strong>
         <small>GROUND-UP DEV NOTES</small>

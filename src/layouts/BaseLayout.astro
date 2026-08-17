@@ -49,6 +49,7 @@ const structuredData = type === 'article'
       publisher: {
         '@type': 'Person',
         name: SITE.author.name,
+        image: new URL(SITE.logo, Astro.site ?? Astro.url.origin).href,
       },
       keywords: tags.join(', '),
     }
@@ -66,6 +67,7 @@ const structuredData = type === 'article'
         alternateName: SITE.author.alternateName,
         url: SITE.author.github,
       },
+      image: new URL(SITE.logo, Astro.site ?? Astro.url.origin).href,
     };
 const structuredDataJson = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 ---
@@ -85,6 +87,7 @@ const structuredDataJson = JSON.stringify(structuredData).replace(/</g, '\\u003c
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="application/rss+xml" title={`${SITE.name} RSS`} href={new URL('/rss.xml', Astro.site ?? Astro.url.origin)} />
     <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href={SITE.logo} />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={SITE.name} />

@@ -81,6 +81,7 @@ assert(missingImages.size === 0, `로컬 이미지가 누락됐습니다:\n${[..
 const requiredFiles = [
   '404.html',
   'ads.txt',
+  'favicon.ico',
   'robots.txt',
   'rss.xml',
   'sitemap.xml',

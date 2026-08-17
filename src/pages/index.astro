@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import PawMark from '../components/PawMark.astro';
+import BrandLogo from '../components/BrandLogo.astro';
 import Pagination from '../components/Pagination.astro';
 import PostCard from '../components/PostCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -26,7 +26,7 @@ const pageCount = Math.ceil(posts.length / PAGE_SIZE);
     </div>
     <div class="ground-scene" aria-label="개 발바닥이 단단한 지층 위에 찍힌 개발바닥 일러스트">
       <span class="ground-scene__sun"></span>
-      <span class="ground-scene__paw"><PawMark /></span>
+      <BrandLogo class="ground-scene__logo" />
       <p class="ground-scene__label"><small>START FROM</small>GROUND<br />LEVEL 0</p>
       <span class="ground-scene__layer ground-scene__layer--one"></span>
       <span class="ground-scene__layer ground-scene__layer--two"></span>

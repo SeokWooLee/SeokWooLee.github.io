@@ -1,0 +1,28 @@
+---
+import { SITE } from '../config';
+
+interface Props {
+  class?: string;
+  alt?: string;
+  loading?: 'eager' | 'lazy';
+}
+
+const { class: className = '', alt = '', loading = 'eager' } = Astro.props;
+---
+
+<img
+  class:list={['brand-logo', className]}
+  src={SITE.logo}
+  alt={alt}
+  width="300"
+  height="300"
+  loading={loading}
+  decoding="async"
+/>
+
+<style>
+  .brand-logo {
+    display: block;
+    object-fit: cover;
+  }
+</style>

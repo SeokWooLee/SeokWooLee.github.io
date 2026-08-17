@@ -12,6 +12,7 @@ export const SITE = {
     email: 'skwu658@gmail.com',
     github: 'https://github.com/SeokWooLee',
   },
+  logo: '/assets/brand/gae-balbadak-logo.png',
   defaultImage: '/og.png',
   adsenseId: 'ca-pub-2371133949449816',
   analyticsId: 'G-8C1SQDEKX5',

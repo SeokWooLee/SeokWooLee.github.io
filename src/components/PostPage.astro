@@ -11,7 +11,7 @@ import {
   getPublishedDate,
   getReadingMinutes,
 } from '../lib/posts';
-import PawMark from './PawMark.astro';
+import BrandLogo from './BrandLogo.astro';
 
 interface Props {
   post: Post;
@@ -44,7 +44,7 @@ const tableOfContents = headings.filter((heading) => heading.depth === 2 || head
       <h1>{post.data.title}</h1>
       <p class="post-hero__lead">{post.data.description}</p>
       <div class="post-hero__meta">
-        <span class="post-hero__avatar"><PawMark /></span>
+        <BrandLogo class="post-hero__avatar" />
         <span><strong>{SITE.author.alternateName}</strong><small>{SITE.author.role}</small></span>
         <span class="post-hero__separator" aria-hidden="true"></span>
         <time datetime={publishedAt.toISOString()}>{formatDate(publishedAt)}</time>
