@@ -124,7 +124,7 @@ C에서 쓰는 글자를 한번 떠올려 볼게요.
 
 아래는 간단한 클래스 선언 모습이에요. @가 어떻게 Objective-C 문법을 감싸는지 보시면 됩니다.
 
-```objectivec
+```objective-c
 @interface Person : NSObject   // 클래스 선언 시작 (C엔 없는 문법)
 @property NSString *name;      // 속성 자동 생성
 @end                           // 선언 끝
