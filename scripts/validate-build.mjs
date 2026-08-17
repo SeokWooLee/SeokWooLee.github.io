@@ -78,6 +78,7 @@ for (const htmlFile of htmlFiles) {
 
 assert(missingImages.size === 0, `로컬 이미지가 누락됐습니다:\n${[...missingImages].join('\n')}`);
 
+const googleVerificationFile = 'googlef513e75fd4fd1b71.html';
 const requiredFiles = [
   '404.html',
   'ads.txt',
@@ -86,10 +87,16 @@ const requiredFiles = [
   'rss.xml',
   'sitemap.xml',
   'sitemap.txt',
-  'googlef513e75fd4fd1b71.html',
+  googleVerificationFile,
   'naver7d3beabb75467760ac49851548c4085c.html',
 ];
 for (const file of requiredFiles) assert(existsSync(join(distRoot, file)), `필수 산출물이 없습니다: ${file}`);
+
+const googleVerification = readFileSync(join(distRoot, googleVerificationFile), 'utf8').trim();
+assert(
+  googleVerification === `google-site-verification: ${googleVerificationFile}`,
+  'Google Search Console 인증 파일 내용이 올바르지 않습니다.',
+);
 
 const largestFile = walk(distRoot)
   .map((path) => ({ path, bytes: statSync(path).size }))
