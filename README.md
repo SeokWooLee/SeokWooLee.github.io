@@ -4,7 +4,7 @@
 
 10년차 iOS 개발자가 Swift와 iOS, 소프트웨어 설계, AI 도구를 실무의 언어로 풀어내는 기술 블로그입니다.
 
-`main`은 Astro 기반 Cloudflare Pages 배포 브랜치입니다. 기존 Jekyll/GitHub Pages 운영본은 전환이 끝날 때까지 `master`에 남겨 둡니다.
+`main`은 Astro 기반 Cloudflare Pages 운영 브랜치입니다.
 
 ## 기술 구성
 
@@ -75,4 +75,4 @@ Cloudflare Pages 최초 연결과 전환 체크리스트는 [CLOUDFLARE.md](CLOU
 
 ## 저작권
 
-글과 자체 제작 이미지의 저작권은 작성자에게 있습니다. 저장소의 이전 Jekyll 테마 이력에 적용되는 MIT 고지는 [LICENSE](LICENSE)에 보존되어 있습니다.
+글과 자체 제작 이미지의 저작권은 작성자에게 있습니다. 저장소의 제3자 코드와 이전 이력에 적용되는 MIT 고지는 [LICENSE](LICENSE)에 보존되어 있습니다.

@@ -38,7 +38,6 @@ SITE_URL=https://gae-balbadak.pages.dev npm run validate
 - `/rss.xml`
 - `/ads.txt`
 - `/googlef513e75fd4fd1b71.html`
-- `/naver7d3beabb75467760ac49851548c4085c.html`
 
 ## 검색 도구와 광고
 
@@ -46,5 +45,3 @@ SITE_URL=https://gae-balbadak.pages.dev npm run validate
 - 두 검색 도구 모두 `/sitemap.xml`을 먼저 제출하고, 진단용으로 `/sitemap.txt`도 사용할 수 있습니다.
 - AdSense의 사이트 목록에도 새 운영 주소를 추가하고 검토를 요청합니다.
 - `ads.txt`와 AdSense 자동 광고 코드는 이미 빌드 결과에 포함됩니다.
-
-기존 GitHub Pages의 `master` 브랜치는 전환 확인이 끝날 때까지 롤백 가능한 운영본으로 유지합니다.

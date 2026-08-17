@@ -89,9 +89,14 @@ const requiredFiles = [
   'sitemap.xml',
   'sitemap.txt',
   googleVerificationFile,
-  'naver7d3beabb75467760ac49851548c4085c.html',
 ];
 for (const file of requiredFiles) assert(existsSync(join(distRoot, file)), `필수 산출물이 없습니다: ${file}`);
+
+const homeHtml = readFileSync(join(distRoot, 'index.html'), 'utf8');
+assert(
+  homeHtml.includes('<meta name="naver-site-verification" content="1cefbcceae5fed9e1a52a5686c05f22db02f47e3">'),
+  '네이버 서치어드바이저 인증 태그가 없습니다.',
+);
 
 const googleVerification = readFileSync(join(distRoot, googleVerificationFile), 'utf8').trim();
 assert(
