@@ -147,12 +147,6 @@ Swift Evolution 편에서 봤던 그 절차들이 지금도 기본 격리 옵션
 <!-- RELATED-POSTS -->
 ## 이어서 읽기
 
-### Swift 심화 시리즈
-
-- 이전 편: [\[Swift 심화 #2\] Swift actor 완전 정리, 데이터 레이스 막는 법](/Swift-%EC%8B%AC%ED%99%94-2-Swift-actor-%EC%99%84%EC%A0%84-%EC%A0%95%EB%A6%AC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A0%88%EC%9D%B4%EC%8A%A4-%EB%A7%89%EB%8A%94-%EB%B2%95/)
-- 이전 편: [\[Swift 심화 #1\] async/await 원리, 멈추는 건 스레드가 아닙니다](/Swift-%EC%8B%AC%ED%99%94-1-asyncawait-%EC%9B%90%EB%A6%AC-%EB%A9%88%EC%B6%94%EB%8A%94-%EA%B1%B4-%EC%8A%A4%EB%A0%88%EB%93%9C%EA%B0%80-%EC%95%84%EB%8B%99%EB%8B%88%EB%8B%A4/)
-
-### 관련 주제
-
 - [델리게이트(Delegate) vs 클로저(Closure), 콜백 선택 기준 3가지](/%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8Delegate-vs-%ED%81%B4%EB%A1%9C%EC%A0%80Closure-%EC%BD%9C%EB%B0%B1-%EC%84%A0%ED%83%9D-%EA%B8%B0%EC%A4%80-3%EA%B0%80%EC%A7%80/)
+- [\[Swift 심화 #4\] 구조적 동시성, Task를 함부로 열면 안 되는 이유](/Swift-%EC%8B%AC%ED%99%94-4-%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%8F%99%EC%8B%9C%EC%84%B1-Task%EB%A5%BC-%ED%95%A8%EB%B6%80%EB%A1%9C-%EC%97%B4%EB%A9%B4-%EC%95%88-%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/)
 <!-- /RELATED-POSTS -->
