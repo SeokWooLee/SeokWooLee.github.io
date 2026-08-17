@@ -29,7 +29,7 @@ npm ci
 SITE_URL=https://gae-balbadak.pages.dev npm run validate
 ```
 
-배포 후 아래 주소가 모두 HTTP 200인지 확인합니다.
+배포 후 아래 주소가 모두 리디렉션 없이 HTTP 200인지 확인합니다.
 
 - `/`
 - `/robots.txt`

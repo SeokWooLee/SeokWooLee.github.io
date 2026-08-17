@@ -80,6 +80,7 @@ assert(missingImages.size === 0, `로컬 이미지가 누락됐습니다:\n${[..
 
 const googleVerificationFile = 'googlef513e75fd4fd1b71.html';
 const requiredFiles = [
+  '_redirects',
   '404.html',
   'ads.txt',
   'favicon.ico',
@@ -96,6 +97,14 @@ const googleVerification = readFileSync(join(distRoot, googleVerificationFile), 
 assert(
   googleVerification === `google-site-verification: ${googleVerificationFile}`,
   'Google Search Console 인증 파일 내용이 올바르지 않습니다.',
+);
+
+const redirects = readFileSync(join(distRoot, '_redirects'), 'utf8');
+const googleVerificationPath = `/${googleVerificationFile}`;
+const googleVerificationRewrite = `${googleVerificationPath} ${googleVerificationPath.replace(/\.html$/, '')} 200`;
+assert(
+  redirects.split('\n').some((line) => line.trim() === googleVerificationRewrite),
+  'Google Search Console 인증 파일의 Cloudflare Pages rewrite가 없습니다.',
 );
 
 const largestFile = walk(distRoot)
